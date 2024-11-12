@@ -1,0 +1,111 @@
+.locationsSection {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 1rem;
+}
+.locationsSection p,
+.locationsSection a,
+.locationsSection span {
+  font-family: var(--font-aptos) !important;
+}
+.locationsSection h3 {
+  margin-bottom: 2rem;
+  color: #f8f8f8;
+  font-size: 1.125rem;
+}
+.locationsSection .remoteAccess {
+  color: #a0a2a6;
+  font-weight: 500;
+  margin: 0 0 0.2rem 0;
+}
+
+.statesGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.stateDropdown {
+  position: relative;
+}
+
+.stateHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  margin: 0.2rem 0;
+  color: #a0a2a6;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: color 0.5s;
+}
+.stateHeader:hover {
+  color: #046999;
+}
+
+.locationsDropdown {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.5s ease-out;
+  padding: 0;
+  margin-left: 0.5rem;
+}
+
+.stateDropdown:hover .locationsDropdown,
+.stateDropdown:focus-within .locationsDropdown {
+  max-height: 500px;
+  padding: 0.5rem 0 0 0.5rem;
+}
+
+.cityItem {
+  margin: 0.5rem 0;
+}
+
+.cityWithServices {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.cityName {
+  color: #a0a2a6;
+  font-weight: 500;
+}
+
+.servicesList {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+.servicesList a {
+  color: #a0a2a6;
+  transition: color 0.5s;
+}
+.servicesList a:hover {
+  color: #046999;
+}
+.servicesList a:not(:last-child)::after {
+  content: "|";
+  margin-left: 0.5rem;
+  color: #a0a2a6;
+}
+
+.cityLink {
+  color: #a0a2a6;
+  transition: color 0.5s;
+  font-weight: 500;
+}
+.cityLink:hover {
+  color: #046999;
+}
+
+@media (max-width: 768px) {
+  .statesGrid {
+    gap: 0.5rem;
+  }
+  .locationsDropdown {
+    padding-left: 1rem;
+  }
+}/*# sourceMappingURL=footerLocations.module.css.map */
