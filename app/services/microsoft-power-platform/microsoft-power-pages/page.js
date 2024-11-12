@@ -12,6 +12,7 @@ import Segment4Repeat from "./(components)/Segment4Repeat";
 import SegmentMainRepeat from "./(components)/SegmentMainRepeat";
 
 import faqs from "../../../faqs/power-pages";
+
 const schema = {
   "@context": "https://schema.org",
   "@graph": [

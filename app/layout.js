@@ -16,32 +16,33 @@ import "./global.css";
 const aptos = localFont({
   src: [
     {
-      path: "../public/fonts/Aptos/Aptos.ttf", // Assuming this is the Regular weight
+      path: "../public/fonts/aptos/Aptos.ttf",
+
       weight: "400",
       style: "normal",
     },
     {
-      path: "../public/fonts/Aptos/Aptos-Light.ttf",
+      path: "../public/fonts/aptos/Aptos-Light.ttf",
       weight: "300",
       style: "normal",
     },
     {
-      path: "../public/fonts/Aptos/Aptos-SemiBold.ttf",
+      path: "../public/fonts/aptos/Aptos-SemiBold.ttf",
       weight: "600",
       style: "normal",
     },
     {
-      path: "../public/fonts/Aptos/Aptos-Bold.ttf",
+      path: "../public/fonts/aptos/Aptos-Bold.ttf",
       weight: "700",
       style: "normal",
     },
     {
-      path: "../public/fonts/Aptos/Aptos-ExtraBold.ttf",
+      path: "../public/fonts/aptos/Aptos-ExtraBold.ttf",
       weight: "800",
       style: "normal",
     },
     {
-      path: "../public/fonts/Aptos/Aptos-Black.ttf",
+      path: "../public/fonts/aptos/Aptos-Black.ttf",
       weight: "900",
       style: "normal",
     },
