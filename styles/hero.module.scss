@@ -84,13 +84,11 @@
   color: white;
 
   h4 {
-    text-transform: uppercase;
     font-size: 1.2rem;
     margin-bottom: 1rem;
   }
 
   h1 {
-    text-transform: uppercase;
     font-weight: 900;
     font-size: clamp(3rem, 10vw, 10rem);
     line-height: clamp(1rem, 8vw, 8rem);
@@ -99,7 +97,6 @@
   button {
     width: 225px;
     height: 70px;
-    text-transform: uppercase;
   }
 }
 

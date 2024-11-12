@@ -11,7 +11,6 @@
   padding-right: 4rem;
 }
 .content h2 {
-  text-transform: uppercase;
   font-size: clamp(2rem, 6vw, 3.5rem);
   font-weight: 900;
   color: #f8f8f8;
@@ -29,7 +28,6 @@
 }
 .subBox p {
   color: #f8f8f8;
-  text-transform: uppercase;
   font-weight: 500;
   letter-spacing: 1px;
   margin-bottom: -0.8rem;

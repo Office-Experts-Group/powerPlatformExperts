@@ -136,7 +136,6 @@
   h2 {
     font-size: 3rem;
     color: $black;
-    text-transform: uppercase;
     font-weight: 900;
     margin: 1.5rem 0 2rem 0;
   }
@@ -147,9 +146,8 @@
   width: fit-content;
   p {
     color: $theme;
-    text-transform: uppercase;
     letter-spacing: 1px;
-    font-weight: 500;
+    font-weight: 600;
     margin-bottom: -0.5rem;
   }
 }

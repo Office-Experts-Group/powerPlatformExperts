@@ -68,7 +68,6 @@
   margin: 0;
   cursor: pointer;
   color: #f8f8f8;
-  text-transform: uppercase;
   font-weight: 500;
   letter-spacing: 0.5px;
 }
@@ -87,7 +86,6 @@
 
 .navLink {
   text-decoration: none;
-  text-transform: uppercase;
   font-weight: 500;
   letter-spacing: 0.5px;
   color: #f8f8f8;
@@ -115,7 +113,6 @@
 }
 .dropdown li {
   list-style-type: none;
-  text-transform: uppercase;
   font-weight: 500;
   position: relative;
   width: -moz-fit-content;

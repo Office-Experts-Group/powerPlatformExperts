@@ -29,7 +29,6 @@
 }
 .contents h3 {
   color: #1e1e1e;
-  text-transform: uppercase;
   margin: 1rem;
   font-weight: 700;
   font-size: 1.25rem;
@@ -52,7 +51,6 @@
 
 .info h2 {
   color: #1e1e1e;
-  text-transform: uppercase;
   margin: 1rem 0;
   font-weight: 900;
 }

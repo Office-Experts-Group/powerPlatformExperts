@@ -13,7 +13,6 @@
 .upgradeSection p:last-of-type {
   color: #046999;
   letter-spacing: 1px;
-  text-transform: uppercase;
   margin: 1rem 0;
 }
 
@@ -64,7 +63,6 @@
 .underline h2 {
   margin-bottom: 1.5rem;
   color: #1e1e1e;
-  text-transform: uppercase;
   font-size: 1.5rem;
   margin-bottom: -0.5rem;
 }

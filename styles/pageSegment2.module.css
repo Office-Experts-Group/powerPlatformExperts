@@ -35,7 +35,6 @@
 }
 .contents h3 {
   color: #1e1e1e;
-  text-transform: uppercase;
   margin: 1rem;
   font-weight: 700;
   font-size: 1.25rem;
@@ -70,7 +69,7 @@
   color: #046999;
   transition: opacity 0.3s ease;
   font-size: 1.5rem;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 a:hover .contentLink {
@@ -92,7 +91,6 @@ a:hover .contentLink p::after {
 
 .info h2 {
   color: #1e1e1e;
-  text-transform: uppercase;
   margin: 1rem 0;
   font-weight: 900;
 }

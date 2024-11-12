@@ -45,14 +45,12 @@
   line-height: 1.5rem;
   color: #1e1e1e;
   font-weight: 900;
-  text-transform: uppercase;
   min-height: 2.75rem;
   transition: color 0.3s ease-in-out;
   margin: 0;
 }
 .content p {
   color: #777a7e;
-  text-transform: uppercase;
   font-weight: 700;
   font-size: 0.8rem;
   letter-spacing: 1px;

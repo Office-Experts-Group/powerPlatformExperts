@@ -40,14 +40,13 @@
 .memberInfo h2 {
   color: #1e1e1e;
   font-size: 1.25rem;
-  font-weight: 600;
+  font-weight: 700;
   margin-bottom: 0.5rem;
   letter-spacing: 1px;
 }
 .memberInfo h3 {
   color: #046999;
   font-size: 1rem;
-  text-transform: uppercase;
   margin-bottom: 0.5rem;
   font-weight: 700;
 }

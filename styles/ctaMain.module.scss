@@ -93,7 +93,6 @@
   margin-left: 5rem;
   p {
     color: $offWhite;
-    text-transform: uppercase;
     font-size: 0.8rem;
   }
   h3 {
@@ -123,19 +122,19 @@
   border-radius: 0.1rem;
   color: $offWhite;
   display: inline-block;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 1rem;
   letter-spacing: 1px;
   margin-bottom: 0;
   padding: 1.5rem 3rem;
   text-align: center;
-  text-transform: uppercase;
   touch-action: manipulation;
   vertical-align: middle;
   white-space: nowrap;
   position: relative;
   z-index: 1;
   overflow: hidden;
+  text-transform: uppercase;
   &::before {
     content: "";
     position: absolute;

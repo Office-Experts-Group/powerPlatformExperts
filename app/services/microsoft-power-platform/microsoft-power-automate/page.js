@@ -9,7 +9,7 @@ import BlackSegment from "./(components)/BlackSegment";
 import Promo from "./(components)/Promo";
 import Segment4Repeat from "./(components)/Segment4Repeat";
 
-import faqs from "../../../faqs/power-automate";
+import faqs from "../../../../faqs/power-automate";
 
 const schema = {
   "@context": "https://schema.org",

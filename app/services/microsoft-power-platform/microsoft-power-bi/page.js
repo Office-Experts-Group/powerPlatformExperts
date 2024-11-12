@@ -9,7 +9,7 @@ import Segment4Repeat from "./(components)/Segment4Repeat";
 import PageSegment4 from "./(components)/PageSegment4";
 import SegmentMainRepeat from "./(components)/SegmentMainRepeat";
 
-import faqs from "../../../faqs/power-bi";
+import faqs from "../../../../faqs/power-bi";
 
 const schema = {
   "@context": "https://schema.org",

@@ -121,7 +121,6 @@
 .contentWrapper h2 {
   font-size: 3rem;
   color: #1e1e1e;
-  text-transform: uppercase;
   font-weight: 900;
   margin: 1.5rem 0 2rem 0;
 }
@@ -133,9 +132,8 @@
 }
 .sub p {
   color: #046999;
-  text-transform: uppercase;
   letter-spacing: 1px;
-  font-weight: 500;
+  font-weight: 600;
   margin-bottom: -0.5rem;
 }
 

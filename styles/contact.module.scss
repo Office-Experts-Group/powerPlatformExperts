@@ -46,7 +46,6 @@
     transition: all 1s ease;
     color: $offWhite;
     font-size: 1rem;
-    text-transform: uppercase;
     width: 220px;
     position: relative;
     overflow: hidden;
@@ -245,7 +244,6 @@
   }
 
   label {
-    text-transform: uppercase;
     font-weight: 500;
     font-size: 1rem;
     span {
@@ -285,7 +283,6 @@
 .radioField {
   .groupLabel {
     font-weight: 500;
-    text-transform: uppercase;
     display: block;
     margin-bottom: 1rem;
   }
@@ -346,7 +343,6 @@
 
 .uploadField {
   label {
-    text-transform: uppercase;
     font-weight: 500;
     span {
       text-transform: none;

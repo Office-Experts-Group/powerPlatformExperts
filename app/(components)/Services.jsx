@@ -21,18 +21,18 @@ const Services = () => {
           <div className={styles.subBox}>
             <p>
               Experts in Custom Design and Development
-              <span> ffor the Microsoft Power Platform</span>
+              <span> for the Microsoft Power Platform</span>
             </p>
           </div>
           <h2>Microsoft Power Platform Consulting Services</h2>
           <p>
-            Microsoft’s Power Platform empowers businesses by offering a suite
-            of powerful tools including Power BI for data visualisation, Power
-            Apps for app creation and Power Automate for workflow automation.
-            These tools enable organisations to streamline processes, gain
-            actionable insights and develop customised solutions that enhance
-            efficiency and productivity across various aspects of their
-            operations.
+            Microsoft&apos;s Power Platform empowers businesses by offering a
+            suite of powerful tools including Power BI for data visualisation,
+            Power Apps for app creation and Power Automate for workflow
+            automation. These tools enable organisations to streamline
+            processes, gain actionable insights and develop customised solutions
+            that enhance efficiency and productivity across various aspects of
+            their operations.
           </p>
           <div className={styles.signature}>
             <div>

@@ -19,7 +19,7 @@ const FAQ = ({ title = "Frequently Asked Questions", faqs = [] }) => {
             name="faq-group"
           >
             <summary>
-              <span className={styles.questionNumber}>Q{index + 1}</span>
+              <span className={styles.questionNumber}>Q{index + 1}.</span>
               <p className={styles.questionText}>{question}</p>
             </summary>
             <div className={styles.content}>{answer}</div>
