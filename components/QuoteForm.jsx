@@ -177,6 +177,7 @@ const QuoteForm = () => {
       aria-label="Quote Request Form"
       role="form"
       noValidate
+      className={styles.form}
     >
       <div className={styles.errorContainer} role="alert" aria-live="polite">
         {error.general && (

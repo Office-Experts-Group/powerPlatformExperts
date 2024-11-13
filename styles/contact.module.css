@@ -147,6 +147,11 @@
     opacity: 0;
   }
 }
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
 .contactForm {
   display: grid;
   grid-template-columns: 1fr 1fr;

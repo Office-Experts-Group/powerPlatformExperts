@@ -26,6 +26,7 @@ const PageSegmentMain = () => {
             alt="Image of a files leaving a computer"
             width={600}
             height={400}
+            priority
           />
         </AnimateOnScroll>
       </div>

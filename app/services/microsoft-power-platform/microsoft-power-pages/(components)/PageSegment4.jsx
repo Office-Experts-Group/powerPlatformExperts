@@ -66,8 +66,8 @@ const Segment4Repeat = () => {
             <Image
               src={eyes}
               alt="person clicking a computer mouse"
-              width={600}
-              height={394}
+              width={450}
+              height={294}
             />
           </div>
         </AnimateOnScroll>

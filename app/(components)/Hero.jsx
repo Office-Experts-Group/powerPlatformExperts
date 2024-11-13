@@ -6,7 +6,7 @@ import styles from "../../styles/hero.module.css";
 import handShake from "../../public/hero/handShake.webp";
 import graph from "../../public/hero/graph.webp";
 import shapeLeft from "../../public/hero/shapeLeft.png";
-import shapeRight from "../../public/hero/shapeRight.png";
+import shapeRight from "../../public/hero/shapeRight.webp";
 
 const Hero = () => {
   return (
