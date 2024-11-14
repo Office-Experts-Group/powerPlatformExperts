@@ -31,13 +31,13 @@ const IsRight = () => {
                 />
               </span>
             </div> */}
-            <Image
+            {/* <Image
               className={`${styles.imgSmall} ${styles.imgMain}`}
               src={isRight2}
               alt="someone holding a newspaper"
               width={160}
               height={135}
-            />
+            /> */}
           </div>
         </div>
       </AnimateOnScroll>

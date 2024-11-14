@@ -24,7 +24,9 @@ const Services = () => {
               <span> for the Microsoft Power Platform</span>
             </p>
           </div>
-          <h2>Microsoft Power Platform Consulting Services</h2>
+          <h2>
+            Microsoft<br></br>Power Platform Consulting Services
+          </h2>
           <p>
             Microsoft&apos;s Power Platform empowers businesses by offering a
             suite of powerful tools including Power BI for data visualisation,

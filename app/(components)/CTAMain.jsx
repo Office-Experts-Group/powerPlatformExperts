@@ -64,7 +64,7 @@ const CTAMain = () => {
             </div>
 
             <Link
-              href="services/microsoft-power-platform/microsoft-power-pages/"
+              href="/services/microsoft-power-platform/microsoft-power-pages/"
               className={styles.link}
             >
               Discover More

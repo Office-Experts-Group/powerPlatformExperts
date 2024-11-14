@@ -89,6 +89,8 @@ const FooterLocationsSection = () => {
         {Object.entries(locationsByState).map(([state, locations]) => (
           <div key={state} className={styles.stateDropdown}>
             <p className={styles.stateHeader}>{state}</p>
+
+            {/* Cities dropdown */}
             <div className={styles.locationsDropdown}>
               {Object.entries(locations).map(([city, data]) => (
                 <div key={city} className={styles.cityItem}>
@@ -99,19 +101,23 @@ const FooterLocationsSection = () => {
                   ) : (
                     <div className={styles.cityWithServices}>
                       <span className={styles.cityName}>{city}</span>
-                      {data.links.map((linkGroup, index) => (
-                        <div key={index} className={styles.servicesList}>
-                          {linkGroup.map((service, serviceIndex) => (
-                            <Link
-                              key={service}
-                              href={data.urls[index]}
-                              className={styles.serviceLink}
-                            >
-                              {service}
-                            </Link>
-                          ))}
-                        </div>
-                      ))}
+
+                      {/* Services dropdown */}
+                      <div className={styles.servicesDropdown}>
+                        {data.links.map((linkGroup, index) => (
+                          <div key={index} className={styles.servicesList}>
+                            {linkGroup.map((service) => (
+                              <Link
+                                key={service}
+                                href={data.urls[index]}
+                                className={styles.serviceLink}
+                              >
+                                {service}
+                              </Link>
+                            ))}
+                          </div>
+                        ))}
+                      </div>
                     </div>
                   )}
                 </div>

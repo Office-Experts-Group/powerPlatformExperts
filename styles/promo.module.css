@@ -5,6 +5,14 @@
   align-items: center;
 }
 
+.promoCenter {
+  scroll-margin-top: 200px;
+  margin: 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .content {
   display: flex;
   align-items: center;
@@ -66,4 +74,81 @@
 .img img:hover {
   filter: grayscale(100%);
   transition: all 0.5s ease-in-out;
+}
+
+.circleButton {
+  width: 4em;
+  height: 4rem;
+  border-radius: 50%;
+  background-color: #ffffff;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: bounce 1s ease infinite;
+}
+.circleButton::before, .circleButton::after {
+  content: "";
+  position: absolute;
+  left: -20px;
+  top: -20px;
+  width: calc(100% + 40px);
+  height: calc(100% + 40px);
+  border-radius: 50%;
+  border: 1px dashed #046999;
+  animation: ringExpand 1.8s linear infinite;
+}
+.circleButton::after {
+  animation-delay: 0.9s;
+}
+.circleButton::before {
+  animation-delay: 0.3s;
+}
+
+.iconWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  height: 80%;
+  border-radius: 50%;
+  background: #ffffff;
+}
+
+@keyframes ringExpand {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.5);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  15% {
+    transform: translateY(5px);
+  }
+  33% {
+    transform: translateY(-10px);
+  }
+  48% {
+    transform: translateY(0);
+  }
+  66% {
+    transform: translateY(-5px);
+  }
+  81% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }/*# sourceMappingURL=promo.module.css.map */

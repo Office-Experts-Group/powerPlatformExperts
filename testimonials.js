@@ -483,9 +483,9 @@ export const testimonials = [
       "I contacted Office Experts with very late notice for some urgent work that we required. Jason was extremely helpful and met all of the required deadlines that our customer had put on us even consulting with us after normal working hours. Jason also offered some great ideas and tips that we had not even thought of which has made the use of the spreadsheet very efficient, saving us time and money. I have been back to get minor changes done and once again everything was done well within time requirements and cost effective. I highly recommended Jason and Office Experts and will be using them in the future.",
     name: "Darryl Cloete",
     contact: "www.linkedin.com/in/darryl-cloete-6081ba16b",
-    image: "",
-    width: 0,
-    height: 0,
+    image: hitech150x,
+    width: 150,
+    height: 100,
   },
   {
     content:
