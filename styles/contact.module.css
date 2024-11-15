@@ -77,8 +77,10 @@
   transition: all 1s ease;
 }
 .option .description p {
-  margin: 1rem 0 0;
   line-height: 1.8;
+}
+.option .description p:first-of-type {
+  margin: 1rem 0 0;
 }
 .option:hover {
   background: #f2f3f5;

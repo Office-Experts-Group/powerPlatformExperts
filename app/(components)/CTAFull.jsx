@@ -14,7 +14,9 @@ const CTAFull = () => {
       <div className={styles.ctaWrapper}>
         <Image src={cta} alt="people in office" fill />
         <AnimateOnScroll animation="fade-up" delay={0.1} duration={1}>
-          <h2>Trust the Experts for All Your business Needs</h2>
+          <h2>
+            Trust the Experts for<br></br>All Your Business Needs
+          </h2>
         </AnimateOnScroll>
         <Link href="/contact-us" className={`${styles.ctaBtn} btn`}>
           Get Started

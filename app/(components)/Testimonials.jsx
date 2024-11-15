@@ -33,7 +33,7 @@ const Testimonials = () => {
       <div className={styles.box}>
         <h2>Client Testimonials</h2>
       </div>
-      <h3>What they say?</h3>
+      <h3>What They Say?</h3>
 
       <div
         className={styles.testimonialsWrapper}

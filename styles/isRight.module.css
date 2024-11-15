@@ -139,6 +139,12 @@
 .text {
   color: #777a7e;
   line-height: 2.125rem;
+  font-size: 1.125rem;
+}
+
+.textAlone {
+  color: #777a7e;
+  line-height: 2.125rem;
   margin-bottom: 2rem;
   font-size: 1.125rem;
 }

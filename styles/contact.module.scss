@@ -84,8 +84,10 @@
     transition: all 1s ease;
 
     p {
-      margin: 1rem 0 0;
       line-height: 1.8;
+      &:first-of-type {
+        margin: 1rem 0 0;
+      }
     }
   }
 

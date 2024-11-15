@@ -38,9 +38,9 @@ const Contact = ({ isQuote }) => {
             <div className={styles.description}>
               <p>
                 Get in touch with our team for general inquiries and support.
-                We&apos;re here to help with any questions you might have about
-                our services.
+                We&apos;re here to help with any questions you
               </p>
+              <p> might have about our services.</p>
             </div>
           </div>
 

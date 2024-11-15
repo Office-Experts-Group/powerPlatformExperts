@@ -55,8 +55,9 @@ const IsRight = () => {
             development, through to deployment, addressing your unique business
             needs and requirements. Additionally, we offer comprehensive
             training, ongoing support and facilitate effective integration into
-            your business to ensure the success of your Power Platform projects.
+            your business to ensure the success of your
           </p>
+          <p className={styles.textAlone}>Power Platform projects.</p>
           <div className={styles.contentGrid}>
             <div className={styles.excerpt}>
               <div>
