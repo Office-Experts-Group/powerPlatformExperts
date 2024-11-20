@@ -1,13 +1,11 @@
 import React from "react";
 
-import { testimonials } from "../../../testimonials";
-
 import TestimonialCard from "../../../components/TestimonialCard";
 import AnimateOnScroll from "../../../components/AnimateOnScroll";
 
 import styles from "../../../styles/testimonialPage.module.css";
 
-const TestimonialPage = () => {
+const TestimonialPage = ({ testimonials }) => {
   // Filter out testimonials without valid images first
   const validTestimonials = testimonials.filter(
     (testimonial) => testimonial.image && testimonial.image !== ""

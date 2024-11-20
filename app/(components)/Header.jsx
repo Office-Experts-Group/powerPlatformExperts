@@ -19,9 +19,14 @@ const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
+    // Check initial scroll position
+    const initialScroll = window.scrollY > 10;
+    setIsScrolled(initialScroll);
+
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 10);
     };
+
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);

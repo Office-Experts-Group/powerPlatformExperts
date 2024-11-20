@@ -143,11 +143,6 @@ const schema = {
       image: {
         "@id": "https://www.powerplatformexperts.com.au/#/schema/logo/image/",
       },
-      aggregateRating: {
-        "@type": "AggregateRating",
-        ratingValue: "5",
-        reviewCount: "112",
-      },
     },
   ],
 };
