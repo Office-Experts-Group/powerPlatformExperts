@@ -2,6 +2,7 @@
 
 .mobileNavContainer {
   position: relative;
+  overflow-x: hidden;
 
   @include deskL {
     display: none;
@@ -48,6 +49,9 @@
   box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
+  @include phone {
+    min-width: 70vw;
+  }
 }
 
 .isOpen {

@@ -1,5 +1,6 @@
 .mobileNavContainer {
   position: relative;
+  overflow-x: hidden;
   margin-left: auto;
 }
 @media (min-width: 1200px) {
@@ -55,6 +56,11 @@
   box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
+}
+@media (max-width: 449px) {
+  .mobileNav {
+    min-width: 70vw;
+  }
 }
 
 .isOpen {
