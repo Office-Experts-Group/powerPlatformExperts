@@ -9,6 +9,30 @@
   margin-bottom: 3rem;
   color: #1e1e1e;
 }
+@media (max-width: 449px) {
+  .faqSection {
+    max-width: 90vw;
+    padding: 0rem 0rem 6rem 0rem;
+  }
+}
+@media (min-width: 450px) and (max-width: 766px) {
+  .faqSection {
+    max-width: 90vw;
+    padding: 0rem 0rem 6rem 0rem;
+  }
+}
+@media (min-width: 767px) and (max-width: 1024px) {
+  .faqSection {
+    max-width: 90vw;
+    padding: 0rem 0rem 6rem 0rem;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1199px) {
+  .faqSection {
+    max-width: 90vw;
+    padding: 0rem 0rem 6rem 0rem;
+  }
+}
 
 .faqContainer {
   display: flex;
@@ -41,6 +65,7 @@
 .faqItem summary {
   position: relative;
   padding: 1.5rem;
+  line-height: 1.5rem;
   list-style: none;
   display: flex;
   align-items: center;

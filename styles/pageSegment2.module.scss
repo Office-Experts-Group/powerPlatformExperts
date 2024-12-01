@@ -1,14 +1,43 @@
 @import "./globals.scss";
 
 .pageSegment {
+  position: relative;
   scroll-margin-top: 100px;
   display: grid;
   grid-template-columns: 66% 1fr;
   gap: 2rem;
   padding: 4rem 10vw;
 
+  @include tablet {
+    padding: 4rem 2vw;
+    gap: 0rem;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  @media screen and (max-width: 1200px) {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 4rem 2vw;
+  }
+
   img {
     object-fit: cover;
+    @include desktop {
+      display: none;
+    }
+    @include tablet {
+      max-width: 70vw;
+      padding: 0;
+    }
+
+    @include phoneLandscape {
+      max-width: 95vw;
+      padding: 0;
+    }
+    @include phone {
+      max-width: 95vw;
+      padding: 0;
+    }
   }
 }
 
@@ -22,6 +51,43 @@
   img {
     object-fit: cover;
     margin-bottom: -4rem;
+  }
+
+  @media screen and (max-width: 1200px) {
+    padding: 0 2vw 8rem 2vw;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    margin-top: -2rem;
+  }
+
+  @include phoneLandscape {
+    margin-top: 4rem;
+    gap: 6rem;
+  }
+  @include phone {
+    margin-top: 6rem;
+    gap: 6rem;
+  }
+
+  img {
+    object-fit: cover;
+    @include desktop {
+      display: none;
+    }
+    @include tablet {
+      max-width: 70vw;
+      padding: 0;
+    }
+
+    @include phoneLandscape {
+      max-width: 95vw;
+      padding: 0;
+    }
+    @include phone {
+      max-width: 95vw;
+      padding: 0;
+    }
   }
 }
 
@@ -47,6 +113,19 @@
     button {
       padding: 1.5rem 3rem;
     }
+  }
+
+  @include desktop {
+    display: none;
+  }
+  @include tablet {
+    display: none;
+  }
+  @include phoneLandscape {
+    display: none;
+  }
+  @include phone {
+    display: none;
   }
 }
 
@@ -109,5 +188,44 @@ a:hover {
     color: $darkGrayText;
     line-height: 2rem;
     max-width: 90%;
+  }
+
+  @include phone {
+    padding: 0 0 2rem 1rem;
+    p {
+      max-width: 100%;
+      padding-top: 1rem;
+    }
+  }
+  @include phoneLandscape {
+    padding: 0 0 2rem 1rem;
+    p {
+      max-width: 100%;
+      padding-top: 1rem;
+    }
+  }
+  @include tablet {
+    padding: 1rem 0 6rem 0;
+  }
+  @include desktop {
+    padding: 0 0 0 10vw;
+  }
+}
+
+.customMargin {
+  margin: 4rem 0 0 0;
+
+  @include desktop {
+    margin: 4rem 0 -4rem 0;
+  }
+
+  @include tablet {
+    margin: 0 0 -4rem 0;
+  }
+  @include phoneLandscape {
+    margin: 0 0 -4rem 0;
+  }
+  @include phone {
+    margin: 0;
   }
 }

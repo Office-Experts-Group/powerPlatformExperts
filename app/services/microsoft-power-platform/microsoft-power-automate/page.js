@@ -10,6 +10,7 @@ import Promo from "./(components)/Promo";
 import Segment4Repeat from "./(components)/Segment4Repeat";
 
 import faqs from "../../../../faqs/power-automate";
+import Contents from "./(components)/Contents";
 
 const schema = {
   "@context": "https://schema.org",
@@ -26,7 +27,7 @@ const schema = {
       datePublished: "2024-10-27T00:00:00+00:00",
       dateModified: "2024-10-27T00:00:00+00:00",
       description:
-        "Professional Microsoft Power Automate development and consulting services. Automate workflows, integrate systems, and optimize processes. Call us today 1300 10 28 10",
+        "Professional Microsoft Power Automate development and consulting services. Automate workflows, integrate systems, and optimize processes. Call us today 1300 102 810",
       breadcrumb: {
         "@id":
           "https://www.powerplatformexperts.com.au/services/microsoft-power-platform/microsoft-power-automate/#breadcrumb",
@@ -103,12 +104,12 @@ const schema = {
       "@id": "https://www.powerplatformexperts.com.au/#organization",
       name: "Power Platform Experts Group",
       url: "https://www.powerplatformexperts.com.au/",
-      telephone: "1300 10 28 10",
+      telephone: "1300 102 810",
       email: "consult@powerplatformexperts.com.au",
       contactPoint: [
         {
           "@type": "ContactPoint",
-          telephone: "1300 10 28 10",
+          telephone: "1300 102 810",
           contactType: "customer service",
           email: "consult@powerplatformexperts.com.au",
           availableLanguage: ["en", "en-AU"],
@@ -165,11 +166,6 @@ const schema = {
       image: {
         "@id": "https://www.powerplatformexperts.com.au/#/schema/logo/image/",
       },
-      aggregateRating: {
-        "@type": "AggregateRating",
-        ratingValue: "5",
-        reviewCount: "112",
-      },
     },
   ],
 };
@@ -181,6 +177,7 @@ const Page = () => {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
       />
+      <Contents />
       <ServiceHero title="Microsoft Power Automate Consulting Services" />
       <ServicePageCards />
       <PageSegmentMain />

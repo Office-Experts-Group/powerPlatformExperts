@@ -4,10 +4,10 @@ import Image from "next/image";
 import styles from "../../../../../styles/servicePageCards.module.css";
 
 // Import icons
-import stuckIcon from "../../../../../public/icons/computerRed.png";
-import issuesIcon from "../../../../../public/icons/support.png";
-import expertsIcon from "../../../../../public/icons/deal.png";
-import migrateIcon from "../../../../../public/icons/idea.png";
+import stuckIcon from "../../../../../public/icons/computerBlue.webp";
+import issuesIcon from "../../../../../public/icons/supportBlue.webp";
+import expertsIcon from "../../../../../public/icons/handShakeBlue.webp";
+import migrateIcon from "../../../../../public/icons/ideaBlue.webp";
 
 // Import main images
 import stuckImage from "../../../../../public/service-img-1350x201.webp";
@@ -17,10 +17,7 @@ import migrateImage from "../../../../../public/service-img-4350x201.webp";
 
 const ServicePageCards = () => {
   return (
-    <section
-      className={styles.servicePageCards}
-      style={{ margin: "4rem 0 0rem 0" }}
-    >
+    <section className={styles.servicePageCards}>
       <div className={styles.card}>
         <a href="#enhance-your-business-productivity">
           <div className={styles.content}>

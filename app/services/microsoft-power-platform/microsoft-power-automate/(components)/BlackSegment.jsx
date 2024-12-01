@@ -6,9 +6,9 @@ import AnimateOnScroll from "../../../../../components/AnimateOnScroll";
 import styles from "../../../../../styles/expertsAwait.module.css";
 
 import bg from "../../../../../public/service-bg.webp";
-import stuckIcon from "../../../../../public/icons/computerRed.png";
-import issuesIcon from "../../../../../public/icons/support.png";
-import migrateIcon from "../../../../../public/icons/idea.png";
+import stuckIcon from "../../../../../public/icons/computerBlue.webp";
+import issuesIcon from "../../../../../public/icons/supportBlue.webp";
+import migrateIcon from "../../../../../public/icons/ideaBlue.webp";
 import Link from "next/link";
 
 const BlackSegment = () => {
@@ -16,7 +16,7 @@ const BlackSegment = () => {
     <section
       className={styles.expertsAwait}
       style={{ marginTop: "8rem" }}
-      id="issues"
+      id="automation"
     >
       <Image className={styles.bgImg} src={bg} alt="shape icon" fill="true" />
 
@@ -73,9 +73,9 @@ const BlackSegment = () => {
               alt="Connection icon"
               width={30}
               height={30}
-              className={styles.icon}
+              className={`${styles.icon} ${styles.hidden}`}
             />
-            <p>Automation of manual tasks.</p>
+            <p className={styles.centerText}>Automation of manual tasks.</p>
           </div>
 
           <div className={styles.point}>
@@ -84,9 +84,11 @@ const BlackSegment = () => {
               alt="Old version icon"
               width={30}
               height={30}
-              className={styles.icon}
+              className={`${styles.icon} ${styles.hidden}`}
             />
-            <p>Boosted productivity through automated processes.</p>
+            <p className={styles.centerText}>
+              Boosted productivity through automated processes.
+            </p>
           </div>
 
           <div className={styles.point}>
@@ -95,9 +97,9 @@ const BlackSegment = () => {
               alt="Old version icon"
               width={30}
               height={30}
-              className={styles.icon}
+              className={`${styles.icon} ${styles.hidden}`}
             />
-            <p>
+            <p className={styles.centerText}>
               Workflows provide connectivity across applications and data
               sources.
             </p>

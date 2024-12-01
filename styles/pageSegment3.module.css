@@ -13,10 +13,45 @@
 .pageSegment img {
   filter: grayscale(0%);
   transition: all 0.3s ease;
+  aspect-ratio: 600/450;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .pageSegment img:hover {
   filter: grayscale(100%);
   transition: all 0.3s ease;
+}
+@media (max-width: 449px) {
+  .pageSegment img {
+    max-width: 90vw;
+  }
+}
+@media (min-width: 450px) and (max-width: 766px) {
+  .pageSegment img {
+    max-width: 90vw;
+  }
+}
+@media (max-width: 449px) {
+  .pageSegment {
+    flex-direction: column-reverse;
+    padding: 2rem 1rem;
+  }
+  .pageSegment p {
+    max-width: 100%;
+  }
+}
+@media (min-width: 450px) and (max-width: 766px) {
+  .pageSegment {
+    flex-direction: column-reverse;
+  }
+  .pageSegment p {
+    max-width: 100%;
+  }
+}
+@media (min-width: 767px) and (max-width: 1024px) {
+  .pageSegment {
+    flex-direction: column-reverse;
+  }
 }
 
 .pageSegmentCentered {
@@ -37,22 +72,41 @@
 .pageSegmentCentered img {
   filter: grayscale(0%);
   transition: all 0.3s ease;
+  max-width: 95vw;
 }
 .pageSegmentCentered img:hover {
   filter: grayscale(100%);
   transition: all 0.3s ease;
 }
+@media (max-width: 449px) {
+  .pageSegmentCentered {
+    flex-direction: column;
+    padding: 2rem 1rem;
+  }
+  .pageSegmentCentered p {
+    max-width: 100%;
+  }
+}
+@media (min-width: 450px) and (max-width: 766px) {
+  .pageSegmentCentered {
+    flex-direction: column;
+  }
+  .pageSegmentCentered p {
+    max-width: 100%;
+  }
+}
+@media (min-width: 767px) and (max-width: 1024px) {
+  .pageSegmentCentered {
+    flex-direction: column;
+  }
+}
 
 .underline {
-  border-bottom: 6px solid #046999;
-  width: -moz-fit-content;
-  width: fit-content;
   margin-bottom: 2rem;
 }
 .underline h2 {
   font-size: 1.5rem;
   font-weight: 700;
-  margin-bottom: -0.5rem;
 }
 
 .points {
@@ -60,6 +114,21 @@
   flex-direction: column;
   gap: 1rem;
   margin-top: 2rem;
+}
+
+.pointsGrid {
+  display: grid;
+  grid-template-columns: 50% 1fr;
+  gap: 0.5rem;
+  margin-top: 2rem;
+}
+@media (max-width: 449px) {
+  .pointsGrid {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 2rem 0 0 1rem;
+  }
 }
 
 .point {
@@ -96,4 +165,130 @@
 .tick:hover svg {
   stroke: #0eaa0e;
   color: #0eaa0e;
+}
+
+@media (max-width: 449px) {
+  .noImg {
+    margin-bottom: 0 !important;
+    padding-bottom: 0;
+  }
+  .noImg img {
+    display: none;
+  }
+}
+@media (min-width: 450px) and (max-width: 766px) {
+  .noImg {
+    margin-bottom: 0 !important;
+    padding-bottom: 0;
+  }
+  .noImg img {
+    display: none;
+  }
+}
+
+@media (max-width: 449px) {
+  .reversed {
+    flex-direction: column;
+    margin-top: 3rem;
+  }
+}
+@media (min-width: 450px) and (max-width: 766px) {
+  .reversed {
+    flex-direction: column;
+    margin-top: 3rem;
+  }
+}
+
+@media (max-width: 449px) {
+  .noMargin {
+    margin: 0 !important;
+  }
+}
+@media (min-width: 450px) and (max-width: 766px) {
+  .noMargin {
+    margin: 0 !important;
+  }
+}
+
+.marginBottom {
+  margin-bottom: 4rem !important;
+}
+@media (max-width: 449px) {
+  .marginBottom {
+    margin-top: -4rem;
+  }
+}
+@media (min-width: 450px) and (max-width: 766px) {
+  .marginBottom {
+    margin-top: -4rem;
+  }
+}
+
+.padded {
+  padding: 8rem 10vw;
+}
+@media (min-width: 1025px) and (max-width: 1199px) {
+  .padded {
+    padding: 4rem 10vw;
+  }
+  .padded img {
+    width: 450px;
+    height: 300px;
+  }
+}
+@media (min-width: 450px) and (max-width: 766px) {
+  .padded {
+    padding: 4rem 5vw;
+  }
+}
+@media (max-width: 449px) {
+  .padded {
+    padding: 4rem 1rem;
+  }
+}
+
+.paddedBtm {
+  padding: 4rem 10vw 8rem 10vw;
+}
+@media (min-width: 1025px) and (max-width: 1199px) {
+  .paddedBtm {
+    padding: 4rem 10vw;
+  }
+  .paddedBtm img {
+    width: 450px;
+    height: 300px;
+  }
+}
+@media (min-width: 450px) and (max-width: 766px) {
+  .paddedBtm {
+    padding: 4rem 5vw;
+  }
+}
+@media (max-width: 449px) {
+  .paddedBtm {
+    padding: 4rem 1rem;
+  }
+}
+
+.paddedTop {
+  padding: 8rem 10vw;
+}
+@media (min-width: 1025px) and (max-width: 1199px) {
+  .paddedTop {
+    padding: 4rem 10vw;
+  }
+  .paddedTop img {
+    width: 450px;
+    height: 300px;
+  }
+}
+@media (min-width: 450px) and (max-width: 766px) {
+  .paddedTop {
+    padding: 4rem 5vw 0 5vw;
+  }
+}
+@media (max-width: 449px) {
+  .paddedTop {
+    padding: 4rem 1rem 0 1rem;
+  }
 }/*# sourceMappingURL=pageSegment3.module.css.map */

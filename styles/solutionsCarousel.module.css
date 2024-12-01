@@ -3,10 +3,29 @@
   padding: 6rem 0;
   position: relative;
 }
+@media (max-width: 449px) {
+  .solutions {
+    padding: 3rem 0;
+  }
+}
+
+.withDuplicate {
+  padding: 6rem 0 1rem 0;
+}
+
+.duplicate {
+  padding: 0 0 6rem 0;
+}
 
 .title {
   margin-left: 10vw;
   margin-bottom: 3rem;
+}
+@media (max-width: 449px) {
+  .title {
+    margin-left: 5vw;
+    margin-bottom: 2rem;
+  }
 }
 .title p {
   color: #046999;
@@ -20,6 +39,11 @@
   font-weight: 900;
   margin: 1.25rem 0 2.5rem 0;
 }
+@media (max-width: 449px) {
+  .title h2 {
+    font-size: 2.5rem;
+  }
+}
 .title div {
   border-bottom: 6px solid rgba(171, 166, 166, 0.371);
   width: -moz-fit-content;
@@ -32,24 +56,23 @@
   margin: 0 auto;
   padding: 0 2rem;
 }
-
-.carouselTrack {
-  display: flex;
-  gap: 2rem;
-  animation: slideTrack 60s linear infinite;
-  will-change: transform;
-  transform: translateZ(0);
-  padding-top: 150px;
-  margin-top: -150px;
-}
-.carouselTrack:hover {
-  animation-play-state: paused;
+@media (max-width: 449px) {
+  .carouselContainer {
+    padding: 0;
+    overflow-x: hidden;
+  }
 }
 
 .cardWrapper {
   flex: 0 0 350px;
   position: relative;
   margin-bottom: 2rem;
+}
+@media (max-width: 449px) {
+  .cardWrapper {
+    flex: 0 0 100vw;
+    margin-bottom: 1rem;
+  }
 }
 .cardWrapper:hover {
   z-index: 30;
@@ -78,6 +101,13 @@
   z-index: 40;
   pointer-events: none;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  z-index: 5;
+}
+@media (max-width: 449px) {
+  .description {
+    width: 90vw;
+    font-size: 0.8rem;
+  }
 }
 .description::after {
   content: "";
@@ -100,6 +130,12 @@
   overflow: hidden;
   cursor: pointer;
   z-index: 10;
+}
+@media (max-width: 449px) {
+  .card {
+    width: 100vw;
+    height: 300px;
+  }
 }
 .card::before {
   content: "";
@@ -133,6 +169,12 @@
   margin-bottom: 2rem;
   transition: background-color 0.3s ease-in-out;
 }
+@media (max-width: 449px) {
+  .popIn {
+    width: 90vw;
+    margin: 1rem auto;
+  }
+}
 .popIn span {
   font-size: 0.8rem;
 }
@@ -145,52 +187,63 @@
   color: #f8f8f8;
 }
 
-@keyframes slideTrack {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(calc(-2800px - 16rem));
+.carouselTrack {
+  display: flex;
+  gap: 2rem;
+  animation: slideTrack 60s linear infinite;
+  will-change: transform;
+  transform: translateZ(0);
+  padding-top: 150px;
+  margin-top: -150px;
+}
+@media (max-width: 449px) {
+  .carouselTrack {
+    gap: 1rem;
+    padding-top: 0;
+    margin-top: 0;
   }
 }
-@media (max-width: 1200px) {
-  .carouselTrack {
+.carouselTrack:hover {
+  animation-play-state: paused;
+}
+
+.reverseAnimation {
+  animation: slideTrackReverse 60s linear infinite;
+  padding: 0 0 150px 0;
+  margin: 0 0 -150px 0;
+}
+
+@keyframes slideTrack {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+@keyframes slideTrackReverse {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@media (min-width: 1025px) and (max-width: 1199px) {
+  .carouselTrack,
+  .reverseAnimation {
     animation-duration: 45s;
   }
 }
-@media (max-width: 768px) {
-  .carouselTrack {
+@media (min-width: 767px) and (max-width: 1024px) {
+  .carouselTrack,
+  .reverseAnimation {
     animation-duration: 30s;
   }
-  .cardWrapper {
-    flex: 0 0 300px;
-  }
-  .card {
-    width: 300px;
-  }
 }
-@media (max-width: 480px) {
-  .title {
-    margin-left: 5vw;
-  }
-  .title h2 {
-    font-size: 2.5rem;
-  }
-  .carouselTrack {
-    animation-duration: 20s;
-  }
-  .cardWrapper {
-    flex: 0 0 250px;
-  }
-  .card {
-    width: 250px;
-  }
-  .popIn {
-    width: 90%;
-  }
-  .description {
-    width: 90%;
-    font-size: 0.8rem;
-    left: 50%;
+@media (max-width: 449px) {
+  .carouselTrack,
+  .reverseAnimation {
+    animation-duration: 10s;
   }
 }/*# sourceMappingURL=solutionsCarousel.module.css.map */

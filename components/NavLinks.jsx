@@ -11,12 +11,10 @@ const NavLinks = () => {
         <Link href="https://excelexperts.com.au">Excel Experts</Link>
       </li>
       <li>
-        <Link href="https://powerplatformexperts.com.au">
-          Power Platform Experts
-        </Link>
+        <Link href="/">Power Platform Experts</Link>
       </li>
       <li>
-        <Link href="/">Access Experts</Link>
+        <Link href="https://accessexperts.com.au">Access Experts</Link>
       </li>
       <li>
         <Link href="https://wordexperts.com.au">Word Experts</Link>

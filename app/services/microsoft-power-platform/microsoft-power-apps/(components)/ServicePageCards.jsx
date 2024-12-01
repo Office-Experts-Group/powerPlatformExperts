@@ -4,10 +4,10 @@ import Image from "next/image";
 import styles from "../../../../../styles/servicePageCards.module.css";
 
 // Import icons
-import stuckIcon from "../../../../../public/icons/computerRed.png";
-import issuesIcon from "../../../../../public/icons/support.png";
-import expertsIcon from "../../../../../public/icons/deal.png";
-import migrateIcon from "../../../../../public/icons/idea.png";
+import stuckIcon from "../../../../../public/icons/computerBlue.webp";
+import issuesIcon from "../../../../../public/icons/supportBlue.webp";
+import expertsIcon from "../../../../../public/icons/handShakeBlue.webp";
+import migrateIcon from "../../../../../public/icons/ideaBlue.webp";
 
 // Import main images
 import stuckImage from "../../../../../public/service-img-1350x201.webp";
@@ -22,7 +22,7 @@ const ServicePageCards = () => {
       style={{ margin: "4rem 0 0rem 0" }}
     >
       <div className={styles.card}>
-        <a href="">
+        <a href="#microsoft-partner">
           <div className={styles.content}>
             <p>Certified</p>
             <h2>Microsoft Partner</h2>
@@ -46,10 +46,10 @@ const ServicePageCards = () => {
       </div>
 
       <div className={styles.card}>
-        <a href="">
+        <a href="#existing-data">
           <div className={styles.content}>
-            <p>Streamline</p>
-            <h2>Business Operations</h2>
+            <p>Connect</p>
+            <h2>Existing Data</h2>
             <Image
               src={issuesIcon}
               alt="Access issues icon"
@@ -70,10 +70,10 @@ const ServicePageCards = () => {
       </div>
 
       <div className={styles.card}>
-        <a href="">
+        <a href="#unlock">
           <div className={styles.content}>
-            <p>Custom Apps</p>
-            <h2>Tailored to your needs</h2>
+            <p>Unlock</p>
+            <h2>Mobility with Apps</h2>
             <Image
               src={expertsIcon}
               alt="Expert help icon"
@@ -94,10 +94,10 @@ const ServicePageCards = () => {
       </div>
 
       <div className={styles.card}>
-        <a href="">
+        <a href="#custom-solutions">
           <div className={styles.content}>
-            <p>Driving</p>
-            <h2>Business innovation</h2>
+            <p>Custom</p>
+            <h2>Platform Solutions</h2>
             <Image
               src={migrateIcon}
               alt="Migration icon"

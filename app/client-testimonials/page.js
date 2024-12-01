@@ -10,7 +10,7 @@ import { testimonials } from "../../testimonials";
 const schema = {
   "@context": "https://schema.org",
   "@graph": [
-    ...getTestimonialsPageSchema(testimonials),
+    ...getTestimonialsPageSchema(testimonials)["@graph"],
     {
       "@type": "WebPage",
       "@id": "https://www.powerplatformexperts.com.au/client-testimonials/",
@@ -87,12 +87,12 @@ const schema = {
       "@id": "https://www.powerplatformexperts.com.au/#organization",
       name: "Power Platform Experts Group",
       url: "https://www.powerplatformexperts.com.au/",
-      telephone: "1300 10 28 10",
+      telephone: "1300 102 810",
       email: "consult@powerplatformexperts.com.au",
       contactPoint: [
         {
           "@type": "ContactPoint",
-          telephone: "1300 10 28 10",
+          telephone: "1300 102 810",
           contactType: "customer service",
           email: "consult@powerplatformexperts.com.au",
           availableLanguage: ["en", "en-AU"],

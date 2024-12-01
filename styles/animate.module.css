@@ -15,6 +15,10 @@
   z-index: 2;
 }
 
+.fade-up-right {
+  transform: translateY(50px) translateX(-50px);
+}
+
 .fade-down {
   transform: translateY(-100px);
 }

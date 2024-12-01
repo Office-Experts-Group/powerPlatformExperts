@@ -7,6 +7,7 @@ import handShake from "../../public/hero/handShake.webp";
 import graph from "../../public/hero/graph.webp";
 import shapeLeft from "../../public/hero/shapeLeft.png";
 import shapeRight from "../../public/hero/shapeRight.webp";
+import Link from "next/link";
 
 const Hero = () => {
   return (
@@ -59,7 +60,9 @@ const Hero = () => {
         <h1>
           Power<br></br>Platform<br></br>Experts
         </h1>
-        <button className="btn">Discover More</button>
+        <a href="#info" className="btn">
+          Discover More
+        </a>
       </div>
     </section>
   );

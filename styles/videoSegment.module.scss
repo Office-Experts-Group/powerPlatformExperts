@@ -3,7 +3,7 @@
 .container {
   background-color: $grayBGC;
   width: 100%;
-  padding: 6rem 0;
+  padding: 6rem 0 0 0;
   display: flex;
   justify-content: center;
 }
@@ -15,6 +15,14 @@
   padding: 0 1rem;
 }
 
+.description {
+  color: $darkGrayText;
+  line-height: 2rem;
+  &:last-of-type {
+    margin-bottom: 3rem;
+  }
+}
+
 .header {
   text-align: center;
   margin-bottom: 1.5rem;
@@ -22,7 +30,7 @@
 
 .subtitle {
   color: $theme;
-  font-weight: 500;
+  font-weight: 700;
   margin-bottom: 0.5rem;
   letter-spacing: 1px;
 }

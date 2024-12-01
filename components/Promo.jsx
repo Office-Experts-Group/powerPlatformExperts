@@ -9,7 +9,7 @@ import styles from "../styles/promo.module.css";
 
 import computer from "../public/icons/computer.webp";
 import promo from "../public/promo.webp";
-import idea from "../public/icons/idea.png";
+import idea from "../public/icons/ideaBlue.webp";
 
 const Promo = ({ h2, p }) => {
   const [activeSection, setActiveSection] = useState(1); // 1 corresponds to state1

@@ -16,10 +16,37 @@
   img {
     filter: grayscale(0%);
     transition: all 0.3s ease;
+    aspect-ratio: 600/450;
+    object-fit: contain;
+
     &:hover {
       filter: grayscale(100%);
       transition: all 0.3s ease;
     }
+
+    @include phone {
+      max-width: 90vw;
+    }
+    @include phoneLandscape {
+      max-width: 90vw;
+    }
+  }
+
+  @include phone {
+    flex-direction: column-reverse;
+    padding: 2rem 1rem;
+    p {
+      max-width: 100%;
+    }
+  }
+  @include phoneLandscape {
+    flex-direction: column-reverse;
+    p {
+      max-width: 100%;
+    }
+  }
+  @include tablet {
+    flex-direction: column-reverse;
   }
 }
 
@@ -46,18 +73,38 @@
       filter: grayscale(100%);
       transition: all 0.3s ease;
     }
+    max-width: 95vw;
+  }
+
+  @include phone {
+    flex-direction: column;
+    padding: 2rem 1rem;
+    p {
+      max-width: 100%;
+    }
+  }
+  @include phoneLandscape {
+    flex-direction: column;
+    p {
+      max-width: 100%;
+    }
+  }
+  @include tablet {
+    flex-direction: column;
   }
 }
 
 .underline {
-  border-bottom: 6px solid $theme;
-  width: fit-content;
   margin-bottom: 2rem;
 
   h2 {
     font-size: 1.5rem;
     font-weight: 700;
-    margin-bottom: -0.5rem;
+    // display: inline; // Makes the element only as wide as its content
+    // background-image: linear-gradient($theme, $theme); // Use your theme color
+    // background-size: 100% 6px;
+    // background-repeat: no-repeat;
+    // background-position: 0 calc(100% + 4px); // Positions the line below the text
   }
 }
 
@@ -66,6 +113,20 @@
   flex-direction: column;
   gap: 1rem;
   margin-top: 2rem;
+}
+
+.pointsGrid {
+  display: grid;
+  grid-template-columns: 50% 1fr;
+  gap: 0.5rem;
+  margin-top: 2rem;
+
+  @include phone {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 2rem 0 0 1rem;
+  }
 }
 
 .point {
@@ -101,5 +162,103 @@
       stroke: #0eaa0e;
       color: #0eaa0e;
     }
+  }
+}
+
+.noImg {
+  @include phone {
+    img {
+      display: none;
+    }
+    margin-bottom: 0 !important;
+    padding-bottom: 0;
+  }
+  @include phoneLandscape {
+    img {
+      display: none;
+    }
+    margin-bottom: 0 !important;
+    padding-bottom: 0;
+  }
+}
+
+.reversed {
+  @include phone {
+    flex-direction: column;
+    margin-top: 3rem;
+  }
+  @include phoneLandscape {
+    flex-direction: column;
+    margin-top: 3rem;
+  }
+}
+
+.noMargin {
+  @include phone {
+    margin: 0 !important;
+  }
+  @include phoneLandscape {
+    margin: 0 !important;
+  }
+}
+
+.marginBottom {
+  margin-bottom: 4rem !important;
+  @include phone {
+    margin-top: -4rem;
+  }
+  @include phoneLandscape {
+    margin-top: -4rem;
+  }
+}
+
+.padded {
+  padding: 8rem 10vw;
+  @include desktop {
+    padding: 4rem 10vw;
+    img {
+      width: 450px;
+      height: 300px;
+    }
+  }
+  @include phoneLandscape {
+    padding: 4rem 5vw;
+  }
+  @include phone {
+    padding: 4rem 1rem;
+  }
+}
+
+.paddedBtm {
+  padding: 4rem 10vw 8rem 10vw;
+  @include desktop {
+    padding: 4rem 10vw;
+    img {
+      width: 450px;
+      height: 300px;
+    }
+  }
+  @include phoneLandscape {
+    padding: 4rem 5vw;
+  }
+  @include phone {
+    padding: 4rem 1rem;
+  }
+}
+
+.paddedTop {
+  padding: 8rem 10vw;
+  @include desktop {
+    padding: 4rem 10vw;
+    img {
+      width: 450px;
+      height: 300px;
+    }
+  }
+  @include phoneLandscape {
+    padding: 4rem 5vw 0 5vw;
+  }
+  @include phone {
+    padding: 4rem 1rem 0 1rem;
   }
 }

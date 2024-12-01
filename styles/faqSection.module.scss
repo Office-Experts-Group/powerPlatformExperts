@@ -10,6 +10,22 @@
     margin-bottom: 3rem;
     color: $black;
   }
+  @include phone {
+    max-width: 90vw;
+    padding: 0rem 0rem 6rem 0rem;
+  }
+  @include phoneLandscape {
+    max-width: 90vw;
+    padding: 0rem 0rem 6rem 0rem;
+  }
+  @include tablet {
+    max-width: 90vw;
+    padding: 0rem 0rem 6rem 0rem;
+  }
+  @include desktop {
+    max-width: 90vw;
+    padding: 0rem 0rem 6rem 0rem;
+  }
 }
 
 .faqContainer {
@@ -47,6 +63,7 @@
   summary {
     position: relative;
     padding: 1.5rem;
+    line-height: 1.5rem;
     list-style: none;
     display: flex;
     align-items: center;

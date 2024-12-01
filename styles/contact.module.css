@@ -7,6 +7,21 @@
 @media (min-width: 767px) and (max-width: 1024px) {
   .contact {
     flex-direction: column;
+    gap: 0rem;
+  }
+}
+@media (min-width: 450px) and (max-width: 766px) {
+  .contact {
+    flex-direction: column;
+    padding: 6rem 5vw;
+    gap: 0rem;
+  }
+}
+@media (max-width: 449px) {
+  .contact {
+    flex-direction: column;
+    padding: 6rem 1rem;
+    gap: 0rem;
   }
 }
 
@@ -24,6 +39,21 @@
 .optionsWrapper {
   position: relative;
   height: 400px;
+}
+@media (min-width: 767px) and (max-width: 1024px) {
+  .optionsWrapper {
+    height: 320px;
+  }
+}
+@media (min-width: 450px) and (max-width: 766px) {
+  .optionsWrapper {
+    height: 320px;
+  }
+}
+@media (max-width: 449px) {
+  .optionsWrapper {
+    height: 320px;
+  }
 }
 
 .option {
@@ -63,6 +93,19 @@
   transition: left 0.3s ease;
   z-index: -1;
 }
+.option:not(.active) h2 {
+  font-family: var(--font-aptos);
+}
+@media (max-width: 449px) {
+  .option:not(.active) h2 {
+    margin-top: 1rem;
+  }
+}
+@media (min-width: 450px) and (max-width: 766px) {
+  .option:not(.active) h2 {
+    margin-top: 1rem;
+  }
+}
 .option:not(.active) h2:hover {
   color: #046999;
   border-color: #046999;
@@ -77,10 +120,8 @@
   transition: all 1s ease;
 }
 .option .description p {
-  line-height: 1.8;
-}
-.option .description p:first-of-type {
   margin: 1rem 0 0;
+  line-height: 1.8;
 }
 .option:hover {
   background: #f2f3f5;
@@ -135,20 +176,6 @@
   pointer-events: all;
 }
 
-@keyframes ringExpand {
-  0% {
-    transform: scale(1);
-    opacity: 1;
-  }
-  50% {
-    transform: scale(1.5);
-    opacity: 0.5;
-  }
-  100% {
-    transform: scale(2);
-    opacity: 0;
-  }
-}
 .form {
   display: flex;
   flex-direction: column;
@@ -161,6 +188,22 @@
   padding: 2rem 2rem 0 2rem;
   grid-row-gap: 2rem;
   height: 100%;
+}
+@media (max-width: 449px) {
+  .contactForm {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem 1rem;
+  }
+}
+@media (min-width: 450px) and (max-width: 766px) {
+  .contactForm {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem 1rem;
+  }
 }
 
 .honeypot {
@@ -185,6 +228,36 @@
   flex: 1;
   max-height: 100%;
   padding: 0.5rem 0;
+}
+@media (max-width: 449px) {
+  .formField:nth-of-type(1) {
+    order: 1;
+  }
+  .formField:nth-of-type(2) {
+    order: 4;
+    height: 150px;
+  }
+  .formField:nth-of-type(3) {
+    order: 2;
+  }
+  .formField:nth-of-type(4) {
+    order: 3;
+  }
+}
+@media (min-width: 450px) and (max-width: 766px) {
+  .formField:nth-of-type(1) {
+    order: 1;
+  }
+  .formField:nth-of-type(2) {
+    order: 4;
+    height: 150px;
+  }
+  .formField:nth-of-type(3) {
+    order: 2;
+  }
+  .formField:nth-of-type(4) {
+    order: 3;
+  }
 }
 .formField label {
   font-weight: 500;
@@ -225,6 +298,22 @@
   gap: 2rem;
   padding: 2rem;
 }
+@media (max-width: 449px) {
+  .quoteForm {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1rem;
+  }
+}
+@media (min-width: 450px) and (max-width: 766px) {
+  .quoteForm {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1rem;
+  }
+}
 
 .radioField .groupLabel {
   font-weight: 500;
@@ -234,14 +323,32 @@
 .radioField .radioOptions {
   display: flex;
 }
-.radioField .radioOptions .radioOption {
+
+.radioFieldSpan {
+  grid-column: span 2;
+}
+.radioFieldSpan .groupLabel {
+  font-weight: 500;
+  display: block;
+  margin-bottom: 1rem;
+}
+.radioFieldSpan .radioOptions {
+  display: flex;
+}
+.radioFieldSpan .radioOptionsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-row-gap: 1rem;
+}
+
+.radioOption {
   display: flex;
   align-items: center;
 }
-.radioField .radioOptions .radioOption:not(:last-child) {
+.radioOption:not(:last-child) {
   margin-right: 1.5rem;
 }
-.radioField .radioOptions .radioOption input[type=radio] {
+.radioOption input[type=radio] {
   -moz-appearance: none;
        appearance: none;
   -webkit-appearance: none;
@@ -253,10 +360,10 @@
   cursor: pointer;
   position: relative;
 }
-.radioField .radioOptions .radioOption input[type=radio]:checked {
+.radioOption input[type=radio]:checked {
   border-color: #046999;
 }
-.radioField .radioOptions .radioOption input[type=radio]:checked::after {
+.radioOption input[type=radio]:checked::after {
   content: "";
   position: absolute;
   top: 50%;
@@ -267,14 +374,20 @@
   background-color: #046999;
   border-radius: 50%;
 }
-.radioField .radioOptions .radioOption input[type=radio]:hover:not(:checked) {
+.radioOption input[type=radio]:hover:not(:checked) {
   border-color: #034767;
 }
-.radioField .radioOptions .radioOption label {
+.radioOption label {
   font-weight: 400;
   text-transform: capitalize;
   margin-left: 0.5rem;
   cursor: pointer;
+}
+
+.refField {
+  grid-column: span 2;
+  display: flex;
+  gap: 1rem;
 }
 
 .uploadField label {
@@ -290,11 +403,33 @@
 .uploadField input {
   margin-top: 0.5rem;
 }
+@media (max-width: 449px) {
+  .uploadField {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (min-width: 450px) and (max-width: 766px) {
+  .uploadField {
+    display: flex;
+    flex-direction: column;
+  }
+}
 
 .termsField {
   grid-column: span 2;
   font-size: 0.8rem;
   color: #a0a2a6;
+}
+@media (max-width: 449px) {
+  .termsField {
+    order: 98;
+  }
+}
+@media (min-width: 450px) and (max-width: 766px) {
+  .termsField {
+    order: 98;
+  }
 }
 .termsField .checkboxLabel {
   display: flex;
@@ -357,6 +492,33 @@
   height: 67px;
   margin-left: auto;
 }
+@media (max-width: 449px) {
+  .submitBtn {
+    order: 99;
+    align-self: flex-end;
+    margin: 1rem 0;
+  }
+}
+@media (min-width: 450px) and (max-width: 766px) {
+  .submitBtn {
+    order: 99;
+    align-self: flex-end;
+    margin: 1rem 0;
+  }
+}
 .submitBtn:hover {
   border: 1px solid #046999;
+}
+
+@media (max-width: 449px) {
+  .webField {
+    height: -moz-fit-content !important;
+    height: fit-content !important;
+  }
+}
+@media (min-width: 450px) and (max-width: 766px) {
+  .webField {
+    height: -moz-fit-content !important;
+    height: fit-content !important;
+  }
 }/*# sourceMappingURL=contact.module.css.map */

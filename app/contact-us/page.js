@@ -3,7 +3,6 @@ import React from "react";
 import Contact from "../../components/Contact";
 import ServiceHero from "../../components/ServiceHero";
 import CTAMain from "./(components)/CTAMain";
-import ContactDetails from "../../components/ContactDetails";
 
 const schema = {
   "@context": "https://schema.org",
@@ -19,7 +18,7 @@ const schema = {
       datePublished: "2024-10-27T00:00:00+00:00",
       dateModified: "2024-10-27T00:00:00+00:00",
       description:
-        "Contact our Microsoft Power Platform experts for all your consulting and development needs. Get in touch today via phone 1300 10 28 10 or email.",
+        "Contact our Microsoft Power Platform experts for all your consulting and development needs. Get in touch today via phone 1300 102 810 or email.",
       breadcrumb: {
         "@id": "https://www.powerplatformexperts.com.au/contact-us/#breadcrumb",
       },
@@ -80,12 +79,12 @@ const schema = {
       "@id": "https://www.powerplatformexperts.com.au/#organization",
       name: "Power Platform Experts Group",
       url: "https://www.powerplatformexperts.com.au/",
-      telephone: "1300 10 28 10",
+      telephone: "1300 102 810",
       email: "consult@powerplatformexperts.com.au",
       contactPoint: [
         {
           "@type": "ContactPoint",
-          telephone: "1300 10 28 10",
+          telephone: "1300 102 810",
           contactType: "customer service",
           email: "consult@powerplatformexperts.com.au",
           availableLanguage: ["en", "en-AU"],
@@ -161,7 +160,6 @@ const Page = () => {
       <ServiceHero title="Contact Us" />
       <CTAMain />
       <Contact />
-      <ContactDetails />
     </>
   );
 };

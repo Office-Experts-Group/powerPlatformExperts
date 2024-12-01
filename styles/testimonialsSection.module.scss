@@ -12,6 +12,15 @@
     font-size: 3rem;
     margin: 0 auto;
   }
+  @include desktop {
+    padding: 2rem;
+  }
+  @include tablet {
+    padding: 2rem;
+  }
+  @include phoneLandscape {
+    padding: 2rem;
+  }
 }
 .box {
   margin: 0 auto 1.5rem auto;
@@ -198,4 +207,23 @@
       transform: translateX(calc(-900% - 18rem));
     }
   }
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin: 4rem auto -2rem auto;
+  width: fit-content;
+  height: 60px;
+  border: 1px solid transparent;
+  &:hover {
+    border: 1px solid $theme;
+  }
+}
+
+// Testimonials ***********************
+.teamHeading {
+  font-size: 3rem;
 }

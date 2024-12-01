@@ -4,15 +4,51 @@
   grid-template-columns: 40% 1fr;
   gap: 4rem;
 }
+.pageSegment h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
 .pageSegment img {
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
   filter: grayscale(0%);
   transition: all 0.3s ease;
+  max-width: 90vw;
 }
 .pageSegment img:hover {
   filter: grayscale(100%);
   transition: all 0.3s ease;
+}
+@media (max-width: 449px) {
+  .pageSegment {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 1rem;
+    gap: 0;
+  }
+  .pageSegment img {
+    margin: 0 auto;
+  }
+}
+@media (min-width: 450px) and (max-width: 766px) {
+  .pageSegment {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 1rem;
+    gap: 0;
+  }
+}
+@media (min-width: 767px) and (max-width: 1024px) {
+  .pageSegment img {
+    width: 450px;
+    height: 300px;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1199px) {
+  .pageSegment img {
+    width: 450px;
+    height: 300px;
+  }
 }
 
 .pageSegmentReverse {
@@ -21,11 +57,16 @@
   justify-content: center;
   gap: 10vw;
 }
+.pageSegmentReverse h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
 .pageSegmentReverse img {
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
   filter: grayscale(0%);
   transition: all 0.3s ease;
+  max-width: 90vw;
 }
 .pageSegmentReverse img:hover {
   filter: grayscale(100%);
@@ -34,12 +75,65 @@
 .pageSegmentReverse .pageSegmentCenter {
   padding: 0;
 }
+@media (min-width: 1025px) and (max-width: 1199px) {
+  .pageSegmentReverse img {
+    width: 450px;
+    height: 300px;
+  }
+}
+@media (min-width: 767px) and (max-width: 1024px) {
+  .pageSegmentReverse img {
+    width: 450px;
+    height: 300px;
+  }
+}
+@media (min-width: 450px) and (max-width: 766px) {
+  .pageSegmentReverse {
+    display: flex;
+    flex-direction: column;
+  }
+  .pageSegmentReverse img {
+    width: 450px;
+    height: 300px;
+  }
+}
+@media (max-width: 449px) {
+  .pageSegmentReverse {
+    display: flex;
+    flex-direction: column;
+  }
+  .pageSegmentReverse img {
+    width: 450px;
+    height: 300px;
+    max-width: 90vw;
+    margin: 0 auto;
+  }
+}
 
 .pageSegmentCenter {
   place-self: center;
-  padding: 0 10vw;
+  padding: 0;
   display: flex;
   flex-direction: column;
+}
+.pageSegmentCenter a {
+  color: #046999;
+  font-weight: 700;
+}
+@media (max-width: 449px) {
+  .pageSegmentCenter img {
+    margin: 0 auto;
+  }
+}
+@media (max-width: 449px) {
+  .miniTickImg {
+    margin-top: 1.5rem;
+  }
+}
+@media (min-width: 450px) and (max-width: 766px) {
+  .miniTickImg {
+    margin-top: 1.5rem;
+  }
 }
 
 .underline {
@@ -72,6 +166,7 @@
   align-items: center;
   gap: 0.75rem;
   flex: 0 1 auto;
+  margin-left: 1rem;
 }
 .benefitItem .tick {
   color: #046999;
@@ -86,4 +181,95 @@
 .benefitItem a:hover {
   color: #046999;
   font-weight: 700;
+}
+
+.points {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.point {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.point p {
+  color: #777a7e;
+  margin: 0 !important;
+  line-height: 1.5rem;
+}
+
+.tick {
+  height: 30px;
+  width: 30px;
+  min-width: 30px;
+  border: 1px solid #0eaa0e;
+  background-color: #0eaa0e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: all 0.5s ease;
+}
+.tick svg {
+  stroke: #f8f8f8;
+  color: #f8f8f8;
+}
+.tick:hover {
+  transition: all 0.5s ease;
+  background-color: #f8f8f8;
+}
+.tick:hover svg {
+  stroke: #0eaa0e;
+  color: #0eaa0e;
+}
+
+@media (min-width: 450px) and (max-width: 766px) {
+  .noImg img {
+    display: none;
+  }
+}
+@media (max-width: 449px) {
+  .noImg img {
+    display: none;
+  }
+}
+
+@media (min-width: 450px) and (max-width: 766px) {
+  .noMargin {
+    margin: 0;
+    align-items: center;
+  }
+  .noMargin img {
+    align-self: center;
+  }
+}
+@media (max-width: 449px) {
+  .noMargin {
+    margin: 0;
+  }
+}
+
+.customSegment {
+  padding: 8rem 10vw;
+  background-color: #f2f3f5;
+  grid-template-columns: 1fr 40%;
+}
+@media screen and (max-width: 900px) {
+  .customSegment {
+    padding: 8rem 5vw;
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (min-width: 450px) and (max-width: 766px) {
+  .customSegment {
+    gap: 2rem;
+  }
+}
+@media (max-width: 449px) {
+  .customSegment {
+    padding: 4rem 1rem 6rem 1rem;
+  }
 }/*# sourceMappingURL=pageSegmentCenter.module.css.map */

@@ -4,10 +4,32 @@
   position: relative;
   overflow: hidden;
   border-radius: 0.2rem;
+  flex: 1;
   min-height: 300px;
-  flex: 1; /* This allows the card to grow */
-  max-width: 400px; /* Prevent cards from getting too wide */
+  max-width: 400px;
   min-width: 300px;
+  cursor: pointer;
+
+  // Add touch-action to allow native touch behavior
+  touch-action: manipulation;
+
+  @include desktop {
+    max-width: 300px;
+    min-width: 250px;
+    min-height: 250px;
+  }
+  @include tablet {
+    place-self: center;
+    min-height: 300px;
+    max-width: 400px;
+    min-width: 300px;
+  }
+  @include phoneLandscape {
+    place-self: center;
+    max-width: 250px;
+    min-width: 250px;
+    min-height: 250px;
+  }
 }
 
 .cardImage {
@@ -26,8 +48,19 @@
   transform: translateY(0);
   transition: transform 0.5s ease;
 
-  .card:hover & {
+  // Combine hover and focus states
+  .card:hover &,
+  .card:focus &,
+  .card:focus-within &,
+  .card:active & {
     transform: translateY(-100%);
+  }
+
+  // Add specific touch handling for mobile
+  @media (hover: none) {
+    .card:active & {
+      transform: translateY(-100%);
+    }
   }
 
   h3 {
@@ -54,6 +87,13 @@
     filter: brightness(1.1);
     border-radius: 50%;
   }
+
+  @include phone {
+    transition: all 1s ease-in-out;
+  }
+  @include phoneLandscape {
+    transition: all 1s ease-in-out;
+  }
 }
 
 .cardContent {
@@ -71,6 +111,21 @@
   transition: transform 0.5s ease;
   overflow: hidden;
 
+  // Combine hover and focus states
+  .card:hover &,
+  .card:focus &,
+  .card:focus-within &,
+  .card:active & {
+    transform: translateY(0);
+  }
+
+  // Add specific touch handling for mobile
+  @media (hover: none) {
+    .card:active & {
+      transform: translateY(0);
+    }
+  }
+
   h4 {
     font-size: 1rem;
     font-weight: 900;
@@ -78,6 +133,7 @@
     letter-spacing: 1px;
     text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
   }
+
   ul {
     list-style-type: none;
     padding: 0;
@@ -105,15 +161,22 @@
     margin: auto 0 0 auto;
     width: fit-content;
 
+    // Make sure the link is always clickable on touch devices
+    position: relative;
+    z-index: 2;
+
     &:hover {
       background-color: $theme;
       filter: brightness(1.3);
       transform: scale(1.1);
     }
-  }
 
-  .card:hover & {
-    transform: translateY(0);
+    @include phone {
+      transition: all 1s ease-in-out;
+    }
+    @include phoneLandscape {
+      transition: all 1s ease-in-out;
+    }
   }
 
   &::before {
@@ -124,60 +187,67 @@
     width: 50%;
     height: 50%;
     background-color: $theme;
-    // filter: brightness(1.3);
+    filter: brightness(1.3);
     border-radius: 50%;
     z-index: -1;
   }
 }
 
-// Contact Page *****************************
 .contactCardWrapper {
-  padding: 8rem 10vw;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 2rem;
+  justify-content: space-around;
+  padding: 6rem 0;
   flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.contentAlt {
+  padding: 2rem;
+  align-items: center;
   text-align: center;
-
-  .card .cardImage {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    h3 {
-      line-height: 2rem;
-    }
-    p {
-      margin-top: 1rem;
-      color: $darkGrayText;
-      line-height: 2rem;
-    }
+  a {
+    margin: 2rem auto 1rem auto;
+  }
+}
+// New classes for intersection observer
+@include phoneLandscape {
+  .inViewImage {
+    transform: translateY(-100%) !important;
   }
 
-  .card .cardContent {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  .inViewContent {
+    transform: translateY(0) !important;
+  }
 
-    h3 {
-      font-size: 1rem;
-      font-weight: 700;
-      margin-bottom: 0.5rem;
-    }
-    li {
-      margin-top: 1rem;
-      list-style-type: none;
+  // Media query for touch devices
+  @media (hover: none) {
+    .card .cardImage.inViewImage {
+      transform: translateY(-100%) !important;
     }
 
-    a {
-      margin: 0.8rem auto -1rem auto;
-      align-self: center;
+    .card .cardContent.inViewContent {
+      transform: translateY(0) !important;
+    }
+  }
+}
+
+@include phone {
+  .inViewImage {
+    transform: translateY(-100%) !important;
+  }
+
+  .inViewContent {
+    transform: translateY(0) !important;
+  }
+
+  // Media query for touch devices
+  @media (hover: none) {
+    .card .cardImage.inViewImage {
+      transform: translateY(-100%) !important;
     }
 
-    p {
-      max-width: 80%;
-      line-height: 2rem;
+    .card .cardContent.inViewContent {
+      transform: translateY(0) !important;
     }
   }
 }

@@ -2,6 +2,11 @@
 
 // HeadTop component
 .headTop {
+  // position: fixed;
+  // top: 0;
+  // left: 0;
+  // right: 0;
+  z-index: 1000;
   background-color: $black;
   display: flex;
   align-items: center;
@@ -12,6 +17,16 @@
   font-weight: 500;
   p {
     letter-spacing: 1px;
+  }
+
+  @include tablet {
+    display: none;
+  }
+  @include phone {
+    display: none;
+  }
+  @include phoneLandscape {
+    display: none;
   }
 }
 
@@ -36,6 +51,7 @@
   right: 0;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   padding: 0rem 1rem;
   background-color: rgba(0, 0, 0, 0.109);
   transition: all 0.3s ease;
@@ -44,6 +60,8 @@
   margin-top: 40px;
   transition: all 0.5s ease;
   height: fit-content;
+  width: 100%;
+  max-width: 100vw;
 
   &.scrolled {
     background-color: $black;
@@ -52,10 +70,32 @@
     transition: all 0.5s ease;
     height: 80px;
   }
+
+  @include tablet {
+    margin-top: 0;
+  }
+  @include phone {
+    margin-top: 0;
+  }
+  @include phoneLandscape {
+    margin-top: 0;
+  }
 }
 
 .nav {
   margin: 0 auto;
+  @include desktop {
+    display: none;
+  }
+  @include tablet {
+    display: none;
+  }
+  @include phone {
+    display: none;
+  }
+  @include phoneLandscape {
+    display: none;
+  }
 }
 
 .navList {
@@ -64,102 +104,173 @@
   list-style-type: none;
   margin: 0;
   padding: 0;
+  gap: 1rem;
+
+  @include desktop {
+    display: none;
+  }
+  @include tablet {
+    display: none;
+  }
+  @include phone {
+    display: none;
+  }
+  @include phoneLandscape {
+    display: none;
+  }
 }
 
 .navItem {
   position: relative;
-
-  p {
-    margin: 0;
-    cursor: pointer;
-    color: $offWhite;
-    font-weight: 500;
-    letter-spacing: 0.5px;
-    &:hover {
-      color: $theme;
-    }
-  }
+  display: flex;
+  align-items: center;
+  height: 100%;
 
   &::after {
     content: "";
     position: absolute;
-    bottom: -1.9rem; // Should match the gap to the dropdown
+    bottom: -1.9rem;
     left: 0;
     width: 100%;
-    height: 1.9rem; // Height matches the gap
-    background-color: transparent; // Invisible but still triggers hover
+    height: 1.9rem;
+    background-color: transparent;
   }
 }
 
 .navLink {
-  text-decoration: none;
-  font-weight: 500;
-  letter-spacing: 0.5px;
-  color: $offWhite;
+  position: relative;
+  display: flex;
+  align-items: center;
   padding: 0.5rem 1rem;
-  display: block;
+  color: $offWhite;
+  text-decoration: none;
+  cursor: pointer;
+  white-space: nowrap;
+
+  span {
+    position: relative;
+    font-weight: 700;
+    letter-spacing: 1px;
+
+    // Growing underline effect
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -3px;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: $theme;
+      transform: scaleX(0);
+      transform-origin: right;
+      transition: transform 0.3s ease;
+    }
+  }
+
   &:hover {
     color: $theme;
+
+    span::after {
+      transform: scaleX(1);
+      transform-origin: left;
+    }
   }
 }
 
-// Primary dropdown styling
+// Dropdown styling
 .dropdown {
   position: absolute;
   top: calc(100% + 1.9rem);
-  left: 1rem;
+  left: 0;
+  min-width: 200px;
   background-color: $offWhite;
   border-top: 4px solid $theme;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-  white-space: nowrap;
   padding: 1rem 0.5rem;
   opacity: 0;
   visibility: hidden;
   transform: translateY(20px);
-  transition: all 0.5s ease;
+  transition: all 0.3s ease;
   z-index: 1;
 
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
   li {
-    list-style-type: none;
-    font-weight: 500;
-    position: relative;
-    width: fit-content; // Contain width to content
-    padding: 0.5rem 1rem;
+    padding: 0;
+    margin: 0;
 
     a {
+      display: block;
+      padding: 0.5rem 1rem;
       color: $gray;
       text-decoration: none;
-      display: inline-block; // Changed from block to inline-block
-      position: relative;
       transition: color 0.3s ease;
-      width: fit-content;
+      width: 100%;
 
-      // Animated underline
-      &::after {
-        content: "";
-        position: absolute;
-        bottom: -0.2rem;
-        left: 0;
-        width: 100%; // Full width of text
-        height: 1px;
-        background: $theme;
-        transform: scaleX(0);
-        transform-origin: left;
-        transition: transform 0.3s ease;
+      span {
+        position: relative;
+
+        // Growing underline effect for dropdown items
+        &::after {
+          content: "";
+          position: absolute;
+          bottom: -3px;
+          left: 0;
+          width: 100%;
+          height: 1px;
+          background-color: $theme;
+          transform: scaleX(0);
+          transform-origin: right;
+          transition: transform 0.3s ease;
+        }
       }
 
       &:hover {
         color: $theme;
+        font-weight: 700;
 
-        &::after {
+        span::after {
           transform: scaleX(1);
+          transform-origin: left;
         }
       }
     }
   }
 }
 
-// Show dropdown on hover
+// Nested dropdowns
+.nestedDropdown {
+  position: relative;
+  width: 100%;
+  padding: 1rem 0.5rem;
+
+  &:hover .nestedItems {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+  }
+}
+
+.nestedItems {
+  position: absolute;
+  top: -1rem;
+  left: 100%;
+  min-width: 220px;
+  background-color: $offWhite;
+  border-top: 4px solid $theme;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  padding: 1rem 0.5rem;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(10px);
+  transition: all 0.3s ease;
+}
+
+// Show dropdowns
 .navItem:hover .dropdown {
   opacity: 1;
   visibility: visible;
@@ -208,10 +319,46 @@
   button {
     margin-left: 0.8rem;
   }
+  @include desktop {
+    display: none;
+  }
+  @include tablet {
+    display: none;
+  }
+  @include phone {
+    display: none;
+  }
+  @include phoneLandscape {
+    display: none;
+  }
 }
 
 .socialLinks {
   border-right: 1px solid rgba(255, 255, 255, 0.275);
   margin-right: 0.8rem;
   padding-right: 0.8rem;
+}
+
+.searchIcon {
+  cursor: pointer;
+  margin-right: 0.8rem;
+}
+
+.logoImg {
+  @include phone {
+    max-width: 150px;
+    max-height: 65px;
+    margin: 1rem 0;
+  }
+}
+
+.scrolledLogo {
+  transform: scale(0.5);
+  transition: all 0.5s ease;
+  @include phone {
+    transform: scale(1);
+    img {
+      margin: 0.5rem 0 0.5rem -0.5rem;
+    }
+  }
 }

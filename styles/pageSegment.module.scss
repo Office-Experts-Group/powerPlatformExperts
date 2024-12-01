@@ -6,6 +6,18 @@
   display: flex;
   gap: 4rem;
   margin: 8rem;
+  @include phone {
+    flex-direction: column;
+    margin: 6rem 1rem;
+  }
+  @include phoneLandscape {
+    flex-direction: column;
+    margin: 6rem 1rem;
+  }
+  @include tablet {
+    flex-direction: column;
+    margin: 6rem 4rem;
+  }
 }
 
 .imgWrapper {
@@ -23,6 +35,19 @@
       filter: grayscale(100%);
     }
   }
+
+  @include phone {
+    display: none;
+  }
+  @include phoneLandscape {
+    display: none;
+  }
+  @include tablet {
+    display: none;
+  }
+  @include desktop {
+    border-bottom: none;
+  }
 }
 
 .contentWrapper {
@@ -32,6 +57,7 @@
 }
 
 .content {
+  z-index: 2;
   h2 {
     color: $black;
     font-size: 2.5rem;
@@ -78,6 +104,19 @@
   flex-direction: column;
   gap: 1rem;
   margin-top: 2rem;
+  @include phone {
+    margin-left: 1rem;
+  }
+  @include phoneLandscape {
+    margin-left: 1rem;
+  }
+}
+
+.pointsGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-top: 2rem;
 }
 
 .point {
@@ -113,6 +152,14 @@
   left: 0;
   filter: brightness(1.5);
   transform: scaleX(-1);
+  @include phone {
+    width: 450px;
+    height: 450px;
+  }
+  @include phone {
+    width: 450px;
+    height: 450px;
+  }
 }
 
 .points {
@@ -154,5 +201,97 @@
       stroke: #0eaa0e;
       color: #0eaa0e;
     }
+  }
+}
+
+.btn {
+  -moz-user-select: none;
+  background: #046999;
+  border: medium none;
+  border-radius: 0.1rem;
+  color: #fff;
+  display: inline-block;
+  font-weight: 700;
+  letter-spacing: 1px;
+  line-height: 1;
+  margin-bottom: 0;
+  padding: 1.5rem 3rem;
+  text-align: center;
+  touch-action: manipulation;
+  vertical-align: middle;
+  white-space: nowrap;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: fit-content;
+  border: 1px solid transparent;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    transition: left 0.3s ease;
+    z-index: -1;
+  }
+
+  &:hover {
+    color: #046999;
+    border: 1px solid $theme;
+
+    &::before {
+      left: 0;
+    }
+  }
+}
+
+// Variations ***********************
+.withImg {
+  @include phone {
+    display: flex;
+    flex-direction: column-reverse;
+    .imgWrapper {
+      display: flex;
+      margin: 0 auto;
+      border: none;
+    }
+  }
+}
+
+.customMargin {
+  margin: 6rem 10vw;
+  @include tablet {
+    margin: 6rem 5vw;
+  }
+  @include phoneLandscape {
+    margin: 6rem 2vw;
+  }
+  @include phone {
+    margin: 6rem 1rem;
+  }
+}
+
+.locationBtn {
+  margin-top: 2rem;
+  max-width: 90vw;
+  display: inline-flex; // Changed to inline-flex
+  align-items: center;
+  gap: 0.5rem;
+  width: fit-content;
+  padding: 1rem;
+  white-space: normal; // Forces text to wrap
+  overflow-wrap: break-word; // Breaks words when necessary
+  line-height: 1.2; // Helps with readability of wrapped text
+
+  svg {
+    flex: 0 0 auto; // Prevents svg from shrinking or growing
+    width: 1.5em;
+    height: 1.5em;
   }
 }
