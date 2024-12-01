@@ -13,7 +13,7 @@ import { testimonials } from "../../../testimonials";
 const schema = {
   "@context": "https://schema.org",
   "@graph": [
-    ...getTestimonialsPageSchema(testimonials),
+    ...getTestimonialsPageSchema(testimonials)["@graph"],
     {
       "@type": "WebPage",
       "@id":
