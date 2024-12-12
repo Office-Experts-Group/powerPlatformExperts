@@ -11,6 +11,9 @@ import Segment4Repeat from "./(components)/Segment4Repeat";
 import SegmentMainRepeat from "./(components)/SegmentMainRepeat";
 import Contents from "./(components)/Contents";
 
+import longDesk from "../../../../public/pageHeros/longDesk.webp";
+import calcMob from "../../../../public/pageHeros/mob/calcMob.webp";
+
 const schema = {
   "@context": "https://schema.org",
   "@graph": [
@@ -98,79 +101,6 @@ const schema = {
       ],
       inLanguage: "en-AU",
     },
-    {
-      "@type": "Organization",
-      "@id": "https://www.powerplatformexperts.com.au/#organization",
-      name: "Power Platform Experts Group",
-      url: "https://www.powerplatformexperts.com.au/",
-      telephone: "1300 102 810",
-      email: "consult@powerplatformexperts.com.au",
-      contactPoint: [
-        {
-          "@type": "ContactPoint",
-          telephone: "1300 102 810",
-          contactType: "customer service",
-          email: "consult@powerplatformexperts.com.au",
-          availableLanguage: ["en", "en-AU"],
-        },
-      ],
-      areaServed: [
-        {
-          "@type": "Country",
-          name: "Australia",
-        },
-        {
-          "@type": "AdministrativeArea",
-          name: "New South Wales",
-        },
-        {
-          "@type": "AdministrativeArea",
-          name: "Victoria",
-        },
-        {
-          "@type": "AdministrativeArea",
-          name: "Queensland",
-        },
-        {
-          "@type": "AdministrativeArea",
-          name: "Western Australia",
-        },
-        {
-          "@type": "AdministrativeArea",
-          name: "South Australia",
-        },
-        {
-          "@type": "AdministrativeArea",
-          name: "Tasmania",
-        },
-        {
-          "@type": "AdministrativeArea",
-          name: "Australian Capital Territory",
-        },
-        {
-          "@type": "AdministrativeArea",
-          name: "Northern Territory",
-        },
-      ],
-      logo: {
-        "@type": "ImageObject",
-        inLanguage: "en-AU",
-        "@id": "https://www.powerplatformexperts.com.au/#/schema/logo/image/",
-        url: "/logo.png",
-        contentUrl: "/logo.png",
-        width: 1181,
-        height: 1181,
-        caption: "Power Platform Experts Group",
-      },
-      image: {
-        "@id": "https://www.powerplatformexperts.com.au/#/schema/logo/image/",
-      },
-      aggregateRating: {
-        "@type": "AggregateRating",
-        ratingValue: "5",
-        reviewCount: "112",
-      },
-    },
   ],
 };
 
@@ -182,7 +112,13 @@ const Page = () => {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
       />
       <Contents />
-      <ServiceHero title="Microsoft Power Apps Consulting Services" />
+      <ServiceHero
+        title="Microsoft Power Apps Consulting Services"
+        desktopImage={longDesk}
+        mobileImage={calcMob}
+        altDesk={"meeting at an office desk"}
+        altMob={"calculator on a desk"}
+      />
       <ServicePageCards />
       <PageSegmentMain />
       <Segment4Repeat />

@@ -125,15 +125,15 @@ const schema = {
       logo: {
         "@type": "ImageObject",
         inLanguage: "en-AU",
-        "@id": "https://www.powerplatformexperts.com.au/#/schema/logo/image/",
-        url: "/logo.png",
-        contentUrl: "/logo.png",
-        width: 1181,
-        height: 1181,
-        caption: "Power Platform Experts Group",
+        "@id": "https://www.powerplatformexperts.com.au/logo.webp",
+        url: "/logo.webp",
+        contentUrl: "/logo.webp",
+        width: 1200,
+        height: 630,
+        caption: "Office Experts Group",
       },
       image: {
-        "@id": "https://www.powerplatformexperts.com.au/#/schema/logo/image/",
+        "@id": "https://www.powerplatformexperts.com.au/logo.webp",
       },
       sameAs: [
         "https://www.facebook.com/MSOfficeExperts",
@@ -142,11 +142,6 @@ const schema = {
         "https://www.linkedin.com/company/office-experts-group",
         "https://www.youtube.com/channel/UCw2Xf02ukEwvM6fQ2lVZxuw",
       ],
-      aggregateRating: {
-        "@type": "AggregateRating",
-        ratingValue: "5",
-        reviewCount: "112",
-      },
     },
   ],
 };

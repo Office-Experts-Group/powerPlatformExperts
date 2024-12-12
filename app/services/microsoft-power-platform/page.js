@@ -10,6 +10,9 @@ import SolutionsCarousel from "./(components)/SolutionsCarousel";
 import { getTestimonialsPageSchema } from "../../../utils/testimonialSchemaGenerator";
 import { testimonials } from "../../../testimonials";
 
+import tableGraph from "../../../public/pageHeros/tableGraph.webp";
+import graphTableMob from "../../../public/pageHeros/mob/graphTableMob.webp";
+
 const schema = {
   "@context": "https://schema.org",
   "@graph": [
@@ -90,65 +93,6 @@ const schema = {
       ],
       inLanguage: "en-US",
     },
-    {
-      "@type": "Organization",
-      "@id": "https://powerplatformexperts.com/#organization",
-      name: "Power Platform Experts",
-      url: "https://powerplatformexperts.com/",
-      telephone: "1300 102 810",
-      email: "consult@officeexperts.com.au",
-      contactPoint: [
-        {
-          "@type": "ContactPoint",
-          telephone: "1300 102 810",
-          contactType: "customer service",
-          email: "consult@officeexperts.com.au",
-          availableLanguage: ["en", "en-AU"],
-        },
-      ],
-      areaServed: [
-        {
-          "@type": "Country",
-          name: "United States",
-        },
-        {
-          "@type": "State",
-          name: "New York",
-        },
-        {
-          "@type": "State",
-          name: "California",
-        },
-        {
-          "@type": "State",
-          name: "Texas",
-        },
-        {
-          "@type": "State",
-          name: "Florida",
-        },
-      ],
-      logo: {
-        "@type": "ImageObject",
-        inLanguage: "en-US",
-        "@id": "https://powerplatformexperts.com/#/schema/logo/image/",
-        url: "/logo.png",
-        contentUrl: "/logo.png",
-        width: 1181,
-        height: 1181,
-        caption: "Power Platform Experts",
-      },
-      image: {
-        "@id": "https://powerplatformexperts.com/#/schema/logo/image/",
-      },
-      sameAs: [
-        "https://www.facebook.com/PowerPlatformExperts",
-        "https://x.com/PowerPlatformExp",
-        "https://www.instagram.com/powerplatformexperts",
-        "https://www.linkedin.com/company/power-platform-experts",
-        "https://www.youtube.com/c/PowerPlatformExperts",
-      ],
-    },
   ],
 };
 
@@ -159,7 +103,13 @@ const Page = () => {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
       />
-      <ServiceHero title="Microsoft Power Platform Services" />
+      <ServiceHero
+        title="Microsoft Power Platform Services"
+        altDesk={"graphs on a table"}
+        altMob={"graphs on a tables"}
+        mobileImage={graphTableMob}
+        desktopImage={tableGraph}
+      />
       <PageSegmentMain />
       <SolutionsCarousel />
       <Testimonials testimonials={testimonials} />

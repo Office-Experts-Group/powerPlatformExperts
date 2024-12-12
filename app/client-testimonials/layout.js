@@ -17,10 +17,10 @@ export const metadata = {
     siteName: "Power Platform Experts",
     images: [
       {
-        url: "https://www.powerplatformexperts.com.au/wp-content/uploads/2023/09/microsoft-office-experts-group-logo.png",
+        url: "https://www.powerplatformexperts.com.au/logo.webp",
         width: 1200,
         height: 630,
-        alt: "Power Platform Experts Logo",
+        alt: "Office Experts Logo",
       },
     ],
     locale: "en-AU",
@@ -43,13 +43,6 @@ export const metadata = {
     "power platform integration feedback",
     "business automation case studies",
 
-    // Industry-specific reviews
-    "enterprise power platform testimonials",
-    "corporate power bi testimonials",
-    "business power apps feedback",
-    "power automate client reviews",
-    "power platform consulting reviews",
-
     // Location-based testimonials
     "australian power platform testimonials",
     "sydney power bi client reviews",
@@ -58,41 +51,13 @@ export const metadata = {
     "perth power platform testimonials",
   ],
 
-  // Twitter Card
-  twitter: {
-    card: "summary_large_image",
-    site: "@PowerPlatformExp",
-    title: "Client Testimonials - Power Platform Experts",
-    description:
-      "Read what our clients say about our Microsoft Power Platform consulting services.",
-    images: [
-      "https://www.powerplatformexperts.com.au/wp-content/uploads/2023/09/microsoft-office-experts-group-logo.png",
-    ],
-  },
-
-  // Additional tags
-
   canonical: "https://www.powerplatformexperts.com.au/client-testimonials/",
-  robots: {
-    index: true,
-    follow: true,
-    "max-image-preview": "large",
-    "max-snippet": -1,
-    "max-video-preview": -1,
-  },
-
-  // Icons
-  icons: {
-    icon: "/favicon.ico",
-    shortcut: "/favicon-32x32.png",
-    apple: "/apple-touch-icon.png",
-  },
 };
 
-export default function RootLayout({ children }) {
+export default function ClientTestimonialsLayout({ children }) {
   return <>{children}</>;
 }
 
-RootLayout.propTypes = {
+ClientTestimonialsLayout.propTypes = {
   children: PropTypes.node.isRequired,
 };

@@ -74,7 +74,7 @@ export const metadata = {
     siteName: "Power Platform Experts",
     images: [
       {
-        url: "https://www.powerplatformexperts.com.au/wp-content/uploads/2023/09/microsoft-office-experts-group-logo.png",
+        url: "https://www.powerplatformexperts.com.au/logo.webp",
         width: 1200,
         height: 630,
         alt: "Power Platform Experts Logo",
@@ -86,6 +86,12 @@ export const metadata = {
 
   // Additional metadata
   keywords: [
+    // currently ranking with
+    "power platform consulting",
+    "power platform consultant",
+    "power pages consulting",
+    "power platform specialists",
+
     // Core Power Platform services
     "Power Platform consulting Australia",
     "Power BI dashboard development",
@@ -112,12 +118,6 @@ export const metadata = {
     "Power Automate document processing",
     "Power Platform business process automation",
 
-    // Technology combinations
-    "Power BI SQL Server integration",
-    "Power Apps SharePoint connectivity",
-    "Power Automate Azure integration",
-    "Power Platform Microsoft 365 integration",
-
     // Specific solutions
     "Power BI data visualization consulting",
     "Power Apps mobile solution development",
@@ -132,10 +132,8 @@ export const metadata = {
     title:
       "Power Platform Experts | Microsoft Power Platform Consulting & Solutions",
     description:
-      "Specialized Microsoft Power Platform consulting services including Power BI visualization, Power Apps development, Power Automate workflow automation, and Power Pages web solutions.",
-    images: [
-      "https://www.powerplatformexperts.com.au/wp-content/uploads/2023/09/microsoft-office-experts-group-logo.png",
-    ],
+      "Specialised Microsoft Power Platform consulting services including Power BI visualization, Power Apps development, Power Automate workflow automation, and Power Pages web solutions.",
+    images: ["https://www.powerplatformexperts.com.au/logo.webp"],
   },
 
   // Additional tags

@@ -16,16 +16,6 @@ export const metadata = {
       "Custom Power Apps solutions for streamlined operations, automated workflows, and enhanced business efficiency. Expert consultants delivering tailored Microsoft Power Platform solutions.",
     url: "https://www.powerplatformexperts.com.au/services/microsoft-power-platform/microsoft-power-apps/",
     siteName: "Power Platform Experts",
-    images: [
-      {
-        url: "https://www.powerplatformexperts.com.au/wp-content/uploads/2023/09/microsoft-office-experts-group-logo.png",
-        width: 1200,
-        height: 630,
-        alt: "Power Platform Experts - Power Apps Services",
-      },
-    ],
-    locale: "en-AU",
-    type: "article",
   },
 
   // Additional metadata
@@ -53,37 +43,8 @@ export const metadata = {
     "Power Platform automation consulting",
   ],
 
-  // Twitter Card
-  twitter: {
-    card: "summary_large_image",
-    site: "@PowerPlatformExp",
-    title:
-      "Power Apps Development & Consulting Services | Power Platform Experts",
-    description:
-      "Custom Power Apps solutions for streamlined operations, automated workflows, and enhanced business efficiency. Expert consultants delivering tailored Microsoft Power Platform solutions.",
-    images: [
-      "https://www.powerplatformexperts.com.au/wp-content/uploads/2023/09/microsoft-office-experts-group-logo.png",
-    ],
-  },
-
-  // Additional tags
-
   canonical:
     "https://www.powerplatformexperts.com.au/services/microsoft-power-platform/microsoft-power-apps/",
-  robots: {
-    index: true,
-    follow: true,
-    "max-image-preview": "large",
-    "max-snippet": -1,
-    "max-video-preview": -1,
-  },
-
-  // Icons
-  icons: {
-    icon: "/favicon.ico",
-    shortcut: "/favicon-32x32.png",
-    apple: "/apple-touch-icon.png",
-  },
 };
 
 export default function RootLayout({ children }) {

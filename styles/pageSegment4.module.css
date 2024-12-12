@@ -208,40 +208,6 @@
   }
 }
 
-.point {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-.point p {
-  color: #777a7e;
-  margin: 0 !important;
-}
-
-.tick {
-  height: 30px;
-  width: 30px;
-  min-width: 30px;
-  border: 1px solid #046999;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  transition: all 0.5s ease;
-}
-.tick svg {
-  stroke: #046999;
-  color: #046999;
-}
-.tick:hover {
-  transition: all 0.5s ease;
-  background-color: #046999;
-}
-.tick:hover svg {
-  stroke: #f8f8f8;
-  color: #f8f8f8;
-}
-
 .checks {
   margin-top: 2rem;
 }

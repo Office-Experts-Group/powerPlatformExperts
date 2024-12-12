@@ -11,19 +11,8 @@ export const metadata = {
   openGraph: {
     title: "Microsoft Power Pages Services | Web Development & Consulting",
     description:
-      "Professional Power Pages development and consulting services specializing in responsive business websites, data integration, and secure web solutions with cross-browser compatibility.",
+      "Professional Power Pages development and consulting services specialising in responsive business websites, data integration, and secure web solutions with cross-browser compatibility.",
     url: "https://www.powerplatformexperts.com.au/services/microsoft-power-platform/microsoft-power-pages/",
-    siteName: "Power Platform Experts",
-    images: [
-      {
-        url: "https://www.powerplatformexperts.com.au/wp-content/uploads/2023/09/microsoft-office-experts-group-logo.png",
-        width: 1200,
-        height: 630,
-        alt: "Power Platform Experts Logo",
-      },
-    ],
-    locale: "en-AU",
-    type: "article",
   },
 
   // Additional metadata
@@ -44,17 +33,16 @@ export const metadata = {
 
     // Feature specific (from content analysis)
     "Power Pages role-based security setup",
-    "Power Pages data visualization tools",
-    "Power Pages R integration development",
+    "Power Pages data visualisation tools",
     "Power Pages Python integration services",
-    "Power Pages mobile optimization",
+    "Power Pages mobile optimisation",
 
     // Service specific (based on provided services)
     "Power Pages consultant Australia",
     "Remote Power Pages development",
-    "Power Pages training services",
-    "Custom Power Pages solutions",
-    "Power Pages support services",
+    "Power Pages training services Sydney",
+    "Custom Power Pages solutions Melbourne",
+    "Power Pages support services Australia",
 
     // Technical capabilities (from content)
     "Power Pages dashboard development",
@@ -64,36 +52,8 @@ export const metadata = {
     "Power Pages governance framework",
   ],
 
-  // Twitter Card
-  twitter: {
-    card: "summary_large_image",
-    site: "@PowerPlatformExp",
-    title: "Microsoft Power Pages Services | Web Development & Consulting",
-    description:
-      "Professional Power Pages development and consulting services specializing in responsive business websites, data integration, and secure web solutions with cross-browser compatibility.",
-    images: [
-      "https://www.powerplatformexperts.com.au/wp-content/uploads/2023/09/microsoft-office-experts-group-logo.png",
-    ],
-  },
-
-  // Additional tags
-
   canonical:
     "https://www.powerplatformexperts.com.au/services/microsoft-power-platform/microsoft-power-pages/",
-  robots: {
-    index: true,
-    follow: true,
-    "max-image-preview": "large",
-    "max-snippet": -1,
-    "max-video-preview": -1,
-  },
-
-  // Icons
-  icons: {
-    icon: "/favicon.ico",
-    shortcut: "/favicon-32x32.png",
-    apple: "/apple-touch-icon.png",
-  },
 };
 
 export default function RootLayout({ children }) {

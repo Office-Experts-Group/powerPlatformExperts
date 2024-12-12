@@ -11,17 +11,6 @@ export const metadata = {
     description:
       "Expert Microsoft Power Platform consultants delivering enterprise-grade Power Apps, Power BI analytics, and Power Automate solutions for business process transformation.",
     url: "https://powerplatformexperts.com/services/microsoft-power-platform/",
-    siteName: "Power Platform Experts",
-    images: [
-      {
-        url: "/logo.png",
-        width: 1200,
-        height: 630,
-        alt: "Power Platform Experts Logo",
-      },
-    ],
-    locale: "en-US",
-    type: "website",
   },
 
   keywords: [
@@ -45,45 +34,16 @@ export const metadata = {
     "Microsoft Teams Power Platform app development",
     "Azure SQL Power Platform integration services",
 
-    // Industry and solution specific
-    "healthcare Power Platform automation solutions",
-    "financial services Power BI reporting solutions",
-    "manufacturing process automation Power Platform",
-    "retail inventory management Power Apps solution",
-    "professional services automation Power Platform",
-
     // Location-specific
-    "Power Platform consulting services United States",
-    "Power Apps development company New York",
-    "Power BI consulting services California",
-    "Power Platform solutions Texas",
-    "Power Automate development services Florida",
+    "Power Platform consulting services Sydney",
+    "Power Apps development NSW",
+    "Power BI consulting services Melbourne",
+    "Power Platform solutions Brisbane",
+    "Power Automate development services Australia",
   ],
-
-  twitter: {
-    card: "summary_large_image",
-    site: "@PowerPlatformExp",
-    title: "Professional Microsoft Power Platform Development Services",
-    description:
-      "Expert Microsoft Power Platform consultants delivering enterprise-grade Power Apps, Power BI analytics, and Power Automate solutions.",
-    images: ["/logo.png"],
-  },
 
   canonical:
     "https://powerplatformexperts.com/services/microsoft-power-platform/",
-  robots: {
-    index: true,
-    follow: true,
-    "max-image-preview": "large",
-    "max-snippet": -1,
-    "max-video-preview": -1,
-  },
-
-  icons: {
-    icon: "/favicon.ico",
-    shortcut: "/favicon-32x32.png",
-    apple: "/apple-touch-icon.png",
-  },
 };
 
 export default function RootLayout({ children }) {

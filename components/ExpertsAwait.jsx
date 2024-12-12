@@ -1,7 +1,9 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 import AnimateOnScroll from "./AnimateOnScroll";
+import ExpertsCardWrapper from "./ExpertsCardWrapper";
 
 import styles from "../styles/expertsAwait.module.css";
 
@@ -10,7 +12,6 @@ import computer from "../public/icons/computerBlue.webp";
 import training from "../public/icons/supportBlue.webp";
 import support from "../public/icons/supportBlue.webp";
 import handShake from "../public/icons/handShakeBlue.webp";
-import Link from "next/link";
 
 const ExpertsAwait = () => {
   return (
@@ -62,63 +63,73 @@ const ExpertsAwait = () => {
       </AnimateOnScroll>
 
       <AnimateOnScroll animation="fade-down" delay={0.3} duration={1.2}>
-        <div className={styles.cards}>
-          <div className={styles.card}>
-            <div className={styles.imageWrapper}>
-              <Image
-                src={handShake}
-                alt="hand shake icon"
-                width={60}
-                height={60}
-              />
+        <ExpertsCardWrapper>
+          <div className={styles.cards}>
+            <div className={styles.card} data-card>
+              <div className={styles.imageWrapper}>
+                <Image
+                  src={handShake}
+                  alt="hand shake icon"
+                  width={60}
+                  height={60}
+                />
+              </div>
+              <p>
+                Quote or
+                <br />
+                hourly rate
+              </p>
             </div>
-            <p>
-              Quote or<br></br>hourly rate
-            </p>
-          </div>
 
-          <div className={styles.card}>
-            <div className={styles.imageWrapper}>
-              <Image
-                src={computer}
-                alt="computer support icon"
-                width={60}
-                height={60}
-              />
+            <div className={styles.card} data-card>
+              <div className={styles.imageWrapper}>
+                <Image
+                  src={computer}
+                  alt="computer support icon"
+                  width={60}
+                  height={60}
+                />
+              </div>
+              <p>
+                Ongoing
+                <br />
+                support
+              </p>
             </div>
-            <p>
-              Ongoing<br></br>support
-            </p>
-          </div>
 
-          <div className={styles.card}>
-            <div className={styles.imageWrapper}>
-              <Image
-                src={support}
-                alt="computer support icon"
-                width={60}
-                height={60}
-              />
+            <div className={styles.card} data-card>
+              <div className={styles.imageWrapper}>
+                <Image
+                  src={support}
+                  alt="computer support icon"
+                  width={60}
+                  height={60}
+                />
+              </div>
+              <p>
+                Remote access
+                <br />
+                or onsite
+              </p>
             </div>
-            <p>
-              Remote access<br></br>or onsite
-            </p>
-          </div>
 
-          <div className={styles.card}>
-            <div className={styles.imageWrapper}>
-              <Image
-                src={training}
-                alt="training support icon"
-                width={60}
-                height={60}
-              />
+            <div className={styles.card} data-card>
+              <div className={styles.imageWrapper}>
+                <Image
+                  src={training}
+                  alt="training support icon"
+                  width={60}
+                  height={60}
+                />
+              </div>
+              <p>
+                Tailored
+                <br />
+                training
+              </p>
             </div>
-            <p>
-              Tailored<br></br>training
-            </p>
           </div>
-        </div>
+        </ExpertsCardWrapper>
       </AnimateOnScroll>
     </section>
   );

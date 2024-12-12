@@ -13,17 +13,6 @@ export const metadata = {
     description:
       "Transform your business operations with expert Power Automate consulting. Custom workflow automation, process optimization, and seamless system integration for enhanced productivity.",
     url: "https://www.powerplatformexperts.com.au/services/microsoft-power-platform/microsoft-power-automate/",
-    siteName: "Power Platform Experts",
-    images: [
-      {
-        url: "https://www.powerplatformexperts.com.au/wp-content/uploads/2023/09/microsoft-office-experts-group-logo.png",
-        width: 1200,
-        height: 630,
-        alt: "Power Platform Experts Logo",
-      },
-    ],
-    locale: "en-AU",
-    type: "article",
   },
 
   // Additional metadata
@@ -71,36 +60,8 @@ export const metadata = {
     "business process automation Perth",
   ],
 
-  // Twitter Card
-  twitter: {
-    card: "summary_large_image",
-    site: "@PowerPlatformExp",
-    title: "Power Automate Services | Custom Workflow Automation Solutions",
-    description:
-      "Transform your business operations with expert Power Automate consulting. Custom workflow automation, process optimization, and seamless system integration for enhanced productivity.",
-    images: [
-      "https://www.powerplatformexperts.com.au/wp-content/uploads/2023/09/microsoft-office-experts-group-logo.png",
-    ],
-  },
-
-  // Additional tags
-
   canonical:
     "https://www.powerplatformexperts.com.au/services/microsoft-power-platform/microsoft-power-automate/",
-  robots: {
-    index: true,
-    follow: true,
-    "max-image-preview": "large",
-    "max-snippet": -1,
-    "max-video-preview": -1,
-  },
-
-  // Icons
-  icons: {
-    icon: "/favicon.ico",
-    shortcut: "/favicon-32x32.png",
-    apple: "/apple-touch-icon.png",
-  },
 };
 
 export default function RootLayout({ children }) {

@@ -1,0 +1,74 @@
+modalOverlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  overflow: auto;
+  padding: 1rem;
+}
+
+.modalContent {
+  background-color: white;
+  border-radius: 8px;
+  max-width: 64rem;
+  margin: 2rem auto;
+  padding: 1.5rem;
+}
+
+.modalHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.modalTitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.closeButton {
+  background: none;
+  border: none;
+  color: #666;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+.closeButton:hover {
+  color: #333;
+}
+
+.section {
+  margin-bottom: 1.5rem;
+}
+
+.sectionTitle {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.keywordContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.keyword {
+  background-color: #dbeafe;
+  color: #1e40af;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.875rem;
+}
+
+.contentSection {
+  border-left: 4px solid #e5e7eb;
+  padding-left: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.tagLabel {
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+}/*# sourceMappingURL=metadataModal.module.css.map */
