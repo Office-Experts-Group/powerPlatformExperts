@@ -3,17 +3,17 @@ import Link from "next/link";
 
 import styles from "../../../../styles/solutionsCarousel.module.css";
 
-import project1 from "../../../../public/project-img-1.webp";
-import project2 from "../../../../public/project-img-2.webp";
-import project3 from "../../../../public/project-img-3.webp";
-import project4 from "../../../../public/project-img-4.webp";
+import dashboard from "../../../../public/350x260/dashboard.webp";
+import desk from "../../../../public/350x260/desk.webp";
+import code from "../../../../public/350x260/code.webp";
+import magnify from "../../../../public/350x260/magnify.webp";
 
 const SolutionsCarousel = () => {
   const solutionsData = [
     {
       title: "Power Apps",
       link: "/services/microsoft-power-platform/microsoft-power-apps",
-      image: project1,
+      image: code,
       description: [
         "Custom business apps such as mobile apps and full database apps",
         "Canvas Apps: Custom user interface, Power FX, connected to any data source",
@@ -23,7 +23,7 @@ const SolutionsCarousel = () => {
     {
       title: "Power Automate",
       link: "/services/microsoft-access",
-      image: project2,
+      image: desk,
       description: [
         "Apps to guide users through business process flows from start to finish, along with reporting and analytics.",
         "Robotic Process Automation to record and replicate mouse clicks for legacy system integration.",
@@ -33,7 +33,7 @@ const SolutionsCarousel = () => {
     {
       title: "Power BI",
       link: "/services/microsoft-power-platform/microsoft-power-bi",
-      image: project3,
+      image: dashboard,
       description: [
         "Web enabled Dashboard solutions which auto-refresh from your live databases.",
         "Power BI Business Intelligence solutions.",
@@ -44,7 +44,7 @@ const SolutionsCarousel = () => {
     {
       title: "Power Pages",
       link: "/services/microsoft-office-365/remote-data-gathering-from-any-device",
-      image: project4,
+      image: magnify,
       description: [
         "Low-code solutions",
         "Rapid design and development of custom business solutions",

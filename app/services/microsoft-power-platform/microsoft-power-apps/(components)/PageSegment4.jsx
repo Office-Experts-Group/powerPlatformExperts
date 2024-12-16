@@ -5,7 +5,7 @@ import AnimateOnScroll from "../../../../../components/AnimateOnScroll";
 
 import styles from "../../../../../styles/pageSegment4.module.css";
 
-import eyes from "../../../../../public/eyes600x394.webp";
+import blueCode from "../../../../../public/blueCode600x400.webp";
 
 const PageSegment4 = () => {
   const checkItems = [
@@ -61,10 +61,10 @@ const PageSegment4 = () => {
         <AnimateOnScroll animation="scale-up" duration={1} delay={0.2}>
           <div className="image-wrapper">
             <Image
-              src={eyes}
-              alt="person clicking a computer mouse"
+              src={blueCode}
+              alt="person on a computer"
               width={600}
-              height={394}
+              height={400}
             />
           </div>
         </AnimateOnScroll>

@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://powerplatformexperts.com.au
+
+# Sitemaps
+Sitemap: https://powerplatformexperts.com.au/sitemap.xml

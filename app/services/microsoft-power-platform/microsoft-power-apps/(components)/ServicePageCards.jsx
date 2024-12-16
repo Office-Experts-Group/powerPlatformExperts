@@ -4,16 +4,16 @@ import Image from "next/image";
 import styles from "../../../../../styles/servicePageCards.module.css";
 
 // Import icons
-import stuckIcon from "../../../../../public/icons/computerBlue.webp";
-import issuesIcon from "../../../../../public/icons/supportBlue.webp";
-import expertsIcon from "../../../../../public/icons/handShakeBlue.webp";
-import migrateIcon from "../../../../../public/icons/ideaBlue.webp";
+import chartBlue from "../../../../../public/icons/chartBlue.webp";
+import issuesIcon from "../../../../../public/icons/connectBlue.webp";
+import expertsIcon from "../../../../../public/icons/fileBlue.webp";
+import migrateIcon from "../../../../../public/icons/wordBlue.webp";
 
 // Import main images
-import stuckImage from "../../../../../public/service-img-1350x201.webp";
-import issuesImage from "../../../../../public/service-img-2350x201.webp";
-import expertsImage from "../../../../../public/service-img-3350x201.webp";
-import migrateImage from "../../../../../public/service-img-4350x201.webp";
+import calcGraph from "../../../../../public/cards/calcGraph350x200.webp";
+import data from "../../../../../public/cards/data350x200.webp";
+import graphHands from "../../../../../public/cards/graphHands350x200.webp";
+import desk from "../../../../../public/cards/desk350x200.webp";
 
 const ServicePageCards = () => {
   return (
@@ -27,7 +27,7 @@ const ServicePageCards = () => {
             <p>Certified</p>
             <h2>Microsoft Partner</h2>
             <Image
-              src={stuckIcon}
+              src={chartBlue}
               alt="Old version icon"
               width={60}
               height={60}
@@ -36,8 +36,8 @@ const ServicePageCards = () => {
           </div>
           <div className={styles.imageWrapper}>
             <Image
-              src={stuckImage}
-              alt="Old version illustration"
+              src={calcGraph}
+              alt="calculator on a table with graphs"
               fill
               className={styles.mainImage}
             />
@@ -60,8 +60,8 @@ const ServicePageCards = () => {
           </div>
           <div className={styles.imageWrapper}>
             <Image
-              src={issuesImage}
-              alt="Access issues illustration"
+              src={data}
+              alt="Data illustration"
               fill
               className={styles.mainImage}
             />
@@ -84,8 +84,8 @@ const ServicePageCards = () => {
           </div>
           <div className={styles.imageWrapper}>
             <Image
-              src={expertsImage}
-              alt="Expert help illustration"
+              src={graphHands}
+              alt="hands pointing at a graph"
               fill
               className={styles.mainImage}
             />
@@ -108,8 +108,8 @@ const ServicePageCards = () => {
           </div>
           <div className={styles.imageWrapper}>
             <Image
-              src={migrateImage}
-              alt="Migration illustration"
+              src={desk}
+              alt="Miscellaneous items on a desk"
               fill
               className={styles.mainImage}
             />

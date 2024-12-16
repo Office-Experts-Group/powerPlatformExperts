@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 import AnimateOnScroll from "../../../../../components/AnimateOnScroll";
 
@@ -9,7 +10,6 @@ import bg from "../../../../../public/service-bg.webp";
 import stuckIcon from "../../../../../public/icons/computerBlue.webp";
 import issuesIcon from "../../../../../public/icons/supportBlue.webp";
 import migrateIcon from "../../../../../public/icons/ideaBlue.webp";
-import Link from "next/link";
 
 const BlackSegment = () => {
   return (

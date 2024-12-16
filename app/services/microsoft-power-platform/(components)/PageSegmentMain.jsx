@@ -5,7 +5,7 @@ import AnimateOnScroll from "../../../../components/AnimateOnScroll";
 
 import styles from "../../../../styles/pageSegment.module.css";
 
-import migrate from "../../../../public/migrate600x400.webp";
+import design from "../../../../public/design600x400.webp";
 
 const PageSegmentMain = () => {
   return (
@@ -13,8 +13,8 @@ const PageSegmentMain = () => {
       <div className={styles.imgWrapper} style={{ height: "fit-content" }}>
         <AnimateOnScroll animation="slide-left" duration={1} delay={0}>
           <Image
-            src={migrate}
-            alt="Image of a files leaving a computer"
+            src={design}
+            alt="the word design on cards"
             width={600}
             height={400}
             priority

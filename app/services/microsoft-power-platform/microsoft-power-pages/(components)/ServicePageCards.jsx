@@ -10,10 +10,10 @@ import expertsIcon from "../../../../../public/icons/handShakeBlue.webp";
 import migrateIcon from "../../../../../public/icons/ideaBlue.webp";
 
 // Import main images
-import stuckImage from "../../../../../public/service-img-1350x201.webp";
-import issuesImage from "../../../../../public/service-img-2350x201.webp";
-import expertsImage from "../../../../../public/service-img-3350x201.webp";
-import migrateImage from "../../../../../public/service-img-4350x201.webp";
+import desk from "../../../../../public/350x260/desk.webp";
+import magnify from "../../../../../public/350x260/magnify.webp";
+import graph from "../../../../../public/350x260/graph.webp";
+import coder from "../../../../../public/350x260/coder.webp";
 
 const ServicePageCards = () => {
   return (
@@ -33,8 +33,8 @@ const ServicePageCards = () => {
           </div>
           <div className={styles.imageWrapper}>
             <Image
-              src={stuckImage}
-              alt="Old version illustration"
+              src={desk}
+              alt="office desk with a computer"
               fill
               className={styles.mainImage}
             />
@@ -57,8 +57,8 @@ const ServicePageCards = () => {
           </div>
           <div className={styles.imageWrapper}>
             <Image
-              src={issuesImage}
-              alt="Access issues illustration"
+              src={graph}
+              alt="graph illustration"
               fill
               className={styles.mainImage}
             />
@@ -81,8 +81,8 @@ const ServicePageCards = () => {
           </div>
           <div className={styles.imageWrapper}>
             <Image
-              src={expertsImage}
-              alt="Expert help illustration"
+              src={coder}
+              alt="computer programmer working on code"
               fill
               className={styles.mainImage}
             />
@@ -105,8 +105,8 @@ const ServicePageCards = () => {
           </div>
           <div className={styles.imageWrapper}>
             <Image
-              src={migrateImage}
-              alt="Migration illustration"
+              src={magnify}
+              alt="magnifying glass over a graph"
               fill
               className={styles.mainImage}
             />

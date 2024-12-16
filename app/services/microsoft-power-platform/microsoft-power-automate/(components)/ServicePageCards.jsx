@@ -10,10 +10,10 @@ import expertsIcon from "../../../../../public/icons/handShakeBlue.webp";
 import migrateIcon from "../../../../../public/icons/ideaBlue.webp";
 
 // Import main images
-import stuckImage from "../../../../../public/service-img-1350x201.webp";
-import issuesImage from "../../../../../public/service-img-2350x201.webp";
-import expertsImage from "../../../../../public/service-img-3350x201.webp";
-import migrateImage from "../../../../../public/service-img-4350x201.webp";
+import keyboard from "../../../../../public/350x260/keyboard.webp";
+import handShake from "../../../../../public/350x260/handShake.webp";
+import graph from "../../../../../public/350x260/graph.webp";
+import coder from "../../../../../public/350x260/coder.webp";
 
 const ServicePageCards = () => {
   return (
@@ -36,8 +36,8 @@ const ServicePageCards = () => {
           </div>
           <div className={styles.imageWrapper}>
             <Image
-              src={stuckImage}
-              alt="Old version illustration"
+              src={keyboard}
+              alt="computer keyboard"
               fill
               className={styles.mainImage}
             />
@@ -60,8 +60,8 @@ const ServicePageCards = () => {
           </div>
           <div className={styles.imageWrapper}>
             <Image
-              src={issuesImage}
-              alt="Access issues illustration"
+              src={coder}
+              alt="computer programmer"
               fill
               className={styles.mainImage}
             />
@@ -83,12 +83,7 @@ const ServicePageCards = () => {
             />
           </div>
           <div className={styles.imageWrapper}>
-            <Image
-              src={expertsImage}
-              alt="Expert help illustration"
-              fill
-              className={styles.mainImage}
-            />
+            <Image src={graph} alt="graph" fill className={styles.mainImage} />
           </div>
         </a>
       </div>
@@ -108,8 +103,8 @@ const ServicePageCards = () => {
           </div>
           <div className={styles.imageWrapper}>
             <Image
-              src={migrateImage}
-              alt="Migration illustration"
+              src={handShake}
+              alt="Handshake"
               fill
               className={styles.mainImage}
             />
