@@ -259,4 +259,11 @@
   .promoWithLocation {
     margin: 6rem 1rem 0 1rem;
   }
+}
+
+.promoCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 6rem 1rem;
 }/*# sourceMappingURL=promo.module.css.map */
