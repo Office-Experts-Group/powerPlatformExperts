@@ -1,28 +1,25 @@
+// app/data/powerBiFaqs.js
 const faqs = [
   {
-    question: "What is Power BI, and how can it benefit my business?",
+    question: "What is Microsoft Power BI?",
     answer:
-      "Power BI is Microsoft’s business intelligence tool that allows you to create interactive dashboards and reports from complex data. By using Power BI, businesses can gain real-time insights, visualize trends, and make data-driven decisions to improve overall strategy and operations.",
+      "Microsoft Power BI is a business analytics service which allows visualisation of data and sharing of insights across your organisation. Power BI connects to various data sources and creates interactive reports which allows businesses to make data-driven decisions.",
   },
   {
-    question: "How can Power Platform Experts assist with Power BI?",
+    question: "What types of data sources can Power BI connect to?",
     answer:
-      "Our team of trained consultants specializes in designing, developing, and implementing custom Power BI solutions. We create tailored dashboards, reports, and analytics that align with your business objectives, helping you unlock actionable insights and improve collaboration across teams.",
+      "Power BI can connect to a wide range of data sources ranging from existing files, to live databases and third party applications. Power BI also uses Power Query to ingest and manipulate the data prior to being visually displayed in a dashboard or report, so that additional value, insight and key metrics can be pulled and displayed.",
   },
   {
-    question: "What types of insights can I gain from Power BI?",
+    question: "What kind of dashboards can be created with Power BI?",
     answer:
-      "With Power BI, you can access real-time insights on various business metrics like sales trends, inventory levels, customer behavior, and operational efficiencies. Power BI allows you to drill down and analyze data, offering clear visualizations that aid in strategic decision-making.",
+      "Power BI allows for the creation of diverse dashboards to provide visual insights to allow businesses to make informed decisions and improve performance.",
   },
   {
-    question: "Does Power BI integrate with other data sources?",
+    question:
+      "What costs are involved/license is required to use Microsoft Power BI?",
     answer:
-      "Yes, Power BI seamlessly connects with a wide range of data sources, including databases, spreadsheets, and cloud services. This integration allows for comprehensive data analysis, revealing patterns and correlations that enhance your understanding of business performance.",
-  },
-  {
-    question: "What are your pricing options for Power BI consulting services?",
-    answer:
-      "We offer flexible pricing options to suit your needs, including fixed-price quotes and hourly rates. Our consultants provide end-to-end guidance, from project design to deployment, with ongoing support and training to ensure lasting success.",
+      "Microsoft Power BI has several licensing options depending on the needs of your business. The various licensing options relate to what kind of dashboards and reports you're looking to use, the number of users who need access and the types of data models and refresh rates you're looking for.",
   },
 ];
 

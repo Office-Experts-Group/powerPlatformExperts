@@ -8,9 +8,10 @@ import PageSegmentMain from "./(components)/PageSegmentMain";
 import BlackSegment from "./(components)/BlackSegment";
 import Promo from "./(components)/Promo";
 import Segment4Repeat from "./(components)/Segment4Repeat";
-
-import faqs from "../../../../faqs/power-automate";
 import Contents from "./(components)/Contents";
+import faqs from "../../../../faqs/power-automate";
+
+import faqSchema from "../../../../faqs/automateSchema";
 
 import puzzleMob from "../../../../public/pageHeros/mob/puzzleMob.webp";
 import puzzle from "../../../../public/pageHeros/puzzle.webp";
@@ -111,6 +112,10 @@ const Page = () => {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
       <Contents />
       <ServiceHero

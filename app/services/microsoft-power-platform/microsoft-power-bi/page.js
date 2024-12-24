@@ -10,6 +10,7 @@ import PageSegment4 from "./(components)/PageSegment4";
 import SegmentMainRepeat from "./(components)/SegmentMainRepeat";
 
 import faqs from "../../../../faqs/power-bi";
+import faqSchema from "../../../../faqs/biSchema";
 
 import graphMeeting from "../../../../public/pageHeros/graphMeeting.webp";
 import graph from "../../../../public/pageHeros/mob/graph.webp";
@@ -110,6 +111,10 @@ const Page = () => {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
       <ServiceHero
         title="Microsoft Power BI Services"

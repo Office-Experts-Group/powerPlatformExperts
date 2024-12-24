@@ -1,31 +1,24 @@
 const faqs = [
   {
-    question: "What is Power Automate, and how can it benefit my business?",
+    question: "What is Microsoft Power Automate?",
     answer:
-      "Power Automate is a Microsoft tool that enables automation of repetitive tasks and complex workflows. It can help businesses streamline processes, reduce manual errors, and increase productivity by automating data entry, approval processes, and other routine tasks.",
+      "Microsoft Power Automate is a platform used to create business workflows. It helps create, streamline and automate repetitive tasks and improve business processes for improved efficiency and productivity.",
+  },
+  {
+    question: "How can Power Automate benefit my business?",
+    answer:
+      "Power Automate can free up time for your team by automating repetitive tasks and structured business processes to reduce manual errors, increase business efficiency and allow your team to focus on higher value processes and tasks. Power Automate can also integrate with a large number of applications and services to further improve interaction with third-party applications.",
+  },
+  {
+    question: "What types of workflows can I create with Power Automate?",
+    answer:
+      "You can create numerous workflows within Power Automate. These range from automated workflows which are triggered by specific events, to workflows that run on a schedule as well as workflows that are manually triggered by a user. This allows for efficiency and consistency to be built into business processes to improve operations.",
   },
   {
     question:
-      "How do you create tailored automation solutions with Power Automate?",
+      "What costs are involved/license is required to use Microsoft Power Automate?",
     answer:
-      "At Power Platform Experts, we work closely with clients to understand their specific business needs. Our consultants design and develop custom workflows that integrate seamlessly with your existing systems, enhancing efficiency and addressing unique challenges.",
-  },
-  {
-    question: "What types of workflows can be automated with Power Automate?",
-    answer:
-      "Power Automate supports a wide range of automated workflows, from cloud-based flows and business process flows to robotic process automation. We can automate tasks such as data updates, email notifications, database management, and cross-application workflows.",
-  },
-  {
-    question:
-      "Do you offer ongoing support and training for Power Automate solutions?",
-    answer:
-      "Yes, we provide comprehensive support and training for all Power Automate solutions we implement. Our team ensures you have the knowledge and resources needed to fully leverage your automation systems for long-term success.",
-  },
-  {
-    question:
-      "What are the pricing options for Power Automate consulting services?",
-    answer:
-      "We offer flexible pricing options to fit different business needs, including fixed-price quotes and hourly rates. Our experts provide guidance from project inception to completion, ensuring each solution is tailored to your goals and budget.",
+      "Microsoft Power Automate has several licensing options depending on the needs of your business. The various licensing options relate to what connections you're using and what kind of flows your business requires. The basic Power Automate license is also already included in your Office 365 subscription so no added cost is needed if you're not using any premium connectors or any advanced flows.",
   },
 ];
 

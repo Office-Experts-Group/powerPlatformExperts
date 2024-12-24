@@ -1,29 +1,25 @@
 const faqs = [
   {
-    question: "What is Microsoft Power Pages?",
+    question: "What is Power Pages?",
     answer:
-      "Microsoft Power Pages is a web platform within the Power Platform suite that allows you to build responsive websites with interactive data visuals like charts and graphs. Power Pages supports cross-browser and cross-device compatibility, ensuring a seamless user experience.",
-  },
-  {
-    question: "How does Power Pages handle data integration?",
-    answer:
-      "Power Pages enables seamless data integration from various sources, allowing users to pull and manipulate data from databases, cloud services, and other Microsoft tools. It also supports Power Query for data shaping and transforming, making it easier to manage and present data on your site.",
-  },
-  {
-    question: "Can Power Pages be customized with programming languages?",
-    answer:
-      "Yes, Power Pages supports customization with languages like R and Python, allowing you to create tailored data visualizations and interactive web elements. This makes it ideal for creating unique, data-driven user experiences suited to specific business needs.",
-  },
-  {
-    question: "Is Power Pages secure?",
-    answer:
-      "Power Pages incorporates robust role-based security and governance features, ensuring that sensitive data is protected. With customizable access controls, administrators can define who can view, edit, or share data, supporting compliance and data security best practices.",
+      "Microsoft Power Pages is a low-code platform which allows users to create, host and manage websites quickly and effectively. Power Pages integrates with Microsoft dataverse, Dynamics 365, Power BI, as well as other sources.",
   },
   {
     question:
-      "How does Power Pages integrate with other Microsoft Power Platform tools?",
+      "How does Power Pages work in conjunction to my existing website?",
     answer:
-      "Power Pages integrates seamlessly with other Power Platform tools like Power Apps and Power BI, enabling users to embed dashboards, reports, and apps into their websites. This integration enhances functionality and allows users to easily access and interact with data across platforms.",
+      "Power Pages has various options available for integrating Power Pages into your existing website. Additionally, you can also incorporate Power Pages with Microsoft's other cloud based tools such as Power BI and SharePoint to extend the scope of your application.",
+  },
+  {
+    question: "Can I integrate Power Pages with other Power Platform tools?",
+    answer:
+      "Microsoft's Power Platform tools like Power BI, Power Automate and Power Apps integrate seamlessly into Power Pages. This allows you to build business processes stemming from a Power Pages website. The benefit of this is that you can create rich, interactive web experiences that seamlessly feed into business and operational processes.",
+  },
+  {
+    question:
+      "What costs are involved/license is required to use Microsoft Power Pages?",
+    answer:
+      "Microsoft's Power Pages has various licensing options depending on the type and number of users you need for your site over time. These options are flexible and scalable depending on your requirements.",
   },
 ];
 

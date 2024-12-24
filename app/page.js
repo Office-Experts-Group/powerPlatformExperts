@@ -15,7 +15,10 @@ const Brands = dynamic(() => import("../components/Brands"));
 const Promo = dynamic(() => import("../components/Promo"));
 const Contact = dynamic(() => import("../components/Contact"));
 const ExpertsAwait = dynamic(() => import("../components/ExpertsAwait"));
+const FAQSection = dynamic(() => import("../components/FAQSection"));
 
+import faqs from "../faqs/home";
+import faqSchema from "../faqs/homeSchema";
 import { getHomePageSchema } from "../utils/testimonialSchemaGenerator";
 import { testimonials } from "../testimonials";
 
@@ -158,6 +161,10 @@ const Page = () => {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
       <Hero />
       <Services />
       <CTAMain />
@@ -170,6 +177,7 @@ const Page = () => {
         h2="Empowering Your Business"
         p="Expert Power Platform solutions to streamline workflows, enhance insights, and drive efficiency across your organization."
       />
+      <FAQSection faqs={faqs} />
       <Contact />
     </>
   );

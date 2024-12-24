@@ -10,6 +10,10 @@ import Promo from "./(components)/Promo";
 import Segment4Repeat from "./(components)/Segment4Repeat";
 import SegmentMainRepeat from "./(components)/SegmentMainRepeat";
 import Contents from "./(components)/Contents";
+import FAQSection from "../../../../components/FAQSection";
+
+import faqs from "../../../../faqs/power-apps";
+import faqSchema from "../../../../faqs/appsSchema";
 
 import longDesk from "../../../../public/pageHeros/longDesk.webp";
 import calcMob from "../../../../public/pageHeros/mob/calcMob.webp";
@@ -111,6 +115,10 @@ const Page = () => {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
       <Contents />
       <ServiceHero
         title="Microsoft Power Apps Consulting Services"
@@ -126,6 +134,7 @@ const Page = () => {
       <Promo />
       <PageSegment4 />
       <SegmentMainRepeat />
+      <FAQSection faqs={faqs} />
       <Contact />
     </>
   );

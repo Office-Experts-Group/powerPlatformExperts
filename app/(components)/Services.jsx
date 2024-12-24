@@ -64,6 +64,7 @@ const Services = () => {
                 "Leverage automation to optimize processes, reduce manual effort, and boost overall efficiency.",
               ]}
               link={"/services/microsoft-power-platform/microsoft-power-apps"}
+              linkText={"Power Apps"}
             />
           </CardIntersectionWrapper>
 
@@ -78,6 +79,7 @@ const Services = () => {
                 "Dive deep into your data with interactive features, allowing you to effortlessly explore trends and patterns.",
               ]}
               link={"/services/microsoft-power-platform/microsoft-power-bi"}
+              linkText={"Power BI"}
             />
           </CardIntersectionWrapper>
 
@@ -94,6 +96,7 @@ const Services = () => {
               link={
                 "/services/microsoft-power-platform/microsoft-power-automate"
               }
+              linkText={"Power Automate"}
             />
           </CardIntersectionWrapper>
 
@@ -107,6 +110,7 @@ const Services = () => {
                 "Data Collection: Collect data efficiently from your customers from any device.",
               ]}
               link={"/services/microsoft-power-platform/microsoft-power-pages"}
+              linkText={"Power Pages"}
             />
           </CardIntersectionWrapper>
         </div>

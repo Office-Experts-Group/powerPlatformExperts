@@ -14,6 +14,8 @@ import SegmentMainRepeat from "./(components)/SegmentMainRepeat";
 import faqs from "../../../../faqs/power-pages";
 import Contents from "./(components)/Contents";
 
+import faqSchema from "../../../../faqs/pagesSchema";
+
 import longDesk from "../../../../public/pageHeros/longDesk.webp";
 import coffee from "../../../../public/pageHeros/mob/coffeeMob.webp";
 
@@ -113,6 +115,10 @@ const Page = () => {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
       <Contents />
       <ServiceHero
