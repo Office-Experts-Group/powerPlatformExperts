@@ -69,7 +69,7 @@ export const metadata = {
     title:
       "Power Platform Experts | Microsoft Power Platform Consulting & Solutions",
     description:
-      "Specialized Microsoft Power Platform consulting services including Power BI visualization, Power Apps development, Power Automate workflow automation, and Power Pages web solutions.",
+      "specialised Microsoft Power Platform consulting services including Power BI visualization, Power Apps development, Power Automate workflow automation, and Power Pages web solutions.",
     url: "https://www.powerplatformexperts.com.au/",
     siteName: "Power Platform Experts",
     images: [

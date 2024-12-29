@@ -6,7 +6,7 @@ export const metadata = {
   title:
     "Contact Us - Power Platform Experts | Microsoft Power Platform Consulting",
   description:
-    "Get in touch with Power Platform Experts for specialized Microsoft Power Platform consulting services. Professional support for Power BI, Power Apps, Power Automate, and Power Pages development across Australia.",
+    "Get in touch with Power Platform Experts for specialised Microsoft Power Platform consulting services. Professional support for Power BI, Power Apps, Power Automate, and Power Pages development across Australia.",
 
   // OpenGraph
   openGraph: {

@@ -61,7 +61,7 @@ const Services = () => {
               li={[
                 "Unique, high performance custom solutions for your specific business needs.",
                 "Seamless data integration into your existing data sources.",
-                "Leverage automation to optimize processes, reduce manual effort, and boost overall efficiency.",
+                "Leverage automation to optimise processes, reduce manual effort, and boost overall efficiency.",
               ]}
               link={"/services/microsoft-power-platform/microsoft-power-apps"}
               linkText={"Power Apps"}

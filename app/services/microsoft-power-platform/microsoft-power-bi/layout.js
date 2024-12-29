@@ -6,7 +6,7 @@ export const metadata = {
   title:
     "Power BI Services: Reporting, Charts and Dashboards | Power Platform Experts",
   description:
-    "Expert Power BI consultancy services for real-time analytics, custom dashboard development, and data visualization. Transform your business data into actionable insights with our specialized Power BI solutions.",
+    "Expert Power BI consultancy services for real-time analytics, custom dashboard development, and data visualization. Transform your business data into actionable insights with our specialised Power BI solutions.",
 
   // OpenGraph
   openGraph: {

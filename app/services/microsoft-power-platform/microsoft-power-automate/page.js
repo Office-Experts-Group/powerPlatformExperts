@@ -31,7 +31,7 @@ const schema = {
       datePublished: "2024-10-27T00:00:00+00:00",
       dateModified: "2024-10-27T00:00:00+00:00",
       description:
-        "Professional Microsoft Power Automate development and consulting services. Automate workflows, integrate systems, and optimize processes. Call us today 1300 102 810",
+        "Professional Microsoft Power Automate development and consulting services. Automate workflows, integrate systems, and optimise processes. Call us today 1300 102 810",
       breadcrumb: {
         "@id":
           "https://www.powerplatformexperts.com.au/services/microsoft-power-platform/microsoft-power-automate/#breadcrumb",
