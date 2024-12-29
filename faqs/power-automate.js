@@ -1,3 +1,4 @@
+// app/data/powerAutomateFaqs.js
 const faqs = [
   {
     question: "What is Microsoft Power Automate?",
@@ -19,6 +20,22 @@ const faqs = [
       "What costs are involved/license is required to use Microsoft Power Automate?",
     answer:
       "Microsoft Power Automate has several licensing options depending on the needs of your business. The various licensing options relate to what connections you're using and what kind of flows your business requires. The basic Power Automate license is also already included in your Office 365 subscription so no added cost is needed if you're not using any premium connectors or any advanced flows.",
+  },
+  {
+    question: "Can Power Automate integrate with third-party applications?",
+    answer:
+      "Yes, Power Automate supports a wide range of connectors for third-party applications, allowing seamless integration.",
+  },
+  {
+    question:
+      "What types of business processes can be automated with Power Automate?",
+    answer:
+      "Businesses can automate processes such as approval workflows, data entry, email notifications, file synchronization, and data collection.",
+  },
+  {
+    question: "Do I need a programming background to use Power Automate?",
+    answer:
+      "No, Power Automate is designed for users with little to no coding experience, offering a user-friendly interface.",
   },
 ];
 

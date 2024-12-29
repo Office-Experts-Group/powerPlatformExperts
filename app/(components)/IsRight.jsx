@@ -6,8 +6,7 @@ import AnimateOnScroll from "../../components/AnimateOnScroll";
 import styles from "../../styles/isRight.module.css";
 
 import isRight from "../../public/isRight.webp";
-import isRight2 from "../../public/isRight2.webp";
-import idea from "../../public/icons/ideaBlue.webp";
+import Link from "next/link";
 
 const IsRight = () => {
   return (
@@ -22,22 +21,6 @@ const IsRight = () => {
               width={505}
               height={635}
             />
-            {/* <div className={styles.circleButton}>
-              <span className={styles.iconWrapper}>
-                <Image
-                  src={idea}
-                  alt="Icon"
-                  style={{ width: "auto", height: "auto" }}
-                />
-              </span>
-            </div> */}
-            {/* <Image
-              className={`${styles.imgSmall} ${styles.imgMain}`}
-              src={isRight2}
-              alt="someone holding a newspaper"
-              width={160}
-              height={135}
-            /> */}
           </div>
         </div>
       </AnimateOnScroll>
@@ -65,7 +48,7 @@ const IsRight = () => {
                 <h3>Power Platform Solutions</h3>
               </div>
               <p>
-                Customized apps, workflows, and insights to boost productivity.
+                Customised apps, workflows, and insights to boost productivity.
               </p>
             </div>
             <div className={styles.excerpt}>
@@ -77,7 +60,9 @@ const IsRight = () => {
             </div>
           </div>
 
-          <button className={`btn ${styles.btn}`}>Learn More</button>
+          <Link href={"/meet-the-team"} className={`btn ${styles.btn}`}>
+            Meet our Team
+          </Link>
         </div>
       </AnimateOnScroll>
     </div>

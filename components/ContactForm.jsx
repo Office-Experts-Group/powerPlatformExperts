@@ -1,7 +1,10 @@
 "use client";
 import React, { useState } from "react";
+import dynamic from "next/dynamic";
 
 import styles from "../styles/contact.module.css";
+
+const SurveyForm = dynamic(() => import("./SurveyForm"));
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -14,12 +17,17 @@ const ContactForm = () => {
 
   const [error, setError] = useState({});
   const [success, setSuccess] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  // props to pass to SurveyForm
+  const [surveyName, setSurveyName] = useState("");
+  const [surveyEmail, setSurveyEmail] = useState("");
 
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
+    setIsSubmitting(true);
     setError({});
     const newError = {};
 
@@ -37,6 +45,7 @@ const ContactForm = () => {
 
     if (Object.keys(newError).length > 0) {
       setError(newError);
+      setIsSubmitting(false);
       // Focus first error field
       const firstErrorField = Object.keys(newError)[0];
       const element = document.getElementById(firstErrorField);
@@ -60,7 +69,11 @@ const ContactForm = () => {
         body: JSON.stringify(formData),
       });
 
+      const data = await res.json();
+
       if (res.ok) {
+        setSurveyName(formData.name);
+        setSurveyEmail(formData.email);
         setSuccess(true);
         setFormData({
           name: "",
@@ -70,16 +83,18 @@ const ContactForm = () => {
           honeypot: "",
         });
       } else {
-        setError((prev) => ({
-          ...prev,
-          general: "Something went wrong. Please try again.",
-        }));
+        setError({
+          general: data.message || "Something went wrong. Please try again.",
+        });
       }
     } catch (err) {
-      setError((prev) => ({
-        ...prev,
-        general: "There was an error submitting the form.",
-      }));
+      console.error("Form submission error:", err);
+      setError({
+        general:
+          "There was an error submitting the form. Please try again later.",
+      });
+    } finally {
+      setIsSubmitting(false);
     }
   };
 
@@ -102,8 +117,7 @@ const ContactForm = () => {
   if (success) {
     return (
       <div className={styles.successMessage} role="alert" aria-live="polite">
-        <h2>Thank you {formData.name} for your message!</h2>
-        <p>One of our team will contact you shortly</p>
+        <SurveyForm name={surveyName} email={surveyEmail} />
       </div>
     );
   }
@@ -116,6 +130,12 @@ const ContactForm = () => {
       aria-label="Contact form"
       role="form"
     >
+      {error.general && (
+        <div className={styles.generalError} role="alert">
+          {error.general}
+        </div>
+      )}
+
       <div className={styles.formField}>
         <label htmlFor="name" className={styles.requiredField}>
           Name
@@ -133,6 +153,7 @@ const ContactForm = () => {
           aria-invalid={!!error.name}
           aria-describedby={error.name ? "name-error" : undefined}
           required
+          disabled={isSubmitting}
         />
         {error.name && (
           <p
@@ -163,6 +184,7 @@ const ContactForm = () => {
           aria-describedby={error.message ? "message-error" : undefined}
           placeholder="Your message..."
           required
+          disabled={isSubmitting}
         />
         {error.message && (
           <p
@@ -194,6 +216,7 @@ const ContactForm = () => {
           aria-describedby={error.email ? "email-error" : undefined}
           placeholder="eg. john@example.com"
           required
+          disabled={isSubmitting}
         />
         {error.email && (
           <p
@@ -219,6 +242,7 @@ const ContactForm = () => {
           onChange={handleChange}
           aria-required="false"
           placeholder="optional..."
+          disabled={isSubmitting}
         />
       </div>
 
@@ -238,8 +262,9 @@ const ContactForm = () => {
         type="submit"
         className={`btn ${styles.submitBtn}`}
         aria-label="Submit contact form"
+        disabled={isSubmitting}
       >
-        Submit
+        {isSubmitting ? "Sending..." : "Submit"}
       </button>
     </form>
   );

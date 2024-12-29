@@ -27,6 +27,21 @@ const faqs = [
     answer:
       "Microsoft Power Apps has several licensing options depending on the needs of your business. The various licensing options relate to what connections you're using and how many users and applications your business requires. The basic Power Apps license is also already included in your Office 365 subscription, so no added cost is required if you're not using any premium connectors.",
   },
+  {
+    question: "Do I need a programming background to use Power Apps?",
+    answer:
+      "No, Power Apps is designed for users with little to no coding experience. It offers a drag-and-drop interface and pre-built templates.",
+  },
+  {
+    question: "What types of apps can be built with Power Apps?",
+    answer:
+      "Businesses can create a wide variety of apps including data collection apps, inventory management, customer relationship management (CRM) apps, employee onboarding apps, and more.",
+  },
+  {
+    question: "How secure is Power Apps?",
+    answer:
+      "Power Apps provides robust security features, including data encryption, user authentication, and role-based access control.",
+  },
 ];
 
 export default faqs;

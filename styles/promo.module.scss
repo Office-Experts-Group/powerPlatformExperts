@@ -5,12 +5,14 @@
   margin: 6rem 8rem;
   display: flex;
   align-items: center;
+  justify-content: center;
   a {
     color: $theme;
     font-weight: 700;
     &:hover {
       text-decoration: underline;
     }
+    max-width: 70vw;
   }
 
   @include phone {
@@ -49,6 +51,7 @@
 .text {
   display: flex;
   flex-direction: column;
+  max-width: 70%;
   h2 {
     color: $black;
     font-size: 2rem;
@@ -73,11 +76,15 @@
   @include phone {
     margin-bottom: 2rem;
     align-items: center;
+    max-width: 100%;
+    text-align: center;
   }
 
   @include phoneLandscape {
     margin-bottom: 2rem;
     align-items: center;
+    max-width: 100%;
+    text-align: center;
   }
 }
 
@@ -85,18 +92,6 @@
   @media screen and (min-width: "800px") {
     margin-left: 2rem;
   }
-}
-
-.bar {
-  background-color: $theme;
-  width: 10px;
-  height: 60px;
-}
-
-.barLarge {
-  background-color: $theme;
-  width: 10px;
-  height: 120px;
 }
 
 .img {
@@ -126,6 +121,7 @@
 .content {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 2rem;
   margin-left: 2rem;
 

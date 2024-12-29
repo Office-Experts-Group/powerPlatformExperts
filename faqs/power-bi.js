@@ -21,6 +21,21 @@ const faqs = [
     answer:
       "Microsoft Power BI has several licensing options depending on the needs of your business. The various licensing options relate to what kind of dashboards and reports you're looking to use, the number of users who need access and the types of data models and refresh rates you're looking for.",
   },
+  {
+    question: "How secure is Power BI?",
+    answer:
+      "Power BI provides robust security features, including data encryption, user authentication, and role-based access control.",
+  },
+  {
+    question: "Can Power BI be used on mobile devices?",
+    answer:
+      "Yes, Power BI offers mobile apps for iOS and Android, allowing users to access their dashboards and reports on the go.",
+  },
+  {
+    question: "What are typical use cases for Power BI?",
+    answer:
+      "Businesses use Power BI for financial analysis, sales and marketing performance tracking, customer insights, operational metrics, and more.",
+  },
 ];
 
 export default faqs;

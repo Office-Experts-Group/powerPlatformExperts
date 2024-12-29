@@ -3,10 +3,12 @@
   margin: 6rem 8rem;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 .promo a {
   color: #046999;
   font-weight: 700;
+  max-width: 70vw;
 }
 .promo a:hover {
   text-decoration: underline;
@@ -55,6 +57,7 @@
 .text {
   display: flex;
   flex-direction: column;
+  max-width: 70%;
 }
 .text h2 {
   color: #1e1e1e;
@@ -79,12 +82,16 @@
   .text {
     margin-bottom: 2rem;
     align-items: center;
+    max-width: 100%;
+    text-align: center;
   }
 }
 @media (min-width: 450px) and (max-width: 766px) {
   .text {
     margin-bottom: 2rem;
     align-items: center;
+    max-width: 100%;
+    text-align: center;
   }
 }
 
@@ -92,18 +99,6 @@
   .textML {
     margin-left: 2rem;
   }
-}
-
-.bar {
-  background-color: #046999;
-  width: 10px;
-  height: 60px;
-}
-
-.barLarge {
-  background-color: #046999;
-  width: 10px;
-  height: 120px;
 }
 
 .img {
@@ -138,6 +133,7 @@
 .content {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 2rem;
   margin-left: 2rem;
 }

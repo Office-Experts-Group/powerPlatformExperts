@@ -1,18 +1,16 @@
 import React from "react";
 import Image from "next/image";
-import Link from "next/link";
 
 import AnimateOnScroll from "../../../../../components/AnimateOnScroll";
 
 import styles from "../../../../../styles/promo.module.css";
 
 import computer from "../../../../../public/icons/computer.webp";
-import promo from "../../../../../public/promo.webp";
 
 const Promo = () => {
   return (
     <section
-      className={`${styles.promo} ${styles.topMargin}`}
+      className={`${styles.promoCenter} ${styles.topMargin}`}
       id="custom-solutions"
     >
       <AnimateOnScroll animation="scale-up" duration={1}>
@@ -31,18 +29,6 @@ const Promo = () => {
           </div>
         </div>
       </AnimateOnScroll>
-
-      {/* <AnimateOnScroll animation="scale-up" duration={1} delay={0.3}>
-        <div className={styles.img}>
-          <div className={styles.bar}></div>
-          <Image
-            src={promo}
-            alt="person at a computer"
-            width={130}
-            height={60}
-          />
-        </div>
-      </AnimateOnScroll> */}
     </section>
   );
 };

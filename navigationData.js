@@ -148,7 +148,7 @@ export const navigationData = {
         href: "https://www.officeexperts.com.au/about-us",
       },
       {
-        label: "Meet the Team",
+        label: "Meet Our Team",
         href: "/meet-the-team",
       },
     ],
