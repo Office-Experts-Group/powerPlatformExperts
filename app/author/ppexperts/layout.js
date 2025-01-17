@@ -3,8 +3,7 @@ import PropTypes from "prop-types";
 
 export const metadata = {
   // Basic metadata
-  title:
-    "Power Platform Experts | Author Archive | Microsoft Power Platform Specialists",
+  title: " Author Archive | Power Platform Experts",
   description:
     "Articles and insights from our certified Power Platform consultants covering Power BI, Power Apps, Power Automate, and Power Pages development, implementation, and best practices.",
 
@@ -30,41 +29,7 @@ export const metadata = {
   // Additional metadata
   keywords: [
     // Expertise-specific long tail
-    "Power BI dashboard optimization techniques",
-    "Power Apps canvas app development guides",
-    "Power Automate flow templates tutorials",
-    "Power Pages portal customization tips",
-    "Power Platform security best practices",
-
-    // Solution-specific
-    "Power BI financial reporting templates",
-    "Power Apps inventory tracking solutions",
-    "Power Automate approval workflow guides",
-    "Power Pages form development tutorials",
-
-    // Integration-focused
-    "Power Platform Dataverse integration",
-    "SharePoint Power Platform connections",
-    "Power Platform Azure AD integration",
-    "Teams Power Platform implementation",
-
-    // Industry-specific
-    "Healthcare Power Platform solutions",
-    "Manufacturing Power Apps templates",
-    "Financial services Power BI reports",
-    "Retail Power Automate workflows",
-
-    // Technical deep-dives
-    "Power Platform licensing optimization",
-    "Power Apps performance tuning",
-    "Power BI DAX formula guides",
-    "Power Automate error handling",
-
-    // Implementation
-    "Power Platform governance framework",
-    "Power Apps deployment strategies",
-    "Power BI report distribution",
-    "Power Platform change management",
+    "Microsoft Power Platform Experts Author",
   ],
 
   // Twitter Card
@@ -74,14 +39,18 @@ export const metadata = {
     title: "Power Platform Experts | Technical Insights & Solutions",
     description:
       "Expert articles and technical guidance on Microsoft Power Platform implementation, covering data visualization, workflow automation, app development, and web solutions.",
-    images: [
-      "https://www.powerplatformexperts.com.au/wp-content/uploads/2023/09/microsoft-office-experts-group-logo.png",
-    ],
+    images: ["https://www.powerplatformexperts.com.au/logo.webp"],
   },
 
   // Additional tags
 
-  canonical: "https://www.powerplatformexperts.com.au/author/ppexperts/",
+  metadataBase: new URL("https://www.powerplatformexperts.com.au"),
+  alternates: {
+    canonical: "/services/microsoft-power-platform/author/ppexperts/",
+    languages: {
+      "en-AU": "/services/microsoft-power-platform/author/ppexperts/",
+    },
+  },
   robots: {
     index: true,
     follow: true,

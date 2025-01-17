@@ -69,14 +69,14 @@ export const metadata = {
     title:
       "Power Platform Experts | Microsoft Power Platform Consulting & Solutions",
     description:
-      "specialised Microsoft Power Platform consulting services including Power BI visualization, Power Apps development, Power Automate workflow automation, and Power Pages web solutions.",
+      "Specialised Microsoft Power Platform consulting services including Power BI visualization, Power Apps development, Power Automate workflow automation, and Power Pages web solutions.",
     url: "https://www.powerplatformexperts.com.au/",
     siteName: "Power Platform Experts",
     images: [
       {
         url: "https://www.powerplatformexperts.com.au/logo.webp",
         width: 1200,
-        height: 630,
+        height: 620,
         alt: "Power Platform Experts Logo",
       },
     ],
@@ -92,37 +92,37 @@ export const metadata = {
     "power pages consulting",
     "power platform specialists",
 
-    // Core Power Platform services
-    "Power Platform consulting Australia",
-    "Power BI dashboard development",
-    "Custom Power Apps solutions",
-    "Power Automate workflow automation",
-    "Power Pages web development",
+    // // Core Power Platform services
+    // "Power Platform consulting Australia",
+    // "Power BI dashboard development",
+    // "Custom Power Apps solutions",
+    // "Power Automate workflow automation",
+    // "Power Pages web development",
 
-    // Location-based
-    "Power Platform consultants Sydney",
-    "Power BI specialists Melbourne",
-    "Power Apps developers Brisbane",
-    "Power Automate experts Perth",
+    // // Location-based
+    // "Power Platform consultants Sydney",
+    // "Power BI specialists Melbourne",
+    // "Power Apps developers Brisbane",
+    // "Power Automate experts Perth",
 
-    // Service-specific long tail
-    "Power BI real-time analytics dashboards",
-    "Power Apps custom business applications",
-    "Power Automate process automation workflows",
-    "Power Pages data collection forms",
-    "Power Platform system integration",
+    // // Service-specific long tail
+    // "Power BI real-time analytics dashboards",
+    // "Power Apps custom business applications",
+    // "Power Automate process automation workflows",
+    // "Power Pages data collection forms",
+    // "Power Platform system integration",
 
-    // Industry-specific
-    "Power BI financial reporting solutions",
-    "Power Apps inventory management systems",
-    "Power Automate document processing",
-    "Power Platform business process automation",
+    // // Industry-specific
+    // "Power BI financial reporting solutions",
+    // "Power Apps inventory management systems",
+    // "Power Automate document processing",
+    // "Power Platform business process automation",
 
-    // Specific solutions
-    "Power BI data visualization consulting",
-    "Power Apps mobile solution development",
-    "Power Automate email workflow automation",
-    "Power Pages customer portal development",
+    // // Specific solutions
+    // "Power BI data visualization consulting",
+    // "Power Apps mobile solution development",
+    // "Power Automate email workflow automation",
+    // "Power Pages customer portal development",
   ],
 
   // Twitter Card
@@ -132,13 +132,19 @@ export const metadata = {
     title:
       "Power Platform Experts | Microsoft Power Platform Consulting & Solutions",
     description:
-      "Specialised Microsoft Power Platform consulting services including Power BI visualization, Power Apps development, Power Automate workflow automation, and Power Pages web solutions.",
+      "Specialised Microsoft Power Platform consulting services including Power BI visualisation, Power Apps development, Power Automate workflow automation, and Power Pages web solutions.",
     images: ["https://www.powerplatformexperts.com.au/logo.webp"],
   },
 
   // Additional tags
+  metadataBase: new URL("https://www.powerplatformexperts.com.au"),
+  alternates: {
+    canonical: "/",
+    languages: {
+      "en-AU": "/",
+    },
+  },
 
-  canonical: "https://www.powerplatformexperts.com.au/",
   robots: {
     index: true,
     follow: true,

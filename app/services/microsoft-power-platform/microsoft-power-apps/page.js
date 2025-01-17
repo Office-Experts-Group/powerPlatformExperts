@@ -18,9 +18,16 @@ import faqSchema from "../../../../faqs/appsSchema";
 import longDesk from "../../../../public/pageHeros/longDesk.webp";
 import calcMob from "../../../../public/pageHeros/mob/calcMob.webp";
 
+import {
+  generateProfessionalServiceSchema,
+  generateOrganizationSchema,
+} from "../../../../utils/schemaGenerators";
+
 const schema = {
   "@context": "https://schema.org",
   "@graph": [
+    generateOrganizationSchema(),
+    generateProfessionalServiceSchema(),
     {
       "@type": "WebPage",
       "@id":

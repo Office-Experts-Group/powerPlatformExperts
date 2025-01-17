@@ -7,21 +7,27 @@ import ServicePageCards from "./(components)/ServicePageCards";
 import Contact from "../../../../components/Contact";
 import PageSegmentMain from "./(components)/PageSegmentMain";
 
+import Contents from "./(components)/Contents";
 import PageSegment4 from "./(components)/PageSegment4";
 import Segment4Repeat from "./(components)/Segment4Repeat";
 import SegmentMainRepeat from "./(components)/SegmentMainRepeat";
 
 import faqs from "../../../../faqs/power-pages";
-import Contents from "./(components)/Contents";
-
 import faqSchema from "../../../../faqs/pagesSchema";
 
 import longDesk from "../../../../public/pageHeros/longDesk.webp";
 import coffee from "../../../../public/pageHeros/mob/coffeeMob.webp";
 
+import {
+  generateProfessionalServiceSchema,
+  generateOrganizationSchema,
+} from "../../../../utils/schemaGenerators";
+
 const schema = {
   "@context": "https://schema.org",
   "@graph": [
+    generateOrganizationSchema(),
+    generateProfessionalServiceSchema(),
     {
       "@type": "WebPage",
       "@id":

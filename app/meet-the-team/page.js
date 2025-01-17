@@ -7,9 +7,16 @@ import Contact from "../../components/Contact";
 import handShake from "../../public/pageHeros/handShake.webp";
 import handShakeMob from "../../public/pageHeros/mob/handShakeMob.webp";
 
+import {
+  generateProfessionalServiceSchema,
+  generateOrganizationSchema,
+} from "../../utils/schemaGenerators";
+
 const schema = {
   "@context": "https://schema.org",
   "@graph": [
+    generateOrganizationSchema(),
+    generateProfessionalServiceSchema(),
     {
       "@type": "WebPage",
       "@id": "https://www.powerplatformexperts.com.au/meet-the-team/",
@@ -95,6 +102,7 @@ const Page = () => {
         mobileImage={handShakeMob}
         altDesk={"greeting shaking hands"}
         altMob={"greeting shaking hands"}
+        isMeetTeam={true}
       />
       <MeetTheTeam />
       <Contact />

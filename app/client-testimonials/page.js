@@ -4,6 +4,10 @@ import Contact from "../../components/Contact";
 import TestimonialPage from "./(components)/TestimonialPage";
 import ServiceHero from "../../components/ServiceHero";
 
+import {
+  generateProfessionalServiceSchema,
+  generateOrganizationSchema,
+} from "../../utils/schemaGenerators";
 import { getTestimonialsPageSchema } from "../../utils/testimonialSchemaGenerator";
 import { testimonials } from "../../testimonials";
 
@@ -14,6 +18,8 @@ const schema = {
   "@context": "https://schema.org",
   "@graph": [
     ...getTestimonialsPageSchema(testimonials)["@graph"],
+    generateOrganizationSchema(),
+    generateProfessionalServiceSchema(),
     {
       "@type": "WebPage",
       "@id": "https://www.powerplatformexperts.com.au/client-testimonials/",

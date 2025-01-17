@@ -16,9 +16,16 @@ import faqSchema from "../../../../faqs/automateSchema";
 import puzzleMob from "../../../../public/pageHeros/mob/puzzleMob.webp";
 import puzzle from "../../../../public/pageHeros/puzzle.webp";
 
+import {
+  generateProfessionalServiceSchema,
+  generateOrganizationSchema,
+} from "../../../../utils/schemaGenerators";
+
 const schema = {
   "@context": "https://schema.org",
   "@graph": [
+    generateOrganizationSchema(),
+    generateProfessionalServiceSchema(),
     {
       "@type": "WebPage",
       "@id":

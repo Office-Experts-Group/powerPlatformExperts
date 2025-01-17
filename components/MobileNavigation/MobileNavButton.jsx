@@ -8,6 +8,7 @@ const MobileNavButton = ({ isOpen, onClick }) => (
     onClick={onClick}
     className={styles.menuButton}
     style={isOpen ? { display: "none" } : {}}
+    aria-label="Open Navigation"
   >
     <svg
       stroke="#f8f8f8"

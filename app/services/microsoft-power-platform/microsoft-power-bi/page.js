@@ -15,9 +15,16 @@ import faqSchema from "../../../../faqs/biSchema";
 import graphMeeting from "../../../../public/pageHeros/graphMeeting.webp";
 import graph from "../../../../public/pageHeros/mob/graph.webp";
 
+import {
+  generateProfessionalServiceSchema,
+  generateOrganizationSchema,
+} from "../../../../utils/schemaGenerators";
+
 const schema = {
   "@context": "https://schema.org",
   "@graph": [
+    generateOrganizationSchema(),
+    generateProfessionalServiceSchema(),
     {
       "@type": "WebPage",
       "@id":

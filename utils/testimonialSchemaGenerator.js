@@ -10,9 +10,25 @@ const formatDate = (date) => {
 
 // Generate schema for a single testimonial
 const generateTestimonialSchema = (testimonial, domain, page, index) => {
+  // Extract domain name for service naming
+  const domainName = domain.split(".")[1]; // e.g., 'wordexperts'
+  const serviceName =
+    domainName.charAt(0).toUpperCase() + domainName.slice(1, -7); // e.g., 'Word'
+
   return {
     "@type": "Review",
     "@id": generateTestimonialId(domain, page, index),
+    itemReviewed: {
+      "@type": "Service",
+      name: `Microsoft ${serviceName} Consulting Services`,
+      provider: {
+        "@type": "Organization",
+        "@id": `${domain}/#organization`,
+      },
+      serviceType: `Microsoft ${serviceName} Consulting`,
+      description: `Professional Microsoft ${serviceName} consulting and support services`,
+      areaServed: "Australia",
+    },
     reviewRating: {
       "@type": "Rating",
       ratingValue: "5",

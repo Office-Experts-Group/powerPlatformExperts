@@ -3,9 +3,16 @@ import React from "react";
 import ServiceHero from "../../../components/ServiceHero";
 import PageSegment4 from "./(components)/PageSegment4";
 
+import {
+  generateProfessionalServiceSchema,
+  generateOrganizationSchema,
+} from "../../../utils/schemaGenerators";
+
 const schema = {
   "@context": "https://schema.org",
   "@graph": [
+    generateOrganizationSchema(),
+    generateProfessionalServiceSchema(),
     {
       "@type": "WebPage",
       "@id": "https://www.powerplatformexperts.com.au/author/ppexperts/",
@@ -17,7 +24,7 @@ const schema = {
       datePublished: "2024-10-27T00:00:00+00:00",
       dateModified: "2024-10-27T00:00:00+00:00",
       description:
-        "Meet our expert authors and consultants specializing in Microsoft Power Platform solutions. Industry leaders in Power Apps, Power Automate, Power BI, and Power Pages.",
+        "Meet our expert authors and consultants specialising in Microsoft Power Platform solutions. Industry leaders in Power Apps, Power Automate, Power BI, and Power Pages.",
       breadcrumb: {
         "@id":
           "https://www.powerplatformexperts.com.au/author/ppexperts/#breadcrumb",
@@ -80,79 +87,6 @@ const schema = {
         },
       ],
       inLanguage: "en-AU",
-    },
-    {
-      "@type": "Organization",
-      "@id": "https://www.powerplatformexperts.com.au/#organization",
-      name: "Power Platform Experts Group",
-      url: "https://www.powerplatformexperts.com.au/",
-      telephone: "1300 102 810",
-      email: "consult@powerplatformexperts.com.au",
-      contactPoint: [
-        {
-          "@type": "ContactPoint",
-          telephone: "1300 102 810",
-          contactType: "customer service",
-          email: "consult@powerplatformexperts.com.au",
-          availableLanguage: ["en", "en-AU"],
-        },
-      ],
-      areaServed: [
-        {
-          "@type": "Country",
-          name: "Australia",
-        },
-        {
-          "@type": "AdministrativeArea",
-          name: "New South Wales",
-        },
-        {
-          "@type": "AdministrativeArea",
-          name: "Victoria",
-        },
-        {
-          "@type": "AdministrativeArea",
-          name: "Queensland",
-        },
-        {
-          "@type": "AdministrativeArea",
-          name: "Western Australia",
-        },
-        {
-          "@type": "AdministrativeArea",
-          name: "South Australia",
-        },
-        {
-          "@type": "AdministrativeArea",
-          name: "Tasmania",
-        },
-        {
-          "@type": "AdministrativeArea",
-          name: "Australian Capital Territory",
-        },
-        {
-          "@type": "AdministrativeArea",
-          name: "Northern Territory",
-        },
-      ],
-      logo: {
-        "@type": "ImageObject",
-        inLanguage: "en-AU",
-        "@id": "https://www.powerplatformexperts.com.au/#/schema/logo/image/",
-        url: "/logo.png",
-        contentUrl: "/logo.png",
-        width: 1181,
-        height: 1181,
-        caption: "Power Platform Experts Group",
-      },
-      image: {
-        "@id": "https://www.powerplatformexperts.com.au/#/schema/logo/image/",
-      },
-      aggregateRating: {
-        "@type": "AggregateRating",
-        ratingValue: "5",
-        reviewCount: "112",
-      },
     },
   ],
 };
