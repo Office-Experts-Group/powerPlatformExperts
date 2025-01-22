@@ -1,7 +1,6 @@
 // components/ServiceHero/index.js
 import React from "react";
 import Image from "next/image";
-import PropTypes from "prop-types";
 
 import styles from "../styles/serviceHero.module.css";
 
@@ -47,15 +46,6 @@ const ServiceHero = ({
       </h1>
     </section>
   );
-};
-
-ServiceHero.propTypes = {
-  title: PropTypes.string,
-  desktopImage: PropTypes.object,
-  mobileImage: PropTypes.object,
-  altDesk: PropTypes.string,
-  altMob: PropTypes.string,
-  objectPosition: PropTypes.string,
 };
 
 export default ServiceHero;

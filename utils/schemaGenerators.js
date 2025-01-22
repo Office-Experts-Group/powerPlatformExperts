@@ -8,12 +8,20 @@ export const generateProfessionalServiceSchema = () => ({
     "Professional Microsoft Power Platform consulting and support services",
   priceRange: "$$",
   serviceType: "Microsoft Power Platform Consulting",
-  availableService: {
-    "@type": "Service",
-    name: "Remote Consulting",
-    description:
-      "Australia-wide remote Microsoft Power Platform consulting services",
-  },
+  availableService: [
+    {
+      "@type": "Service",
+      name: "Remote Consulting",
+      description:
+        "Australia-wide remote Microsoft Power Platform consulting services",
+    },
+    {
+      "@type": "Service",
+      name: "On-site Consulting",
+      description:
+        "In-house Microsoft Power Platform consulting services available in major metropolitan areas",
+    },
+  ],
   areaServed: [
     {
       "@type": "Country",
@@ -251,7 +259,7 @@ export const generateProfessionalServiceSchema = () => ({
     "@type": "Organization",
     "@id": `https://www.powerplatformexperts.com.au/#organization`,
   },
-  telephone: "1300 122 038",
+  telephone: "1300 102 810",
   email: "consult@officeexperts.com.au",
 });
 
@@ -260,14 +268,14 @@ export const generateOrganizationSchema = () => ({
   "@id": "https://www.powerplatformexperts.com.au/#organization",
   name: "Office Experts Group",
   url: "https://www.powerplatformexperts.com.au/",
-  telephone: "1300 122 038",
+  telephone: "1300 102 810",
   email: "consult@officeexperts.com.au",
   // Enhanced contact point information
   contactPoint: [
     {
       "@type": "ContactPoint",
       contactType: "customer service",
-      telephone: "1300 122 038",
+      telephone: "1300 102 810",
       email: "consult@officeexperts.com.au",
       availableLanguage: ["en", "en-AU"],
       contactOption: "TollFree",
@@ -277,15 +285,38 @@ export const generateOrganizationSchema = () => ({
   // Remote service availability
   hasOfferCatalog: {
     "@type": "OfferCatalog",
-    name: "Services",
+    name: "Power Platform Services",
     itemListElement: [
       {
         "@type": "Offer",
         itemOffered: {
           "@type": "Service",
-          name: "Remote Microsoft Word Consulting",
-          description:
-            "Australia-wide remote Microsoft Word consulting and support",
+          name: "Power BI Solutions",
+          description: "Custom dashboard development and data visualisation",
+        },
+      },
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "Power Apps Development",
+          description: "Custom business application development",
+        },
+      },
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "Power Automate",
+          description: "Workflow automation and business process optimisation",
+        },
+      },
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "Power Pages",
+          description: "External-facing website development and portals",
         },
       },
     ],

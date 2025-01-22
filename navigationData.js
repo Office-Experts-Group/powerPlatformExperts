@@ -1,140 +1,139 @@
-// lib/navigationData.js
+// Base URLs for different sites (change these for production)
+const WORD_EXPERTS_URL = "https://word-experts.vercel.app";
+const OFFICE_EXPERTS_URL = "https://office-experts.vercel.app";
+const EXCEL_EXPERTS_URL = "https://excel-experts.vercel.app";
+const POWER_PLATFORM_EXPERTS_URL = "https://power-platform-experts.vercel.app";
+const ACCESS_EXPERTS_URL = "https://access-experts.vercel.app";
 
 export const navigationData = {
   home: {
     label: "Home",
     href: "/",
+    items: [
+      {
+        label: "Office Experts",
+        href: OFFICE_EXPERTS_URL,
+      },
+      {
+        label: "Excel Experts",
+        href: EXCEL_EXPERTS_URL,
+      },
+      {
+        label: "Power Platform Experts",
+        href: "/",
+      },
+      {
+        label: "Access Experts",
+        href: ACCESS_EXPERTS_URL,
+      },
+      {
+        label: "Word Experts",
+        href: WORD_EXPERTS_URL,
+      },
+    ],
   },
   services: {
     label: "Services",
     items: [
       {
-        label: "Power Platform",
-        href: "",
+        label: "All Our Services",
+        href: `${OFFICE_EXPERTS_URL}/services`,
+      },
+      {
+        label: "Microsoft Power Platform",
+        href: "/",
         items: [
           {
-            label: "App Development with Power Apps",
-            href: "/services/microsoft-power-platform/microsoft-power-apps/",
+            label: "Microsoft Power Apps",
+            href: `/services/microsoft-power-platform/microsoft-power-apps`,
           },
           {
-            label: "Workflow Automation with Power Automate",
-            href: "/services/microsoft-power-platform/microsoft-power-automate/",
+            label: "Microsoft Power BI",
+            href: `/services/microsoft-power-platform/microsoft-power-bi`,
           },
           {
-            label: "Data Analytics with Power BI",
-            href: "/services/microsoft-power-platform/microsoft-power-bi/",
+            label: "Microsoft Power Automate",
+            href: `/services/microsoft-power-platform/microsoft-power-automate`,
           },
           {
-            label: "Simple, Scalable Websites with Power Pages",
-            href: "/services/microsoft-power-platform/microsoft-power-pages/",
+            label: "Microsoft Power Pages",
+            href: `/services/microsoft-power-platform/microsoft-power-pages`,
           },
         ],
       },
       {
-        label: "Office",
-        href: "/services/",
+        label: "By Office Product",
+        href: `${OFFICE_EXPERTS_URL}/services/by-office-product`,
         items: [
           {
-            label: "Office Experts Home",
-            href: "https://www.officeexperts.com.au",
+            label: "Microsoft Office",
+            href: `${OFFICE_EXPERTS_URL}/services/microsoft-office`,
           },
           {
-            label: "SharePoint",
-            href: "https://www.officeexperts.com.au/services/by-business-solution/online-solutions",
+            label: "Microsoft Excel",
+            href: EXCEL_EXPERTS_URL,
           },
           {
-            label: "Azure",
-            href: "https://www.officeexperts.com.au/services/by-business-solution/cloud-based-solutions-with-azure",
+            label: "Microsoft Access",
+            href: ACCESS_EXPERTS_URL,
           },
           {
-            label: "SQL Server",
-            href: "https://www.officeexperts.com.au/services/by-business-solution/office-and-sql-server-integration",
+            label: "Microsoft Word",
+            href: WORD_EXPERTS_URL,
           },
           {
-            label: ".NET",
-            href: "https://www.officeexperts.com.au/services/microsoft-dot-net",
+            label: "Microsoft PowerPoint",
+            href: `${OFFICE_EXPERTS_URL}/services/microsoft-powerpoint`,
           },
           {
-            label: "Office 365",
-            href: "https://www.officeexperts.com.au/services/microsoft-office-365",
-          },
-          {
-            label: "Outlook",
-            href: "https://www.officeexperts.com.au/services/by-business-solution/custom-office-solutions",
-          },
-          {
-            label: "VBScript",
-            href: "https://www.officeexperts.com.au/services/microsoft-vbscript",
-          },
-          {
-            label: "Publisher",
-            href: "https://www.officeexperts.com.au/services/microsoft-publisher",
+            label: "Microsoft Office 365",
+            href: `${OFFICE_EXPERTS_URL}/services/microsoft-office-365`,
           },
         ],
       },
       {
-        label: "Excel",
-        href: "",
+        label: "By Business Solution",
+        href: `${OFFICE_EXPERTS_URL}/services/by-business-solution`,
         items: [
           {
-            label: "Excel Experts Home",
-            href: "https://www.excelexperts.com.au/",
+            label: "VBA Macro Development",
+            href: `${OFFICE_EXPERTS_URL}/services/by-business-solution/vba-macro-development`,
           },
           {
-            label: "Data analysis and reporting",
-            href: "https://www.excelexperts.com.au/data-manipulation/",
+            label: "Custom Office Solutions",
+            href: `${OFFICE_EXPERTS_URL}/services/by-business-solution/custom-office-solutions`,
           },
           {
-            label: "Automation and VBA programming",
-            href: "https://www.excelexperts.com.au/vba-macro-development/",
+            label: "Database Solutions",
+            href: `${OFFICE_EXPERTS_URL}/services/by-business-solution/database-development-and-solutions`,
           },
           {
-            label: "Dashboard and Visualisation Design",
-            href: "https://www.excelexperts.com.au/custom-design-and-development/",
+            label: "Online Solutions",
+            href: `${OFFICE_EXPERTS_URL}/services/by-business-solution/online-solutions`,
           },
           {
-            label: "Training and Skill Development",
-            href: "https://www.excelexperts.com.au/excel-support/",
-          },
-        ],
-      },
-      {
-        label: "Word",
-        href: "",
-        items: [
-          {
-            label: "Word Experts Home",
-            href: "https://www.wordexperts.com.au/",
+            label: "Microsoft Cloud Based Solutions",
+            href: `${OFFICE_EXPERTS_URL}/services/by-business-solution/cloud-based-solutions-with-azure`,
           },
           {
-            label: "Template Creation and Standardisation",
-            href: "https://www.wordexperts.com.au/word-document-template-creation/",
+            label: "Dashboards",
+            href: `${OFFICE_EXPERTS_URL}/services/by-business-solution/dashboards`,
           },
           {
-            label: "Automation with Macros and Custom Functions",
-            href: "https://wordexperts.com.au/custom-toolbars-and-ribbons/",
+            label: "3rd Party App or Office Integration",
+            href: `${OFFICE_EXPERTS_URL}/services/by-business-solution/3rd-party-application-or-office-integration`,
           },
           {
-            label: "Training and User Support",
-            href: "https://www.wordexperts.com.au/training/",
-          },
-        ],
-      },
-      {
-        label: "Access",
-        href: "",
-        items: [
-          {
-            label: "Access Experts Home",
-            href: "https://www.accessexperts.com.au/",
+            label: "Office and SQL Server",
+            href: `${OFFICE_EXPERTS_URL}/services/by-business-solution/office-and-sql-server-integration`,
           },
           {
-            label: "Cloud-based and Online Database Solutions",
-            href: "https://www.accessexperts.com.au/access-online/",
+            label: "Upgrades and Migration",
+            href: `${OFFICE_EXPERTS_URL}/services/microsoft-office/upgrades-and-migration`,
           },
           {
-            label: "Integration with Other Systems",
-            href: "https://www.accessexperts.com.au/3rd-party-product-integration/",
+            label: "Add-in Creation",
+            href: `${OFFICE_EXPERTS_URL}/services/by-business-solution/add-in-creation`,
           },
         ],
       },
@@ -145,7 +144,7 @@ export const navigationData = {
     items: [
       {
         label: "About Us",
-        href: "https://www.officeexperts.com.au/about-us",
+        href: `${OFFICE_EXPERTS_URL}/about-us`,
       },
       {
         label: "Meet Our Team",
