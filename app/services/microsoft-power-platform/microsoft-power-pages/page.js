@@ -40,7 +40,7 @@ const schema = {
       datePublished: "2024-10-27T00:00:00+00:00",
       dateModified: "2024-10-27T00:00:00+00:00",
       description:
-        "Professional Microsoft Power Pages development and consulting services. Create secure, modern web portals and business websites. Call us today 1300 102 810",
+        "Empower your business with Microsoft Power Pages services. Create secure, responsive websites with data integration, visuals, and AI insights. Contact us today for expert assistance!",
       breadcrumb: {
         "@id":
           "https://www.powerplatformexperts.com.au/services/microsoft-power-platform/microsoft-power-pages/#breadcrumb",

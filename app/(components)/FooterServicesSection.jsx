@@ -32,7 +32,7 @@ const FooterServicesSection = () => {
           <Link href="https://www.powerplatformexperts.com.au/services/microsoft-power-platform/microsoft-power-bi">
             Microsoft Power BI
           </Link>
-          <Link href="/https://www.powerplatformexperts.com.au/services/microsoft-power-platform/microsoft-power-automate">
+          <Link href="https://www.powerplatformexperts.com.au/services/microsoft-power-platform/microsoft-power-automate">
             Microsoft Power Automate
           </Link>
           <Link href="https://www.powerplatformexperts.com.au/services/microsoft-power-platform/microsoft-power-pages">

@@ -4,13 +4,13 @@ export const metadata = {
   // Basic metadata
   title: "Microsoft Power Pages Services | Power Platform Experts",
   description:
-    "Expert Power Pages consulting services for creating secure, responsive business websites with seamless data integration, interactive visuals, and AI-powered insights. Specialists in cross-device compatibility and governance solutions.",
+    "Empower your business with Microsoft Power Pages services. Create secure, responsive websites with data integration, visuals, and AI insights. Contact us today for expert assistance!",
 
   // OpenGraph
   openGraph: {
     title: "Microsoft Power Pages Services | Power Platform Experts",
     description:
-      "Expert Power Pages consulting services for creating secure, responsive business websites with seamless data integration, interactive visuals, and AI-powered insights. Specialists in cross-device compatibility and governance solutions.",
+      "Empower your business with Microsoft Power Pages services. Create secure, responsive websites with data integration, visuals, and AI insights. Contact us today for expert assistance!",
     url: "https://www.powerplatformexperts.com.au/services/microsoft-power-platform/microsoft-power-pages/",
   },
 

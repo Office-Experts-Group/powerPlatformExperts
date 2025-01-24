@@ -11,7 +11,7 @@ import SocialLinks from "../../components/SocialLinks";
 import MobileNav from "../../components/MobileNavigation/MobileNav";
 
 import logo from "../../public/logo300x130.webp";
-import certified from "../../public/microsoft/certified.gif";
+import certified from "../../public/microsoft/partnerLogo.webp";
 import ideaBlue from "../../public/icons/ideaBlue.webp";
 
 const Header = () => {
@@ -84,30 +84,6 @@ const Header = () => {
             )}
           </li>
 
-          {/* About Us dropdown */}
-          <li
-            className={styles.navItem}
-            onMouseEnter={() => handleMouseEnter("aboutUs")}
-            onMouseLeave={handleMouseLeave}
-          >
-            <div className={styles.navLink}>
-              <span>About Us</span>
-            </div>
-            {activeDropdown === "aboutUs" && (
-              <div className={styles.dropdown}>
-                <ul>
-                  {navigationData.aboutUs.items.map((item, index) => (
-                    <li key={index}>
-                      <Link href={item.href}>
-                        <span>{item.label}</span>
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            )}
-          </li>
-
           {/* Static Links */}
           {navigationData.staticLinks.map((link, index) => (
             <li key={index} className={styles.navItem}>
@@ -153,7 +129,11 @@ const Header = () => {
         <div className={styles.socialLinks}>
           <SocialLinks />
         </div>
-        <Link href="/contact-us" className="btn">
+        <Link
+          href="/contact-us"
+          className="btn"
+          aria-label="contact us page link"
+        >
           Contact Us
         </Link>
       </div>

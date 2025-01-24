@@ -73,7 +73,7 @@ export const metadata = {
     siteName: "Power Platform Experts",
     images: [
       {
-        url: "https://www.powerplatformexperts.com.au/logo.webp",
+        url: "/logo.png",
         width: 1200,
         height: 620,
         alt: "Power Platform Experts Logo",
@@ -132,7 +132,7 @@ export const metadata = {
       "Power Platform Experts | Microsoft Power Platform Consulting & Solutions",
     description:
       "Specialised Microsoft Power Platform consulting services including Power BI visualisation, Power Apps development, Power Automate workflow automation, and Power Pages web solutions.",
-    images: ["https://www.powerplatformexperts.com.au/logo.webp"],
+    images: ["/logo.png"],
   },
 
   // Additional tags

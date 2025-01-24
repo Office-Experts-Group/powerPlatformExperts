@@ -4,9 +4,9 @@ import dynamic from "next/dynamic";
 
 // Keep Hero static as it's above fold
 import Hero from "./(components)/Hero";
+import Services from "./(components)/Services";
 
 // Dynamically import everything else
-const Services = dynamic(() => import("./(components)/Services"));
 const CTAMain = dynamic(() => import("./(components)/CTAMain"));
 const IsRight = dynamic(() => import("./(components)/IsRight"));
 const CTAFull = dynamic(() => import("./(components)/CTAFull"));
@@ -133,7 +133,7 @@ const schema = {
       logo: {
         "@type": "ImageObject",
         inLanguage: "en-AU",
-        "@id": "https://www.powerplatformexperts.com.au/logo.webp",
+        "@id": "/logo.png",
         url: "/logo.webp",
         contentUrl: "/logo.webp",
         width: 1200,
@@ -141,7 +141,7 @@ const schema = {
         caption: "Office Experts Group",
       },
       image: {
-        "@id": "https://www.powerplatformexperts.com.au/logo.webp",
+        "@id": "/logo.png",
       },
       sameAs: [
         "https://www.facebook.com/MSOfficeExperts",

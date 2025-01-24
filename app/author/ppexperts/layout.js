@@ -38,7 +38,7 @@ export const metadata = {
     title: "Power Platform Experts | Technical Insights & Solutions",
     description:
       "Expert articles and technical guidance on Microsoft Power Platform implementation, covering data visualization, workflow automation, app development, and web solutions.",
-    images: ["https://www.powerplatformexperts.com.au/logo.webp"],
+    images: ["/logo.png"],
   },
 
   // Additional tags

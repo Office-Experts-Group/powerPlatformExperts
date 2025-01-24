@@ -14,7 +14,7 @@ export const metadata = {
     siteName: "Power Platform Experts",
     images: [
       {
-        url: "https://www.powerplatformexperts.com.au/logo.webp",
+        url: "/logo.png",
         width: 1200,
         height: 630,
         alt: "Office Experts Logo",
