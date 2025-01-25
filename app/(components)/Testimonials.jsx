@@ -48,7 +48,7 @@ const Testimonials = ({ testimonials }) => {
               }`}
               tabIndex={index}
             >
-              <TestimonialCard {...testimonial} />
+              <TestimonialCard key={index} {...testimonial} index={index} />
             </div>
           ))}
         </div>

@@ -10,14 +10,18 @@ import {
 } from "../../utils/schemaGenerators";
 import { getTestimonialsPageSchema } from "../../utils/testimonialSchemaGenerator";
 import { testimonials } from "../../testimonials";
-
+import { filterAndSortTestimonials } from "../../utils/filterTestimonials";
+const serviceTestimonials =
+  filterAndSortTestimonials(testimonials, "powerplatform") || testimonials;
 import testimonialsPic from "../../public/pageHeros/testimonials.webp";
 import testimonialsMob from "../../public/pageHeros/mob/testimonialsMob.webp";
 
 const schema = {
   "@context": "https://schema.org",
   "@graph": [
-    ...getTestimonialsPageSchema(testimonials)["@graph"],
+    ...getTestimonialsPageSchema(serviceTestimonials, "powerplatform")[
+      "@graph"
+    ],
     generateOrganizationSchema(),
     generateProfessionalServiceSchema(),
     {
@@ -68,7 +72,7 @@ const Page = () => {
         altDesk={"Wooden block with smiley face"}
         altMob={"five stars"}
       />
-      <TestimonialPage testimonials={testimonials} />
+      <TestimonialPage testimonials={serviceTestimonials} />
       <Contact />
     </>
   );

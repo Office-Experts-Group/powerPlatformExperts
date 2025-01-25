@@ -25,7 +25,7 @@ import { testimonials } from "../testimonials";
 const schema = {
   "@context": "https://schema.org",
   "@graph": [
-    ...getHomePageSchema(testimonials)["@graph"],
+    ...getHomePageSchema(testimonials, "powerplatform")["@graph"],
     {
       "@type": "WebPage",
       "@id": "https://www.powerplatformexperts.com.au/",

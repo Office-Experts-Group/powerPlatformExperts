@@ -36,6 +36,10 @@ const locationsByState = {
     Darwin:
       "https://officeexperts.com.au/office-excel-access-and-365-experts-darwin/",
   },
+  "South Australia": {
+    Adelaide:
+      "https://officeexperts.com.au/office-excel-access-and-365-experts-adelaide/",
+  },
 };
 
 export default function FooterLocationsSection() {
