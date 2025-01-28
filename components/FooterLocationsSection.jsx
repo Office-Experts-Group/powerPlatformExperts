@@ -1,13 +1,14 @@
 "use client";
 import { useState, useEffect } from "react";
 import Link from "next/link";
+
 import styles from "../styles/footerLocations.module.scss";
 
 const locationsByState = {
   "New South Wales": {
     Sydney: "https://officeexperts.com.au/word-and-powerpoint-experts-sydney/",
     Wollongong:
-      "https://officeexperts.com.au/office-excel-access-and-word-experts-wollongong/",
+      "https://officeexperts.com.au/office-excel-access-and-365-experts-wollongong/",
     "Central Coast":
       "https://officeexperts.com.au/excel-and-access-experts-central-coast-nsw/",
     "Northern Rivers":
