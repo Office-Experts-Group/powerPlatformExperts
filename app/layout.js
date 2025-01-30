@@ -21,6 +21,7 @@ const ScrollBtn = dynamic(() => import("../components/ScrollBtn"), {
 });
 
 import "./global.css";
+import ScrollIndicator from "../components/ScrollIndicator";
 
 const aptos = localFont({
   src: [
@@ -171,6 +172,7 @@ export default function RootLayout({ children }) {
         <Footer />
         <Copyright />
         <ScrollBtn />
+        <ScrollIndicator />
       </body>
     </html>
   );

@@ -103,21 +103,16 @@ export async function POST(req) {
       Software Versions: ${softwareVersions || "Not provided"}.
       Website: ${website || "Not provided"}.
       Message: ${message || "Not provided"}
-
+      This form was filled out on the website: https://powerplatformexperts.com.au @ ${new Date().toLocaleString()}
       ${textSignature}
     `;
 
     const customerTextMessage = `
       Hi ${name},
 
-      Thank you for reaching out. We've received your quote request:
-
-      Operating System: ${operatingSystem || "Not provided"}.
-      Software Versions: ${softwareVersions || "Not provided"}.
-      Website: ${website || "Not provided"}.
-      Message: ${message || "Not provided"}
-
-      We'll get back to you soon!
+      Thanks for contacting us.
+      
+      One of our team members will be in touch shortly.
 
       ${textSignature}
     `;
@@ -134,22 +129,14 @@ export async function POST(req) {
       <p><strong>Website:</strong> ${website || "Not provided"}</p>
       <p><strong>Message:</strong></p>
       <p>${message || "Not provided"}</p>
+            <em>This form was filled out on the website: https://powerplatformexperts.com.au @ ${new Date().toLocaleString()}</em>
       ${htmlSignature}
     `;
 
     const customerHtmlMessage = `
       <p>Hi ${name},</p>
-      <p>Thank you for reaching out. We've received your quote request:</p>
-      <p><strong>Operating System:</strong> ${
-        operatingSystem || "Not provided"
-      }</p>
-      <p><strong>Software Versions:</strong> ${
-        softwareVersions || "Not provided"
-      }</p>
-      <p><strong>Website:</strong> ${website || "Not provided"}</p>
-      <p><strong>Message:</strong></p>
-      <p>${message || "Not provided"}</p>
-      <p>We'll get back to you soon!</p>
+      <p>Thanks for contacting us.</p>
+      <p>One of our team members will be in touch shortly.</p>
       ${htmlSignature}
     `;
 

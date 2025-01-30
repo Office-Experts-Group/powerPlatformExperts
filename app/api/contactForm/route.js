@@ -33,17 +33,15 @@ export async function POST(req) {
       Phone: ${phone || "Not provided"}.
       Message: ${message}
 
-      This form was filled out on the website: https://officeexperts.com.au @ ${new Date().toLocaleString()}
+      This form was filled out on the website: https://powerplatformexperts.com.au @ ${new Date().toLocaleString()}
     `;
 
     const customerTextMessage = `
       Hi ${name},
-
-      Thank you for reaching out. We've received your message:
-
-      ${message}
-
-      We'll get back to you soon!
+      
+      Thanks for contacting us.
+      
+      One of our team members will be in touch shortly.
 
       ${textSignature}
     `;
@@ -55,14 +53,13 @@ export async function POST(req) {
       <p><strong>Message:</strong></p>
       <p>${message}</p>
       
-      <em>This form was filled out on the website: https://officeexperts.com.au @ ${new Date().toLocaleString()}</em>
+      <em>This form was filled out on the website: https://powerplatformexperts.com.au @ ${new Date().toLocaleString()}</em>
     `;
 
     const customerHtmlMessage = `
       <p>Hi ${name},</p>
-      <p>Thank you for reaching out. We've received your message:</p>
-      <p>${message}</p>
-      <p>On of our team members will get back to you soon.</p>
+      <p>Thanks for contacting us.</p>
+      <p>One of our team members will be in touch shortly.</p>
       ${htmlSignature}
     `;
 
