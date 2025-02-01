@@ -63,9 +63,9 @@ export const metadata = {
 
   metadataBase: new URL("https://www.powerplatformexperts.com.au"),
   alternates: {
-    canonical: "/services/microsoft-power-platform/meet-the-team",
+    canonical: "/meet-the-team",
     languages: {
-      "en-AU": "/services/microsoft-power-platform/meet-the-team",
+      "en-AU": "/meet-the-team",
     },
   },
 };

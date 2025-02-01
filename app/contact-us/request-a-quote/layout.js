@@ -21,9 +21,9 @@ export const metadata = {
 
   metadataBase: new URL("https://www.powerplatformexperts.com.au"),
   alternates: {
-    canonical: "/services/microsoft-power-platform/contact-us/request-a-quote",
+    canonical: "/contact-us/request-a-quote",
     languages: {
-      "en-AU": "/services/microsoft-power-platform/contact-us/request-a-quote",
+      "en-AU": "/contact-us/request-a-quote",
     },
   },
 };

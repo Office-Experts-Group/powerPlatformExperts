@@ -61,11 +61,9 @@ export const metadata = {
 
   metadataBase: new URL("https://www.powerplatformexperts.com.au"),
   alternates: {
-    canonical:
-      "/services/microsoft-power-platform/services/microsoft-power-platform/microsoft-power-automate",
+    canonical: "/services/microsoft-power-platform/microsoft-power-automate",
     languages: {
-      "en-AU":
-        "/services/microsoft-power-platform/services/microsoft-power-platform/microsoft-power-automate",
+      "en-AU": "/services/microsoft-power-platform/microsoft-power-automate",
     },
   },
 };
