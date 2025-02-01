@@ -10,7 +10,7 @@ export const metadata = {
     title: "Contact Us | Power Platform Experts",
     description:
       "Connect with Australia's leading Microsoft Power Platform consultants. Expert consulting for Power BI, Power Apps, Power Automate, and Power Pages solutions.",
-    url: "https://www.powerplatformexperts.com.au/contact-us/",
+    url: "https://www.powerplatformexperts.com.au/contact-us",
   },
 
   keywords: [
@@ -20,9 +20,9 @@ export const metadata = {
 
   metadataBase: new URL("https://www.powerplatformexperts.com.au"),
   alternates: {
-    canonical: "/services/microsoft-power-platform/contact-us/",
+    canonical: "/services/microsoft-power-platform/contact-us",
     languages: {
-      "en-AU": "/services/microsoft-power-platform/contact-us/",
+      "en-AU": "/services/microsoft-power-platform/contact-us",
     },
   },
 };

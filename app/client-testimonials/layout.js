@@ -10,7 +10,7 @@ export const metadata = {
     title: "Client Testimonials - Power Platform Experts",
     description:
       "Read what our clients say about our Microsoft Power Platform consulting services, including Power BI, Power Apps, Power Automate, and Power Pages solutions.",
-    url: "https://www.powerplatformexperts.com.au/client-testimonials/",
+    url: "https://www.powerplatformexperts.com.au/client-testimonials",
     siteName: "Power Platform Experts",
     images: [
       {
@@ -32,9 +32,9 @@ export const metadata = {
 
   metadataBase: new URL("https://www.powerplatformexperts.com.au"),
   alternates: {
-    canonical: "/services/microsoft-power-platform/client-testimonials/",
+    canonical: "/services/microsoft-power-platform/client-testimonials",
     languages: {
-      "en-AU": "/services/microsoft-power-platform/client-testimonials/",
+      "en-AU": "/services/microsoft-power-platform/client-testimonials",
     },
   },
 };

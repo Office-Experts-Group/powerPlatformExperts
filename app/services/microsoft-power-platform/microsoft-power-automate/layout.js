@@ -11,7 +11,7 @@ export const metadata = {
     title: "Power Automate Services | Custom Workflow Automation Solutions",
     description:
       "Transform your business operations with expert Power Automate consulting. Custom workflow automation, process optimisation, and seamless system integration for enhanced productivity.",
-    url: "https://www.powerplatformexperts.com.au/services/microsoft-power-platform/microsoft-power-automate/",
+    url: "https://www.powerplatformexperts.com.au/services/microsoft-power-platform/microsoft-power-automate",
   },
 
   // Additional metadata
@@ -62,10 +62,10 @@ export const metadata = {
   metadataBase: new URL("https://www.powerplatformexperts.com.au"),
   alternates: {
     canonical:
-      "/services/microsoft-power-platform/services/microsoft-power-platform/microsoft-power-automate/",
+      "/services/microsoft-power-platform/services/microsoft-power-platform/microsoft-power-automate",
     languages: {
       "en-AU":
-        "/services/microsoft-power-platform/services/microsoft-power-platform/microsoft-power-automate/",
+        "/services/microsoft-power-platform/services/microsoft-power-platform/microsoft-power-automate",
     },
   },
 };

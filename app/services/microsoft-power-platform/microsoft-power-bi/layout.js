@@ -10,7 +10,7 @@ export const metadata = {
     title: "Microsoft Power BI Services | Power Platform Experts",
     description:
       "Professional Power BI services including custom dashboard creation, real-time analytics implementation, and data visualisation solutions. Expert consultants delivering tailored Power BI solutions across Australia.",
-    url: "https://www.powerplatformexperts.com.au/services/microsoft-power-platform/microsoft-power-bi/",
+    url: "https://www.powerplatformexperts.com.au/services/microsoft-power-platform/microsoft-power-bi",
   },
 
   // Additional metadata
@@ -46,10 +46,10 @@ export const metadata = {
   metadataBase: new URL("https://www.powerplatformexperts.com.au"),
   alternates: {
     canonical:
-      "/services/microsoft-power-platform/services/microsoft-power-platform/microsoft-power-bi/",
+      "/services/microsoft-power-platform/services/microsoft-power-platform/microsoft-power-bi",
     languages: {
       "en-AU":
-        "/services/microsoft-power-platform/services/microsoft-power-platform/microsoft-power-bi/",
+        "/services/microsoft-power-platform/services/microsoft-power-platform/microsoft-power-bi",
     },
   },
 };

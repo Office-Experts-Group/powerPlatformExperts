@@ -10,7 +10,7 @@ export const metadata = {
     title: "Request a Quote | Power Platform Experts ",
     description:
       "Get a detailed quote for your Microsoft Power Platform project. Expert consulting and development services for Power BI, Power Apps, Power Automate, and Power Pages solutions.",
-    url: "https://www.powerplatformexperts.com.au/contact-us/request-a-quote/",
+    url: "https://www.powerplatformexperts.com.au/contact-us/request-a-quote",
   },
 
   // Additional metadata
@@ -21,9 +21,9 @@ export const metadata = {
 
   metadataBase: new URL("https://www.powerplatformexperts.com.au"),
   alternates: {
-    canonical: "/services/microsoft-power-platform/contact-us/request-a-quote/",
+    canonical: "/services/microsoft-power-platform/contact-us/request-a-quote",
     languages: {
-      "en-AU": "/services/microsoft-power-platform/contact-us/request-a-quote/",
+      "en-AU": "/services/microsoft-power-platform/contact-us/request-a-quote",
     },
   },
 };

@@ -13,7 +13,7 @@ export const metadata = {
       "Power Apps Development & Consulting Services | Power Platform Experts",
     description:
       "Custom Power Apps solutions for streamlined operations, automated workflows, and enhanced business efficiency. Expert consultants delivering tailored Microsoft Power Platform solutions.",
-    url: "https://www.powerplatformexperts.com.au/services/microsoft-power-platform/microsoft-power-apps/",
+    url: "https://www.powerplatformexperts.com.au/services/microsoft-power-platform/microsoft-power-apps",
     siteName: "Power Platform Experts",
   },
 
@@ -44,9 +44,9 @@ export const metadata = {
 
   metadataBase: new URL("https://www.powerplatformexperts.com.au"),
   alternates: {
-    canonical: "/services/microsoft-power-platform/microsoft-power-apps/",
+    canonical: "/services/microsoft-power-platform/microsoft-power-apps",
     languages: {
-      "en-AU": "/services/microsoft-power-platform/microsoft-power-apps/",
+      "en-AU": "/services/microsoft-power-platform/microsoft-power-apps",
     },
   },
 };

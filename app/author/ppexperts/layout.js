@@ -11,11 +11,11 @@ export const metadata = {
     title: "Power Platform Experts | Technical Insights & Solutions",
     description:
       "Expert articles and technical guidance on Microsoft Power Platform implementation, covering data visualization, workflow automation, app development, and web solutions.",
-    url: "https://www.powerplatformexperts.com.au/author/ppexperts/",
+    url: "https://www.powerplatformexperts.com.au/author/ppexperts",
     siteName: "Power Platform Experts",
     images: [
       {
-        url: "https://www.powerplatformexperts.com.au/wp-content/uploads/2023/09/microsoft-office-experts-group-logo.png",
+        url: "https://www.powerplatformexperts.com.au/logo.png",
         width: 1200,
         height: 630,
         alt: "Power Platform Experts Author Profile",
@@ -45,24 +45,10 @@ export const metadata = {
 
   metadataBase: new URL("https://www.powerplatformexperts.com.au"),
   alternates: {
-    canonical: "/services/microsoft-power-platform/author/ppexperts/",
+    canonical: "/services/microsoft-power-platform/author/ppexperts",
     languages: {
-      "en-AU": "/services/microsoft-power-platform/author/ppexperts/",
+      "en-AU": "/services/microsoft-power-platform/author/ppexperts",
     },
-  },
-  robots: {
-    index: true,
-    follow: true,
-    "max-image-preview": "large",
-    "max-snippet": -1,
-    "max-video-preview": -1,
-  },
-
-  // Icons
-  icons: {
-    icon: "/favicon.ico",
-    shortcut: "/favicon-32x32.png",
-    apple: "/apple-touch-icon.png",
   },
 };
 

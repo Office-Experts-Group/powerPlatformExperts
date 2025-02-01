@@ -11,7 +11,7 @@ export const metadata = {
       " Microsoft Power Platform Development Services | Power Platform Experts",
     description:
       "Expert Microsoft Power Platform consultants delivering custom Power Apps, Power BI analytics, and Power Automate solutions. We create scalable, enterprise-grade automation and business intelligence solutions that transform your business processes and drive operational excellence.",
-    url: "https://powerplatformexperts.com/services/microsoft-power-platform/",
+    url: "https://powerplatformexperts.com/services/microsoft-power-platform",
   },
 
   keywords: [
@@ -47,10 +47,10 @@ export const metadata = {
   metadataBase: new URL("https://www.powerplatformexperts.com.au"),
   alternates: {
     canonical:
-      "/services/microsoft-power-platform/services/microsoft-power-platform/",
+      "/services/microsoft-power-platform/services/microsoft-power-platform",
     languages: {
       "en-AU":
-        "/services/microsoft-power-platform/services/microsoft-power-platform/",
+        "/services/microsoft-power-platform/services/microsoft-power-platform",
     },
   },
 };
