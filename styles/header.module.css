@@ -446,12 +446,6 @@
   transform: translateX(0);
 }
 
-.nestedDropdown {
-  position: relative;
-  width: 100%;
-  padding: 1rem 0.5rem;
-}
-
 .nestedItems {
   position: absolute;
   top: -1rem;

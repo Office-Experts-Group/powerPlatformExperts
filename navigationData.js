@@ -58,40 +58,6 @@ export const navigationData = {
         ],
       },
       {
-        label: "Microsoft Access",
-        href: ACCESS_EXPERTS_URL,
-        items: [
-          {
-            label: "Database Solutions",
-            href: `${OFFICE_EXPERTS_URL}/services/by-business-solution/database-development-and-solutions`,
-          },
-          {
-            label: "Is Access right for you company?",
-            href: `${ACCESS_EXPERTS_URL}/is-access-right-for-your-company`,
-          },
-          {
-            label: "Upgrade your existing Database",
-            href: `${ACCESS_EXPERTS_URL}/upgrades-and-migration`,
-          },
-          {
-            label: "3rd Party Product Integration",
-            href: `${ACCESS_EXPERTS_URL}/3rd-party-product-integration`,
-          },
-          {
-            label: "Help & Training",
-            href: `${ACCESS_EXPERTS_URL}/access-support`,
-          },
-          {
-            label: "Upgrades & Migration",
-            href: `${ACCESS_EXPERTS_URL}/upgrades-and-migration`,
-          },
-          {
-            label: "Cloud-based and Online Database Solutions",
-            href: `${ACCESS_EXPERTS_URL}/access-online`,
-          },
-        ],
-      },
-      {
         label: "Microsoft Word",
         href: WORD_EXPERTS_URL,
         items: [
@@ -158,6 +124,40 @@ export const navigationData = {
           {
             label: "Training and User Support",
             href: `${WORD_EXPERTS_URL}/training`,
+          },
+        ],
+      },
+      {
+        label: "Microsoft Access",
+        href: ACCESS_EXPERTS_URL,
+        items: [
+          {
+            label: "Database Solutions",
+            href: `${OFFICE_EXPERTS_URL}/services/by-business-solution/database-development-and-solutions`,
+          },
+          {
+            label: "Is Access right for you company?",
+            href: `${ACCESS_EXPERTS_URL}/is-access-right-for-your-company`,
+          },
+          {
+            label: "Upgrade your existing Database",
+            href: `${ACCESS_EXPERTS_URL}/upgrades-and-migration`,
+          },
+          {
+            label: "3rd Party Product Integration",
+            href: `${ACCESS_EXPERTS_URL}/3rd-party-product-integration`,
+          },
+          {
+            label: "Help & Training",
+            href: `${ACCESS_EXPERTS_URL}/access-support`,
+          },
+          {
+            label: "Upgrades & Migration",
+            href: `${ACCESS_EXPERTS_URL}/upgrades-and-migration`,
+          },
+          {
+            label: "Cloud-based and Online Database Solutions",
+            href: `${ACCESS_EXPERTS_URL}/access-online`,
           },
         ],
       },
