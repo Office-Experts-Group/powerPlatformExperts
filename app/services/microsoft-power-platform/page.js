@@ -27,24 +27,24 @@ const schema = {
     {
       "@type": "WebPage",
       "@id":
-        "https://powerplatformexperts.com/services/microsoft-power-platform/",
-      url: "https://powerplatformexperts.com/services/microsoft-power-platform/",
+        "https://powerplatformexperts.com/services/microsoft-power-platform",
+      url: "https://powerplatformexperts.com/services/microsoft-power-platform",
       name: "Microsoft Power Platform Development & Consulting Services - Power Apps, Power BI, Power Automate Solutions",
       isPartOf: {
-        "@id": "https://powerplatformexperts.com/#website",
+        "@id": "https://powerplatformexperts.com#website",
       },
       datePublished: "2024-10-27T00:00:00+00:00",
       dateModified: "2024-10-27T00:00:00+00:00",
       breadcrumb: {
         "@id":
-          "https://powerplatformexperts.com/services/microsoft-power-platform/#breadcrumb",
+          "https://powerplatformexperts.com/services/microsoft-power-platform#breadcrumb",
       },
       inLanguage: "en-US",
       potentialAction: [
         {
           "@type": "ReadAction",
           target: [
-            "https://powerplatformexperts.com/services/microsoft-power-platform/",
+            "https://powerplatformexperts.com/services/microsoft-power-platform",
           ],
         },
       ],
@@ -52,19 +52,19 @@ const schema = {
     {
       "@type": "BreadcrumbList",
       "@id":
-        "https://powerplatformexperts.com/services/microsoft-power-platform/#breadcrumb",
+        "https://powerplatformexperts.com/services/microsoft-power-platform#breadcrumb",
       itemListElement: [
         {
           "@type": "ListItem",
           position: 1,
           name: "Home",
-          item: "https://powerplatformexperts.com/",
+          item: "https://powerplatformexperts.com",
         },
         {
           "@type": "ListItem",
           position: 2,
           name: "Services",
-          item: "https://powerplatformexperts.com/services/",
+          item: "https://powerplatformexperts.com/services",
         },
         {
           "@type": "ListItem",
@@ -72,33 +72,6 @@ const schema = {
           name: "Microsoft Power Platform Services",
         },
       ],
-    },
-    {
-      "@type": "WebSite",
-      "@id": "https://powerplatformexperts.com/#website",
-      url: "https://powerplatformexperts.com/",
-      name: "Power Platform Experts: Professional Power Apps, Power BI, and Power Automate Development Services",
-      description:
-        "Enterprise Microsoft Power Platform Development and Consulting Services",
-      publisher: {
-        "@id": "https://powerplatformexperts.com/#organization",
-      },
-      potentialAction: [
-        {
-          "@type": "SearchAction",
-          target: {
-            "@type": "EntryPoint",
-            urlTemplate:
-              "https://powerplatformexperts.com/?s={search_term_string}",
-          },
-          "query-input": {
-            "@type": "PropertyValueSpecification",
-            valueRequired: true,
-            valueName: "search_term_string",
-          },
-        },
-      ],
-      inLanguage: "en-US",
     },
   ],
 };

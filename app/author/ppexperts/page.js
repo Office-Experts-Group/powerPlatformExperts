@@ -15,11 +15,11 @@ const schema = {
     generateProfessionalServiceSchema(),
     {
       "@type": "WebPage",
-      "@id": "https://www.powerplatformexperts.com.au/author/ppexperts/",
-      url: "https://www.powerplatformexperts.com.au/author/ppexperts/",
+      "@id": "https://www.powerplatformexperts.com.au/author/ppexperts",
+      url: "https://www.powerplatformexperts.com.au/author/ppexperts",
       name: "Power Platform Experts Group | Expert Authors",
       isPartOf: {
-        "@id": "https://www.powerplatformexperts.com.au/#website",
+        "@id": "https://www.powerplatformexperts.com.au#website",
       },
       datePublished: "2024-10-27T00:00:00+00:00",
       dateModified: "2024-10-27T00:00:00+00:00",
@@ -27,32 +27,32 @@ const schema = {
         "Meet our expert authors and consultants specialising in Microsoft Power Platform solutions. Industry leaders in Power Apps, Power Automate, Power BI, and Power Pages.",
       breadcrumb: {
         "@id":
-          "https://www.powerplatformexperts.com.au/author/ppexperts/#breadcrumb",
+          "https://www.powerplatformexperts.com.au/author/ppexperts#breadcrumb",
       },
       inLanguage: "en-AU",
       potentialAction: [
         {
           "@type": "ReadAction",
-          target: ["https://www.powerplatformexperts.com.au/author/ppexperts/"],
+          target: ["https://www.powerplatformexperts.com.au/author/ppexperts"],
         },
       ],
     },
     {
       "@type": "BreadcrumbList",
       "@id":
-        "https://www.powerplatformexperts.com.au/author/ppexperts/#breadcrumb",
+        "https://www.powerplatformexperts.com.au/author/ppexperts#breadcrumb",
       itemListElement: [
         {
           "@type": "ListItem",
           position: 1,
           name: "Home",
-          item: "https://www.powerplatformexperts.com.au/",
+          item: "https://www.powerplatformexperts.com.au",
         },
         {
           "@type": "ListItem",
           position: 2,
           name: "Authors",
-          item: "https://www.powerplatformexperts.com.au/author/",
+          item: "https://www.powerplatformexperts.com.au/author",
         },
         {
           "@type": "ListItem",
@@ -60,33 +60,6 @@ const schema = {
           name: "Power Platform Experts Group",
         },
       ],
-    },
-    {
-      "@type": "WebSite",
-      "@id": "https://www.powerplatformexperts.com.au/#website",
-      url: "https://www.powerplatformexperts.com.au/",
-      name: "Power Platform Experts: Microsoft Power Platform Development and Consulting Services",
-      description:
-        "Your Microsoft Power Platform Design, Development and Consulting Experts",
-      publisher: {
-        "@id": "https://www.powerplatformexperts.com.au/#organization",
-      },
-      potentialAction: [
-        {
-          "@type": "SearchAction",
-          target: {
-            "@type": "EntryPoint",
-            urlTemplate:
-              "https://www.powerplatformexperts.com.au/?s={search_term_string}",
-          },
-          "query-input": {
-            "@type": "PropertyValueSpecification",
-            valueRequired: true,
-            valueName: "search_term_string",
-          },
-        },
-      ],
-      inLanguage: "en-AU",
     },
   ],
 };

@@ -26,11 +26,11 @@ const schema = {
     generateProfessionalServiceSchema(),
     {
       "@type": "WebPage",
-      "@id": "https://www.powerplatformexperts.com.au/client-testimonials/",
-      url: "https://www.powerplatformexperts.com.au/client-testimonials/",
+      "@id": "https://www.powerplatformexperts.com.au/client-testimonials",
+      url: "https://www.powerplatformexperts.com.au/client-testimonials",
       name: "Client Testimonials | Power Platform Experts Success Stories",
       isPartOf: {
-        "@id": "https://www.powerplatformexperts.com.au/#website",
+        "@id": "https://www.powerplatformexperts.com.au#website",
       },
       datePublished: "2024-10-27T00:00:00+00:00",
       dateModified: "2024-10-27T00:00:00+00:00",
@@ -40,13 +40,13 @@ const schema = {
     {
       "@type": "BreadcrumbList",
       "@id":
-        "https://www.powerplatformexperts.com.au/client-testimonials/#breadcrumb",
+        "https://www.powerplatformexperts.com.au/client-testimonials#breadcrumb",
       itemListElement: [
         {
           "@type": "ListItem",
           position: 1,
           name: "Home",
-          item: "https://www.powerplatformexperts.com.au/",
+          item: "https://www.powerplatformexperts.com.au",
         },
         {
           "@type": "ListItem",

@@ -35,7 +35,7 @@ const schema = {
       url: "https://www.powerplatformexperts.com.au/services/microsoft-power-platform/microsoft-power-pages/",
       name: "Microsoft Power Pages Services | Web Portal Development",
       isPartOf: {
-        "@id": "https://www.powerplatformexperts.com.au/#website",
+        "@id": "https://www.powerplatformexperts.com.au#website",
       },
       datePublished: "2024-10-27T00:00:00+00:00",
       dateModified: "2024-10-27T00:00:00+00:00",
@@ -43,7 +43,7 @@ const schema = {
         "Empower your business with Microsoft Power Pages services. Create secure, responsive websites with data integration, visuals, and AI insights. Contact us today for expert assistance!",
       breadcrumb: {
         "@id":
-          "https://www.powerplatformexperts.com.au/services/microsoft-power-platform/microsoft-power-pages/#breadcrumb",
+          "https://www.powerplatformexperts.com.au/services/microsoft-power-platform/microsoft-power-pages#breadcrumb",
       },
       inLanguage: "en-AU",
       potentialAction: [
@@ -58,7 +58,7 @@ const schema = {
     {
       "@type": "BreadcrumbList",
       "@id":
-        "https://www.powerplatformexperts.com.au/services/microsoft-power-platform/microsoft-power-pages/#breadcrumb",
+        "https://www.powerplatformexperts.com.au/services/microsoft-power-platform/microsoft-power-pages#breadcrumb",
       itemListElement: [
         {
           "@type": "ListItem",
@@ -87,13 +87,13 @@ const schema = {
     },
     {
       "@type": "WebSite",
-      "@id": "https://www.powerplatformexperts.com.au/#website",
+      "@id": "https://www.powerplatformexperts.com.au#website",
       url: "https://www.powerplatformexperts.com.au/",
       name: "Power Platform Experts: Microsoft Power Platform Development and Consulting Services",
       description:
         "Your Microsoft Power Platform Design, Development and Consulting Experts",
       publisher: {
-        "@id": "https://www.powerplatformexperts.com.au/#organization",
+        "@id": "https://www.powerplatformexperts.com.au#organization",
       },
       potentialAction: [
         {
@@ -101,7 +101,7 @@ const schema = {
           target: {
             "@type": "EntryPoint",
             urlTemplate:
-              "https://www.powerplatformexperts.com.au/?s={search_term_string}",
+              "https://www.powerplatformexperts.com.au?s={search_term_string}",
           },
           "query-input": {
             "@type": "PropertyValueSpecification",

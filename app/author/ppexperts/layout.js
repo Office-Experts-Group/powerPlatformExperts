@@ -40,16 +40,6 @@ export const metadata = {
       "Expert articles and technical guidance on Microsoft Power Platform implementation, covering data visualization, workflow automation, app development, and web solutions.",
     images: ["/logo.png"],
   },
-
-  // Additional tags
-
-  metadataBase: new URL("https://www.powerplatformexperts.com.au"),
-  alternates: {
-    canonical: "/author/ppexperts",
-    languages: {
-      "en-AU": "/author/ppexperts",
-    },
-  },
 };
 
 export default function RootLayout({ children }) {

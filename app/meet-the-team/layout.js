@@ -60,14 +60,6 @@ export const metadata = {
     // "Database solution architects",
     // "Cloud integration experts",
   ],
-
-  metadataBase: new URL("https://www.powerplatformexperts.com.au"),
-  alternates: {
-    canonical: "/meet-the-team",
-    languages: {
-      "en-AU": "/meet-the-team",
-    },
-  },
 };
 
 export default function RootLayout({ children }) {

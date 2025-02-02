@@ -29,11 +29,11 @@ const schema = {
     {
       "@type": "WebPage",
       "@id":
-        "https://www.powerplatformexperts.com.au/services/microsoft-power-platform/microsoft-power-automate/",
-      url: "https://www.powerplatformexperts.com.au/services/microsoft-power-platform/microsoft-power-automate/",
+        "https://www.powerplatformexperts.com.au/services/microsoft-power-platform/microsoft-power-automate",
+      url: "https://www.powerplatformexperts.com.au/services/microsoft-power-platform/microsoft-power-automate",
       name: "Microsoft Power Automate Services | Process Automation Experts",
       isPartOf: {
-        "@id": "https://www.powerplatformexperts.com.au/#website",
+        "@id": "https://www.powerplatformexperts.com.au#website",
       },
       datePublished: "2024-10-27T00:00:00+00:00",
       dateModified: "2024-10-27T00:00:00+00:00",
@@ -41,14 +41,14 @@ const schema = {
         "Professional Microsoft Power Automate development and consulting services. Automate workflows, integrate systems, and optimise processes. Call us today 1300 102 810",
       breadcrumb: {
         "@id":
-          "https://www.powerplatformexperts.com.au/services/microsoft-power-platform/microsoft-power-automate/#breadcrumb",
+          "https://www.powerplatformexperts.com.au/services/microsoft-power-platform/microsoft-power-automate#breadcrumb",
       },
       inLanguage: "en-AU",
       potentialAction: [
         {
           "@type": "ReadAction",
           target: [
-            "https://www.powerplatformexperts.com.au/services/microsoft-power-platform/microsoft-power-automate/",
+            "https://www.powerplatformexperts.com.au/services/microsoft-power-platform/microsoft-power-automate",
           ],
         },
       ],
@@ -56,25 +56,25 @@ const schema = {
     {
       "@type": "BreadcrumbList",
       "@id":
-        "https://www.powerplatformexperts.com.au/services/microsoft-power-platform/microsoft-power-automate/#breadcrumb",
+        "https://www.powerplatformexperts.com.au/services/microsoft-power-platform/microsoft-power-automate#breadcrumb",
       itemListElement: [
         {
           "@type": "ListItem",
           position: 1,
           name: "Home",
-          item: "https://www.powerplatformexperts.com.au/",
+          item: "https://www.powerplatformexperts.com.au",
         },
         {
           "@type": "ListItem",
           position: 2,
           name: "Services",
-          item: "https://www.powerplatformexperts.com.au/services/",
+          item: "https://www.powerplatformexperts.com.au/services",
         },
         {
           "@type": "ListItem",
           position: 3,
           name: "Microsoft Power Platform",
-          item: "https://www.powerplatformexperts.com.au/services/microsoft-power-platform/",
+          item: "https://www.powerplatformexperts.com.au/services/microsoft-power-platform",
         },
         {
           "@type": "ListItem",
@@ -82,33 +82,6 @@ const schema = {
           name: "Microsoft Power Automate Services",
         },
       ],
-    },
-    {
-      "@type": "WebSite",
-      "@id": "https://www.powerplatformexperts.com.au/#website",
-      url: "https://www.powerplatformexperts.com.au/",
-      name: "Power Platform Experts: Microsoft Power Platform Development and Consulting Services",
-      description:
-        "Your Microsoft Power Platform Design, Development and Consulting Experts",
-      publisher: {
-        "@id": "https://www.powerplatformexperts.com.au/#organization",
-      },
-      potentialAction: [
-        {
-          "@type": "SearchAction",
-          target: {
-            "@type": "EntryPoint",
-            urlTemplate:
-              "https://www.powerplatformexperts.com.au/?s={search_term_string}",
-          },
-          "query-input": {
-            "@type": "PropertyValueSpecification",
-            valueRequired: true,
-            valueName: "search_term_string",
-          },
-        },
-      ],
-      inLanguage: "en-AU",
     },
   ],
 };

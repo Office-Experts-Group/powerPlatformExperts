@@ -29,14 +29,6 @@ export const metadata = {
     // Testimonial-specific
     "power platform customer testimonials",
   ],
-
-  metadataBase: new URL("https://www.powerplatformexperts.com.au"),
-  alternates: {
-    canonical: "/client-testimonials",
-    languages: {
-      "en-AU": "/client-testimonials",
-    },
-  },
 };
 
 export default function ClientTestimonialsLayout({ children }) {

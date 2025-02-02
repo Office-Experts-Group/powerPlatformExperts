@@ -41,14 +41,6 @@ export const metadata = {
     // "Power Apps system integration services",
     // "Power Platform automation consulting",
   ],
-
-  metadataBase: new URL("https://www.powerplatformexperts.com.au"),
-  alternates: {
-    canonical: "/services/microsoft-power-platform/microsoft-power-apps",
-    languages: {
-      "en-AU": "/services/microsoft-power-platform/microsoft-power-apps",
-    },
-  },
 };
 
 export default function RootLayout({ children }) {

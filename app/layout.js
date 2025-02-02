@@ -70,7 +70,7 @@ export const metadata = {
       "Power Platform Experts | Microsoft Power Platform Consulting & Solutions",
     description:
       "Specialised Microsoft Power Platform consulting services including Power BI visualization, Power Apps development, Power Automate workflow automation, and Power Pages web solutions.",
-    url: "https://www.powerplatformexperts.com.au/",
+    url: "https://www.powerplatformexperts.com.au",
     siteName: "Power Platform Experts",
     images: [
       {
@@ -159,6 +159,12 @@ export const metadata = {
     shortcut: "/favicon-32x32.png",
     apple: "/apple-touch-icon.png",
   },
+
+  metadataBase: new URL(
+    process.env.NODE_ENV === "production"
+      ? "https://www.powerplatformexperts.com.au"
+      : "http://localhost:3000"
+  ),
 };
 
 export default function RootLayout({ children }) {

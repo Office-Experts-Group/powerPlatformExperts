@@ -17,14 +17,6 @@ export const metadata = {
     // Contact-specific keywords
     "Power Platform consultation booking",
   ],
-
-  metadataBase: new URL("https://www.powerplatformexperts.com.au"),
-  alternates: {
-    canonical: "/contact-us",
-    languages: {
-      "en-AU": "/contact-us",
-    },
-  },
 };
 
 export default function ContactLayout({ children }) {

@@ -43,14 +43,6 @@ export const metadata = {
     // "Power Platform solutions Brisbane",
     // "Power Automate development services Australia",
   ],
-
-  metadataBase: new URL("https://www.powerplatformexperts.com.au"),
-  alternates: {
-    canonical: "/services/microsoft-power-platform/microsoft-power-pages",
-    languages: {
-      "en-AU": "/services/microsoft-power-platform/microsoft-power-pages",
-    },
-  },
 };
 
 export default function RootLayout({ children }) {
