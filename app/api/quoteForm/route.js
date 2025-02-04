@@ -113,6 +113,7 @@ export async function POST(req) {
     const clientTextMessage = `
       You have received a new quote request from ${name} (${email}).
       Phone: ${phone || "Not provided"}.
+      Company: ${company || "Not provided"}.
       Operating System: ${operatingSystem || "Not provided"}.
       Software Versions: ${softwareVersions || "Not provided"}.
       Website: ${website || "Not provided"}.
@@ -133,6 +134,7 @@ export async function POST(req) {
     const clientHtmlMessage = `
       <p>You have received a new quote request from <strong>${name}</strong> (${email}).</p>
       <p><strong>Phone:</strong> ${phone || "Not provided"}</p>
+      <p><strong>Company:</strong> ${company || "Not provided"}</p>
       <p><strong>Operating System:</strong> ${
         operatingSystem || "Not provided"
       }</p>
