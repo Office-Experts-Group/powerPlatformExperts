@@ -12,6 +12,7 @@ const ContactForm = () => {
     email: "",
     phone: "",
     message: "",
+    company: "",
     honeypot: "",
   });
 
@@ -168,37 +169,6 @@ const ContactForm = () => {
       </div>
 
       <div className={styles.formField}>
-        <label htmlFor="message" className={styles.requiredField}>
-          Message
-          <span className={styles.requiredIndicator} aria-hidden="true">
-            *
-          </span>
-        </label>
-        <textarea
-          id="message"
-          name="message"
-          value={formData.message}
-          onChange={handleChange}
-          aria-required="true"
-          aria-invalid={!!error.message}
-          aria-describedby={error.message ? "message-error" : undefined}
-          placeholder="Your message..."
-          required
-          disabled={isSubmitting}
-        />
-        {error.message && (
-          <p
-            id="message-error"
-            className={styles.errorMessage}
-            role="alert"
-            aria-live="polite"
-          >
-            {error.message}
-          </p>
-        )}
-      </div>
-
-      <div className={styles.formField}>
         <label htmlFor="email" className={styles.requiredField}>
           Email
           <span className={styles.requiredIndicator} aria-hidden="true">
@@ -243,6 +213,51 @@ const ContactForm = () => {
           aria-required="false"
           placeholder="optional..."
           disabled={isSubmitting}
+        />
+      </div>
+
+      <div className={styles.formField}>
+        <label htmlFor="message" className={styles.requiredField}>
+          Message
+          <span className={styles.requiredIndicator} aria-hidden="true">
+            *
+          </span>
+        </label>
+        <textarea
+          id="message"
+          name="message"
+          value={formData.message}
+          onChange={handleChange}
+          aria-required="true"
+          aria-invalid={!!error.message}
+          aria-describedby={error.message ? "message-error" : undefined}
+          placeholder="Your message..."
+          required
+          disabled={isSubmitting}
+        />
+        {error.message && (
+          <p
+            id="message-error"
+            className={styles.errorMessage}
+            role="alert"
+            aria-live="polite"
+          >
+            {error.message}
+          </p>
+        )}
+      </div>
+
+      <div className={styles.formField}>
+        <label className={styles.label} htmlFor="company">
+          Company
+        </label>
+        <input
+          type="text"
+          id="company"
+          name="company"
+          value={formData.company}
+          onChange={handleChange}
+          placeholder="optional..."
         />
       </div>
 

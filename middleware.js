@@ -1,6 +1,26 @@
 import { NextResponse } from "next/server";
+import { goneUrls } from "./utils/goneUrls";
 
 export function middleware(request) {
+  // Normalize the path: lowercase and remove trailing slash
+  const normalizedPath = request.nextUrl.pathname
+    .toLowerCase()
+    .replace(/\/$/, "");
+
+  // Also check the path with trailing slash since users might enter either
+  const pathWithSlash = `${normalizedPath}/`;
+
+  // Check if either version of the path is in our goneUrls list
+  if (goneUrls.includes(normalizedPath) || goneUrls.includes(pathWithSlash)) {
+    return new NextResponse(null, {
+      status: 410,
+      statusText: "Gone",
+      headers: {
+        "X-Robots-Tag": "noindex",
+      },
+    });
+  }
+
   const response = NextResponse.next();
 
   // Security headers

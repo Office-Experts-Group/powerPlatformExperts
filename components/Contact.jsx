@@ -38,17 +38,11 @@ const Contact = ({ isQuote }) => {
             <div className={styles.description}>
               <p>
                 Get in touch with our team for general inquiries and support.
-                We&apos;re here to help with any questions you
+                We&apos;re here to help with any questions you might have about
+                our services.
               </p>
-              <p> might have about our services.</p>
             </div>
           </div>
-
-          {/* <div className={styles.divider}>
-            <div className={styles.circle}>
-              <span>OR</span>
-            </div>
-          </div> */}
 
           <div
             className={`${styles.option} ${styles.quoteOption} ${

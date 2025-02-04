@@ -2,7 +2,12 @@ const REDIRECTS = [
   {
     source:
       "/services/microsoft-power-platform/services/microsoft-power-platform/microsoft-power-pages",
-    destination: "/services/microsoft-power-platform/microsoft-power-pages",
+    destination: "/",
+    permanent: true,
+  },
+  {
+    source: "/services/microsoft-power-platform",
+    destination: "/",
     permanent: true,
   },
 ];
@@ -25,6 +30,20 @@ const nextConfig = {
 
   async redirects() {
     return REDIRECTS;
+  },
+
+  async headers() {
+    return [
+      {
+        source: "/:path*",
+        headers: [
+          {
+            key: "X-Robots-Tag",
+            value: "index, follow",
+          },
+        ],
+      },
+    ];
   },
 
   webpack: (config, { dev, isServer }) => {
