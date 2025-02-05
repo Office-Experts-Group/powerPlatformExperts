@@ -119,7 +119,7 @@ export async function POST(req) {
       Software Versions: ${softwareVersions || "Not provided"}.
       Website: ${website || "Not provided"}.
       Message: ${message || "Not provided"}
-      This form was filled out on the website: https://powerplatformexperts.com.au @ ${currentTimeAEST}
+      This form was filled out on the website: https://powerplatformexperts.com.au @ ${currentTimeAEST} AEST
     `;
 
     const customerTextMessage = `
@@ -145,7 +145,7 @@ export async function POST(req) {
       <p><strong>Website:</strong> ${website || "Not provided"}</p>
       <p><strong>Message:</strong></p>
       <p>${message || "Not provided"}</p>
-            <em>This form was filled out on the website: https://powerplatformexperts.com.au @ ${currentTimeAEST}</em>
+            <em>This form was filled out on the website: https://powerplatformexperts.com.au @ ${currentTimeAEST} AEST</em>
     `;
 
     const customerHtmlMessage = `
@@ -157,16 +157,6 @@ export async function POST(req) {
 
     try {
       // Send email to business
-      await sgMail.send({
-        from: "consult@officeexperts.com.au",
-        to: "joshua@officeexperts.com.au",
-        subject: "New Quote Request Submission",
-        text: clientTextMessage,
-        html: clientHtmlMessage,
-        ...(attachments.length > 0 && { attachments }),
-        replyTo: email,
-      });
-
       await sgMail.send({
         from: "consult@officeexperts.com.au",
         to: "consult@officeexperts.com.au",
