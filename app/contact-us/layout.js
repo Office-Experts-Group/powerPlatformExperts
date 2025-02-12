@@ -17,6 +17,9 @@ export const metadata = {
     // Contact-specific keywords
     "Power Platform consultation booking",
   ],
+  alternates: {
+    canonical: "https://powerplatformexperts.com.au/contact-us",
+  },
 };
 
 export default function ContactLayout({ children }) {

@@ -58,6 +58,15 @@ export const metadata = {
     // "Power Platform automation Brisbane",
     // "business process automation Perth",
   ],
+  alternates: {
+    canonical:
+      "https://powerplatformexperts.com.au/services/microsoft-power-platform/microsoft-power-automate",
+    alternates: [
+      {
+        url: "https://officeexperts.com.au/services/microsoft-power-platform/microsoft-power-automate",
+      },
+    ],
+  },
 };
 
 export default function RootLayout({ children }) {

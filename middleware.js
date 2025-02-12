@@ -2,15 +2,21 @@ import { NextResponse } from "next/server";
 import { goneUrls } from "./utils/goneUrls";
 
 export function middleware(request) {
-  // Normalize the path: lowercase and remove trailing slash
-  const normalizedPath = request.nextUrl.pathname
-    .toLowerCase()
-    .replace(/\/$/, "");
+  const path = request.nextUrl.pathname;
+  const normalizedPath = path.toLowerCase();
 
-  // Also check the path with trailing slash since users might enter either
-  const pathWithSlash = `${normalizedPath}/`;
+  // Handle static media files - prevent URL indexing while preserving image discovery
+  if (path.includes("/_next/static/media/")) {
+    const response = NextResponse.next();
+    response.headers.set("X-Robots-Tag", "noimageindex, noindex");
+    return response;
+  }
 
-  // Check if either version of the path is in our goneUrls list
+  const pathWithSlash = normalizedPath.endsWith("/")
+    ? normalizedPath
+    : `${normalizedPath}/`;
+
+  // Check both with and without trailing slash for gone URLs
   if (goneUrls.includes(normalizedPath) || goneUrls.includes(pathWithSlash)) {
     return new NextResponse(null, {
       status: 410,
@@ -31,13 +37,16 @@ export function middleware(request) {
   response.headers.set(
     "Content-Security-Policy",
     "default-src 'self'; " +
-      "script-src 'self' 'unsafe-inline' 'unsafe-eval'; " +
+      "script-src 'self' 'unsafe-inline' 'unsafe-eval' *.vimeo.com *.googletagmanager.com *.google-analytics.com; " +
       "style-src 'self' 'unsafe-inline'; " +
-      "img-src 'self' data: https:; " +
+      "img-src 'self' data: https: *.vimeocdn.com *.google-analytics.com *.googletagmanager.com; " +
       "font-src 'self'; " +
-      "frame-ancestors 'none';"
+      "frame-src 'self' *.vimeo.com player.vimeo.com *.googletagmanager.com; " +
+      "media-src 'self' *.vimeo.com *.vimeocdn.com; " +
+      "connect-src 'self' *.vimeo.com *.vimeocdn.com *.google-analytics.com *.googletagmanager.com *.officeexperts.com.au;"
   );
 
+  // Handle Next.js system paths
   if (
     request.nextUrl.pathname.startsWith("/_next/") &&
     !request.nextUrl.pathname.startsWith("/_next/image")
@@ -51,6 +60,7 @@ export function middleware(request) {
 export const config = {
   matcher: [
     "/((?!api|_next/static|_next/image|favicon.ico).*)",
+    "/_next/static/media/:path*",
     "/_next/image",
   ],
 };

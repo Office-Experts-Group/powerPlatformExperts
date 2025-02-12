@@ -18,6 +18,9 @@ export const metadata = {
     // Quote-specific keywords
     "Power Platform consultation quote",
   ],
+  alternates: {
+    canonical: "https://powerplatformexperts.com.au/contact-us/request-a-quote",
+  },
 };
 
 export default function RootLayout({ children }) {

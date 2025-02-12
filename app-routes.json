@@ -1,0 +1,132 @@
+[
+  {
+    "path": "/(components)",
+    "depth": 0,
+    "type": "directory"
+  },
+  {
+    "path": "/api",
+    "depth": 0,
+    "type": "directory"
+  },
+  {
+    "path": "/api/contactForm",
+    "depth": 1,
+    "type": "directory"
+  },
+  {
+    "path": "/api/quoteForm",
+    "depth": 1,
+    "type": "directory"
+  },
+  {
+    "path": "/api/surveyForm",
+    "depth": 1,
+    "type": "directory"
+  },
+  {
+    "path": "/author",
+    "depth": 0,
+    "type": "directory"
+  },
+  {
+    "path": "/author/ppexperts",
+    "depth": 1,
+    "type": "directory"
+  },
+  {
+    "path": "/author/ppexperts/(components)",
+    "depth": 2,
+    "type": "directory"
+  },
+  {
+    "path": "/client-testimonials",
+    "depth": 0,
+    "type": "directory"
+  },
+  {
+    "path": "/client-testimonials/(components)",
+    "depth": 1,
+    "type": "directory"
+  },
+  {
+    "path": "/contact-us",
+    "depth": 0,
+    "type": "directory"
+  },
+  {
+    "path": "/contact-us/(components)",
+    "depth": 1,
+    "type": "directory"
+  },
+  {
+    "path": "/contact-us/request-a-quote",
+    "depth": 1,
+    "type": "directory"
+  },
+  {
+    "path": "/meet-the-team",
+    "depth": 0,
+    "type": "directory"
+  },
+  {
+    "path": "/meet-the-team/(components)",
+    "depth": 1,
+    "type": "directory"
+  },
+  {
+    "path": "/services",
+    "depth": 0,
+    "type": "directory"
+  },
+  {
+    "path": "/services/microsoft-power-platform",
+    "depth": 1,
+    "type": "directory"
+  },
+  {
+    "path": "/services/microsoft-power-platform/(components)",
+    "depth": 2,
+    "type": "directory"
+  },
+  {
+    "path": "/services/microsoft-power-platform/microsoft-power-apps",
+    "depth": 2,
+    "type": "directory"
+  },
+  {
+    "path": "/services/microsoft-power-platform/microsoft-power-apps/(components)",
+    "depth": 3,
+    "type": "directory"
+  },
+  {
+    "path": "/services/microsoft-power-platform/microsoft-power-automate",
+    "depth": 2,
+    "type": "directory"
+  },
+  {
+    "path": "/services/microsoft-power-platform/microsoft-power-automate/(components)",
+    "depth": 3,
+    "type": "directory"
+  },
+  {
+    "path": "/services/microsoft-power-platform/microsoft-power-bi",
+    "depth": 2,
+    "type": "directory"
+  },
+  {
+    "path": "/services/microsoft-power-platform/microsoft-power-bi/(components)",
+    "depth": 3,
+    "type": "directory"
+  },
+  {
+    "path": "/services/microsoft-power-platform/microsoft-power-pages",
+    "depth": 2,
+    "type": "directory"
+  },
+  {
+    "path": "/services/microsoft-power-platform/microsoft-power-pages/(components)",
+    "depth": 3,
+    "type": "directory"
+  }
+]

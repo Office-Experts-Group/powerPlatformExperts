@@ -29,6 +29,9 @@ export const metadata = {
     // Testimonial-specific
     "power platform customer testimonials",
   ],
+  alternates: {
+    canonical: "https://powerplatformexperts.com.au/client-testimonials",
+  },
 };
 
 export default function ClientTestimonialsLayout({ children }) {

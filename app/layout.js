@@ -145,6 +145,9 @@ export const metadata = {
       "en-AU": "/",
     },
   },
+  verification: {
+    google: "4pCGu8qrYPdfGHve5jLQXy0z9_WNgV7qAtUU4lg3QTo",
+  },
 
   robots: {
     index: true,

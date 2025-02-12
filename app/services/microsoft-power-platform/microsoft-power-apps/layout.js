@@ -41,6 +41,15 @@ export const metadata = {
     // "Power Apps system integration services",
     // "Power Platform automation consulting",
   ],
+  alternates: {
+    canonical:
+      "https://powerplatformexperts.com.au/services/microsoft-power-platform/microsoft-power-apps",
+    alternates: [
+      {
+        url: "https://officeexperts.com.au/services/microsoft-power-platform/microsoft-power-apps",
+      },
+    ],
+  },
 };
 
 export default function RootLayout({ children }) {

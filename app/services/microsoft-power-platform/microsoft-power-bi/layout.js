@@ -42,6 +42,15 @@ export const metadata = {
     // "end-to-end BI implementation",
     // "Power BI system integration",
   ],
+  alternates: {
+    canonical:
+      "https://powerplatformexperts.com.au/services/microsoft-power-platform/microsoft-power-bi",
+    alternates: [
+      {
+        url: "https://officeexperts.com.au/services/microsoft-power-platform/microsoft-power-bi",
+      },
+    ],
+  },
 };
 
 export default function RootLayout({ children }) {
