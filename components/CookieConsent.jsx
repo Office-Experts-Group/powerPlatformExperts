@@ -2,79 +2,65 @@
 import React, { useEffect, useState } from "react";
 import styles from "../styles/cookieConsent.module.css";
 
+const GA_ID = "G-WDDMGT2LK0";
+
 const CookieConsent = () => {
   const [isVisible, setIsVisible] = useState(false);
   const [isClient, setIsClient] = useState(false);
-  const [hasScrolled, setHasScrolled] = useState(false);
 
   useEffect(() => {
     setIsClient(true);
 
     // Check if consent already exists
     const consentChoice = localStorage.getItem("cookieConsent");
-    if (consentChoice === "accepted") {
+    if (consentChoice === "accepted" && !window.gtag) {
       initializeAnalytics();
-      return; // Exit early if consent already given
+      return;
     }
 
-    // Add scroll listener
-    const handleScroll = () => {
-      if (!hasScrolled && window.scrollY > 100) {
-        // Show after 100px scroll
-        setHasScrolled(true);
+    // Show consent after slight delay if no choice made
+    const timer = setTimeout(() => {
+      if (!localStorage.getItem("cookieConsent")) {
         setIsVisible(true);
-        window.removeEventListener("scroll", handleScroll); // Clean up listener
       }
-    };
+    }, 2000);
 
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, [hasScrolled]);
+    return () => clearTimeout(timer);
+  }, []);
 
   const initializeAnalytics = () => {
-    if (typeof window === "undefined" || window.GA_INITIALIZED) return;
-
-    window.GA_INITIALIZED = true;
+    if (typeof window === "undefined") return;
 
     try {
-      const gtmScript = document.createElement("script");
-      gtmScript.defer = true;
-      gtmScript.src = `https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}`;
+      // Initialize GA4
+      const script = document.createElement("script");
+      script.src = `https://www.googletagmanager.com/gtag/js?id=${GA_ID}`;
+      script.async = true;
+      document.head.appendChild(script);
 
-      const initScript = document.createElement("script");
-      initScript.defer = true;
-      initScript.textContent = `
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', '${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}', {
-          page_path: window.location.pathname,
-        });
-      `;
-
-      document.head.appendChild(gtmScript);
-      document.head.appendChild(initScript);
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        window.dataLayer.push(arguments);
+      }
+      window.gtag = gtag;
+      gtag("js", new Date());
+      gtag("config", GA_ID);
     } catch (error) {
       console.error("Failed to initialize analytics:", error);
     }
   };
 
   const handleAccept = () => {
-    if (typeof window !== "undefined") {
-      localStorage.setItem("cookieConsent", "accepted");
-      initializeAnalytics();
-      setIsVisible(false);
-    }
+    localStorage.setItem("cookieConsent", "accepted");
+    initializeAnalytics();
+    setIsVisible(false);
   };
 
   const handleDecline = () => {
-    if (typeof window !== "undefined") {
-      localStorage.setItem("cookieConsent", "declined");
-      setIsVisible(false);
-    }
+    localStorage.setItem("cookieConsent", "declined");
+    setIsVisible(false);
   };
 
-  // Don't render anything on server
   if (!isClient || !isVisible) return null;
 
   return (
@@ -84,7 +70,6 @@ const CookieConsent = () => {
         <div className={styles.description}>
           <p className={styles.message}>
             We use cookies to analyze our traffic and improve your experience.
-            This includes Google Analytics and Google Tag Manager.
           </p>
           <div className={styles.buttonGroup}>
             <button onClick={handleAccept} className={styles.acceptButton}>
