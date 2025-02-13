@@ -31,4 +31,10 @@ export const goneUrls = [
   "/testimonials/private-wealth-partners-group-pty-ltd",
   "/testimonials/smartcool-systems-australia",
   "/testimonials/queensland-rail-1",
+  "/services/",
+  "/feed/",
+  "/logo.webp",
+  "/services/microsoft-access",
+  "/training",
+  "/wp-content/plugins/google-sitemap-generator/{$itemURL}",
 ].map((url) => url.toLowerCase());
