@@ -19,7 +19,7 @@ export const metadata = {
     "Power Platform consultation quote",
   ],
   alternates: {
-    canonical: "https://powerplatformexperts.com.au/contact-us/request-a-quote",
+    canonical: "/contact-us/request-a-quote",
   },
 };
 

@@ -149,6 +149,10 @@ export const metadata = {
     google: "4pCGu8qrYPdfGHve5jLQXy0z9_WNgV7qAtUU4lg3QTo",
   },
 
+  alternates: {
+    canonical: "https://www.powerplatformexperts.com.au",
+  },
+
   robots: {
     index: true,
     follow: true,

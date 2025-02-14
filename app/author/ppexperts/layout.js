@@ -25,11 +25,10 @@ export const metadata = {
     type: "profile",
   },
 
-  // Additional metadata
-  keywords: [
-    // Expertise-specific long tail
-    "Microsoft Power Platform Experts Author",
-  ],
+  robots: {
+    index: false,
+    follow: false,
+  },
 
   // Twitter Card
   twitter: {
@@ -41,7 +40,7 @@ export const metadata = {
     images: ["/logo.png"],
   },
   alternates: {
-    canonical: "https://powerplatformexperts.com.au/author/ppexperts",
+    canonical: "/author/ppexperts",
   },
 };
 

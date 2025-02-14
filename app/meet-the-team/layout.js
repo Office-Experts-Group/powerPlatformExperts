@@ -17,7 +17,7 @@ export const metadata = {
   // Additional metadata
   keywords: ["Power Platform expert development team"],
   alternates: {
-    canonical: "https://powerplatformexperts.com.au/meet-the-team",
+    canonical: "/meet-the-team",
   },
 };
 

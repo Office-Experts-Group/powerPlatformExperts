@@ -30,7 +30,7 @@ export const metadata = {
     "power platform customer testimonials",
   ],
   alternates: {
-    canonical: "https://powerplatformexperts.com.au/client-testimonials",
+    canonical: "/client-testimonials",
   },
 };
 

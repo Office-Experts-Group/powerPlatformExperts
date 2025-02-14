@@ -16,9 +16,8 @@ export const metadata = {
   // Additional metadata
   keywords: ["Power BI dashboard development Australia"],
   alternates: {
-    canonical:
-      "https://powerplatformexperts.com.au/services/microsoft-power-platform/microsoft-power-bi",
-    alternates: [
+    canonical: "/services/microsoft-power-platform/microsoft-power-bi",
+    alternate: [
       {
         url: "https://officeexperts.com.au/services/microsoft-power-platform/microsoft-power-bi",
       },

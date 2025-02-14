@@ -18,7 +18,7 @@ export const metadata = {
     "Power Platform consultation booking",
   ],
   alternates: {
-    canonical: "https://powerplatformexperts.com.au/contact-us",
+    canonical: "/contact-us",
   },
 };
 

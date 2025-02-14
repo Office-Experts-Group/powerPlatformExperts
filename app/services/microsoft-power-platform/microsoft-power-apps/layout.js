@@ -20,9 +20,8 @@ export const metadata = {
   // Additional metadata
   keywords: ["custom Power Apps workflow automation"],
   alternates: {
-    canonical:
-      "https://powerplatformexperts.com.au/services/microsoft-power-platform/microsoft-power-apps",
-    alternates: [
+    canonical: "/services/microsoft-power-platform/microsoft-power-apps",
+    alternate: [
       {
         url: "https://officeexperts.com.au/services/microsoft-power-platform/microsoft-power-apps",
       },

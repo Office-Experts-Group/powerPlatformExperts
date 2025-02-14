@@ -16,9 +16,8 @@ export const metadata = {
 
   keywords: ["Microsoft Power Platform consulting services"],
   alternates: {
-    canonical:
-      "https://powerplatformexperts.com.au/services/microsoft-power-platform/microsoft-power-pages",
-    alternates: [
+    canonical: "/services/microsoft-power-platform/microsoft-power-pages",
+    alternate: [
       {
         url: "https://officeexperts.com.au/services/microsoft-power-platform/microsoft-power-pages",
       },
