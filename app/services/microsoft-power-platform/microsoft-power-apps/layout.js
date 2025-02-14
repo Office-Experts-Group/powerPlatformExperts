@@ -23,7 +23,7 @@ export const metadata = {
     canonical: "/services/microsoft-power-platform/microsoft-power-apps",
     alternate: [
       {
-        url: "https://officeexperts.com.au/services/microsoft-power-platform/microsoft-power-apps",
+        url: "https://www.officeexperts.com.au/services/microsoft-power-platform/microsoft-power-apps",
       },
     ],
   },

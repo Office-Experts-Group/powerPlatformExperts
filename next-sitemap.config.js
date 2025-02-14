@@ -1,6 +1,6 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-  siteUrl: "https://powerplatformexperts.com.au",
+  siteUrl: "https://www.powerplatformexperts.com.au",
   generateRobotsTxt: true,
   // Optional: other configuration
   changefreq: "weekly",

@@ -19,7 +19,7 @@ export const metadata = {
     canonical: "/services/microsoft-power-platform/microsoft-power-pages",
     alternate: [
       {
-        url: "https://officeexperts.com.au/services/microsoft-power-platform/microsoft-power-pages",
+        url: "https://www.officeexperts.com.au/services/microsoft-power-platform/microsoft-power-pages",
       },
     ],
   },

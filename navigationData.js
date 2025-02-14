@@ -1,9 +1,9 @@
 // Base URLs for different sites (change these for production)
-const WORD_EXPERTS_URL = "https://wordexperts.com.au";
-const OFFICE_EXPERTS_URL = "https://officeexperts.com.au";
-const EXCEL_EXPERTS_URL = "https://excelexperts.com.au";
-const POWER_PLATFORM_EXPERTS_URL = "https://powerplatformexperts.com.au";
-const ACCESS_EXPERTS_URL = "https://accessexperts.com.au";
+const WORD_EXPERTS_URL = "https://www.wordexperts.com.au";
+const OFFICE_EXPERTS_URL = "https://www.officeexperts.com.au";
+const EXCEL_EXPERTS_URL = "https://www.excelexperts.com.au";
+const POWER_PLATFORM_EXPERTS_URL = "https://www.powerplatformexperts.com.au";
+const ACCESS_EXPERTS_URL = "https://www.accessexperts.com.au";
 
 export const navigationData = {
   home: {

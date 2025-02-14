@@ -47,7 +47,7 @@ export async function POST(req) {
       Phone: ${phone || "Not provided"}.
       Message: ${message}
 
-      This form was filled out on the website: https://powerplatformexperts.com.au @ ${currentTimeAEST} AEST
+      This form was filled out on the website: https://www.powerplatformexperts.com.au @ ${currentTimeAEST} AEST
     `;
 
     const customerTextMessage = `
@@ -67,7 +67,7 @@ export async function POST(req) {
       <p><strong>Message:</strong></p>
       <p>${message}</p>
       
-      <em>This form was filled out on the website: https://powerplatformexperts.com.au @ ${currentTimeAEST} AEST</em>
+      <em>This form was filled out on the website: https://www.powerplatformexperts.com.au @ ${currentTimeAEST} AEST</em>
     `;
 
     const customerHtmlMessage = `

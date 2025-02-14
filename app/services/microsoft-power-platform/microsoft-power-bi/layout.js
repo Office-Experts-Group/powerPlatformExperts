@@ -19,7 +19,7 @@ export const metadata = {
     canonical: "/services/microsoft-power-platform/microsoft-power-bi",
     alternate: [
       {
-        url: "https://officeexperts.com.au/services/microsoft-power-platform/microsoft-power-bi",
+        url: "https://www.officeexperts.com.au/services/microsoft-power-platform/microsoft-power-bi",
       },
     ],
   },
