@@ -106,7 +106,7 @@ const Page = () => {
       <ExpertsAwait />
       <Promo
         h2="Empowering Your Business"
-        p="Expert Power Platform solutions to streamline workflows, enhance insights, and drive efficiency across your organization."
+        p="Expert Power Platform solutions to streamline workflows, enhance insights, and drive efficiency across your organisation."
       />
       <FAQSection faqs={faqs} />
       <Contact />
