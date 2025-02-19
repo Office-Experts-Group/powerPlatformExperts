@@ -8,14 +8,28 @@ const FooterHelpSection = () => {
     <div className={styles.helpSection}>
       <h3>Help</h3>
       <Link href={"/contact-us"}>Online Enquiry Form</Link>
-      <Link href={"https://www.officeexperts.com.au/faq"}>FAQ</Link>
-      <Link href={"https://www.officeexperts.com.au/terms-and-conditions"}>
+      <Link
+        rel="nofollow noopener noreferrer"
+        href={"https://www.officeexperts.com.au/faq"}
+      >
+        FAQ
+      </Link>
+      <Link
+        rel="nofollow noopener noreferrer"
+        href={"https://www.officeexperts.com.au/terms-and-conditions"}
+      >
         Terms and Conditions
       </Link>
-      <Link href={"https://www.officeexperts.com.au/privacy-policy"}>
+      <Link
+        rel="nofollow noopener noreferrer"
+        href={"https://www.officeexperts.com.au/privacy-policy"}
+      >
         Privacy Policy
       </Link>
-      <Link href={"https://www.officeexperts.com.au/refund-policy"}>
+      <Link
+        rel="nofollow noopener noreferrer"
+        href={"https://www.officeexperts.com.au/refund-policy"}
+      >
         Refund Policy
       </Link>
     </div>

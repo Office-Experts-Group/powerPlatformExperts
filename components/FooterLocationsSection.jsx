@@ -103,7 +103,11 @@ export default function FooterLocationsSection() {
                 <div className={styles.dropdownContent}>
                   {Object.entries(locations).map(([city, url]) => (
                     <div key={city} className={styles.cityItem}>
-                      <Link href={url} className={styles.cityLink}>
+                      <Link
+                        rel="nofollow noopener noreferrer"
+                        href={url}
+                        className={styles.cityLink}
+                      >
                         {city}
                       </Link>
                     </div>
