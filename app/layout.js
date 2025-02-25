@@ -22,6 +22,7 @@ const ScrollBtn = dynamic(() => import("../components/ScrollBtn"), {
 
 import "./global.css";
 import ScrollIndicator from "../components/ScrollIndicator";
+import AhrefsAnalytics from "../components/AhrefsAnalytics";
 
 const aptos = localFont({
   src: [
@@ -179,6 +180,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en-AU">
       <body className={`${aptos.variable} ${garamond.variable}`}>
+        <AhrefsAnalytics />
         <HeadTop />
         <Header />
         {children}
