@@ -6,42 +6,30 @@ import styles from "../styles/footerLocations.module.scss";
 
 const locationsByState = {
   "New South Wales": {
-    Sydney:
-      "https://www.officeexperts.com.au/word-and-powerpoint-experts-sydney/",
-    Wollongong:
-      "https://www.officeexperts.com.au/office-excel-access-and-365-experts-wollongong/",
-    "Central Coast":
-      "https://www.officeexperts.com.au/excel-and-access-experts-central-coast-nsw/",
-    "Northern Rivers":
-      "https://www.officeexperts.com.au/office-excel-access-and-365-experts-northern-rivers-nsw/",
+    Sydney: "/power-platform-consultants-sydney",
+    Wollongong: "/power-platform-consultants-wollongong",
+    "Central Coast": "/power-platform-consultants-central-coast-nsw",
+    "Northern Rivers": "/power-platform-consultants-northern-rivers-nsw",
   },
   Victoria: {
-    Melbourne:
-      "https://www.officeexperts.com.au/word-and-powerpoint-experts-melbourne/",
-    Richmond:
-      "https://www.officeexperts.com.au/office-and-office-365-experts-richmond/",
+    Melbourne: "/power-platform-consultants-melbourne",
+    Richmond: "/power-platform-consultants-richmond",
   },
   Queensland: {
-    Brisbane:
-      "https://www.officeexperts.com.au/office-excel-access-and-365-experts-brisbane/",
-    "Gold Coast":
-      "https://www.officeexperts.com.au/word-and-powerpoint-experts-gold-coast/",
+    Brisbane: "/power-platform-consultants-brisbane",
+    "Gold Coast": "/power-platform-consultants-gold-coast",
   },
   "Western Australia": {
-    Perth:
-      "https://www.officeexperts.com.au/word-and-powerpoint-experts-perth/",
+    Perth: "/power-platform-consultants-perth",
   },
   ACT: {
-    Canberra:
-      "https://www.officeexperts.com.au/word-and-powerpoint-experts-canberra/",
+    Canberra: "/power-platform-consultants-canberra",
   },
   "Northern Territory": {
-    Darwin:
-      "https://www.officeexperts.com.au/office-excel-access-and-365-experts-darwin/",
+    Darwin: "/power-platform-consultants-darwin",
   },
   "South Australia": {
-    Adelaide:
-      "https://www.officeexperts.com.au/office-excel-access-and-365-experts-adelaide/",
+    Adelaide: "/power-platform-consultants-adelaide",
   },
 };
 
@@ -76,7 +64,9 @@ export default function FooterLocationsSection() {
 
   return (
     <div className={styles.locationsSection}>
-      <h3>Our Locations</h3>
+      <Link href="/locations">
+        <h3>Our Locations</h3>
+      </Link>
       <p className={styles.remoteAccess}>Australia-wide via remote access</p>
 
       <div className={styles.statesGrid}>
@@ -103,11 +93,7 @@ export default function FooterLocationsSection() {
                 <div className={styles.dropdownContent}>
                   {Object.entries(locations).map(([city, url]) => (
                     <div key={city} className={styles.cityItem}>
-                      <Link
-                        rel="nofollow noopener noreferrer"
-                        href={url}
-                        className={styles.cityLink}
-                      >
+                      <Link href={url} className={styles.cityLink}>
                         {city}
                       </Link>
                     </div>

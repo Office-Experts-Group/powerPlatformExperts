@@ -93,38 +93,6 @@ export const metadata = {
     "power pages consulting",
     "power platform specialists",
     "power plaftorm experts",
-
-    // // Core Power Platform services
-    // "Power Platform consulting Australia",
-    // "Power BI dashboard development",
-    // "Custom Power Apps solutions",
-    // "Power Automate workflow automation",
-    // "Power Pages web development",
-
-    // // Location-based
-    // "Power Platform consultants Sydney",
-    // "Power BI specialists Melbourne",
-    // "Power Apps developers Brisbane",
-    // "Power Automate experts Perth",
-
-    // // Service-specific long tail
-    // "Power BI real-time analytics dashboards",
-    // "Power Apps custom business applications",
-    // "Power Automate process automation workflows",
-    // "Power Pages data collection forms",
-    // "Power Platform system integration",
-
-    // // Industry-specific
-    // "Power BI financial reporting solutions",
-    // "Power Apps inventory management systems",
-    // "Power Automate document processing",
-    // "Power Platform business process automation",
-
-    // // Specific solutions
-    // "Power BI data visualization consulting",
-    // "Power Apps mobile solution development",
-    // "Power Automate email workflow automation",
-    // "Power Pages customer portal development",
   ],
 
   // Twitter Card

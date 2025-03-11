@@ -158,7 +158,7 @@ const FooterServicesSection = () => {
             </Link>
             <Link
               rel="nofollow noopener noreferrer"
-              href="https://www.officeexperts.com.au/services/by-product-and-technology/microsoft-dot-net"
+              href="https://www.officeexperts.com.au/services/microsoft-dot-net"
             >
               Microsoft .NET
             </Link>
@@ -170,7 +170,7 @@ const FooterServicesSection = () => {
             </Link>
             <Link
               rel="nofollow noopener noreferrer"
-              href="https://www.officeexperts.com.au/services/by-product-and-technology/microsoft-publisher"
+              href="https://www.officeexperts.com.au/services/microsoft-publisher"
             >
               Microsoft Publisher
             </Link>
