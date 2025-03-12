@@ -4,13 +4,13 @@ export const metadata = {
   // Basic metadata
   title: "Power Platform Consultants Sydney",
   description:
-    "Leading Power Platform consultants in Sydney. For over 25yrs Powerplatfom Experts have supercharged business efficiency with power bi, power automate, pages, apps and the entire Office suite  ",
+    "Leading Power Platform consultants in Sydney. For over 25yrs Power Platform Experts have supercharged business efficiency with power bi, power automate, pages, apps and the entire Office suite  ",
 
   // OpenGraph
   openGraph: {
     title: "Power Platform Consultants Sydney",
     description:
-      "Leading Power Platform consultants in Sydney. For over 25yrs Powerplatfom Experts have supercharged business efficiency with power bi, power automate, pages, apps and the entire Office suite  ",
+      "Leading Power Platform consultants in Sydney. For over 25yrs Power Platform Experts have supercharged business efficiency with power bi, power automate, pages, apps and the entire Office suite  ",
     url: "https://www.powerplatformexperts.com.au/power-platform-consultants-sydney",
     siteName: "Power Platform Experts",
     images: [
@@ -37,7 +37,7 @@ export const metadata = {
     site: "@OfficeExpertsG1",
     title: "Power Platform Consultants Sydney",
     description:
-      "Leading Power Platform consultants in Sydney. For over 25yrs Powerplatfom Experts have supercharged business efficiency with power bi, power automate, pages, apps and the entire Office suite  ",
+      "Leading Power Platform consultants in Sydney. For over 25yrs Power Platform Experts have supercharged business efficiency with power bi, power automate, pages, apps and the entire Office suite  ",
     images: ["/logo.png"],
   },
 
