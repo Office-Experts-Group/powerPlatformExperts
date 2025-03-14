@@ -11,6 +11,17 @@ export const metadata = {
     description:
       "Connect with Australia's leading Microsoft Power Platform consultants. Expert consulting for Power BI, Power Apps, Power Automate, and Power Pages solutions.",
     url: "https://www.powerplatformexperts.com.au/contact-us",
+    siteName: "Power Platform Experts",
+    images: [
+      {
+        url: "/logo.png",
+        width: 1200,
+        height: 620,
+        alt: "Power Platform Experts Logo",
+      },
+    ],
+    locale: "en-AU",
+    type: "website",
   },
 
   keywords: [

@@ -60,15 +60,13 @@ const garamond = EB_Garamond({
 
 export const metadata = {
   // Basic metadata
-  title:
-    "Power Platform Experts | Microsoft Power Platform Design, Development and Consulting",
+  title: "Power Platform Consultants | Power Platform Experts",
   description:
     "Microsoft's Power Platform specialists offering expert consulting in Power BI, Power Apps, Power Automate, and Power Pages. Delivering tailored solutions for business efficiency and automation.",
 
   // OpenGraph
   openGraph: {
-    title:
-      "Power Platform Experts | Microsoft Power Platform Consulting & Solutions",
+    title: "Power Platform Consultants | Power Platform Experts",
     description:
       "Specialised Microsoft Power Platform consulting services including Power BI visualisation, Power Apps development, Power Automate workflow automation, and Power Pages web solutions.",
     url: "https://www.powerplatformexperts.com.au",
@@ -88,19 +86,14 @@ export const metadata = {
   // Additional metadata
   keywords: [
     // currently ranking with
-    "power platform consulting",
-    "power platform consultant",
-    "power pages consulting",
-    "power platform specialists",
-    "power plaftorm experts",
+    "power platform consultants",
   ],
 
   // Twitter Card
   twitter: {
     card: "summary_large_image",
     site: "@PowerPlatformExp",
-    title:
-      "Power Platform Experts | Microsoft Power Platform Consulting & Solutions",
+    title: "Power Platform Consultants | Power Platform Experts",
     description:
       "Specialised Microsoft Power Platform consulting services including Power BI visualisation, Power Apps development, Power Automate workflow automation, and Power Pages web solutions.",
     images: ["/logo.png"],

@@ -12,6 +12,17 @@ export const metadata = {
     description:
       "Expert Power Automate consulting services for workflow automation, process optimisation, and business efficiency.",
     url: "https://www.powerplatformexperts.com.au/services/microsoft-power-platform/microsoft-power-automate",
+    siteName: "Power Platform Experts",
+    images: [
+      {
+        url: "/logo.png",
+        width: 1200,
+        height: 620,
+        alt: "Power Platform Experts Logo",
+      },
+    ],
+    locale: "en-AU",
+    type: "website",
   },
 
   // Additional metadata

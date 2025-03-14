@@ -12,6 +12,17 @@ export const metadata = {
     description:
       "Meet our certified Microsoft Power Platform consultants specialising in Power BI analytics, Power Apps development, Power Automate workflows, and Power Pages solutions.",
     url: "https://www.powerplatformexperts.com.au/meet-the-team",
+    siteName: "Power Platform Experts",
+    images: [
+      {
+        url: "/logo.png",
+        width: 1200,
+        height: 620,
+        alt: "Power Platform Experts Logo",
+      },
+    ],
+    locale: "en-AU",
+    type: "website",
   },
 
   // Additional metadata

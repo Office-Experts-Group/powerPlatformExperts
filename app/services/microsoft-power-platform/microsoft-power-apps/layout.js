@@ -15,6 +15,16 @@ export const metadata = {
       "Custom Power Apps solutions for streamlined operations, automated workflows, and enhanced business efficiency.",
     url: "https://www.powerplatformexperts.com.au/services/microsoft-power-platform/microsoft-power-apps",
     siteName: "Power Platform Experts",
+    images: [
+      {
+        url: "/logo.png",
+        width: 1200,
+        height: 620,
+        alt: "Power Platform Experts Logo",
+      },
+    ],
+    locale: "en-AU",
+    type: "website",
   },
 
   // Additional metadata

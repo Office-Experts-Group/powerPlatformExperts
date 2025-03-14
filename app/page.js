@@ -59,7 +59,7 @@ const schema = {
       "@type": "WebSite",
       "@id": "https://www.powerplatformexperts.com.au#website",
       url: "https://www.powerplatformexperts.com.au",
-      name: "Power Platform Experts: Microsoft Power Platform Development and Consulting Services",
+      name: "Power Platform Experts: Microsoft Power Platform Consulting Services",
       description:
         "Your Microsoft Power Platform Design, Development and Consulting Experts",
       publisher: {

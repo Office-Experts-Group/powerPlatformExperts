@@ -11,6 +11,17 @@ export const metadata = {
     description:
       "Professional Power BI services including custom dashboard creation, real-time analytics implementation, and data visualisation solutions.",
     url: "https://www.powerplatformexperts.com.au/services/microsoft-power-platform/microsoft-power-bi",
+    siteName: "Power Platform Experts",
+    images: [
+      {
+        url: "/logo.png",
+        width: 1200,
+        height: 620,
+        alt: "Power Platform Experts Logo",
+      },
+    ],
+    locale: "en-AU",
+    type: "website",
   },
 
   // Additional metadata

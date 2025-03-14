@@ -2,7 +2,7 @@ const REDIRECTS = [
   {
     source:
       "/services/microsoft-power-platform/services/microsoft-power-platform/microsoft-power-pages",
-    destination: "/",
+    destination: "/services/microsoft-power-platform/microsoft-power-pages",
     permanent: true,
   },
   {
