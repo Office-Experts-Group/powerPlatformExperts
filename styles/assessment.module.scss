@@ -1,0 +1,480 @@
+@import "./globals.scss";
+
+.assessmentPage {
+  position: relative;
+  margin: 6rem;
+  img {
+    z-index: -1;
+  }
+
+  @media screen and (max-width: 800px) {
+    margin: 3rem 0;
+  }
+}
+
+// Container styles
+.container {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 24px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+// Header section
+.header {
+  margin-bottom: 24px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  color: #666;
+  margin-bottom: 16px;
+}
+
+// Progress bar
+.progressContainer {
+  width: 100%;
+  background-color: #eee;
+  border-radius: 999px;
+  height: 8px;
+  margin-top: 16px;
+}
+
+.progressBar {
+  background-color: $theme;
+  height: 8px;
+  border-radius: 999px;
+  transition: width 0.3s ease;
+}
+
+.progressText {
+  font-size: 14px;
+  color: #777;
+  margin-top: 4px;
+}
+
+// Question card
+.questionCard {
+  background-color: #f9f9f9;
+  padding: 16px;
+  border-radius: 8px;
+  margin-bottom: 24px;
+}
+
+.sectionTitle {
+  font-size: 14px;
+  font-weight: 500;
+  color: #777;
+  margin-bottom: 4px;
+}
+
+.questionText {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 16px;
+}
+
+.optionsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.optionButton {
+  width: 100%;
+  text-align: left;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+  cursor: pointer;
+  transition: all 0.2s ease;
+
+  &:hover {
+    background-color: rgba($theme, 0.05);
+    border-color: rgba($theme, 0.3);
+  }
+}
+
+// Email form
+.emailFormContainer {
+  background-color: rgba($theme, 0.1);
+  padding: 24px;
+  border-radius: 8px;
+}
+
+.emailFormTitle {
+  font-size: 20px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.emailFormDescription {
+  color: #666;
+  margin-bottom: 16px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.formLabel {
+  font-size: 14px;
+  font-weight: 500;
+  color: #555;
+  margin-bottom: 4px;
+}
+
+.formInput {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+
+  &:focus {
+    outline: none;
+    border-color: $theme;
+  }
+}
+
+.checkboxContainer {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.checkbox {
+  margin-top: 4px;
+}
+
+.checkboxLabel {
+  font-size: 14px;
+  color: #666;
+}
+
+.submitButton {
+  width: 100%;
+  background-color: $theme;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+
+  &:hover {
+    background-color: darken($theme, 10%);
+  }
+}
+
+// Results section
+.resultsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.resultsTitle {
+  font-size: 24px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.scoreGrid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 16px;
+  margin-bottom: 16px;
+
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.scoreCard {
+  background-color: #f9f9f9;
+  padding: 16px;
+  border-radius: 8px;
+}
+
+.scoreCardTitle {
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.scoreBarContainer {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.scoreBarBackground {
+  flex-grow: 1;
+  background-color: #eee;
+  border-radius: 999px;
+  height: 8px;
+}
+
+.scoreBar {
+  height: 8px;
+  border-radius: 999px;
+
+  &.advanced {
+    background-color: #10b981;
+  }
+
+  &.intermediate {
+    background-color: $theme;
+  }
+
+  &.basic {
+    background-color: #f59e0b;
+  }
+
+  &.none {
+    background-color: #9ca3af;
+  }
+}
+
+.scorePercentage {
+  font-size: 14px;
+  font-weight: 500;
+  min-width: 40px;
+  text-align: right;
+}
+
+.proficiencyLevel {
+  font-size: 14px;
+  color: #666;
+  text-transform: capitalize;
+}
+
+.recommendationsTitle {
+  font-size: 20px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 16px;
+}
+
+.recommendationsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.recommendation {
+  padding-left: 16px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    border-radius: 4px;
+  }
+
+  &.advanced::before {
+    background-color: #10b981;
+  }
+
+  &.intermediate::before {
+    background-color: $theme;
+  }
+
+  &.basic::before {
+    background-color: #f59e0b;
+  }
+}
+
+.recommendationTitle {
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 4px;
+}
+
+.recommendationDescription {
+  color: #666;
+  margin-bottom: 12px;
+}
+
+.resourceLinks {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.resourceLink {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 14px;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.serviceLink {
+  color: $theme;
+
+  &:hover {
+    color: darken($theme, 15%);
+  }
+}
+
+.resourceGuideLink {
+  color: #10b981;
+
+  &:hover {
+    color: darken(#10b981, 15%);
+  }
+}
+
+.resourceIcon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+}
+
+.ctaContainer {
+  background-color: rgba($theme, 0.1);
+  padding: 16px;
+  border-radius: 8px;
+}
+
+.ctaTitle {
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.ctaDescription {
+  color: #666;
+  margin-bottom: 12px;
+}
+
+.ctaButton {
+  display: inline-block;
+  background-color: $theme;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+
+  &:hover {
+    background-color: darken($theme, 10%);
+  }
+}
+
+.recommendationDetails {
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.recommendationDetails.advanced {
+  border-left: 4px solid #10b981;
+}
+
+.recommendationDetails.intermediate {
+  border-left: 4px solid #3b82f6;
+}
+
+.recommendationDetails.basic {
+  border-left: 4px solid #f59e0b;
+}
+
+.recommendationSummary {
+  padding: 1rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  user-select: none;
+  position: relative;
+}
+
+.recommendationSummary::-webkit-details-marker {
+  display: none;
+}
+
+.recommendationSummary:hover {
+  background-color: #f3f4f6;
+}
+
+.recommendationSummary h4 {
+  margin: 0;
+}
+
+.expandIcon {
+  font-size: 0.875rem;
+  color: #666;
+  transition: transform 0.3s ease;
+}
+
+.recommendationDetails[open] .expandIcon {
+  transform: rotate(180deg);
+}
+
+.recommendationContent {
+  padding: 0 1rem 1rem 1rem;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.recommendation {
+  margin-bottom: 1.5rem;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+/* Add a slight offset to create a nice hover effect */
+.recommendationDetails:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  transform: translateY(-2px);
+}

@@ -291,6 +291,36 @@ export const generateOrganizationSchema = () => ({
         "@type": "Offer",
         itemOffered: {
           "@type": "Service",
+          name: "Excel Dashboard Creation",
+          description:
+            "Creation of interactive and appealing Excel dashboards to provide real-time insights in your business.",
+        },
+        businessFunction: "http://purl.org/goodrelations/v1#ProvideService",
+      },
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "Financial Modeling and Forecasting",
+          description:
+            "Creation of tools for financial models and forecasting using Excel for planning and strategy.",
+        },
+        businessFunction: "http://purl.org/goodrelations/v1#ProvideService",
+      },
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "Power Pivot & Power Query",
+          description:
+            "Development of advanced data modelling, analytics, transformations and reporting using Power Pivot & Power Query.",
+        },
+        businessFunction: "http://purl.org/goodrelations/v1#ProvideService",
+      },
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
           name: "Power BI Solutions",
           description: "Custom dashboard development and data visualisation",
         },
