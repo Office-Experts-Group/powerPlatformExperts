@@ -18,7 +18,7 @@ import 'prismjs/plugins/toolbar/prism-toolbar';
 import 'prismjs/plugins/toolbar/prism-toolbar.css';
 import 'prismjs/plugins/copy-to-clipboard/prism-copy-to-clipboard';
 
-import styles from '../styles/CodeBlock.module.scss';
+import styles from '../styles/codeBlock.module.scss';
 
 const CodeBlock = ({ code, language }) => {
     const [isMounted, setIsMounted] = useState(false);
