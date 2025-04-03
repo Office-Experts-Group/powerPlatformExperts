@@ -40,10 +40,10 @@ export function middleware(request) {
       "script-src 'self' 'unsafe-inline' 'unsafe-eval' *.vimeo.com *.googletagmanager.com *.google-analytics.com *.ahrefs.com analytics.ahrefs.com; " +
       "style-src 'self' 'unsafe-inline'; " +
       "img-src 'self' data: https: *.vimeocdn.com *.google-analytics.com *.googletagmanager.com *.ahrefs.com; " +
-      "font-src 'self' fonts.gstatic.com fonts.googleapis.com; " + // Add any external font domains here
-      "frame-src 'self' *.vimeo.com player.vimeo.com *.googletagmanager.com; " +
-      "media-src 'self' *.vimeo.com *.vimeocdn.com; " +
-      "connect-src 'self' *.vimeo.com *.vimeocdn.com *.google-analytics.com *.googletagmanager.com *.officeexperts.com.au *.ahrefs.com analytics.ahrefs.com;"
+      "font-src 'self' fonts.gstatic.com fonts.googleapis.com; " +
+      "frame-src 'self' *.vimeo.com player.vimeo.com *.googletagmanager.com *.youtube.com www.youtube.com youtube.com; " +
+      "media-src 'self' *.vimeo.com *.vimeocdn.com *.youtube.com www.youtube.com youtube.com; " +
+      "connect-src 'self' *.vimeo.com *.vimeocdn.com *.youtube.com www.youtube.com youtube.com *.google-analytics.com *.googletagmanager.com *.officeexperts.com.au *.ahrefs.com analytics.ahrefs.com;"
   );
 
   // Handle Next.js system paths
