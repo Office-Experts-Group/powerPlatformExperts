@@ -82,6 +82,17 @@ const schema = {
       ],
       inLanguage: "en-AU",
     },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://www.powerplatformexperts.com.au#breadcrumb",
+      itemListElement: [
+        {
+          "@type": "ListItem",
+          position: 1,
+          name: "Home",
+        },
+      ],
+    },
   ],
 };
 
