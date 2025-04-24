@@ -1,79 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
-<url><loc>https://www.powerplatformexperts.com.au/blog/build-apps-for-power-pages</loc><lastmod>2025-04-03T12:31:55.172Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority><additionalTags>
-      <video:video>
-        <video:thumbnail_loc>https://i.ytimg.com/vi/qVe5t4xBugs?si=JmnIz4kIMNuX7FFb/maxresdefault.jpg</video:thumbnail_loc>
-        <video:title>Build Apps for Power Pages - The Best Way!</video:title>
-        <video:description>In this video, you will learn how to build web applications with only a limited amount of coding knowledge required using Power Pages, a powerful platform that lets you connect to any web service or API and design and customize your page layout using HTML and JavaScript. You will also see how to create a new record in a Dataverse table using the Webapi tool, a feature that lets you access and manipulate data in Dataverse tables using HTTP requests. This is the best way to build apps in Power Pages because you have full control over the look and feel of your app. This tutorial is suitable for anyone who wants to create web apps in Power Pages. All you need is a Microsoft Power Pages account and a web browser. By the end of this video, you will have the tools you need to build a fully functioning web app in Power Pages that you can use yourself or share with others.</video:description>
-        <video:player_loc allow_embed="yes">https://www.youtube.com/embed/qVe5t4xBugs?si=JmnIz4kIMNuX7FFb</video:player_loc>
-        <video:duration>4650</video:duration>
-      </video:video>
-    </additionalTags></url>
-<url><loc>https://www.powerplatformexperts.com.au/blog/display-data-in-power-pages</loc><lastmod>2025-04-03T12:31:55.173Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority><additionalTags>
-      <video:video>
-        <video:thumbnail_loc>https://i.ytimg.com/vi/2zdTy1MRUR4?si=KTiZiqCC92MRpEB8/maxresdefault.jpg</video:thumbnail_loc>
-        <video:title>Display Data in Power Pages using Custom-Built Galleries</video:title>
-        <video:description>In this video, I will show you how I built a custom page in Microsoft Power Pages with a custom built Power Apps like gallery using JavaScript, HTML, CSS and using the Dataverse WEBAPI. You will learn how to: Create a responsive layout with CSS grid and flexbox. Use JavaScript to fetch data from the WEBAPI and display it in the gallery. Add interactivity and functionality to the gallery items, such as filtering, sorting. Style the gallery elements with CSS variables and transitions. This video is for anyone who wants to learn how to create a modern and dynamic web page in Microsoft Power Pages with Power Apps like features. You will need some basic knowledge of HTML, CSS, and JavaScript to follow along.</video:description>
-        <video:player_loc allow_embed="yes">https://www.youtube.com/embed/2zdTy1MRUR4?si=KTiZiqCC92MRpEB8</video:player_loc>
-        <video:duration>2245</video:duration>
-      </video:video>
-    </additionalTags></url>
-<url><loc>https://www.powerplatformexperts.com.au/blog/power-apps-global-variables</loc><lastmod>2025-04-03T12:31:55.173Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority><additionalTags>
-      <video:video>
-        <video:thumbnail_loc>https://i.ytimg.com/vi/6gyEHeS0Oak?si=FMTEF4hMFXheD5D9/maxresdefault.jpg</video:thumbnail_loc>
-        <video:title>Power Apps Global Variables - Stop using them!</video:title>
-        <video:description>In this video, we will explore the benefits of using the With function in Power Apps over using global variables and the Set function. The With function is a powerful tool that allows you to make multiple changes to your app in a single function, rather than making each change individually. By using the With function, you can improve the performance of your app and make your code easier to read and understand. We'll also discuss the limitations of global variables and the Set function, and how the With function can help you avoid these pitfalls. So join us as we learn about the benefits of using the With function in Power Apps.</video:description>
-        <video:player_loc allow_embed="yes">https://www.youtube.com/embed/6gyEHeS0Oak?si=FMTEF4hMFXheD5D9</video:player_loc>
-        <video:duration>993</video:duration>
-      </video:video>
-    </additionalTags></url>
-<url><loc>https://www.powerplatformexperts.com.au/blog/popups-in-power-apps</loc><lastmod>2025-04-03T12:31:55.173Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority><additionalTags>
-      <video:video>
-        <video:thumbnail_loc>https://i.ytimg.com/vi/tt5zTO19Nx4?si=060D90_DtH3TocV1/maxresdefault.jpg</video:thumbnail_loc>
-        <video:title>Create Beautiful Pop-ups, Message and Model boxes in Microsoft PowerApps</video:title>
-        <video:description>In this episode, Chino shows you how to build and include beautiful looking custom dialog boxes in your Power Apps application.</video:description>
-        <video:player_loc allow_embed="yes">https://www.youtube.com/embed/tt5zTO19Nx4?si=060D90_DtH3TocV1</video:player_loc>
-        <video:duration>744</video:duration>
-      </video:video>
-    </additionalTags></url>
-<url><loc>https://www.powerplatformexperts.com.au/blog/power-apps-tips</loc><lastmod>2025-04-03T12:31:55.173Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority><additionalTags>
-      <video:video>
-        <video:thumbnail_loc>https://i.ytimg.com/vi/buKRMHImTzo?si=Ina6FXKrm5Al-1qV/maxresdefault.jpg</video:thumbnail_loc>
-        <video:title>Make your Power Apps Look Beautiful with Some Simple Techniques!</video:title>
-        <video:description>In this video, Chino shows you how to turn any boring looking power app into a beautiful application!</video:description>
-        <video:player_loc allow_embed="yes">https://www.youtube.com/embed/buKRMHImTzo?si=Ina6FXKrm5Al-1qV</video:player_loc>
-        <video:duration>1911</video:duration>
-      </video:video>
-    </additionalTags></url>
-<url><loc>https://www.powerplatformexperts.com.au/blog/power-apps-data-validation</loc><lastmod>2025-04-03T12:31:55.173Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority><additionalTags>
-      <video:video>
-        <video:thumbnail_loc>https://i.ytimg.com/vi/SYUAlSHBpsU?si=r7X1JzwVzkJsE-2z/maxresdefault.jpg</video:thumbnail_loc>
-        <video:title>Power Apps Data Validation - The Best Way to do it!</video:title>
-        <video:description>In this video, Chino shares his secret way to implement data validation on form fields, controls and basically everything else in Power Apps. This is the simplest and still technically best way of controlling how and when a user can input data into a form or input fields in your Power Apps application. </video:description>
-        <video:player_loc allow_embed="yes">https://www.youtube.com/embed/SYUAlSHBpsU?si=r7X1JzwVzkJsE-2z</video:player_loc>
-        <video:duration>993</video:duration>
-      </video:video>
-    </additionalTags></url>
-<url><loc>https://www.powerplatformexperts.com.au/blog/sharepoint-lists</loc><lastmod>2025-04-03T12:31:55.173Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority><additionalTags>
-      <video:video>
-        <video:thumbnail_loc>https://i.ytimg.com/vi/Bea5aP-OpZg?si=PSVPw5o7augLSbfB/maxresdefault.jpg</video:thumbnail_loc>
-        <video:title>Use SharePoint Lists just like a Relational Database in Power Apps</video:title>
-        <video:description>In this video, Chino gives you a quick introduction into how to use SharePoint lists as a data source in Power Apps and how they may work as a Relational Database.</video:description>
-        <video:player_loc allow_embed="yes">https://www.youtube.com/embed/Bea5aP-OpZg?si=PSVPw5o7augLSbfB</video:player_loc>
-        <video:duration>2464</video:duration>
-      </video:video>
-    </additionalTags></url>
-<url><loc>https://www.powerplatformexperts.com.au/blog</loc><lastmod>2025-04-03T12:31:55.173Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://www.powerplatformexperts.com.au/blog/responsive-power-apps</loc><lastmod>2025-04-03T12:31:55.173Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority><additionalTags>
-      <video:video>
-        <video:thumbnail_loc>https://i.ytimg.com/vi/ESkwWKVPdmA?si=DMvR4lCzv3xA4lDh/maxresdefault.jpg</video:thumbnail_loc>
-        <video:title>Build your app the Responsive way in Microsoft PowerApps</video:title>
-        <video:description>In this episode, Chino demonstrates the new Horizontal and Vertical Containers for Power Apps and how to easily use them to build Responsive apps.</video:description>
-        <video:player_loc allow_embed="yes">https://www.youtube.com/embed/ESkwWKVPdmA?si=DMvR4lCzv3xA4lDh</video:player_loc>
-        <video:duration>865</video:duration>
-      </video:video>
-    </additionalTags></url>
-<url><loc>https://www.powerplatformexperts.com.au/blog/power-apps-pdf-function</loc><lastmod>2025-04-03T12:31:55.173Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority><additionalTags>
+<url><loc>https://www.powerplatformexperts.com.au/meet-the-team</loc><lastmod>2025-04-24T06:36:38.698Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.powerplatformexperts.com.au/locations</loc><lastmod>2025-04-24T06:36:38.698Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.powerplatformexperts.com.au/contact-us/request-a-quote</loc><lastmod>2025-04-24T06:36:38.698Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.powerplatformexperts.com.au/blog</loc><lastmod>2025-04-24T06:36:38.698Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.powerplatformexperts.com.au/power-automate-support</loc><lastmod>2025-04-24T06:36:38.698Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.powerplatformexperts.com.au/blog/power-apps-pdf-function</loc><lastmod>2025-04-24T06:36:38.698Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority><additionalTags>
       <video:video>
         <video:thumbnail_loc>https://i.ytimg.com/vi/BiOCK1jDOMo?si=MZOdygQP0ZkibR4D/maxresdefault.jpg</video:thumbnail_loc>
         <video:title>Power Apps PDF Function - The Best Way to Export to PDF?</video:title>
@@ -82,33 +14,49 @@
         <video:duration>813</video:duration>
       </video:video>
     </additionalTags></url>
-<url><loc>https://www.powerplatformexperts.com.au/client-testimonials</loc><lastmod>2025-04-03T12:31:55.173Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://www.powerplatformexperts.com.au/power-platform-assessment</loc><lastmod>2025-04-03T12:31:55.173Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://www.powerplatformexperts.com.au/contact-us</loc><lastmod>2025-04-03T12:31:55.173Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://www.powerplatformexperts.com.au/contact-us/request-a-quote</loc><lastmod>2025-04-03T12:31:55.173Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://www.powerplatformexperts.com.au/blog/custom-defaults-in-power-apps</loc><lastmod>2025-04-03T12:31:55.173Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://www.powerplatformexperts.com.au/locations</loc><lastmod>2025-04-03T12:31:55.173Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://www.powerplatformexperts.com.au</loc><lastmod>2025-04-03T12:31:55.173Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://www.powerplatformexperts.com.au/power-platform-consultants-canberra</loc><lastmod>2025-04-03T12:31:55.173Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://www.powerplatformexperts.com.au/power-platform-consultants-adelaide</loc><lastmod>2025-04-03T12:31:55.173Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://www.powerplatformexperts.com.au/blog/multiple-records-with-power-apps</loc><lastmod>2025-04-03T12:31:55.173Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority><additionalTags>
+<url><loc>https://www.powerplatformexperts.com.au/power-platform-assessment</loc><lastmod>2025-04-24T06:36:38.698Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.powerplatformexperts.com.au/power-platform-consultants-adelaide</loc><lastmod>2025-04-24T06:36:38.698Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.powerplatformexperts.com.au/power-bi-support</loc><lastmod>2025-04-24T06:36:38.698Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.powerplatformexperts.com.au/power-pages-support</loc><lastmod>2025-04-24T06:36:38.698Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.powerplatformexperts.com.au/power-platform-consultants-brisbane</loc><lastmod>2025-04-24T06:36:38.698Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.powerplatformexperts.com.au</loc><lastmod>2025-04-24T06:36:38.698Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.powerplatformexperts.com.au/blog/sharepoint-lists</loc><lastmod>2025-04-24T06:36:38.698Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority><additionalTags>
       <video:video>
-        <video:thumbnail_loc>https://i.ytimg.com/vi/P-92BYSRv08?si=lneRzpwuss4vU3Sm/maxresdefault.jpg</video:thumbnail_loc>
-        <video:title>Set a Custom Default Value for the Drop Down lookup Control in Microsoft Power Apps</video:title>
-        <video:description>In this episode, Chino shows you how to set a custom / first value for your drop down fields that are connected to a data source.</video:description>
-        <video:player_loc allow_embed="yes">https://www.youtube.com/embed/P-92BYSRv08?si=lneRzpwuss4vU3Sm</video:player_loc>
-        <video:duration>370</video:duration>
+        <video:thumbnail_loc>https://i.ytimg.com/vi/Bea5aP-OpZg?si=PSVPw5o7augLSbfB/maxresdefault.jpg</video:thumbnail_loc>
+        <video:title>Use SharePoint Lists just like a Relational Database in Power Apps</video:title>
+        <video:description>In this video, Chino gives you a quick introduction into how to use SharePoint lists as a data source in Power Apps and how they may work as a Relational Database.</video:description>
+        <video:player_loc allow_embed="yes">https://www.youtube.com/embed/Bea5aP-OpZg?si=PSVPw5o7augLSbfB</video:player_loc>
+        <video:duration>2464</video:duration>
       </video:video>
     </additionalTags></url>
-<url><loc>https://www.powerplatformexperts.com.au/power-platform-consultants-brisbane</loc><lastmod>2025-04-03T12:31:55.173Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://www.powerplatformexperts.com.au/power-platform-consultants-darwin</loc><lastmod>2025-04-03T12:31:55.173Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://www.powerplatformexperts.com.au/power-platform-consultants-central-coast-nsw</loc><lastmod>2025-04-03T12:31:55.173Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://www.powerplatformexperts.com.au/power-platform-consultants-richmond</loc><lastmod>2025-04-03T12:31:55.173Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://www.powerplatformexperts.com.au/power-platform-consultants-wollongong</loc><lastmod>2025-04-03T12:31:55.173Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://www.powerplatformexperts.com.au/power-platform-consultants-sydney</loc><lastmod>2025-04-03T12:31:55.173Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://www.powerplatformexperts.com.au/power-platform-consultants-perth</loc><lastmod>2025-04-03T12:31:55.173Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://www.powerplatformexperts.com.au/services/microsoft-power-platform/microsoft-power-apps</loc><lastmod>2025-04-03T12:31:55.173Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://www.powerplatformexperts.com.au/blog/file-attachments-in-power-apps</loc><lastmod>2025-04-03T12:31:55.173Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority><additionalTags>
+<url><loc>https://www.powerplatformexperts.com.au/power-platform-consultants-melbourne</loc><lastmod>2025-04-24T06:36:38.698Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.powerplatformexperts.com.au/power-platform-consultants-gold-coast</loc><lastmod>2025-04-24T06:36:38.698Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.powerplatformexperts.com.au/power-platform-consultants-canberra</loc><lastmod>2025-04-24T06:36:38.698Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.powerplatformexperts.com.au/power-platform-consultants-central-coast-nsw</loc><lastmod>2025-04-24T06:36:38.698Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.powerplatformexperts.com.au/contact-us</loc><lastmod>2025-04-24T06:36:38.698Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.powerplatformexperts.com.au/power-platform-consultants-perth</loc><lastmod>2025-04-24T06:36:38.698Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.powerplatformexperts.com.au/power-platform-consultants-northern-rivers-nsw</loc><lastmod>2025-04-24T06:36:38.698Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.powerplatformexperts.com.au/power-platform-consultants-richmond</loc><lastmod>2025-04-24T06:36:38.698Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.powerplatformexperts.com.au/power-apps-support</loc><lastmod>2025-04-24T06:36:38.698Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.powerplatformexperts.com.au/power-platform-support</loc><lastmod>2025-04-24T06:36:38.698Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.powerplatformexperts.com.au/power-platform-consultants-sydney</loc><lastmod>2025-04-24T06:36:38.698Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.powerplatformexperts.com.au/services/microsoft-power-platform/microsoft-power-apps</loc><lastmod>2025-04-24T06:36:38.698Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.powerplatformexperts.com.au/services/microsoft-power-platform/microsoft-power-bi</loc><lastmod>2025-04-24T06:36:38.698Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.powerplatformexperts.com.au/services/microsoft-power-platform/microsoft-power-pages</loc><lastmod>2025-04-24T06:36:38.698Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.powerplatformexperts.com.au/services/microsoft-power-platform/microsoft-power-automate</loc><lastmod>2025-04-24T06:36:38.698Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.powerplatformexperts.com.au/power-platform-consultants-darwin</loc><lastmod>2025-04-24T06:36:38.698Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.powerplatformexperts.com.au/power-platform-consultants-wollongong</loc><lastmod>2025-04-24T06:36:38.698Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.powerplatformexperts.com.au/blog/power-apps-with-sql-database</loc><lastmod>2025-04-24T06:36:38.698Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority><additionalTags>
+      <video:video>
+        <video:thumbnail_loc>https://i.ytimg.com/vi/awsNLPGNI4w?si=hn-0Ak_weB4vWeBT/maxresdefault.jpg</video:thumbnail_loc>
+        <video:title>Getting Started with PowerApps and a Microsoft SQL Database</video:title>
+        <video:description>In one of his most integral videos to date, Chino takes you step by step through developing PowerApps with Azure SQL database repositories.</video:description>
+        <video:player_loc allow_embed="yes">https://www.youtube.com/embed/awsNLPGNI4w?si=hn-0Ak_weB4vWeBT</video:player_loc>
+        <video:duration>2018</video:duration>
+      </video:video>
+    </additionalTags></url>
+<url><loc>https://www.powerplatformexperts.com.au/services/microsoft-power-platform</loc><lastmod>2025-04-24T06:36:38.698Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.powerplatformexperts.com.au/blog/file-attachments-in-power-apps</loc><lastmod>2025-04-24T06:36:38.698Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority><additionalTags>
       <video:video>
         <video:thumbnail_loc>https://i.ytimg.com/vi/yC0W5am6M3Q?si=wlQ5FUzmmOka-J24/maxresdefault.jpg</video:thumbnail_loc>
         <video:title>File Attachments in Power Apps - The best way to do them</video:title>
@@ -117,12 +65,6 @@
         <video:duration>1384</video:duration>
       </video:video>
     </additionalTags></url>
-<url><loc>https://www.powerplatformexperts.com.au/services/microsoft-power-platform/microsoft-power-automate</loc><lastmod>2025-04-03T12:31:55.173Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://www.powerplatformexperts.com.au/power-platform-consultants-melbourne</loc><lastmod>2025-04-03T12:31:55.173Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://www.powerplatformexperts.com.au/meet-the-team</loc><lastmod>2025-04-03T12:31:55.173Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://www.powerplatformexperts.com.au/power-platform-consultants-northern-rivers-nsw</loc><lastmod>2025-04-03T12:31:55.173Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://www.powerplatformexperts.com.au/services/microsoft-power-platform</loc><lastmod>2025-04-03T12:31:55.173Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://www.powerplatformexperts.com.au/services/microsoft-power-platform/microsoft-power-bi</loc><lastmod>2025-04-03T12:31:55.173Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://www.powerplatformexperts.com.au/services/microsoft-power-platform/microsoft-power-pages</loc><lastmod>2025-04-03T12:31:55.173Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://www.powerplatformexperts.com.au/power-platform-consultants-gold-coast</loc><lastmod>2025-04-03T12:31:55.173Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.powerplatformexperts.com.au/blog/export-to-pdf-in-power-apps</loc><lastmod>2025-04-24T06:36:38.698Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.powerplatformexperts.com.au/client-testimonials</loc><lastmod>2025-04-24T06:36:38.698Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
 </urlset>

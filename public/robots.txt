@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://www.excelexperts.com.au
+Host: https://www.powerplatformexperts.com.au
 
 # Sitemaps
-Sitemap: https://www.excelexperts.com.au/sitemap.xml
+Sitemap: https://www.powerplatformexperts.com.au/sitemap.xml

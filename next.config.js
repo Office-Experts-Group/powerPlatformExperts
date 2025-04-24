@@ -26,7 +26,15 @@ const nextConfig = {
   images: {
     formats: ["image/webp"],
     minimumCacheTTL: 31536000,
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'img.youtube.com',
+        pathname: '/**',
+      },
+    ],
   },
+  
 
   async redirects() {
     return REDIRECTS;
