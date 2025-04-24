@@ -41,7 +41,7 @@ export const metadata = {
   },
 
   alternates: {
-    canonical: "/file-attachments-in-power-apps",
+    canonical: "/blog/file-attachments-in-power-apps",
   },
 };
 

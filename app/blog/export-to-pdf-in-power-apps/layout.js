@@ -41,7 +41,7 @@ export const metadata = {
   },
 
   alternates: {
-    canonical: "/export-to-pdf-power-apps",
+    canonical: "/blog/export-to-pdf-power-apps",
   },
 };
 

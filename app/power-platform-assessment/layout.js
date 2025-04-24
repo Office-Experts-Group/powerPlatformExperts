@@ -22,6 +22,10 @@ export const metadata = {
     locale: "en_AU",
     type: "website",
   },
+
+  alternates: {
+    canonical: "/power-platform-assessment",
+  },
 };
 
 export default function PowerPlatformAssessmentLayout({ children }) {

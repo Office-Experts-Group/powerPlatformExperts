@@ -41,7 +41,7 @@ export const metadata = {
   },
 
   alternates: {
-    canonical: "/sharepoint-lists",
+    canonical: "/blog/sharepoint-lists",
   },
 };
 
