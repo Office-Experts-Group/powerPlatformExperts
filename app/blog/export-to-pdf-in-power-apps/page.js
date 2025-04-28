@@ -360,7 +360,10 @@ const ExportToPDFBlogPost = () => {
         <div className={styles.about}>
           <div>
         <h4>About the Author</h4>
-        <p> Marcello has lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua, please feel free to get in contact at <Link href={'/'}> Powerplatform Experts.</Link></p>
+        <p> Marcello is a lead developer at Powerplatform Experts, an expert in, Computer Science, Power Platform integration and founder of the YouTube channel <a 
+          href="https://www.youtube.com/@ChinoDoesStuff/featured" 
+          rel="nofollow noreferrer noopener"
+        >ChinoDoesStuff.</a> If you have any questions, please feel free to get in contact at via the form below.</p>
         </div>
         <div className={styles.authorImage}>
           <Image src={marcello} alt="Marcello Brocchi" width={80} height={80} />

@@ -3,12 +3,12 @@ import React from "react";
 export const metadata = {
   // Basic metadata
   title: "Microsoft Power Pages Support",
-  description: 'Expert Power Pages support services for Australian businesses. Troubleshooting, optimisation, and ongoing maintenance from certified Microsoft specialists.',
+  description: 'Expert Power Pages support services for Australian businesses. Troubleshooting, optimisation, and ongoing maintenance from specialised Microsoft specialists.',
 
   // OpenGraph
   openGraph: {
     title: "Microsoft Power Pages Support",
-    description: 'Expert Power Pages support services for Australian businesses. Troubleshooting, optimisation, and ongoing maintenance from certified Microsoft specialists.',
+    description: 'Expert Power Pages support services for Australian businesses. Troubleshooting, optimisation, and ongoing maintenance from specialised Microsoft specialists.',
     url: "https://www.powerplatformexperts.com.au/power-pages-support",
     siteName: "Power Platform Experts",
     images: [
@@ -32,7 +32,7 @@ export const metadata = {
     card: "summary_large_image",
     site: "@OfficeExpertsG1",
     title: "Microsoft Power Pages Support",
-    description: 'Expert Power Pages support services for Australian businesses. Troubleshooting, optimisation, and ongoing maintenance from certified Microsoft specialists.',
+    description: 'Expert Power Pages support services for Australian businesses. Troubleshooting, optimisation, and ongoing maintenance from specialised Microsoft specialists.',
     images: ["/logo.png"],
   },
 

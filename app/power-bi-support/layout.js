@@ -3,12 +3,12 @@ import React from "react";
 export const metadata = {
   // Basic metadata
   title: "Microsoft Power BI Support",
-  description: 'Expert Power BI support services for Australian businesses. Troubleshooting, optimisation, and ongoing maintenance from certified Microsoft specialists.',
+  description: 'Expert Power BI support services for Australian businesses. Troubleshooting, optimisation, and ongoing maintenance from Microsoft specialists.',
 
   // OpenGraph
   openGraph: {
     title: "Microsoft Power BI Support",
-    description: 'Expert Power BI support services for Australian businesses. Troubleshooting, optimisation, and ongoing maintenance from certified Microsoft specialists.',
+    description: 'Expert Power BI support services for Australian businesses. Troubleshooting, optimisation, and ongoing maintenance from Microsoft specialists.',
     url: "https://www.powerplatformexperts.com.au/power-bi-support",
     siteName: "Power Platform Experts",
     images: [
@@ -32,7 +32,7 @@ export const metadata = {
     card: "summary_large_image",
     site: "@OfficeExpertsG1",
     title: "Microsoft Power BI Support",
-    description: 'Expert Power BI support services for Australian businesses. Troubleshooting, optimisation, and ongoing maintenance from certified Microsoft specialists.',
+    description: 'Expert Power BI support services for Australian businesses. Troubleshooting, optimisation, and ongoing maintenance from Microsoft specialists.',
     images: ["/logo.png"],
   },
 

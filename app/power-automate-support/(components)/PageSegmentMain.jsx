@@ -28,7 +28,7 @@ const PageSegmentMain = () => {
             <p>Expert Advice</p>
             <h2>Power Automate Support to Streamline Your Business Processes</h2>
             <p>
-            At Power Platform Experts, we specialise in helping businesses simplify and automate their workflows with Microsoft Power Automate. Whether you're looking to eliminate repetitive tasks, integrate cloud services, or resolve flow errors, our certified experts are here to ensure your automations run smoothly and reliably.
+            At Power Platform Experts, we specialise in helping businesses simplify and automate their workflows with Microsoft Power Automate. Whether you're looking to eliminate repetitive tasks, integrate cloud services, or resolve flow errors, our highly skilled Microsoft specialists are here to ensure your automations run smoothly and reliably.
             </p>
           </div>
           <div className={styles.content}>

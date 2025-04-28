@@ -31,7 +31,7 @@ const schema = {
       datePublished: "2025-04-04T00:00:00+00:00",
       dateModified: "2025-04-04T00:00:00+00:00",
       description:
-        "Power Automate support services for business intelligence solutions. Expert advice and training from certified professionals.",
+        "Power Automate support services for business intelligence solutions. Expert advice and training from Microsoft professionals.",
       breadcrumb: {
         "@id":
           "https://www.powerplatformexperts.com.au/power-automate-support#breadcrumb",

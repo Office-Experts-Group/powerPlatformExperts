@@ -12,7 +12,6 @@ import stuckIcon from "../../../public/icons/computerBlue.webp";
 import issuesIcon from "../../../public/icons/supportBlue.webp";
 import migrateIcon from "../../../public/icons/ideaBlue.webp";
 import chartBlue from "../../../public/icons/chartBlue.webp";
-import fileBlue from "../../../public/icons/fileBlue.webp";
 
 const BlackSegment = () => {
   return (

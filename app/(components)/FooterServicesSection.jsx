@@ -37,13 +37,13 @@ const FooterServicesSection = () => {
       <div className={styles.mainLinks}>
         <h3>Our Business</h3>
         <Link
-          rel="nofollow noopener noreferrer"
           href="https://www.officeexperts.com.au/about-us"
         >
           Our Company
         </Link>
         <Link href="/meet-the-team">Our Team</Link>
         <Link href="/client-testimonials">Testimonials</Link>
+        <Link href="/blog">Blog</Link>
       </div>
 
       {/* Power Platform Services Dropdown */}
@@ -88,37 +88,31 @@ const FooterServicesSection = () => {
           <div className={styles.dropdownBackground}></div>
           <div className={styles.dropdownContent}>
             <Link
-              rel="nofollow noopener noreferrer"
               href="https://www.officeexperts.com.au/services/microsoft-office"
             >
               Microsoft Office
             </Link>
             <Link
-              rel="nofollow noopener noreferrer"
               href="https://www.excelexperts.com.au"
             >
               Microsoft Excel
             </Link>
             <Link
-              rel="nofollow noopener noreferrer"
               href="https://www.accessexperts.com.au/"
             >
               Microsoft Access
             </Link>
             <Link
-              rel="nofollow noopener noreferrer"
               href="https://www.wordexperts.com.au"
             >
               Microsoft Word
             </Link>
             <Link
-              rel="nofollow noopener noreferrer"
               href="https://www.officeexperts.com.au/services/microsoft-powerpoint"
             >
               Microsoft PowerPoint
             </Link>
             <Link
-              rel="nofollow noopener noreferrer"
               href="https://www.officeexperts.com.au/services/microsoft-office-365"
             >
               Microsoft Office 365
@@ -139,37 +133,31 @@ const FooterServicesSection = () => {
           <div className={styles.dropdownBackground}></div>
           <div className={styles.dropdownContent}>
             <Link
-              rel="nofollow noopener noreferrer"
               href="https://www.officeexperts.com.au/services/by-business-solution/cloud-based-solutions-with-azure"
             >
               Microsoft Azure
             </Link>
             <Link
-              rel="nofollow noopener noreferrer"
               href="https://www.officeexperts.com.au/services/by-business-solution/office-and-sql-server-integration"
             >
               Microsoft SQL Server
             </Link>
             <Link
-              rel="nofollow noopener noreferrer"
               href="https://www.officeexperts.com.au/services/by-business-solution/online-solutions"
             >
               Microsoft SharePoint
             </Link>
             <Link
-              rel="nofollow noopener noreferrer"
               href="https://www.officeexperts.com.au/services/microsoft-dot-net"
             >
               Microsoft .NET
             </Link>
             <Link
-              rel="nofollow noopener noreferrer"
               href="https://www.officeexperts.com.au/services/by-business-solution/custom-office-solutions"
             >
               Microsoft Outlook
             </Link>
             <Link
-              rel="nofollow noopener noreferrer"
               href="https://www.officeexperts.com.au/services/microsoft-publisher"
             >
               Microsoft Publisher

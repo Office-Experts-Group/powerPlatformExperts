@@ -28,7 +28,7 @@ const PageSegmentMain = () => {
             <p>Web design, wireframe illustration or icon</p>
             <h2>Build Better Experiences with Power Pages Support</h2>
             <p>
-            At Power Platform Experts, we help you create secure, scalable, and user-friendly websites with Microsoft Power Pages. Whether you're building a customer portal, partner dashboard, or employee self-service site, our certified experts are here to support you every step of the way — from concept to continuous optimisation.
+            At Power Platform Experts, we help you create secure, scalable, and user-friendly websites with Microsoft Power Pages. Whether you're building a customer portal, partner dashboard, or employee self-service site, our specialised Microsoft experts are here to support you every step of the way — from concept to continuous optimisation.
             </p>
           </div>
           <div className={styles.content}>
