@@ -55,6 +55,10 @@ export const navigationData = {
             label: "Simple, Scalable Websites with Power Pages",
             href: `/services/microsoft-power-platform/microsoft-power-pages`,
           },
+          {
+            label: "Support and Training",
+            href: `/power-platform-support`,
+          }
         ],
       },
       {

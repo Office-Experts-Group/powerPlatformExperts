@@ -41,7 +41,7 @@ export const metadata = {
   },
 
   alternates: {
-    canonical: "/blog/power-apps-sql-database",
+    canonical: "/blog/power-apps-with-sql-database",
   },
 };
 

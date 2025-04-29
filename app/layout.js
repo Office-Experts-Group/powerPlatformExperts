@@ -62,13 +62,13 @@ export const metadata = {
   // Basic metadata
   title: "Power Platform Consultants | Power Platform Experts",
   description:
-    "Microsoft's Power Platform specialists offering expert consulting in Power BI, Power Apps, Power Automate, and Power Pages. Delivering tailored solutions for business efficiency and automation.",
+    "Experts in Microsoft Power BI, Apps, Automate & Pages. We deliver tailored solutions to streamline business processes and improve efficiency.",
 
   // OpenGraph
   openGraph: {
     title: "Power Platform Consultants | Power Platform Experts",
     description:
-      "Specialised Microsoft Power Platform consulting services including Power BI visualisation, Power Apps development, Power Automate workflow automation, and Power Pages web solutions.",
+    "Experts in Microsoft Power BI, Apps, Automate & Pages. We deliver tailored solutions to streamline business processes and improve efficiency.",
     url: "https://www.powerplatformexperts.com.au",
     siteName: "Power Platform Experts",
     images: [
@@ -95,7 +95,7 @@ export const metadata = {
     site: "@PowerPlatformExp",
     title: "Power Platform Consultants | Power Platform Experts",
     description:
-      "Specialised Microsoft Power Platform consulting services including Power BI visualisation, Power Apps development, Power Automate workflow automation, and Power Pages web solutions.",
+    "Experts in Microsoft Power BI, Apps, Automate & Pages. We deliver tailored solutions to streamline business processes and improve efficiency.",
     images: ["/logo.png"],
   },
 

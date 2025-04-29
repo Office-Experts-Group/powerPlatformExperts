@@ -2,15 +2,15 @@ import React from "react";
 
 export const metadata = {
   // Basic metadata
-  title: "Microsoft Power Platform Consultants Locations",
+  title: "Australia's Trusted Power Platform Consultants | Find a Location",
   description:
-    "Microsoft Power Platform consulting services available across Australia. Remote support and on-site consultants in Sydney, Melbourne, Brisbane, Perth, Adelaide, Canberra and more locations.",
+    "Discover expert Power Platform consulting services across Australia. We offer remote and on-site support to meet your business needs, wherever you are.",
 
   // OpenGraph
   openGraph: {
-    title: "Microsoft Power Platform Consultants Locations",
+    title: "Australia's Trusted Power Platform Consultants | Find a Location",
     description:
-      "Microsoft Power Platform consulting services available across Australia. Remote support and on-site consultants in Sydney, Melbourne, Brisbane, Perth, Adelaide, Canberra and more locations.",
+      "Discover expert Power Platform consulting services across Australia. We offer remote and on-site support to meet your business needs, wherever you are.",
     url: "https://www.powerplatformexperts.com.au/locations",
     siteName: "Power Platform Experts",
     images: [
@@ -35,9 +35,9 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     site: "@OfficeExpertsG1",
-    title: "Microsoft Power Platform Consultants Locations",
+    title: "Australia's Trusted Power Platform Consultants | Find a Location",
     description:
-      "Microsoft Power Platform consulting services available across Australia. Remote support and on-site consultants in Sydney, Melbourne, Brisbane, Perth, Adelaide, Canberra and more locations.",
+      "Discover expert Power Platform consulting services across Australia. We offer remote and on-site support to meet your business needs, wherever you are.",
     images: ["/logo.png"],
   },
 

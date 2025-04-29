@@ -4,13 +4,13 @@ export const metadata = {
   // Basic metadata
   title: "Power Platform Experts Blog",
   description:
-    "Explore expert tutorials, tips, and best practices for Microsoft Power Platform. Our blog covers Power Apps, Power Automate, SQL integration, PDF exports, and more to help you build better business solutions.",
+    "Explore expert tutorials, tips, and best practices for Microsoft Power Platform. Our experts share their knowledge to help you build better business solutions.",
 
   // OpenGraph
   openGraph: {
     title: "Power Platform Experts Blog",
     description:
-      "Explore expert tutorials, tips, and best practices for Microsoft Power Platform. Our blog covers Power Apps, Power Automate, SQL integration, PDF exports, and more to help you build better business solutions.",
+    "Explore expert tutorials, tips, and best practices for Microsoft Power Platform. Our experts share their knowledge to help you build better business solutions.",
     url: "https://www.powerplatformexperts.com.au/blog",
     siteName: "Power Platform Experts",
     images: [
@@ -37,7 +37,7 @@ export const metadata = {
     site: "@OfficeExpertsG1",
     title: "Power Platform Experts Blog",
     description:
-      "Explore expert tutorials, tips, and best practices for Microsoft Power Platform. Our blog covers Power Apps, Power Automate, SQL integration, PDF exports, and more to help you build better business solutions.",
+    "Explore expert tutorials, tips, and best practices for Microsoft Power Platform. Our experts share their knowledge to help you build better business solutions.",
     images: ["/logo.png"],
   },
 

@@ -1,29 +1,29 @@
 import React from "react";
 
 export const metadata = {
-  // Basic metadata
+// Basic metadata
+title: "Power Platform Consultants Adelaide",
+description:
+"Adelaide's leading Power Platform consultants. 25+ years helping businesses streamline operations with Power BI, Apps, Pages, and Automate solutions.",
+
+// OpenGraph
+openGraph: {
   title: "Power Platform Consultants Adelaide",
   description:
-    "Leading Power Platform consultants in Adelaide. For over 25yrs Power Platform Experts have supercharged business efficiency with power bi, power automate, pages, apps and the entire Office suite  ",
-
-  // OpenGraph
-  openGraph: {
-    title: "Power Platform Consultants Adelaide",
-    description:
-      "Leading Power Platform consultants in Adelaide. For over 25yrs Power Platform Experts have supercharged business efficiency with power bi, power automate, pages, apps and the entire Office suite  ",
-    url: "https://www.powerplatformexperts.com.au/power-platform-consultants-adelaide",
-    siteName: "Power Platform Experts",
-    images: [
-      {
-        url: "/logo.png",
-        width: 1200,
-        height: 630,
-        alt: "Office Experts Group Logo",
-      },
-    ],
-    locale: "en-AU",
-    type: "website",
-  },
+  "Adelaide's leading Power Platform consultants. 25+ years helping businesses streamline operations with Power BI, Apps, Pages, and Automate solutions.",
+  url: "https://www.powerplatformexperts.com.au/power-platform-consultants-adelaide",
+  siteName: "Power Platform Experts",
+  images: [
+    {
+      url: "/logo.png",
+      width: 1200,
+      height: 630,
+      alt: "Office Experts Group Logo",
+    },
+  ],
+  locale: "en-AU",
+  type: "website",
+},
 
   // Additional metadata
   keywords: [
@@ -37,7 +37,7 @@ export const metadata = {
     site: "@OfficeExpertsG1",
     title: "Power Platform Consultants Adelaide",
     description:
-      "Leading Power Platform consultants in Adelaide. For over 25yrs Power Platform Experts have supercharged business efficiency with power bi, power automate, pages, apps and the entire Office suite  ",
+    "Adelaide's leading Power Platform consultants. 25+ years helping businesses streamline operations with Power BI, Apps, Pages, and Automate solutions.",
     images: ["/logo.png"],
   },
 
