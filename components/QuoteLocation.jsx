@@ -1,8 +1,13 @@
 "use client";
 import Link from "next/link";
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
+import dynamic from "next/dynamic";
 
 import styles from "../styles/contact.module.css";
+
+const SurveyForm = dynamic(() => import("./SurveyForm"), {
+  ssr: false,
+});
 
 const MAX_FILE_SIZE = 5 * 1024 * 1024; // 5 MB
 const VALID_FILE_TYPES = [
@@ -16,6 +21,8 @@ const VALID_FILE_TYPES = [
 const QuoteLocation = ({ location }) => {
   const [error, setError] = useState({});
   const [success, setSuccess] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [hasConversionTracking, setHasConversionTracking] = useState(false);
   const [formData, setFormData] = useState({
     location: location,
     service: "",
@@ -36,6 +43,29 @@ const QuoteLocation = ({ location }) => {
   const emailRef = useRef(null);
   const messageRef = useRef(null);
   const termsRef = useRef(null);
+
+  // Check if conversion tracking is available
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      // Check if the conversion function exists
+      setHasConversionTracking(typeof window.gtag_report_conversion === 'function');
+      
+      // Set up a MutationObserver to detect when conversion tracking becomes available
+      if (!window.gtag_report_conversion) {
+        const observer = new MutationObserver(() => {
+          if (typeof window.gtag_report_conversion === 'function') {
+            setHasConversionTracking(true);
+            observer.disconnect();
+          }
+        });
+        
+        // Watch for changes to the body element
+        observer.observe(document.body, { childList: true, subtree: true });
+        
+        return () => observer.disconnect();
+      }
+    }
+  }, []);
 
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
@@ -101,8 +131,12 @@ const QuoteLocation = ({ location }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setError({});
+    setIsSubmitting(true);
 
-    if (formData.honeypot) return;
+    if (formData.honeypot) {
+      setIsSubmitting(false);
+      return;
+    }
 
     const newError = {};
 
@@ -120,6 +154,8 @@ const QuoteLocation = ({ location }) => {
 
     if (Object.keys(newError).length > 0) {
       setError(newError);
+      setIsSubmitting(false);
+      
       // Get the first error field
       const firstErrorField = Object.keys(newError)[0];
       // Get the corresponding ref
@@ -143,8 +179,24 @@ const QuoteLocation = ({ location }) => {
       });
 
       if (res.ok) {
+        // Track conversion if available
+        if (hasConversionTracking && typeof window.gtag_report_conversion === 'function') {
+          window.gtag_report_conversion();
+        }
+        
+        // Send additional event to Google Analytics
+        if (typeof window.gtag === 'function') {
+          window.gtag('event', 'quote_location_submission', {
+            'event_category': 'Forms',
+            'event_label': `Location Quote: ${location}`,
+            'value': 1
+          });
+        }
+        
         setSuccess(true);
         setFormData({
+          location: location,
+          service: "",
           name: "",
           email: "",
           phone: "",
@@ -161,14 +213,15 @@ const QuoteLocation = ({ location }) => {
       }
     } catch (err) {
       setError({ general: "There was an error submitting the form." });
+    } finally {
+      setIsSubmitting(false);
     }
   };
 
   if (success) {
     return (
-      <div role="alert" aria-live="polite">
-        <h2>Thank you {formData.name} for your quote request!</h2>
-        <p>One of our team will contact you shortly</p>
+      <div className={styles.successMessage} role="alert" aria-live="polite">
+        <SurveyForm name={surveyName} email={surveyEmail} />
       </div>
     );
   }
@@ -197,6 +250,7 @@ const QuoteLocation = ({ location }) => {
         className={styles.honeypot}
         aria-hidden="true"
         tabIndex="-1"
+        disabled={isSubmitting}
       />
 
       <div className={styles.contactForm}>
@@ -218,6 +272,7 @@ const QuoteLocation = ({ location }) => {
             aria-describedby={error.name ? "name-error" : undefined}
             required
             ref={nameRef}
+            disabled={isSubmitting}
           />
           {error.name && (
             <p
@@ -241,6 +296,7 @@ const QuoteLocation = ({ location }) => {
             aria-describedby={error.message ? "message-error" : undefined}
             placeholder="Enter details about your project here..."
             ref={messageRef}
+            disabled={isSubmitting}
           />
           {error.message && (
             <p
@@ -273,6 +329,7 @@ const QuoteLocation = ({ location }) => {
             placeholder="eg. john@example.com"
             required
             ref={emailRef}
+            disabled={isSubmitting}
           />
           {error.email && (
             <p
@@ -296,6 +353,7 @@ const QuoteLocation = ({ location }) => {
             onChange={handleChange}
             aria-required="false"
             placeholder="optional"
+            disabled={isSubmitting}
           />
         </div>
       </div>
@@ -310,6 +368,7 @@ const QuoteLocation = ({ location }) => {
             value={formData.softwareVersions}
             onChange={handleChange}
             placeholder="e.g. Office 365, Excel 2019"
+            disabled={isSubmitting}
           />
         </div>
         <div className={styles.formField}>
@@ -322,30 +381,7 @@ const QuoteLocation = ({ location }) => {
             onChange={handleChange}
             aria-required="false"
             placeholder="Your company website or project URL"
-          />
-        </div>
-
-        <div className={styles.formField}>
-          <label htmlFor="softwareVersions">Software Versions</label>
-          <input
-            type="text"
-            id="softwareVersions"
-            name="softwareVersions"
-            value={formData.softwareVersions}
-            onChange={handleChange}
-            placeholder="e.g. Office 365, Excel 2019"
-          />
-        </div>
-        <div className={styles.formField}>
-          <label htmlFor="website">Website</label>
-          <input
-            type="url"
-            id="website"
-            name="website"
-            value={formData.website}
-            onChange={handleChange}
-            aria-required="false"
-            placeholder="Your company website or project URL"
+            disabled={isSubmitting}
           />
         </div>
 
@@ -356,10 +392,11 @@ const QuoteLocation = ({ location }) => {
               <input
                 type="radio"
                 id="Office"
-                name="operatingSystem"
+                name="service"
                 value="Office"
-                checked={formData.operatingSystem === "Office"}
+                checked={formData.service === "Office"}
                 onChange={handleChange}
+                disabled={isSubmitting}
               />
               <label htmlFor="Office">Office</label>
             </div>
@@ -368,10 +405,11 @@ const QuoteLocation = ({ location }) => {
               <input
                 type="radio"
                 id="Access"
-                name="operatingSystem"
+                name="service"
                 value="Access"
-                checked={formData.operatingSystem === "Access"}
+                checked={formData.service === "Access"}
                 onChange={handleChange}
+                disabled={isSubmitting}
               />
               <label htmlFor="Access">Access</label>
             </div>
@@ -380,10 +418,11 @@ const QuoteLocation = ({ location }) => {
               <input
                 type="radio"
                 id="Excel"
-                name="operatingSystem"
+                name="service"
                 value="Excel"
-                checked={formData.operatingSystem === "Excel"}
+                checked={formData.service === "Excel"}
                 onChange={handleChange}
+                disabled={isSubmitting}
               />
               <label htmlFor="Excel">Excel</label>
             </div>
@@ -392,10 +431,11 @@ const QuoteLocation = ({ location }) => {
               <input
                 type="radio"
                 id="power-platform"
-                name="operatingSystem"
-                value="power-platform"
-                checked={formData.operatingSystem === "power-platform"}
+                name="service"
+                value="Power Platform"
+                checked={formData.service === "Power Platform"}
                 onChange={handleChange}
+                disabled={isSubmitting}
               />
               <label htmlFor="power-platform">Power Platform</label>
             </div>
@@ -404,10 +444,11 @@ const QuoteLocation = ({ location }) => {
               <input
                 type="radio"
                 id="Word"
-                name="operatingSystem"
+                name="service"
                 value="Word"
-                checked={formData.operatingSystem === "Word"}
+                checked={formData.service === "Word"}
                 onChange={handleChange}
+                disabled={isSubmitting}
               />
               <label htmlFor="Word">Word</label>
             </div>
@@ -416,10 +457,11 @@ const QuoteLocation = ({ location }) => {
               <input
                 type="radio"
                 id="not-sure"
-                name="operatingSystem"
-                value="not-sure"
-                checked={formData.operatingSystem === "not-sure"}
+                name="service"
+                value="Not Sure"
+                checked={formData.service === "Not Sure"}
                 onChange={handleChange}
+                disabled={isSubmitting}
               />
               <label htmlFor="not-sure">Not Sure</label>
             </div>
@@ -437,6 +479,7 @@ const QuoteLocation = ({ location }) => {
                 value="Windows"
                 checked={formData.operatingSystem === "Windows"}
                 onChange={handleChange}
+                disabled={isSubmitting}
               />
               <label htmlFor="windows">Windows</label>
             </div>
@@ -449,6 +492,7 @@ const QuoteLocation = ({ location }) => {
                 value="Mac"
                 checked={formData.operatingSystem === "Mac"}
                 onChange={handleChange}
+                disabled={isSubmitting}
               />
               <label htmlFor="mac">Mac</label>
             </div>
@@ -461,6 +505,7 @@ const QuoteLocation = ({ location }) => {
                 value="Other"
                 checked={formData.operatingSystem === "Other"}
                 onChange={handleChange}
+                disabled={isSubmitting}
               />
               <label htmlFor="other">Other</label>
             </div>
@@ -478,6 +523,7 @@ const QuoteLocation = ({ location }) => {
             onChange={handleFileChange}
             accept={VALID_FILE_TYPES.join(", ")}
             className={styles.fileInput}
+            disabled={isSubmitting}
           />
           {error.file && (
             <p
@@ -502,6 +548,7 @@ const QuoteLocation = ({ location }) => {
               aria-invalid={!!error.acceptTerms}
               required
               ref={termsRef}
+              disabled={isSubmitting}
             />
             <span className={styles.checkboxText}>
               I accept the{" "}
@@ -532,8 +579,12 @@ const QuoteLocation = ({ location }) => {
         </div>
       </div>
 
-      <button type="submit" className={`btn ${styles.submitBtn}`}>
-        Submit
+      <button 
+        type="submit" 
+        className={`btn ${styles.submitBtn}`}
+        disabled={isSubmitting}
+      >
+        {isSubmitting ? "Sending..." : "Submit"}
       </button>
     </form>
   );

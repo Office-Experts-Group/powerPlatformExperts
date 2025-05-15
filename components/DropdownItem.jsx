@@ -1,130 +1,76 @@
-// "use client";
-// import React, { useEffect, useRef } from "react";
-// import Link from "next/link";
-
-// import styles from "../styles/header.module.css";
-
-// export default function DropdownItem({ item, handleLinkClick }) {
-//   const dropdownRef = useRef(null);
-
-//   useEffect(() => {
-//     if (dropdownRef.current) {
-//       const checkPosition = () => {
-//         const dropdown = dropdownRef.current;
-//         if (!dropdown) return;
-
-//         const rect = dropdown.getBoundingClientRect();
-//         const viewportHeight = window.innerHeight;
-
-//         // If dropdown would extend beyond viewport
-//         if (rect.bottom > viewportHeight) {
-//           dropdown.style.top = "auto";
-//           dropdown.style.bottom = "0";
-//         } else {
-//           dropdown.style.top = "-1rem";
-//           dropdown.style.bottom = "auto";
-//         }
-//       };
-
-//       // Check position on hover
-//       dropdownRef.current.parentElement.addEventListener(
-//         "mouseenter",
-//         checkPosition
-//       );
-
-//       return () => {
-//         if (dropdownRef.current && dropdownRef.current.parentElement) {
-//           dropdownRef.current.parentElement.removeEventListener(
-//             "mouseenter",
-//             checkPosition
-//           );
-//         }
-//       };
-//     }
-//   }, []);
-
-//   if (!item.items) {
-//     return (
-//       <li>
-//         <Link href={item.href} onClick={() => handleLinkClick(item.label)}>
-//           <span>{item.label}</span>
-//         </Link>
-//       </li>
-//     );
-//   }
-
-//   return (
-//     <li className={styles.nestedDropdown}>
-//       <Link href={item.href} onClick={() => handleLinkClick(item.label)}>
-//         <span>{item.label}</span>
-//       </Link>
-//       <ul className={styles.nestedItems} ref={dropdownRef}>
-//         {item.items.map((subItem, index) => (
-//           <DropdownItem
-//             key={index}
-//             item={subItem}
-//             handleLinkClick={handleLinkClick}
-//           />
-//         ))}
-//       </ul>
-//     </li>
-//   );
-// }
-
 "use client";
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Link from "next/link";
+
 import styles from "../styles/header.module.css";
 
 export default function DropdownItem({ item, handleLinkClick }) {
   const dropdownRef = useRef(null);
+  const [needsScroll, setNeedsScroll] = useState(false);
 
   useEffect(() => {
-    if (!dropdownRef.current) return;
+    if (!dropdownRef.current || !item.items) return;
 
-    const checkPosition = () => {
+    const checkDropdownPosition = () => {
       const dropdown = dropdownRef.current;
       if (!dropdown) return;
 
-      // Get dropdown and viewport dimensions
-      const rect = dropdown.getBoundingClientRect();
+      // Reset any previously applied styles first
+      dropdown.style.bottom = 'auto';
+      dropdown.style.top = '-1rem';
+      dropdown.style.maxHeight = '';
+      dropdown.style.overflowY = '';
+
+      // Get measurements after resetting styles
+      const dropdownRect = dropdown.getBoundingClientRect();
       const viewportHeight = window.innerHeight;
-      const dropdownHeight = rect.height;
-      const spaceBelow = viewportHeight - rect.top;
-      const spaceAbove = rect.top;
-
-      // Clear any existing positioning
-      dropdown.style.removeProperty("top");
-      dropdown.style.removeProperty("bottom");
-
-      // If there's not enough space below, and there's more space above
-      if (spaceBelow < dropdownHeight && spaceAbove > spaceBelow) {
-        dropdown.style.bottom = "100%";
-        dropdown.style.top = "auto";
+      const dropdownHeight = dropdown.scrollHeight;
+      const spaceBelow = viewportHeight - dropdownRect.top;
+      
+      // Add buffer space (adjust as needed)
+      const buffer = 40;
+      
+      // Check if dropdown extends beyond viewport
+      if (dropdownHeight > spaceBelow - buffer) {
+        // Set a maximum height based on available space
+        const maxHeight = spaceBelow - buffer;
+        
+        // Enable scrolling if the dropdown is too tall
+        if (maxHeight < dropdownHeight) {
+          dropdown.style.maxHeight = `${maxHeight}px`;
+          dropdown.style.overflowY = 'auto';
+          setNeedsScroll(true);
+        } else {
+          setNeedsScroll(false);
+        }
       } else {
-        dropdown.style.top = "-1rem";
-        dropdown.style.bottom = "auto";
+        setNeedsScroll(false);
       }
     };
 
-    // Check position on hover and window resize
-    const parent = dropdownRef.current.parentElement;
-    if (parent) {
-      parent.addEventListener("mouseenter", checkPosition);
-      window.addEventListener("resize", checkPosition);
-
-      // Cleanup
-      return () => {
-        parent.removeEventListener("mouseenter", checkPosition);
-        window.removeEventListener("resize", checkPosition);
-      };
+    // Add event listeners
+    const parentElement = dropdownRef.current.parentElement;
+    
+    if (parentElement) {
+      parentElement.addEventListener("mouseenter", checkDropdownPosition);
+      window.addEventListener("resize", checkDropdownPosition);
     }
-  }, []);
+
+    return () => {
+      if (parentElement) {
+        parentElement.removeEventListener("mouseenter", checkDropdownPosition);
+      }
+      window.removeEventListener("resize", checkDropdownPosition);
+    };
+  }, [item.items]);
 
   if (!item.items) {
     return (
       <li>
-        <Link href={item.href} onClick={() => handleLinkClick(item.label)}>
+        <Link 
+          href={item.href} 
+          onClick={() => handleLinkClick && handleLinkClick(item.label)}
+        >
           <span>{item.label}</span>
         </Link>
       </li>
@@ -133,10 +79,16 @@ export default function DropdownItem({ item, handleLinkClick }) {
 
   return (
     <li className={styles.nestedDropdown}>
-      <Link href={item.href} onClick={() => handleLinkClick(item.label)}>
+      <Link 
+        href={item.href} 
+        onClick={() => handleLinkClick && handleLinkClick(item.label)}
+      >
         <span>{item.label}</span>
       </Link>
-      <ul className={styles.nestedItems} ref={dropdownRef}>
+      <ul 
+        className={`${styles.nestedItems} ${needsScroll ? styles.scrollable : ''}`} 
+        ref={dropdownRef}
+      >
         {item.items.map((subItem, index) => (
           <DropdownItem
             key={index}

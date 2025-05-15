@@ -129,6 +129,14 @@ export const navigationData = {
             label: "Training and User Support",
             href: `${WORD_EXPERTS_URL}/training`,
           },
+                              {
+            label: "Document Rebranding",
+            href: `${WORD_EXPERTS_URL}/document-rebranding-services`,
+          },
+          {
+            label: "Brand Templates",
+            href: `${WORD_EXPERTS_URL}/brand-templates`,
+          }
         ],
       },
       {
