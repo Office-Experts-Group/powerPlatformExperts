@@ -7,7 +7,7 @@ import styles from "../styles/cookieConsent.module.css";
 const GA_ID = process.env.NEXT_PUBLIC_GA_ID || "G-WDDMGT2LK0";
 // Google Ads Conversion ID and Label
 const GADS_CONVERSION_ID = "AW-1062762865";
-const GADS_CONVERSION_LABEL = "ZqwXCP_M6MYaEPHy4foD";
+const GADS_CONVERSION_LABEL = "NeofCNTWkWMQ8fLh-gM";
 
 const CookieConsent = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -120,7 +120,7 @@ const CookieConsent = () => {
               gtag('config', '${GADS_CONVERSION_ID}', {
                 'send_page_view': false,
                 'linker': {
-                  'domains': ['excelexperts.com.au', 'officeexperts.com.au', 'accessexperts.com.au']
+                  'domains': ['excelexperts.com.au', 'officeexperts.com.au', 'accessexperts.com.au', 'wordexperts.com.au']
                 }
               });
             `}
