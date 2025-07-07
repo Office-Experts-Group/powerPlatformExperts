@@ -41,9 +41,14 @@
   font-size: 3rem;
   margin: 1rem 0 2rem 0;
 }
+.content p:nth-of-type(2),
 .content p:last-of-type {
   color: #777a7e;
   line-height: 2rem;
+}
+.content a {
+  color: #046999;
+  font-weight: 700;
 }
 
 .faqContainer {

@@ -202,7 +202,7 @@ export const getAboutPageSchema = (testimonials) => {
   return generateTestimonialsSchema(
     testimonials,
     "https://www.powerplatformexperts.com.au",
-    "https://www.officeexperts.com.au/about-us/",
+    "/about-us/",
     false
   );
 };

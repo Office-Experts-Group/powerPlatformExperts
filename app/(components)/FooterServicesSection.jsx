@@ -36,11 +36,7 @@ const FooterServicesSection = () => {
       {/* Main Business Links - Always Visible */}
       <div className={styles.mainLinks}>
         <h3>Our Business</h3>
-        <Link
-          href="https://www.officeexperts.com.au/about-us"
-        >
-          Our Company
-        </Link>
+        <Link href="/about-us">Our Company</Link>
         <Link href="/meet-the-team">Our Team</Link>
         <Link href="/client-testimonials">Testimonials</Link>
         <Link href="/blog">Blog</Link>
@@ -87,34 +83,18 @@ const FooterServicesSection = () => {
         <div className={styles.dropdownContainer}>
           <div className={styles.dropdownBackground}></div>
           <div className={styles.dropdownContent}>
-            <Link
-              href="https://www.officeexperts.com.au/services/microsoft-office"
-            >
+            <Link href="https://www.officeexperts.com.au/services/microsoft-office">
               Microsoft Office
             </Link>
-            <Link
-              href="https://www.excelexperts.com.au"
-            >
-              Microsoft Excel
-            </Link>
-            <Link
-              href="https://www.accessexperts.com.au/"
-            >
+            <Link href="https://www.excelexperts.com.au">Microsoft Excel</Link>
+            <Link href="https://www.accessexperts.com.au/">
               Microsoft Access
             </Link>
-            <Link
-              href="https://www.wordexperts.com.au"
-            >
-              Microsoft Word
-            </Link>
-            <Link
-              href="https://www.officeexperts.com.au/services/microsoft-powerpoint"
-            >
+            <Link href="https://www.wordexperts.com.au">Microsoft Word</Link>
+            <Link href="https://www.officeexperts.com.au/services/microsoft-powerpoint">
               Microsoft PowerPoint
             </Link>
-            <Link
-              href="https://www.officeexperts.com.au/services/microsoft-office-365"
-            >
+            <Link href="https://www.officeexperts.com.au/services/microsoft-office-365">
               Microsoft Office 365
             </Link>
           </div>
@@ -132,34 +112,22 @@ const FooterServicesSection = () => {
         <div className={styles.dropdownContainer}>
           <div className={styles.dropdownBackground}></div>
           <div className={styles.dropdownContent}>
-            <Link
-              href="https://www.officeexperts.com.au/services/by-business-solution/cloud-based-solutions-with-azure"
-            >
+            <Link href="https://www.officeexperts.com.au/services/by-business-solution/cloud-based-solutions-with-azure">
               Microsoft Azure
             </Link>
-            <Link
-              href="https://www.officeexperts.com.au/services/by-business-solution/office-and-sql-server-integration"
-            >
+            <Link href="https://www.officeexperts.com.au/services/by-business-solution/office-and-sql-server-integration">
               Microsoft SQL Server
             </Link>
-            <Link
-              href="https://www.officeexperts.com.au/services/by-business-solution/online-solutions"
-            >
+            <Link href="https://www.officeexperts.com.au/services/by-business-solution/online-solutions">
               Microsoft SharePoint
             </Link>
-            <Link
-              href="https://www.officeexperts.com.au/services/microsoft-dot-net"
-            >
+            <Link href="https://www.officeexperts.com.au/services/microsoft-dot-net">
               Microsoft .NET
             </Link>
-            <Link
-              href="https://www.officeexperts.com.au/services/by-business-solution/custom-office-solutions"
-            >
+            <Link href="https://www.officeexperts.com.au/services/by-business-solution/custom-office-solutions">
               Microsoft Outlook
             </Link>
-            <Link
-              href="https://www.officeexperts.com.au/services/microsoft-publisher"
-            >
+            <Link href="https://www.officeexperts.com.au/services/microsoft-publisher">
               Microsoft Publisher
             </Link>
           </div>

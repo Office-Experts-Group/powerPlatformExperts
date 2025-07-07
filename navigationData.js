@@ -58,7 +58,7 @@ export const navigationData = {
           {
             label: "Support and Training",
             href: `/power-platform-support`,
-          }
+          },
         ],
       },
       {
@@ -129,14 +129,14 @@ export const navigationData = {
             label: "Training and User Support",
             href: `${WORD_EXPERTS_URL}/training`,
           },
-                              {
+          {
             label: "Document Rebranding",
             href: `${WORD_EXPERTS_URL}/document-rebranding-services`,
           },
           {
             label: "Brand Templates",
             href: `${WORD_EXPERTS_URL}/brand-templates`,
-          }
+          },
         ],
       },
       {
@@ -358,7 +358,7 @@ export const navigationData = {
     },
     {
       label: "About Us",
-      href: `${OFFICE_EXPERTS_URL}/about-us`,
+      href: `/about-us`,
     },
     {
       label: "Meet Our Team",
