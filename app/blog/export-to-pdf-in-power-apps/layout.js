@@ -11,7 +11,7 @@ export const metadata = {
     title: "Export to PDF in Power Apps - The Best Way to Do It!",
     description:
       "Learn how to export data from Power Apps to PDF using Power Automate. Generate professional PDF documents directly from your Power Apps.",
-    url: "https://www.powerplatformexperts.com.au/blog/export-to-pdf-power-apps",
+    url: "https://www.powerplatformexperts.com.au/blog/export-to-pdf-in-power-apps",
     siteName: "Power Platform Experts",
     images: [
       {

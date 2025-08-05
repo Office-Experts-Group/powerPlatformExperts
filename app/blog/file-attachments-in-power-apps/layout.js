@@ -4,13 +4,13 @@ export const metadata = {
   // Basic metadata
   title: "File Attachments in Power Apps - The best way to do them",
   description:
-  "In this tutorial, Marcello shows you how to upload files directly to a SharePoint Document Library using the new Power Apps V2 trigger. This method is the simplest way of doing this, and the files end up in a document library and not attached to a SharePoint list or some other blob storage which is ideal!",
+    "In this article, you will learn how to upload files directly to a SharePoint Document Library using the new Power Apps V2 trigger.",
 
   // OpenGraph
   openGraph: {
     title: "File Attachments in Power Apps - The best way to do them",
     description:
-    "In this tutorial, Marcello shows you how to upload files directly to a SharePoint Document Library using the new Power Apps V2 trigger. This method is the simplest way of doing this, and the files end up in a document library and not attached to a SharePoint list or some other blob storage which is ideal!",
+      "In this article, you will learn how to upload files directly to a SharePoint Document Library using the new Power Apps V2 trigger.",
     url: "https://www.powerplatformexperts.com.au/blog/file-attachments-in-power-apps",
     siteName: "Power Platform Experts",
     images: [
@@ -26,9 +26,7 @@ export const metadata = {
   },
 
   // Additional metadata
-  keywords: [
-    "File Attachments in Power Apps",
-  ],
+  keywords: ["File Attachments in Power Apps"],
 
   // Twitter Card
   twitter: {
@@ -36,7 +34,7 @@ export const metadata = {
     site: "@OfficeExpertsG1",
     title: "File Attachments in Power Apps - The best way to do them",
     description:
-    "In this tutorial, Marcello shows you how to upload files directly to a SharePoint Document Library using the new Power Apps V2 trigger. This method is the simplest way of doing this, and the files end up in a document library and not attached to a SharePoint list or some other blob storage which is ideal!",
+      "In this article, you will learn how to upload files directly to a SharePoint Document Library using the new Power Apps V2 trigger.",
     images: ["/logo.png"],
   },
 

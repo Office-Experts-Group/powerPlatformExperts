@@ -3,11 +3,11 @@ import React from "react";
 export const metadata = {
   title: "About Us | Power Platform Experts",
   description:
-    "Discover how our certified Power Platform consultants deliver custom business solutions using Power Apps, Power Automate, Power BI, and Power Pages across Australia.",
+    "Discover how our certified Power Platform consultants deliver custom business solutions using Power Apps, Power Automate, Power BI, and Power Pages.",
   openGraph: {
     title: "About Us | Power Platform Experts",
     description:
-      "Discover how our certified Power Platform consultants deliver custom business solutions using Power Apps, Power Automate, Power BI, and Power Pages across Australia.",
+      "Discover how our certified Power Platform consultants deliver custom business solutions using Power Apps, Power Automate, Power BI, and Power Pages.",
     url: "https://www.powerplatformexperts.com.au/about-us",
     siteName: "Access Experts",
     images: [
@@ -29,7 +29,7 @@ export const metadata = {
     site: "@OfficeExpertsG1",
     title: "About Us | Power Platform Experts",
     description:
-      "Discover how our certified Power Platform consultants deliver custom business solutions using Power Apps, Power Automate, Power BI, and Power Pages across Australia.",
+      "Discover how our certified Power Platform consultants deliver custom business solutions using Power Apps, Power Automate, Power BI, and Power Pages.",
     images: ["/logo.png"],
   },
   alternates: {

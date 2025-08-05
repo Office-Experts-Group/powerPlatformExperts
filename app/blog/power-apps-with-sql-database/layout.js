@@ -4,14 +4,14 @@ export const metadata = {
   // Basic metadata
   title: "Getting Started with Power Apps and Microsoft SQL Database",
   description:
-  "Learn how to evolve your Power Apps development by connecting to Microsoft SQL databases. This comprehensive guide covers setting up an Azure SQL database, creating tables and relationships, connecting Power Apps to SQL using stored procedures and Power Automate, and building a simple inventory management application.",
+    "Connect Power Apps to SQL databases: Set up Azure SQL, create tables and relationships, use stored procedures and Power Automate for inventory management.",
 
   // OpenGraph
   openGraph: {
     title: "Getting Started with Power Apps and Microsoft SQL Database",
     description:
-    "Learn how to evolve your Power Apps development by connecting to Microsoft SQL databases. This comprehensive guide covers setting up an Azure SQL database, creating tables and relationships, connecting Power Apps to SQL using stored procedures and Power Automate, and building a simple inventory management application.",
-    url: "https://www.powerplatformexperts.com.au/blog/power-apps-sql-database",
+      "Connect Power Apps to SQL databases: Set up Azure SQL, create tables and relationships, use stored procedures and Power Automate for inventory management.",
+    url: "https://www.powerplatformexperts.com.au/blog/power-apps-with-sql-database",
     siteName: "Power Platform Experts",
     images: [
       {
@@ -26,9 +26,7 @@ export const metadata = {
   },
 
   // Additional metadata
-  keywords: [
-    "Power Apps SQL Database",
-  ],
+  keywords: ["Power Apps SQL Database"],
 
   // Twitter Card
   twitter: {
@@ -36,7 +34,7 @@ export const metadata = {
     site: "@OfficeExpertsG1",
     title: "Getting Started with Power Apps and Microsoft SQL Database",
     description:
-    "Learn how to evolve your Power Apps development by connecting to Microsoft SQL databases. This comprehensive guide covers setting up an Azure SQL database, creating tables and relationships, connecting Power Apps to SQL using stored procedures and Power Automate, and building a simple inventory management application.",
+      "Connect Power Apps to SQL databases: Set up Azure SQL, create tables and relationships, use stored procedures and Power Automate for inventory management.",
     images: ["/logo.png"],
   },
 

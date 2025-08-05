@@ -2,13 +2,13 @@ import React from "react";
 
 export const metadata = {
   // Basic metadata
-  title: "Power Platform Consulting Team | Experts in Power BI, Apps, Automate & Pages",
+  title: "The Power Platform Consulting Team",
   description:
     "Meet our expert Power Platform consultants. Specialists in Power BI, Power Apps, Power Automate, and Power Pages, helping businesses thrive across Australia.",
 
   // OpenGraph
   openGraph: {
-    title: "Power Platform Consulting Team | Experts in Power BI, Apps, Automate & Pages",
+    title: "The Power Platform Consulting Team",
     description:
       "Meet our expert Power Platform consultants. Specialists in Power BI, Power Apps, Power Automate, and Power Pages, helping businesses thrive across Australia.",
     url: "https://www.powerplatformexperts.com.au/meet-the-team",
@@ -25,15 +25,15 @@ export const metadata = {
     type: "website",
   },
 
-    // Twitter Card
-    twitter: {
-      card: "summary_large_image",
-      site: "@OfficeExpertsG1",
-      title: "Power Platform Consulting Team | Experts in Power BI, Apps, Automate & Pages",
-      description:
-        "Meet our expert Power Platform consultants. Specialists in Power BI, Power Apps, Power Automate, and Power Pages, helping businesses thrive across Australia.",
-      images: ["/logo.png"],
-    },
+  // Twitter Card
+  twitter: {
+    card: "summary_large_image",
+    site: "@OfficeExpertsG1",
+    title: "The Power Platform Consulting Team",
+    description:
+      "Meet our expert Power Platform consultants. Specialists in Power BI, Power Apps, Power Automate, and Power Pages, helping businesses thrive across Australia.",
+    images: ["/logo.png"],
+  },
 
   // Additional metadata
   keywords: ["Power Platform expert development team"],
