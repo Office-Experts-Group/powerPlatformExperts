@@ -4,13 +4,13 @@ export const metadata = {
   // Basic metadata
   title: "Export to PDF in Power Apps",
   description:
-  "Learn how to export data from Power Apps to PDF using Power Automate. This tutorial shows the easiest and most effective way to generate professional PDF documents directly from your Power Apps, including how to add images to your PDFs and automatically link them back to your data source.",
+    "Learn how to export data from Power Apps to PDF using Power Automate. Generate professional PDF documents directly from your Power Apps.",
 
   // OpenGraph
   openGraph: {
     title: "Export to PDF in Power Apps - The Best Way to Do It!",
     description:
-    "Learn how to export data from Power Apps to PDF using Power Automate. This tutorial shows the easiest and most effective way to generate professional PDF documents directly from your Power Apps, including how to add images to your PDFs and automatically link them back to your data source.",
+      "Learn how to export data from Power Apps to PDF using Power Automate. Generate professional PDF documents directly from your Power Apps.",
     url: "https://www.powerplatformexperts.com.au/blog/export-to-pdf-power-apps",
     siteName: "Power Platform Experts",
     images: [
@@ -26,9 +26,7 @@ export const metadata = {
   },
 
   // Additional metadata
-  keywords: [
-    "Power Apps Export to PDF",
-  ],
+  keywords: ["Power Apps Export to PDF"],
 
   // Twitter Card
   twitter: {
@@ -36,7 +34,7 @@ export const metadata = {
     site: "@OfficeExpertsG1",
     title: "Export to PDF in Power Apps - The Best Way to Do It!",
     description:
-    "Learn how to export data from Power Apps to PDF using Power Automate. This tutorial shows the easiest and most effective way to generate professional PDF documents directly from your Power Apps, including how to add images to your PDFs and automatically link them back to your data source.",
+      "Learn how to export data from Power Apps to PDF using Power Automate. Generate professional PDF documents directly from your Power Apps.",
     images: ["/logo.png"],
   },
 

@@ -4,13 +4,13 @@ export const metadata = {
   // Basic metadata
   title: "Use SharePoint Lists just like a Relational Database in Power Apps",
   description:
-  "In this tutorial, Marcello gives you a quick introduction into how to use SharePoint lists as a data source in Power Apps and how they may work as a Relational Database.",
+    "Learn how to use SharePoint lists as a data source in Power Apps and how they may work as a Relational Database.",
 
   // OpenGraph
   openGraph: {
     title: "Use SharePoint Lists just like a Relational Database in Power Apps",
     description:
-      "In this tutorial, Marcello gives you a quick introduction into how to use SharePoint lists as a data source in Power Apps and how they may work as a Relational Database.",
+      "Learn how to use SharePoint lists as a data source in Power Apps and how they may work as a Relational Database.",
     url: "https://www.powerplatformexperts.com.au/blog/sharepoint-lists",
     siteName: "Power Platform Experts",
     images: [
@@ -26,9 +26,7 @@ export const metadata = {
   },
 
   // Additional metadata
-  keywords: [
-    "sharepoint lists",
-  ],
+  keywords: ["sharepoint lists"],
 
   // Twitter Card
   twitter: {
@@ -36,7 +34,7 @@ export const metadata = {
     site: "@OfficeExpertsG1",
     title: "Use SharePoint Lists just like a Relational Database in Power Apps",
     description:
-      "In this tutorial, Marcello gives you a quick introduction into how to use SharePoint lists as a data source in Power Apps and how they may work as a Relational Database.",
+      "Learn how to use SharePoint lists as a data source in Power Apps and how they may work as a Relational Database.",
     images: ["/logo.png"],
   },
 

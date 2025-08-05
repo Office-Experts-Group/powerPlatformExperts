@@ -1,0 +1,67 @@
+export const blogPosts = [
+  {
+    id: 1,
+    title: "Export to PDF in Power Apps - The Best Way to Do It!",
+    description:
+      "Learn how to export data from Power Apps to PDF using Power Automate. This tutorial shows the easiest and most effective way to generate professional PDF documents directly from your Power Apps.",
+    slug: "export-to-pdf-in-power-apps",
+    date: "April 11, 2025",
+    author: "Marcello Brocchi",
+    readingTime: "6 min",
+    category: "Power Apps",
+    featured: true,
+    youtubeId: "_mgLYllGY-Y",
+  },
+  {
+    id: 2,
+    title: "Getting Started with Power Apps and Microsoft SQL Database",
+    description:
+      "Learn how to evolve your Power Apps development by connecting to Microsoft SQL databases. This comprehensive guide covers setting up an Azure SQL database and building applications.",
+    slug: "power-apps-with-sql-database",
+    date: "April 11, 2025",
+    author: "Marcello Brocchi",
+    readingTime: "8 min",
+    category: "Power Apps",
+    featured: true,
+    youtubeId: "awsNLPGNI4w",
+  },
+  {
+    id: 3,
+    title: "Power Apps PDF Function - The Best Way to Export to PDF?",
+    description:
+      "Discover how to use the new experimental PDF function in Power Apps to generate PDF documents directly from your applications without complex workarounds.",
+    slug: "power-apps-pdf-function",
+    date: "April 11, 2025",
+    author: "Marcello Brocchi",
+    readingTime: "4 min",
+    category: "Power Apps",
+    featured: false,
+    youtubeId: "BiOCK1jDOMo",
+  },
+  {
+    id: 4,
+    title: "File Attachments in Power Apps - The Best Way to Do Them",
+    description:
+      "Learn the best approach to implement file attachments in Power Apps using the new Power Automate action that makes uploading documents to SharePoint document libraries simple and efficient.",
+    slug: "file-attachments-in-power-apps",
+    date: "April 11, 2025",
+    author: "Marcello Brocchi",
+    readingTime: "5 min",
+    category: "Power Apps",
+    featured: false,
+    youtubeId: "yC0W5am6M3Q",
+  },
+  {
+    id: 5,
+    title: "Use SharePoint Lists just like a Relational Database in Power Apps",
+    description:
+      "In this tutorial, Marcello gives you a quick introduction into how to use SharePoint lists as a data source in Power Apps and how they may work as a Relational Database.",
+    slug: "sharepoint-lists",
+    date: "April 20, 2025",
+    author: "Marcello Brocchi",
+    readingTime: "5 min",
+    category: "SharePoint",
+    featured: false,
+    youtubeId: "Bea5aP-OpZg",
+  },
+];
