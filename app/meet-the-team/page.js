@@ -3,6 +3,7 @@ import React from "react";
 import ServiceHero from "../../components/ServiceHero";
 import MeetTheTeam from "../../components/MeetTheTeam";
 import Contact from "../../components/Contact";
+import Services from "./(components)/Services";
 
 import handShake from "../../public/pageHeros/handShake.webp";
 import handShakeMob from "../../public/pageHeros/mob/handShakeMob.webp";
@@ -76,6 +77,7 @@ const Page = () => {
         altMob={"greeting shaking hands"}
         isMeetTeam={true}
       />
+      <Services />
       <MeetTheTeam />
       <Contact />
     </>
