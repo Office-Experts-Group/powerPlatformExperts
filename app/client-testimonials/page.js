@@ -33,7 +33,7 @@ const schema = {
         "@id": "https://www.powerplatformexperts.com.au#website",
       },
       datePublished: "2024-10-27T00:00:00+00:00",
-      dateModified: "2024-10-27T00:00:00+00:00",
+      dateModified: "2025-09-02T00:00:00+00:00",
       description:
         "Read what our clients say about our Microsoft Power Platform services.",
     },
