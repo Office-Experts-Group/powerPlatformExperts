@@ -24,6 +24,7 @@ import northernRivers from "../../public/pageHeros/mob/northernRiversMob.webp";
 import wollongong from "../../public/pageHeros/mob/wollongongMob.webp";
 import richmond from "../../public/pageHeros/mob/richmondMob.webp";
 import darwin from "../../public/pageHeros/mob/darwinMob.webp";
+import goldCoast from "../../public/pageHeros/mob/goldCoastMob.webp";
 
 const schema = {
   "@context": "https://schema.org",
@@ -172,6 +173,23 @@ const Page = () => {
             access: "https://www.accessexperts.com.au/contact-us",
             powerplatform: "/contact-us",
             office: "https://www.officeexperts.com.au/contact-us",
+          },
+        },
+        {
+          name: "Gold Coast, QLD",
+          image: goldCoast,
+          alt: "Gold Coast skyline and beaches",
+          description:
+            "Our Gold Coast team specialises in Microsoft Office consulting and training for local businesses. From Excel automation to Word templates, Access databases, and Power Platform solutions, we provide tailored services to improve efficiency and productivity.",
+          serviceLinks: {
+            excel:
+              "https://www.excelexperts.com.au/excel-consultants-gold-coast",
+            word: "https://www.wordexperts.com.au/word-consultants-gold-coast",
+            access:
+              "https://www.accessexperts.com.au/access-consultants-gold-coast",
+            powerplatform: "/contact-us",
+            office:
+              "https://www.officeexperts.com.au/word-and-powerpoint-experts-gold-coast",
           },
         },
       ],
