@@ -25,6 +25,7 @@ import wollongong from "../../public/pageHeros/mob/wollongongMob.webp";
 import richmond from "../../public/pageHeros/mob/richmondMob.webp";
 import darwin from "../../public/pageHeros/mob/darwinMob.webp";
 import goldCoast from "../../public/pageHeros/mob/goldCoastMob.webp";
+import centralCoast from "../../public/pageHeros/mob/centralCoastMob.webp";
 
 const schema = {
   "@context": "https://schema.org",
@@ -94,6 +95,20 @@ const Page = () => {
           },
         },
         {
+          name: "Wollongong, NSW",
+          image: wollongong,
+          alt: "Wollongong coastline",
+          description:
+            "Our Wollongong team serves the Illawarra region with specialised low-code automation and business intelligence services. We develop custom Power Platform solutions for organisations looking to modernise their processes and enhance their data-driven decision making.",
+          serviceLinks: {
+            excel: "https://www.excelexperts.com.au/contact-us",
+            word: "https://www.wordexperts.com.au/contact-us",
+            access: "https://www.accessexperts.com.au/contact-us",
+            powerplatform: "/contact-us",
+            office: "https://www.officeexperts.com.au/contact-us",
+          },
+        },
+        {
           name: "Northern Rivers, NSW",
           image: northernRivers,
           alt: "Northern Rivers region",
@@ -108,17 +123,21 @@ const Page = () => {
           },
         },
         {
-          name: "Wollongong, NSW",
-          image: wollongong,
-          alt: "Wollongong coastline",
+          name: "Central Coast, NSW",
+          image: centralCoast,
+          alt: "Central Coast region",
           description:
-            "Our Wollongong team serves the Illawarra region with specialised low-code automation and business intelligence services. We develop custom Power Platform solutions for organisations looking to modernise their processes and enhance their data-driven decision making.",
+            "On the beautiful Central Coast region of NSW, our team provides Microsoft solutions for a variety of businesses. Working either through remote access and online support, or on-site support for the entire Microsoft suite.",
           serviceLinks: {
-            excel: "https://www.excelexperts.com.au/contact-us",
-            word: "https://www.wordexperts.com.au/contact-us",
-            access: "https://www.accessexperts.com.au/contact-us",
-            powerplatform: "/contact-us",
-            office: "https://www.officeexperts.com.au/contact-us",
+            excel:
+              "https://www.excelexperts.com.au/excel-consultants-central-coast-nsw",
+            word: "https://www.wordexperts.com.au/word-consultants-central-coast-nsw",
+            access:
+              "https://www.accessexperts.com.au/access-consultants-central-coast-nsw",
+            powerplatform:
+              "https://www.powerplatformexperts.com.au/power-platform-consultants-central-coast-nsw",
+            office:
+              "https://www.officeexperts.com.au/office-consultants-central-coast-nsw",
           },
         },
       ],
