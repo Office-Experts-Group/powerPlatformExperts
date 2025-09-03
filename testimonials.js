@@ -86,15 +86,6 @@ export const testimonials = [
   },
   {
     content:
-      "Scott has provided exceptional service and support. He has an excellent knowledge of Access Databases and manufacturing procedures. He is fast and effective.",
-    name: "Peter Norwood",
-    contact: "www.astau.co",
-    image: ast,
-    width: 150,
-    height: 41,
-  },
-  {
-    content:
       "Martin from Office Experts worked with us on automating our project reporting dashboards to increase accuracy and efficiency in our reporting process. Martin was a pleasure to deal with and an expert in his field. He quickly understood the brief, delivered the functionality as required and worked with us to ensure a smooth rollout. ",
     name: "Richard Keals-Smith",
     contact: "Rail Control Systems Australia",
