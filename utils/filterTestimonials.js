@@ -36,6 +36,7 @@ const serviceKeywords = {
   powerplatform: [
     "power platform",
     "power platform experts",
+    "powerplatform experts",
     "powerpoint",
     "automate",
     "powerbi",

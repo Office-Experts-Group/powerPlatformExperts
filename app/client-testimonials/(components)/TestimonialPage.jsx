@@ -3,17 +3,19 @@ import React from "react";
 import TestimonialCard from "../../../components/TestimonialCard";
 import AnimateOnScroll from "../../../components/AnimateOnScroll";
 
-import styles from "../../../styles/testimonialPage.module.css";
+import { filterAndSortTestimonials } from "../../../utils/filterTestimonials";
+
+import styles from "../../../styles/testimonialPage.module.scss";
 
 const TestimonialPage = ({ testimonials }) => {
-  // Filter out testimonials without valid images first
-  const validTestimonials = testimonials.filter(
-    (testimonial) => testimonial.image && testimonial.image !== ""
+  const validTestimonials = filterAndSortTestimonials(
+    testimonials,
+    "powerplatform"
   );
 
   return (
     <section className={styles.testimonialPage}>
-      <h2>
+      <h2 className={styles.padded}>
         We are grateful to our clients for providing the following references
         <br></br>
         and feedback for our consultants and our services.
@@ -21,10 +23,7 @@ const TestimonialPage = ({ testimonials }) => {
       <div className={styles.testimonialGrid}>
         {validTestimonials.map((testimonial, index) => {
           // Create a unique key using multiple properties
-          const uniqueKey = `testimonial-${index}-${testimonial.name.replace(
-            /\s+/g,
-            ""
-          )}-${testimonial.contact.replace(/[^a-zA-Z0-9]/g, "")}`;
+          const uniqueKey = `testimonial-${index}`;
 
           // Show first 3 testimonials without animation
           if (index < 3) {

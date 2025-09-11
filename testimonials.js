@@ -73,8 +73,37 @@ import sacasting from "./public/logos/sa-casting187x131.webp";
 import cem from "./public/logos/cem.webp";
 import tsubaki from "./public/logos/tsubaki.webp";
 import rcs from "./public/logos/rcs.webp";
+// new testimonials 10/9/2025
+import fbrice from "./public/logos/fbrice.png";
 
 export const testimonials = [
+  {
+    content:
+      "Rochelle was excellent to work with, very adaptable and reactive to our needs. We were very happy with our new office templates and associated training that was provided. Both services were tailored specifically to our requirements.",
+    name: "Leonie Bryson",
+    contact: "www.enviroproperty.com.au",
+    image: eps,
+    width: 150,
+    height: 63,
+  },
+  {
+    content:
+      "Word Experts and Excel Experts have provided our firm with an invaluable set of templates which have expedited the input of large volumes of data. This has all but eliminated the need for time consuming proof reading and cross checking of raw data. I highly recommend Word Experts and Excel Experts to provide solutions using macros for your day to day operations.",
+    name: "Mark Wagner",
+    contact: "www.ems.net.au",
+    image: environmentalmonitoringservices150x,
+    width: 150,
+    height: 94,
+  },
+  {
+    content:
+      "I have had a nagging problem with Microsoft Word hierarchical document numbering for some time. I read all the MS Word tips and advice online but I still could not get it to work and I was wasting a lot of time. I then found Word Experts, sent them the file and they sent the document back fixed within the hour.",
+    name: "Jason Bresnehan",
+    contact: "www.bresnehan.com",
+    image: bresnehan150x,
+    width: 150,
+    height: 36,
+  },
   {
     content:
       "James could not have been more helpful throughout our project. A complex project reviewed from the ground up, all broken down for our review and understanding including adding functionality. Will definitely engage with James and Office Experts Group for any future requirements.",
@@ -86,12 +115,21 @@ export const testimonials = [
   },
   {
     content:
-      "Martin from Office Experts worked with us on automating our project reporting dashboards to increase accuracy and efficiency in our reporting process. Martin was a pleasure to deal with and an expert in his field. He quickly understood the brief, delivered the functionality as required and worked with us to ensure a smooth rollout. ",
-    name: "Richard Keals-Smith",
-    contact: "Rail Control Systems Australia",
-    image: rcs,
-    width: 150,
-    height: 50,
+      "FB Rice engaged Office Experts to update our templates and Microsoft styles, and we are very pleased with the outcome. Rochelle and Aleisha brought the expertise we needed, delivering professional output in a new font for the firm. Communication was clear and consistent throughout the project, and they demonstrated strong knowledge, responsiveness, and reliability in meeting our deadlines. We would recommend Office Experts to others seeking specialised Microsoft support.",
+    name: "Jacinta Dague",
+    contact: "FB Rice",
+    image: fbrice,
+    width: 200,
+    height: 40,
+  },
+  {
+    content:
+      "Fantastic results, we had a custom system built in Microsoft Access by Stephen at Office Experts. Overall, the system works very well and has boosted our overall efficiency. Stephen made the process of information gathering and build easy and smooth, highly recommended.",
+    name: "Brenna Allmey",
+    contact: "SeaSide Joinery Pty Ltd",
+    // image: ,
+    // width: 200,
+    // height: 40,
   },
   {
     content:
@@ -140,6 +178,15 @@ export const testimonials = [
   },
   {
     content:
+      "We appreciated the professionalism, patience and expertise of Richard at Office Experts. He resolved a major issue we had with our Access database and we can begin the new year with less stress. We are happy to recommend Office Experts.",
+    name: "Ann Peters",
+    contact: "www.sacasting.com.au",
+    image: sacasting,
+    width: 187,
+    height: 131,
+  },
+  {
+    content:
       "Jason was exceptional with his service and the end product he provided. I would highly recommend Jason for anything to do with Excel. Excellent from start to finish!!",
     name: "Anthony Lee",
     contact: "www.parkstonehr.com.au",
@@ -175,21 +222,21 @@ export const testimonials = [
     height: 53,
   },
   {
+    content:
+      "Martin from Office Experts worked with us on automating our project reporting dashboards to increase accuracy and efficiency in our reporting process. Martin was a pleasure to deal with and an expert in his field. He quickly understood the brief, delivered the functionality as required and worked with us to ensure a smooth rollout. ",
+    name: "Richard Keals-Smith",
+    contact: "Rail Control Systems Australia",
+    image: rcs,
+    width: 150,
+    height: 50,
+  },
+  {
     content: "Great service, exactly what I was after.",
     name: "Peter",
     contact: "flowhighperformance.com",
     image: flowhighperformance,
     width: 92,
     height: 90,
-  },
-  {
-    content:
-      "We appreciated the professionalism, patience and expertise of Richard at Office Experts. He resolved a major issue we had with our Access database and we can begin the new year with less stress. We are happy to recommend Office Experts.",
-    name: "Ann Peters",
-    contact: "www.sacasting.com.au",
-    image: sacasting,
-    width: 187,
-    height: 131,
   },
   {
     content:
@@ -202,21 +249,21 @@ export const testimonials = [
   },
   {
     content:
-      "Jason was responsive. Reviewed our project documentation before we agreed on the final solution. Clear instructions provided on how to install the add-in created for us. Delivered within time frame agreed.",
-    name: "Rhonda Dekker",
-    contact: "www.rookpartners.com/contact-us",
-    image: rookpartnersrooksheuptdltd,
-    width: 150,
-    height: 49,
-  },
-  {
-    content:
       "James was fantastic to work with - he was very patient and tenacious in sorting our issue for us (MYOB API Key) and kept a sense of humour in the most frustrating of issues....working with MYOB Tech Support! He was open to suggestions and seeking further assistance to resolve the issue and his communication was prompt, professional and sometimes very entertaining which was greatly appreciated when our software stopped working and my stress levels were going through the roof! I would 100% work with James again - in fact, he is now our company point of contact for support with our inhouse management program which was designed by a company who no longer supports the program and left us quite vulnerable should the system stop working. James took the time to learn our program so he could assist us with any future developments and updates which is critical to reducing our business IT risk. I can't rate James highly enough and I'm so glad to have found Office Experts!",
     name: "Christina Matthews",
     contact: "C.E.M. Alliance Pty Ltd",
     image: cem,
     width: 200,
     height: 50,
+  },
+  {
+    content:
+      "Jason was responsive. Reviewed our project documentation before we agreed on the final solution. Clear instructions provided on how to install the add-in created for us. Delivered within time frame agreed.",
+    name: "Rhonda Dekker",
+    contact: "www.rookpartners.com/contact-us",
+    image: rookpartnersrooksheuptdltd,
+    width: 150,
+    height: 49,
   },
   {
     content:
@@ -253,15 +300,6 @@ export const testimonials = [
     image: tsubaki,
     width: 200,
     height: 50,
-  },
-  {
-    content:
-      "Rochelle was excellent to work with, very adaptable and reactive to our needs. We were very happy with our new office templates and associated training that was provided. Both services were tailored specifically to our requirements.",
-    name: "Leonie Bryson",
-    contact: "www.enviroproperty.com.au",
-    image: eps,
-    width: 150,
-    height: 63,
   },
   {
     content:
@@ -507,15 +545,6 @@ export const testimonials = [
   },
   {
     content:
-      "Word Experts and Excel Experts have provided our firm with an invaluable set of templates which have expedited the input of large volumes of data. This has all but eliminated the need for time consuming proof reading and cross checking of raw data. I highly recommend Word Experts and Excel Experts to provide solutions using macros for your day to day operations.",
-    name: "Mark Wagner",
-    contact: "www.ems.net.au",
-    image: environmentalmonitoringservices150x,
-    width: 150,
-    height: 94,
-  },
-  {
-    content:
       "I have utilized the services of Scott Robinson from Excel Experts a number of times and have always found his level of service to be above and beyond our agreed expectations. Even when the goal posts were constantly changing, Scott was always equal to the challenge. Scott from Excel Experts will be the first person that I call if and when I require 'Excel' assistance in the future.",
     name: "Rob Smith",
     contact: "www.unitingcare.org.au",
@@ -621,15 +650,6 @@ export const testimonials = [
     image: "",
     width: 0,
     height: 0,
-  },
-  {
-    content:
-      "I have had a nagging problem with Microsoft Word hierarchical document numbering for some time. I read all the MS Word tips and advice online but I still could not get it to work and I was wasting a lot of time. I then found Word Experts, sent them the file and they sent the document back fixed within the hour.",
-    name: "Jason Bresnehan",
-    contact: "www.bresnehan.com",
-    image: bresnehan150x,
-    width: 150,
-    height: 36,
   },
   {
     content:
@@ -783,15 +803,6 @@ export const testimonials = [
     image: chillit150x,
     width: 150,
     height: 47,
-  },
-  {
-    content:
-      "During a recent project, the assistance of Office Experts was invaluable. They assisted our company in the development of an inspection tool using Office based software. This tool will save us a significant amount of time and resources per annum. From design through testing and to completion, I could not speak highly enough of them. Our one on one consultant Linda Campbell was exceptional and really delivered exactly what we were after. I would recommend Office Experts for any business that is looking to streamline processes and make their day to day operation more efficient.",
-    name: "Brett McLeod",
-    contact: "www.persal.com.au",
-    image: persalandcox,
-    width: 150,
-    height: 124,
   },
   {
     content:
