@@ -105,7 +105,7 @@
   margin-bottom: 2rem;
 }
 .underline h2 {
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: 700;
 }
 
@@ -290,5 +290,140 @@
 @media (max-width: 449px) {
   .paddedTop {
     padding: 4rem 1rem 0 1rem;
+  }
+}
+
+.deskImage {
+  display: flex;
+  margin: 3rem auto;
+}
+@media (max-width: 449px) {
+  .deskImage {
+    display: none;
+  }
+}
+@media (min-width: 450px) and (max-width: 766px) {
+  .deskImage {
+    display: none;
+  }
+}
+@media (min-width: 767px) and (max-width: 1024px) {
+  .deskImage {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .mobImage {
+    display: none;
+  }
+}
+
+@media (max-width: 449px) {
+  .deskOnly {
+    display: none;
+    margin-bottom: 3rem;
+  }
+}
+@media (min-width: 450px) and (max-width: 766px) {
+  .deskOnly {
+    display: none;
+    margin-bottom: 3rem;
+  }
+}
+@media (min-width: 767px) and (max-width: 1024px) {
+  .deskOnly {
+    display: none;
+    margin-bottom: 3rem;
+  }
+}
+
+.useCases {
+  margin-top: 3rem;
+  padding: 0 5vw;
+}
+@media (min-width: 767px) and (max-width: 1024px) {
+  .useCases {
+    padding: 0;
+  }
+}
+.useCases h3 {
+  font-size: 1.5rem;
+  text-align: center;
+}
+@media (max-width: 449px) {
+  .useCases {
+    margin: 2rem 0;
+    padding: 0;
+  }
+}
+
+.gridHolder {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+.gridHolder img {
+  margin-left: auto;
+  align-self: center;
+}
+.gridHolder div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.gridHolder p {
+  text-align: center;
+}
+@media screen and (max-width: 700px) {
+  .gridHolder {
+    grid-template-columns: 25% 1fr;
+  }
+  .gridHolder img {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 449px) {
+  .DeskImg {
+    display: none;
+  }
+}
+@media (min-width: 450px) and (max-width: 766px) {
+  .DeskImg {
+    display: none;
+  }
+}
+
+.centered {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 1100px) {
+  .centered {
+    flex-direction: column;
+  }
+  .centered img {
+    margin-bottom: 2rem;
+  }
+}
+.centered div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.centered h2,
+.centered p {
+  text-align: center;
+}
+@media screen and (max-width: 700px) {
+  .centered h2,
+  .centered p {
+    text-align: left;
   }
 }/*# sourceMappingURL=pageSegment3.module.css.map */
