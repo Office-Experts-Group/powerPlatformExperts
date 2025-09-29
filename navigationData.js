@@ -59,6 +59,14 @@ export const navigationData = {
             label: "Support and Training",
             href: `/power-platform-support`,
           },
+          {
+            label: "Data Integration",
+            href: `/power-bi-data-integration`,
+          },
+          {
+            label: "Excel to Power BI Migration",
+            href: `/excel-to-power-bi-migration`,
+          },
         ],
       },
       {

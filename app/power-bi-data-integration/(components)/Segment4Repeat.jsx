@@ -1,12 +1,12 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 import AnimateOnScroll from "../../../components/AnimateOnScroll";
 
 import styles from "../../../styles/pageSegment4.module.css";
 
 import transform from "../../../public/transform.webp";
-import Link from "next/link";
 
 const Segment4Repeat = () => {
   const checkItems = [

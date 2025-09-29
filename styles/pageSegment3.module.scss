@@ -369,3 +369,9 @@
     }
   }
 }
+
+.padLess {
+  @media screen and (max-width: 700px) {
+    padding: 0 1rem !important;
+  }
+}

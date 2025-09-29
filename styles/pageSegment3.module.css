@@ -426,4 +426,10 @@
   .centered p {
     text-align: left;
   }
+}
+
+@media screen and (max-width: 700px) {
+  .padLess {
+    padding: 0 1rem !important;
+  }
 }/*# sourceMappingURL=pageSegment3.module.css.map */
