@@ -11,6 +11,7 @@ export const blogPosts = [
     category: "Power Apps",
     featured: true,
     youtubeId: "_mgLYllGY-Y",
+    imagePath: null, // Set to null when using youtubeId
   },
   {
     id: 2,
@@ -24,6 +25,7 @@ export const blogPosts = [
     category: "Power Apps",
     featured: true,
     youtubeId: "awsNLPGNI4w",
+    imagePath: null,
   },
   {
     id: 3,
@@ -37,6 +39,7 @@ export const blogPosts = [
     category: "Power Apps",
     featured: false,
     youtubeId: "BiOCK1jDOMo",
+    imagePath: null,
   },
   {
     id: 4,
@@ -50,6 +53,7 @@ export const blogPosts = [
     category: "Power Apps",
     featured: false,
     youtubeId: "yC0W5am6M3Q",
+    imagePath: null,
   },
   {
     id: 5,
@@ -63,5 +67,20 @@ export const blogPosts = [
     category: "SharePoint",
     featured: false,
     youtubeId: "Bea5aP-OpZg",
+    imagePath: null,
+  },
+  {
+    id: 6,
+    title: "Power BI for Financial Services",
+    description:
+      "Discover how Power BI empowers financial organisations to turn raw data into actionable insights for compliance, risk management, and business growth.",
+    slug: "power-bi-for-financial-services",
+    date: "October 1, 2025",
+    author: "Power Platform Team",
+    readingTime: "10 min",
+    category: "Power BI",
+    featured: false,
+    youtubeId: null, // Set to null when using custom image
+    imagePath: "/blog/financial/financial-services.webp",
   },
 ];

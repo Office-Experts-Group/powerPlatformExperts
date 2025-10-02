@@ -1,4 +1,5 @@
 "use client";
+
 import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
@@ -61,24 +62,6 @@ const schema = {
       ],
     },
     {
-      "@type": "Blog",
-      "@id": "https://www.powerplatformexperts.com.au/blog#blog",
-      url: "https://www.powerplatformexperts.com.au/blog",
-      name: "Power Platform Experts Australia Blog",
-      description:
-        "Expert tutorials, tips, and best practices for Microsoft Power Platform",
-      inLanguage: "en-AU",
-      publisher: {
-        "@type": "Organization",
-        name: "Power Platform Experts Australia",
-        url: "https://www.powerplatformexperts.com.au",
-        logo: {
-          "@type": "ImageObject",
-          url: "https://www.powerplatformexperts.com.au/logo.png",
-        },
-      },
-    },
-    {
       "@type": "WebSite",
       "@id": "https://www.powerplatformexperts.com.au#website",
       url: "https://www.powerplatformexperts.com.au",
@@ -113,7 +96,28 @@ const BlogPage = () => {
   // Get featured posts
   const featuredPosts = blogPosts.filter((post) => post.featured);
 
-  // Function to render a card (used for both featured and regular posts)
+  /**
+   * Function to get the correct image source for a post
+   * Prioritizes YouTube thumbnails, then custom images, then fallback
+   * @param {Object} post - Blog post object
+   * @returns {string} - Image URL
+   */
+  const getImageSource = (post) => {
+    if (post.youtubeId) {
+      return `https://img.youtube.com/vi/${post.youtubeId}/maxresdefault.jpg`;
+    } else if (post.imagePath) {
+      return post.imagePath;
+    }
+    // Fallback image if neither youtubeId nor imagePath is available
+    return "/blog/fallback.webp";
+  };
+
+  /**
+   * Function to render a post card (used for both featured and regular posts)
+   * @param {Object} post - Blog post object
+   * @param {boolean} isFeatured - Whether this is a featured post
+   * @returns {JSX.Element} - Rendered post card
+   */
   const renderPostCard = (post, isFeatured = false) => (
     <Link
       href={`/blog/${post.slug}`}
@@ -122,7 +126,7 @@ const BlogPage = () => {
     >
       <div className={styles.postImageContainer}>
         <Image
-          src={`https://img.youtube.com/vi/${post.youtubeId}/maxresdefault.jpg`}
+          src={getImageSource(post)}
           alt={post.title}
           className={styles.postImage}
           fill
@@ -179,7 +183,13 @@ const BlogPage = () => {
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
               className={styles.searchInput}
+              list="searchList"
             />
+            <datalist id="searchList">
+              {blogPosts.map((post) => (
+                <option key={post.id} value={post.title} />
+              ))}
+            </datalist>
             <svg
               className={styles.searchIcon}
               xmlns="http://www.w3.org/2000/svg"
