@@ -83,4 +83,18 @@ export const blogPosts = [
     youtubeId: null, // Set to null when using custom image
     imagePath: "/blog/financial/financial-services.webp",
   },
+  {
+    id: 7,
+    title: "Power BI in Healthcare Analytics: Transforming Patient Outcomes",
+    description:
+      "Discover how Power BI is revolutionising healthcare analytics with real-time dashboards that improve patient outcomes, reduce readmissions, and optimise hospital operations.",
+    slug: "power-bi-in-healthcare-analytics",
+    date: "October 3, 2025",
+    author: "Scott Robinson",
+    readingTime: "8 min",
+    category: "Power BI",
+    featured: false,
+    youtubeId: null,
+    imagePath: "/blog/healthcare/healthcare.webp",
+  },
 ];
