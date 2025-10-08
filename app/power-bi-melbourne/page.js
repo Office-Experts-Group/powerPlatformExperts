@@ -8,6 +8,7 @@ import PageSegmentMain from "./(components)/PageSegmentMain";
 import Segment4 from "./(components)/Segment4";
 import Promo from "../../components/Promo";
 import OurExperts from "./(components)/OurExperts";
+import Testimonials from "../../app/(components)/Testimonials";
 
 import melbourne from "../../public/pageHeros/melbourne.webp";
 import melbourneMob from "../../public/pageHeros/mob/melbourneMob.webp";
@@ -16,6 +17,7 @@ import {
   generateProfessionalServiceSchema,
   generateOrganizationSchema,
 } from "../../utils/schemaGenerators";
+import { testimonials } from "../../testimonials";
 
 const schema = {
   "@context": "https://schema.org",
@@ -174,6 +176,7 @@ const Page = () => {
         />
         <OurExperts />
         <ExpertsAwait />
+        <Testimonials testimonials={testimonials} />
         <Contact />
       </main>
     </>

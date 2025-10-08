@@ -43,6 +43,7 @@ const serviceKeywords = {
     "power apps",
     "flow",
     "Marcello",
+    "yuriy",
   ],
 };
 
