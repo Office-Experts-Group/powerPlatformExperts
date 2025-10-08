@@ -376,3 +376,10 @@
     margin-bottom: 6rem;
   }
 }
+
+.gridList {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 10vw;
+  margin-top: 1rem;
+}
