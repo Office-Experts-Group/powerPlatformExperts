@@ -5,18 +5,24 @@ import AnimateOnScroll from "../../../../components/AnimateOnScroll";
 
 import styles from "../../../../styles/pageSegment.module.css";
 
-import design from "../../../../public/design600x400.webp";
+import services from "../../../../public/services.webp";
 
 const PageSegmentMain = () => {
   return (
-    <section className={styles.pageSegment}>
-      <div className={styles.imgWrapper} style={{ height: "fit-content" }}>
+    <section
+      className={styles.pageSegment}
+      style={{ flexDirection: "row-reverse" }}
+    >
+      <div
+        className={styles.imgWrapper}
+        style={{ height: "fit-content", borderBottom: "none" }}
+      >
         <AnimateOnScroll animation="slide-left" duration={1} delay={0}>
           <Image
-            src={design}
-            alt="the word design on cards"
-            width={600}
-            height={400}
+            src={services}
+            alt="someone writing services by hand"
+            width={450}
+            height={300}
             priority
           />
         </AnimateOnScroll>
@@ -26,18 +32,16 @@ const PageSegmentMain = () => {
         <AnimateOnScroll animation="fade-up" duration={1} delay={0.3}>
           <div className={styles.content}>
             <p>Custom Design and Development</p>
-            <h2>Power Platform Expert Consulting Services</h2>
+            <h2>Power Platform Services</h2>
             <p>
-              With competitive pricing and a prompt high quality service, our
-              consultants excel in the Microsoft Power Platform of low-code
-              tools and software. We specialise in custom business applications
-              to efficiently perform daily tasks such as managing customer
-              information, automating approvals and sending notifications.
-            </p>
-            <p>
-              Office Experts have your business process and workflow needs
-              covered across the spectrum of databases, automation, dashboards,
-              reporting, integration and so much more.
+              Since 2000, Office Experts Group has helped Australian
+              organisations unlock the full potential of Microsoft technologies.
+              Our Power Platform specialists team design, develop, and deploy
+              custom solutions that streamline operations, automate workflows,
+              and transform data into interactive dashboards and actionable
+              insights. Be it a small mobile app for field workers, automated
+              approval processes, or interactive dashboards for executive teams,
+              we deliver practical solutions tailored for your needs.
             </p>
           </div>
         </AnimateOnScroll>

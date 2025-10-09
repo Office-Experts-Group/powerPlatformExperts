@@ -1,10 +1,11 @@
-import React from 'react'
+import React from "react";
 
 import ServiceHero from "../../components/ServiceHero";
 import Contact from "../../components/Contact";
-import PageSegmentMain from './(components)/PageSegmentMain';
-import PageSegment4 from './(components)/PageSegment4';
-import BlackSegment from './(components)/BlackSegment';
+import PageSegmentMain from "./(components)/PageSegmentMain";
+import PageSegment4 from "./(components)/PageSegment4";
+import BlackSegment from "./(components)/BlackSegment";
+import Testimonials from "../(components)/Testimonials";
 
 import handShake from "../../public/pageHeros/handShake.webp";
 import handShakeMob from "../../public/pageHeros/mob/handShakeMob.webp";
@@ -13,6 +14,7 @@ import {
   generateProfessionalServiceSchema,
   generateOrganizationSchema,
 } from "../../utils/schemaGenerators";
+import { testimonials } from "../../testimonials";
 
 const schema = {
   "@context": "https://schema.org",
@@ -39,13 +41,16 @@ const schema = {
       potentialAction: [
         {
           "@type": "ReadAction",
-          target: ["https://www.powerplatformexperts.com.au/power-platform-support"],
+          target: [
+            "https://www.powerplatformexperts.com.au/power-platform-support",
+          ],
         },
       ],
     },
     {
       "@type": "BreadcrumbList",
-      "@id": "https://www.powerplatformexperts.com.au/power-platform-support#breadcrumb",
+      "@id":
+        "https://www.powerplatformexperts.com.au/power-platform-support#breadcrumb",
       itemListElement: [
         {
           "@type": "ListItem",
@@ -67,68 +72,70 @@ const schema = {
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "Service",
-  "name": "Power Platform Support Services",
-  "provider": {
+  name: "Power Platform Support Services",
+  provider: {
     "@type": "Organization",
-    "name": "Power Platform Experts - Office Experts Group",
-    "sameAs": [
+    name: "Power Platform Experts - Office Experts Group",
+    sameAs: [
       "https://powerplatformexperts.com.au",
-      "https://officeexperts.com.au"
-    ]
+      "https://officeexperts.com.au",
+    ],
   },
-  "serviceType": "Power Platform Consulting and Support",
-  "areaServed": {
+  serviceType: "Power Platform Consulting and Support",
+  areaServed: {
     "@type": "Country",
-    "name": "Australia"
+    name: "Australia",
   },
-  "description": "Expert support for the Microsoft Power Platform including Power BI, Power Apps, Power Automate, and Power Pages. Troubleshooting, consulting, and training services tailored to your business needs.",
-  "offers": {
+  description:
+    "Expert support for the Microsoft Power Platform including Power BI, Power Apps, Power Automate, and Power Pages. Troubleshooting, consulting, and training services tailored to your business needs.",
+  offers: {
     "@type": "Offer",
-    "availability": "https://schema.org/InStock",
-    "priceSpecification": {
+    availability: "https://schema.org/InStock",
+    priceSpecification: {
       "@type": "PriceSpecification",
-      "priceCurrency": "AUD"
-    }
+      priceCurrency: "AUD",
+    },
   },
-  "audience": {
+  audience: {
     "@type": "BusinessAudience",
-    "audienceType": "Australian businesses using Microsoft Power Platform"
+    audienceType: "Australian businesses using Microsoft Power Platform",
   },
-  "serviceOutput": "Efficient apps, automations, reports, and websites built and maintained using Microsoft Power Platform tools.",
-  "hasOfferCatalog": {
+  serviceOutput:
+    "Efficient apps, automations, reports, and websites built and maintained using Microsoft Power Platform tools.",
+  hasOfferCatalog: {
     "@type": "OfferCatalog",
-    "name": "Power Platform Support Services",
-    "itemListElement": [
+    name: "Power Platform Support Services",
+    itemListElement: [
       {
         "@type": "Offer",
-        "itemOffered": {
+        itemOffered: {
           "@type": "Service",
-          "name": "Power BI Support & Visualisation"
-        }
+          name: "Power BI Support & Visualisation",
+        },
       },
       {
         "@type": "Offer",
-        "itemOffered": {
+        itemOffered: {
           "@type": "Service",
-          "name": "Power Apps Development & Maintenance"
-        }
+          name: "Power Apps Development & Maintenance",
+        },
       },
       {
         "@type": "Offer",
-        "itemOffered": {
+        itemOffered: {
           "@type": "Service",
-          "name": "Power Automate Workflows & Automation"
-        }
+          name: "Power Automate Workflows & Automation",
+        },
       },
       {
         "@type": "Offer",
-        "itemOffered": {
+        itemOffered: {
           "@type": "Service",
-          "name": "Power Pages Setup & Portal Support"
-        }
-      }
-    ]
-  }
+          name: "Power Pages Setup & Portal Support",
+        },
+      },
+    ],
+  },
 };
 
 const PowerPlatformSupport = () => {
@@ -153,6 +160,7 @@ const PowerPlatformSupport = () => {
         <PageSegmentMain />
         <BlackSegment />
         <PageSegment4 />
+        <Testimonials testimonials={testimonials} />
         <Contact />
       </main>
     </>

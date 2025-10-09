@@ -432,4 +432,45 @@
   .padLess {
     padding: 0 1rem !important;
   }
+}
+
+.ourProcess {
+  padding: 0 5vw;
+  display: grid;
+  grid-template-columns: 1fr fr;
+}
+@media (min-width: 767px) and (max-width: 1024px) {
+  .ourProcess {
+    padding: 0;
+  }
+}
+.ourProcess h3 {
+  font-size: 1.5rem;
+  text-align: center;
+}
+@media (max-width: 449px) {
+  .ourProcess {
+    margin: 2rem 0;
+    padding: 0;
+  }
+}
+
+.flexHolder {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+.flexHolder img {
+  margin-left: auto;
+  align-self: center;
+}
+.flexHolder div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.flexHolder p {
+  text-align: center;
 }/*# sourceMappingURL=pageSegment3.module.css.map */

@@ -5,11 +5,6 @@ const REDIRECTS = [
     destination: "/services/microsoft-power-platform/microsoft-power-pages",
     permanent: true,
   },
-  {
-    source: "/services/microsoft-power-platform",
-    destination: "/",
-    permanent: true,
-  },
 ];
 
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
@@ -28,13 +23,12 @@ const nextConfig = {
     minimumCacheTTL: 31536000,
     remotePatterns: [
       {
-        protocol: 'https',
-        hostname: 'img.youtube.com',
-        pathname: '/**',
+        protocol: "https",
+        hostname: "img.youtube.com",
+        pathname: "/**",
       },
     ],
   },
-  
 
   async redirects() {
     return REDIRECTS;

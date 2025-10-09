@@ -5,7 +5,11 @@ import ExpertsAwait from "../../../components/ExpertsAwait";
 import Contact from "../../../components/Contact";
 import Testimonials from "../../(components)/Testimonials";
 import PageSegmentMain from "./(components)/PageSegmentMain";
-import SolutionsCarousel from "./(components)/SolutionsCarousel";
+import ServicesApps from "./(components)/ServicesApps";
+import ServicesAutomate from "./(components)/ServicesAutomate";
+import ServicesBI from "./(components)/ServicesBI";
+import ServicesPages from "./(components)/ServicesPages";
+import OurProcess from "./(components)/OurProcess";
 
 import { getTestimonialsPageSchema } from "../../../utils/testimonialSchemaGenerator";
 import { testimonials } from "../../../testimonials";
@@ -17,6 +21,9 @@ import {
   generateProfessionalServiceSchema,
   generateOrganizationSchema,
 } from "../../../utils/schemaGenerators";
+import DeskImage from "./(components)/DeskImage";
+import Quote from "./(components)/Quote";
+import Quote2 from "./(components)/Quote2";
 
 const schema = {
   "@context": "https://schema.org",
@@ -91,7 +98,14 @@ const Page = () => {
         desktopImage={tableGraph}
       />
       <PageSegmentMain />
-      <SolutionsCarousel />
+      <Quote />
+      <ServicesApps />
+      <ServicesAutomate />
+      <ServicesBI />
+      <ServicesPages />
+      <DeskImage />
+      <Quote2 />
+      <OurProcess />
       <Testimonials testimonials={testimonials} />
       <ExpertsAwait />
       <Contact />
