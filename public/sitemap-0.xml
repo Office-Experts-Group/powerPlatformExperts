@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
-<url><loc>https://www.powerplatformexperts.com.au/about-us</loc><lastmod>2025-10-09T07:29:22.702Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://www.powerplatformexperts.com.au/blog</loc><lastmod>2025-10-09T07:29:22.703Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://www.powerplatformexperts.com.au/blog/power-apps-with-sql-database</loc><lastmod>2025-10-09T07:29:22.703Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority><additionalTags>
+<url><loc>https://www.powerplatformexperts.com.au/blog/export-to-pdf-in-power-apps</loc><lastmod>2025-10-09T08:08:25.505Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.powerplatformexperts.com.au/about-us</loc><lastmod>2025-10-09T08:08:25.505Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.powerplatformexperts.com.au/blog/power-apps-with-sql-database</loc><lastmod>2025-10-09T08:08:25.505Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority><additionalTags>
       <video:video>
         <video:thumbnail_loc>https://i.ytimg.com/vi/awsNLPGNI4w?si=hn-0Ak_weB4vWeBT/maxresdefault.jpg</video:thumbnail_loc>
         <video:title>Getting Started with PowerApps and a Microsoft SQL Database</video:title>
@@ -11,29 +11,8 @@
         <video:duration>2018</video:duration>
       </video:video>
     </additionalTags></url>
-<url><loc>https://www.powerplatformexperts.com.au/blog/export-to-pdf-in-power-apps</loc><lastmod>2025-10-09T07:29:22.703Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://www.powerplatformexperts.com.au/contact-us/request-a-quote</loc><lastmod>2025-10-09T07:29:22.703Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://www.powerplatformexperts.com.au/blog/power-apps-pdf-function</loc><lastmod>2025-10-09T07:29:22.703Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority><additionalTags>
-      <video:video>
-        <video:thumbnail_loc>https://i.ytimg.com/vi/BiOCK1jDOMo?si=MZOdygQP0ZkibR4D/maxresdefault.jpg</video:thumbnail_loc>
-        <video:title>Power Apps PDF Function - The Best Way to Export to PDF?</video:title>
-        <video:description>In this video, we will discuss the benefits of using the PDF function for exporting to PDF in Power Apps. The PDF function is a powerful tool that allows you to easily generate high-quality PDF documents from your Power Apps. It provides a variety of options for formatting and styling your PDFs, and enables you to include data from multiple sources in a single document. By using the PDF function, you can create professional-grade reports, invoices, and other documents with minimal effort. We'll also explore some real-world examples of how the PDF function can be used in your Power Apps. So join us as we learn about the benefits of using the PDF function for exporting to PDF in Power Apps.</video:description>
-        <video:player_loc allow_embed="yes">https://www.youtube.com/embed/BiOCK1jDOMo?si=MZOdygQP0ZkibR4D</video:player_loc>
-        <video:duration>813</video:duration>
-      </video:video>
-    </additionalTags></url>
-<url><loc>https://www.powerplatformexperts.com.au/blog/sharepoint-lists</loc><lastmod>2025-10-09T07:29:22.703Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority><additionalTags>
-      <video:video>
-        <video:thumbnail_loc>https://i.ytimg.com/vi/Bea5aP-OpZg?si=PSVPw5o7augLSbfB/maxresdefault.jpg</video:thumbnail_loc>
-        <video:title>Use SharePoint Lists just like a Relational Database in Power Apps</video:title>
-        <video:description>In this video, Chino gives you a quick introduction into how to use SharePoint lists as a data source in Power Apps and how they may work as a Relational Database.</video:description>
-        <video:player_loc allow_embed="yes">https://www.youtube.com/embed/Bea5aP-OpZg?si=PSVPw5o7augLSbfB</video:player_loc>
-        <video:duration>2464</video:duration>
-      </video:video>
-    </additionalTags></url>
-<url><loc>https://www.powerplatformexperts.com.au/blog/power-bi-in-healthcare-analytics</loc><lastmod>2025-10-09T07:29:22.703Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://www.powerplatformexperts.com.au/contact-us</loc><lastmod>2025-10-09T07:29:22.703Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://www.powerplatformexperts.com.au/blog/file-attachments-in-power-apps</loc><lastmod>2025-10-09T07:29:22.703Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority><additionalTags>
+<url><loc>https://www.powerplatformexperts.com.au/blog</loc><lastmod>2025-10-09T08:08:25.505Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.powerplatformexperts.com.au/blog/file-attachments-in-power-apps</loc><lastmod>2025-10-09T08:08:25.505Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority><additionalTags>
       <video:video>
         <video:thumbnail_loc>https://i.ytimg.com/vi/yC0W5am6M3Q?si=wlQ5FUzmmOka-J24/maxresdefault.jpg</video:thumbnail_loc>
         <video:title>File Attachments in Power Apps - The best way to do them</video:title>
@@ -42,35 +21,56 @@
         <video:duration>1384</video:duration>
       </video:video>
     </additionalTags></url>
-<url><loc>https://www.powerplatformexperts.com.au/locations</loc><lastmod>2025-10-09T07:29:22.703Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://www.powerplatformexperts.com.au/client-testimonials</loc><lastmod>2025-10-09T07:29:22.703Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://www.powerplatformexperts.com.au/blog/power-bi-for-financial-services</loc><lastmod>2025-10-09T07:29:22.703Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://www.powerplatformexperts.com.au/excel-to-power-bi-migration</loc><lastmod>2025-10-09T07:29:22.703Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://www.powerplatformexperts.com.au/meet-the-team</loc><lastmod>2025-10-09T07:29:22.703Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://www.powerplatformexperts.com.au/power-apps-support</loc><lastmod>2025-10-09T07:29:22.703Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://www.powerplatformexperts.com.au/power-bi-support</loc><lastmod>2025-10-09T07:29:22.703Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://www.powerplatformexperts.com.au/power-bi-melbourne</loc><lastmod>2025-10-09T07:29:22.703Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://www.powerplatformexperts.com.au/power-bi-data-integration</loc><lastmod>2025-10-09T07:29:22.703Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://www.powerplatformexperts.com.au/power-platform-assessment</loc><lastmod>2025-10-09T07:29:22.703Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://www.powerplatformexperts.com.au/power-pages-support</loc><lastmod>2025-10-09T07:29:22.703Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://www.powerplatformexperts.com.au</loc><lastmod>2025-10-09T07:29:22.703Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://www.powerplatformexperts.com.au/power-platform-consultants-canberra</loc><lastmod>2025-10-09T07:29:22.703Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://www.powerplatformexperts.com.au/power-platform-consultants-adelaide</loc><lastmod>2025-10-09T07:29:22.703Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://www.powerplatformexperts.com.au/power-platform-consultants-wollongong</loc><lastmod>2025-10-09T07:29:22.703Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://www.powerplatformexperts.com.au/power-platform-consultants-northern-rivers-nsw</loc><lastmod>2025-10-09T07:29:22.703Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://www.powerplatformexperts.com.au/power-platform-consultants-central-coast-nsw</loc><lastmod>2025-10-09T07:29:22.703Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://www.powerplatformexperts.com.au/power-platform-consultants-sydney</loc><lastmod>2025-10-09T07:29:22.703Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://www.powerplatformexperts.com.au/power-platform-consultants-gold-coast</loc><lastmod>2025-10-09T07:29:22.703Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://www.powerplatformexperts.com.au/services/microsoft-power-platform/microsoft-power-apps</loc><lastmod>2025-10-09T07:29:22.703Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://www.powerplatformexperts.com.au/power-platform-consultants-darwin</loc><lastmod>2025-10-09T07:29:22.703Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://www.powerplatformexperts.com.au/services/microsoft-power-platform/microsoft-power-automate</loc><lastmod>2025-10-09T07:29:22.703Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://www.powerplatformexperts.com.au/power-platform-consultants-perth</loc><lastmod>2025-10-09T07:29:22.703Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://www.powerplatformexperts.com.au/power-platform-support</loc><lastmod>2025-10-09T07:29:22.703Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://www.powerplatformexperts.com.au/power-platform-consultants-melbourne</loc><lastmod>2025-10-09T07:29:22.703Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://www.powerplatformexperts.com.au/power-platform-consultants-brisbane</loc><lastmod>2025-10-09T07:29:22.703Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://www.powerplatformexperts.com.au/power-automate-support</loc><lastmod>2025-10-09T07:29:22.703Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://www.powerplatformexperts.com.au/services/microsoft-power-platform/microsoft-power-bi</loc><lastmod>2025-10-09T07:29:22.703Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://www.powerplatformexperts.com.au/services/microsoft-power-platform</loc><lastmod>2025-10-09T07:29:22.703Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://www.powerplatformexperts.com.au/power-platform-consultants-richmond</loc><lastmod>2025-10-09T07:29:22.703Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://www.powerplatformexperts.com.au/services/microsoft-power-platform/microsoft-power-pages</loc><lastmod>2025-10-09T07:29:22.703Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.powerplatformexperts.com.au/blog/power-apps-pdf-function</loc><lastmod>2025-10-09T08:08:25.505Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority><additionalTags>
+      <video:video>
+        <video:thumbnail_loc>https://i.ytimg.com/vi/BiOCK1jDOMo?si=MZOdygQP0ZkibR4D/maxresdefault.jpg</video:thumbnail_loc>
+        <video:title>Power Apps PDF Function - The Best Way to Export to PDF?</video:title>
+        <video:description>In this video, we will discuss the benefits of using the PDF function for exporting to PDF in Power Apps. The PDF function is a powerful tool that allows you to easily generate high-quality PDF documents from your Power Apps. It provides a variety of options for formatting and styling your PDFs, and enables you to include data from multiple sources in a single document. By using the PDF function, you can create professional-grade reports, invoices, and other documents with minimal effort. We'll also explore some real-world examples of how the PDF function can be used in your Power Apps. So join us as we learn about the benefits of using the PDF function for exporting to PDF in Power Apps.</video:description>
+        <video:player_loc allow_embed="yes">https://www.youtube.com/embed/BiOCK1jDOMo?si=MZOdygQP0ZkibR4D</video:player_loc>
+        <video:duration>813</video:duration>
+      </video:video>
+    </additionalTags></url>
+<url><loc>https://www.powerplatformexperts.com.au/blog/power-bi-for-financial-services</loc><lastmod>2025-10-09T08:08:25.505Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.powerplatformexperts.com.au/blog/sharepoint-lists</loc><lastmod>2025-10-09T08:08:25.505Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority><additionalTags>
+      <video:video>
+        <video:thumbnail_loc>https://i.ytimg.com/vi/Bea5aP-OpZg?si=PSVPw5o7augLSbfB/maxresdefault.jpg</video:thumbnail_loc>
+        <video:title>Use SharePoint Lists just like a Relational Database in Power Apps</video:title>
+        <video:description>In this video, Chino gives you a quick introduction into how to use SharePoint lists as a data source in Power Apps and how they may work as a Relational Database.</video:description>
+        <video:player_loc allow_embed="yes">https://www.youtube.com/embed/Bea5aP-OpZg?si=PSVPw5o7augLSbfB</video:player_loc>
+        <video:duration>2464</video:duration>
+      </video:video>
+    </additionalTags></url>
+<url><loc>https://www.powerplatformexperts.com.au/blog/power-bi-in-healthcare-analytics</loc><lastmod>2025-10-09T08:08:25.505Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.powerplatformexperts.com.au/client-testimonials</loc><lastmod>2025-10-09T08:08:25.505Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.powerplatformexperts.com.au/contact-us</loc><lastmod>2025-10-09T08:08:25.505Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.powerplatformexperts.com.au/excel-to-power-bi-migration</loc><lastmod>2025-10-09T08:08:25.505Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.powerplatformexperts.com.au/meet-the-team</loc><lastmod>2025-10-09T08:08:25.505Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.powerplatformexperts.com.au/power-bi-data-integration</loc><lastmod>2025-10-09T08:08:25.505Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.powerplatformexperts.com.au/contact-us/request-a-quote</loc><lastmod>2025-10-09T08:08:25.505Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.powerplatformexperts.com.au</loc><lastmod>2025-10-09T08:08:25.505Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.powerplatformexperts.com.au/locations</loc><lastmod>2025-10-09T08:08:25.505Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.powerplatformexperts.com.au/power-bi-melbourne</loc><lastmod>2025-10-09T08:08:25.505Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.powerplatformexperts.com.au/power-apps-support</loc><lastmod>2025-10-09T08:08:25.505Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.powerplatformexperts.com.au/power-bi-support</loc><lastmod>2025-10-09T08:08:25.505Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.powerplatformexperts.com.au/power-automate-support</loc><lastmod>2025-10-09T08:08:25.505Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.powerplatformexperts.com.au/power-platform-assessment</loc><lastmod>2025-10-09T08:08:25.505Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.powerplatformexperts.com.au/power-pages-support</loc><lastmod>2025-10-09T08:08:25.505Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.powerplatformexperts.com.au/power-platform-consultants-brisbane</loc><lastmod>2025-10-09T08:08:25.505Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.powerplatformexperts.com.au/power-platform-consultants-gold-coast</loc><lastmod>2025-10-09T08:08:25.505Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.powerplatformexperts.com.au/power-platform-consultants-canberra</loc><lastmod>2025-10-09T08:08:25.505Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.powerplatformexperts.com.au/power-platform-consultants-adelaide</loc><lastmod>2025-10-09T08:08:25.505Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.powerplatformexperts.com.au/power-platform-consultants-darwin</loc><lastmod>2025-10-09T08:08:25.505Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.powerplatformexperts.com.au/power-platform-consultants-northern-rivers-nsw</loc><lastmod>2025-10-09T08:08:25.505Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.powerplatformexperts.com.au/power-platform-consultants-perth</loc><lastmod>2025-10-09T08:08:25.505Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.powerplatformexperts.com.au/power-platform-consultants-richmond</loc><lastmod>2025-10-09T08:08:25.505Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.powerplatformexperts.com.au/power-platform-support</loc><lastmod>2025-10-09T08:08:25.505Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.powerplatformexperts.com.au/power-platform-consultants-sydney</loc><lastmod>2025-10-09T08:08:25.505Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.powerplatformexperts.com.au/power-platform-consultants-wollongong</loc><lastmod>2025-10-09T08:08:25.505Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.powerplatformexperts.com.au/services/microsoft-power-platform/microsoft-power-apps</loc><lastmod>2025-10-09T08:08:25.505Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.powerplatformexperts.com.au/power-platform-consultants-melbourne</loc><lastmod>2025-10-09T08:08:25.505Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.powerplatformexperts.com.au/services/microsoft-power-platform/microsoft-power-pages</loc><lastmod>2025-10-09T08:08:25.505Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.powerplatformexperts.com.au/services/microsoft-power-platform/microsoft-power-bi</loc><lastmod>2025-10-09T08:08:25.505Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.powerplatformexperts.com.au/services/microsoft-power-platform</loc><lastmod>2025-10-09T08:08:25.505Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.powerplatformexperts.com.au/power-platform-consultants-central-coast-nsw</loc><lastmod>2025-10-09T08:08:25.505Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.powerplatformexperts.com.au/services/microsoft-power-platform/microsoft-power-automate</loc><lastmod>2025-10-09T08:08:25.505Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
 </urlset>

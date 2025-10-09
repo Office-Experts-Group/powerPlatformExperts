@@ -435,10 +435,26 @@
   line-height: 2rem;
   margin: 0;
 }
+@media screen and (max-width: 800px) {
+  .challenges p,
+  .challenges li {
+    margin-left: 1rem;
+  }
+}
+@media screen and (max-width: 800px) {
+  .challenges {
+    padding: 0 1rem;
+  }
+}
 
 .btnHolder {
   display: flex;
   margin: 0 10vw;
+}
+@media screen and (max-width: 800px) {
+  .btnHolder {
+    margin: 2rem 0 0 0;
+  }
 }
 
 .btn {
@@ -479,4 +495,10 @@
 }
 .btn:hover::before {
   left: 0;
+}
+@media screen and (max-width: 800px) {
+  .btn {
+    margin: 0 auto;
+    font-size: 0.8rem;
+  }
 }/*# sourceMappingURL=pageSegment4.module.css.map */

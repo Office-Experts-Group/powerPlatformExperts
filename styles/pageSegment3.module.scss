@@ -400,6 +400,9 @@
   img {
     margin-left: auto;
     align-self: center;
+    @media screen and (max-width: 700px) {
+      display: none;
+    }
   }
   div {
     display: flex;
