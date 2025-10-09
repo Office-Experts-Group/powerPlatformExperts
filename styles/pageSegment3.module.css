@@ -339,12 +339,12 @@
 }
 
 .useCases {
-  margin-top: 3rem;
-  padding: 0 5vw;
+  margin: 3rem 0 3rem 0;
+  padding: 0;
 }
 @media (min-width: 767px) and (max-width: 1024px) {
   .useCases {
-    padding: 0;
+    padding: 0 1rem;
   }
 }
 .useCases h3 {

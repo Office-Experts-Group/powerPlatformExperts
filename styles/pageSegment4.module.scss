@@ -468,3 +468,19 @@
     font-size: 0.8rem;
   }
 }
+
+.workloads {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  @media screen and (max-width: 800px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.imgDeskWrapper {
+  margin-left: 2rem;
+  @media screen and (max-width: 1200px) {
+    display: none;
+  }
+}
