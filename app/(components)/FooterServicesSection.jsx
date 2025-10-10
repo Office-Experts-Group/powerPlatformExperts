@@ -55,7 +55,9 @@ const FooterServicesSection = () => {
         <div className={styles.dropdownContainer}>
           <div className={styles.dropdownBackground}></div>
           <div className={styles.dropdownContent}>
-            <Link href="/">Microsoft Power Platform</Link>
+            <Link href="/services/microsoft-power-platform">
+              Power Platform Services
+            </Link>
             <Link href="/services/microsoft-power-platform/microsoft-power-apps">
               Microsoft Power Apps
             </Link>

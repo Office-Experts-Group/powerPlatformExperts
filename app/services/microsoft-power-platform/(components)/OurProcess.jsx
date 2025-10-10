@@ -74,7 +74,7 @@ const OurProcess = () => {
                 <p>
                   Follows agile methodology with regular progress updates.
                   Iterative testing catches issues early. We provide change
-                  management support to help your organization prepare for the
+                  management support to help your organisation prepare for the
                   new solution.
                 </p>
               </div>
@@ -102,10 +102,10 @@ const OurProcess = () => {
                 src={support}
                 width={100}
                 height={100}
-                alt="support and optimization"
+                alt="support and optimisation"
               />
               <div>
-                <h3>Support & Optimization</h3>
+                <h3>Support & Optimisation</h3>
                 <p>
                   Continues with ongoing maintenance and feature enhancements.
                   We monitor performance continuously and track user adoption to
