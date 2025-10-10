@@ -5,14 +5,14 @@ export const metadata = {
   title:
     "Power BI in Healthcare Analytics: Transforming Patient Outcomes with Data",
   description:
-    "Discover how Power BI is revolutionising healthcare analytics. Learn how hospitals and healthcare providers use real-time dashboards to improve patient outcomes, reduce readmissions, and optimise resource allocation.",
+    "Discover how Power BI is revolutionising healthcare analytics. Learn how hospitals and healthcare providers use real-time dashboards to increase efficiency.",
 
   // OpenGraph
   openGraph: {
     title:
       "Power BI in Healthcare Analytics: Transforming Patient Outcomes with Data",
     description:
-      "Discover how Power BI is revolutionising healthcare analytics. Learn how hospitals and healthcare providers use real-time dashboards to improve patient outcomes, reduce readmissions, and optimise resource allocation.",
+      "Discover how Power BI is revolutionising healthcare analytics. Learn how hospitals and healthcare providers use real-time dashboards to increase efficiency.",
     url: "https://www.powerplatformexperts.com.au/blog/power-bi-in-healthcare-analytics",
     siteName: "Power Platform Experts",
     images: [
@@ -36,7 +36,7 @@ export const metadata = {
     site: "@OfficeExpertsG1",
     title: "Power BI in Healthcare Analytics: Transforming Patient Outcomes",
     description:
-      "Discover how Power BI is revolutionizing healthcare analytics with real-time dashboards that improve patient outcomes and optimize hospital operations.",
+      "Discover how Power BI is revolutionising healthcare analytics with real-time dashboards that improve patient outcomes and optimize hospital operations.",
     images: ["/logo.png"],
   },
 

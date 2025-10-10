@@ -2,7 +2,7 @@ import React from "react";
 
 export const metadata = {
   // Basic metadata
-  title: "Export to PDF in Power Apps",
+  title: "Export to PDF in Power Apps - The Best Way to Do It!",
   description:
     "Learn how to export data from Power Apps to PDF using Power Automate. Generate professional PDF documents directly from your Power Apps.",
 

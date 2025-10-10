@@ -6,7 +6,6 @@ import Contact from "../../../components/Contact";
 
 import styles from "../../../styles/blogPost.module.scss";
 
-import placeholder from "../../../public/placeholder.webp";
 import financial from "../../../public/blog/financial/financial-services.webp";
 import sales from "../../../public/blog/financial/sales.webp";
 import security from "../../../public/blog/financial/security.webp";
