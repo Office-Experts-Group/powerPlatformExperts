@@ -130,8 +130,8 @@ const ServicesApps = () => {
           We can integrate Power Apps with SharePoint, SQL Server, Dynamics 365,
           and over 1,000 other data connectors. Our apps include offline
           functionality for remote workers, custom connectors for legacy
-          systems, and sophisticated Power FX formulas. Every application
-          features responsive design that works on phones, tablets, and desktop
+          systems, and sophisticated Power FX formulas. Applications can feature
+          responsive designs that work on phones, tablets, and desktop
           computers.
         </p>
       </div>
