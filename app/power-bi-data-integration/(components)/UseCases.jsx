@@ -41,7 +41,7 @@ const UseCases = () => {
           <p style={{ maxWidth: "100%", textAlign: "center" }}>
             To deliver robust and scalable integrations, we use a wide range of
             Microsoft and third-party tools. Our team selects the right mix of
-            platforms based on your organisation’s goals, IT environment, and
+            platforms based on your organisation's goals, IT environment, and
             budget.
           </p>
         </AnimateOnScroll>
