@@ -97,4 +97,18 @@ export const blogPosts = [
     youtubeId: null,
     imagePath: "/blog/healthcare/healthcare.webp",
   },
+  {
+  id: 8,
+  title: "How to Get Live MYOB & Xero Data into Power BI — No More Manual Exports",
+  description:
+    "Tired of CSV exports and stale reports? Learn how to connect live MYOB and Xero data into Power BI using modern OData feeds like OdataLink, plus implementation strategies from Power Platform Experts.",
+  slug: "xero-to-power-bi",
+  date: "November 20, 2025",
+  author: "Power Platform Experts",
+  readingTime: "10 min",
+  category: "Power BI",
+  featured: false,
+  youtubeId: null,
+  imagePath: "/blog/xero/xero-to-power-bi.webp",
+},
 ];

@@ -256,3 +256,148 @@
   max-width: 90vw;
   height: auto;
 }
+
+// Simple Comparison Table Styles
+.comparisonTable {
+  margin: 2rem 0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  background: white;
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.95rem;
+  }
+
+  thead {
+    background: $theme;
+    color: white;
+
+    th {
+      padding: 1rem;
+      text-align: left;
+      font-weight: 600;
+      border-right: 1px solid rgba(255, 255, 255, 0.2);
+
+      &:last-child {
+        border-right: none;
+      }
+    }
+  }
+
+  tbody {
+    tr {
+      border-bottom: 1px solid #eee;
+
+      &:last-child {
+        border-bottom: none;
+      }
+
+      &:nth-child(even) {
+        background: #f9f9f9;
+      }
+    }
+
+    td {
+      padding: 1rem;
+      border-right: 1px solid #eee;
+      vertical-align: top;
+
+      &:last-child {
+        border-right: none;
+      }
+
+      &:first-child {
+        font-weight: 600;
+        color: $theme;
+        background: rgba($theme, 0.05);
+      }
+    }
+  }
+
+  .checkmark {
+    color: #28a745;
+    font-weight: bold;
+    margin-right: 0.5rem;
+  }
+
+  .crossmark {
+    color: #dc3545;
+    font-weight: bold;
+    margin-right: 0.5rem;
+  }
+
+  // Mobile responsiveness
+  @media (max-width: 768px) {
+    font-size: 0.85rem;
+
+    thead th,
+    tbody td {
+      padding: 0.75rem 0.5rem;
+    }
+
+    // Stack on very small screens
+    @media (max-width: 480px) {
+      display: block;
+      border: none;
+
+      table,
+      thead,
+      tbody,
+      th,
+      td,
+      tr {
+        display: block;
+      }
+
+      thead {
+        display: none;
+      }
+
+      tr {
+        border: 1px solid #ddd;
+        margin-bottom: 0.5rem;
+        border-radius: 4px;
+        background: white;
+      }
+
+      td {
+        border: none;
+        border-right: none !important;
+        padding: 0.5rem;
+        text-align: left;
+
+        &:first-child {
+          background: $theme;
+          color: white;
+          font-weight: 700;
+          margin-bottom: 0.5rem;
+        }
+
+        &:before {
+          content: attr(data-label) ": ";
+          font-weight: bold;
+          color: $theme;
+        }
+
+        &:first-child:before {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+.relBox {
+  position: relative;
+}
+
+.absImage {
+  position: absolute;
+  top: -4rem;
+  right: -2rem;
+  z-index: 0;
+  opacity: .2;
+}
