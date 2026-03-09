@@ -157,7 +157,7 @@ export const navigationData = {
             label: "Mail Merge",
             href: `${WORD_EXPERTS_URL}/mail-merge`,
           },
-        ],
+        ]
       },
       {
         label: "Microsoft Access",

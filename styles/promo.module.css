@@ -8,10 +8,12 @@
 .promo a {
   color: #046999;
   font-weight: 700;
-  max-width: 70vw;
 }
 .promo a:hover {
   text-decoration: underline;
+}
+.promo a {
+  max-width: 70vw;
 }
 @media (max-width: 449px) {
   .promo {

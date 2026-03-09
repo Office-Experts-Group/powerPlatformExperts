@@ -28,12 +28,12 @@
   font-size: 24px;
   font-weight: 700;
   color: #333;
-  margin-bottom: 1rem;
+  margin-bottom: 8px;
 }
 
 .subtitle {
   color: #666;
-  margin-bottom: 2rem;
+  margin-bottom: 16px;
 }
 
 .progressContainer {
@@ -174,7 +174,7 @@
   transition: background-color 0.2s ease;
 }
 .submitButton:hover {
-  background-color: #034767;
+  background-color: rgb(2.7006369427, 70.8917197452, 103.2993630573);
 }
 
 .resultsContainer {
@@ -327,14 +327,14 @@
   color: #046999;
 }
 .serviceLink:hover {
-  color: #02364e;
+  color: rgb(2.050955414, 53.8375796178, 78.449044586);
 }
 
 .resourceGuideLink {
   color: #10b981;
 }
 .resourceGuideLink:hover {
-  color: #0a7350;
+  color: rgb(9.9104477612, 114.5895522388, 79.9029850746);
 }
 
 .resourceIcon {
@@ -373,7 +373,7 @@
   transition: background-color 0.2s ease;
 }
 .ctaButton:hover {
-  background-color: #034767;
+  background-color: rgb(2.7006369427, 70.8917197452, 103.2993630573);
 }
 
 .recommendationDetails {
@@ -404,8 +404,8 @@
   justify-content: space-between;
   align-items: center;
   -webkit-user-select: none;
-  -moz-user-select: none;
-  user-select: none;
+     -moz-user-select: none;
+          user-select: none;
   position: relative;
 }
 
@@ -458,4 +458,4 @@
 .recommendationDetails:hover {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
   transform: translateY(-2px);
-} /*# sourceMappingURL=assessment.module.css.map */
+}/*# sourceMappingURL=assessment.module.css.map */
