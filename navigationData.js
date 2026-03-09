@@ -6,32 +6,6 @@ const POWER_PLATFORM_EXPERTS_URL = "https://www.powerplatformexperts.com.au";
 const ACCESS_EXPERTS_URL = "https://www.accessexperts.com.au";
 
 export const navigationData = {
-  home: {
-    label: "Home",
-    href: "/",
-    items: [
-      {
-        label: "Office Experts",
-        href: OFFICE_EXPERTS_URL,
-      },
-      {
-        label: "Excel Experts",
-        href: EXCEL_EXPERTS_URL,
-      },
-      {
-        label: "Power Platform Experts",
-        href: "/",
-      },
-      {
-        label: "Access Experts",
-        href: ACCESS_EXPERTS_URL,
-      },
-      {
-        label: "Word Experts",
-        href: WORD_EXPERTS_URL,
-      },
-    ],
-  },
   services: {
     label: "Services",
     items: [
@@ -157,7 +131,7 @@ export const navigationData = {
             label: "Mail Merge",
             href: `${WORD_EXPERTS_URL}/mail-merge`,
           },
-        ]
+        ],
       },
       {
         label: "Microsoft Access",
@@ -379,14 +353,110 @@ export const navigationData = {
       },
     ],
   },
+  locations: {
+    label: "Locations",
+    href: "/locations",
+    items: [
+      {
+        label: "New South Wales",
+        href: "/locations",
+        items: [
+          {
+            label: "Sydney",
+            href: "/power-platform-consultants-sydney",
+          },
+          {
+            label: "Wollongong",
+            href: "/power-platform-consultants-wollongong",
+          },
+          {
+            label: "Central Coast",
+            href: "/power-platform-consultants-central-coast-nsw",
+          },
+          {
+            label: "Northern Rivers",
+            href: "/power-platform-consultants-northern-rivers-nsw",
+          },
+        ],
+      },
+      {
+        label: "Victoria",
+        href: "/locations",
+        items: [
+          {
+            label: "Melbourne",
+            href: "/power-platform-consultants-melbourne",
+          },
+          {
+            label: "Richmond",
+            href: "/power-platform-consultants-richmond",
+          },
+        ],
+      },
+      {
+        label: "Queensland",
+        href: "/locations",
+        items: [
+          {
+            label: "Brisbane",
+            href: "/power-platform-consultants-brisbane",
+          },
+          {
+            label: "Gold Coast",
+            href: "/power-platform-consultants-gold-coast",
+          },
+        ],
+      },
+      {
+        label: "Western Australia",
+        href: "/locations",
+        items: [
+          {
+            label: "Perth",
+            href: "/power-platform-consultants-perth",
+          },
+        ],
+      },
+      {
+        label: "ACT",
+        href: "/locations",
+        items: [
+          {
+            label: "Canberra",
+            href: "/power-platform-consultants-canberra",
+          },
+        ],
+      },
+      {
+        label: "Northern Territory",
+        href: "/locations",
+        items: [
+          {
+            label: "Darwin",
+            href: "/power-platform-consultants-darwin",
+          },
+        ],
+      },
+      {
+        label: "South Australia",
+        href: "/locations",
+        items: [
+          {
+            label: "Adelaide",
+            href: "/power-platform-consultants-adelaide",
+          },
+        ],
+      },
+    ],
+  },
   staticLinks: [
-    {
-      label: "Testimonials",
-      href: "/client-testimonials",
-    },
     {
       label: "About Us",
       href: `/about-us`,
+    },
+    {
+      label: "Testimonials",
+      href: "/client-testimonials",
     },
     {
       label: "Meet Our Team",

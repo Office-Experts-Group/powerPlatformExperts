@@ -38,11 +38,11 @@ const Services = ({ location }) => {
             Working with a local Power Platform consultant brings the added
             advantage of understanding regional business requirements, faster
             response times and direct, face-to-face collaboration when needed.
-            Based in {location}, we are well-positioned to provide both remote
-            and onsite services, ensuring organisations receive timely,
-            professional automation and business intelligence solutions from
-            specialists who understand their unique operational challenges and
-            industry-specific needs.
+            With a part of our team based in {location}, we are well-positioned
+            to provide both remote and onsite services, ensuring organisations
+            receive timely, professional automation and business intelligence
+            solutions from specialists who understand their unique operational
+            challenges and industry-specific needs.
           </p>
         </div>
       </AnimateOnScroll>

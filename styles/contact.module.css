@@ -363,8 +363,8 @@
   -moz-appearance: none;
        appearance: none;
   -webkit-appearance: none;
-  width: 1.25rem;
-  height: 1.25rem;
+  min-width: 1.25rem;
+  min-height: 1.25rem;
   border: 2px solid #ddd;
   border-radius: 50%;
   outline: none;
