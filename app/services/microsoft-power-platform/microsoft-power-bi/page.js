@@ -1,13 +1,19 @@
 import React from "react";
+import dynamic from "next/dynamic";
 
 import ServiceHero from "../../../../components/ServiceHero";
-import ExpertsAwait from "../../../../components/ExpertsAwait";
-import FAQSection from "../../../../components/FAQSection";
-import Contact from "../../../../components/Contact";
 import PageSegmentMain from "./(components)/PageSegmentMain";
-import Segment4Repeat from "./(components)/Segment4Repeat";
-import PageSegment4 from "./(components)/PageSegment4";
-import SegmentMainRepeat from "./(components)/SegmentMainRepeat";
+
+const ExpertsAwait = dynamic(
+  () => import("../../../../components/ExpertsAwait"),
+);
+const FAQSection = dynamic(() => import("../../../../components/FAQSection"));
+const Contact = dynamic(() => import("../../../../components/Contact"));
+const Segment4Repeat = dynamic(() => import("./(components)/Segment4Repeat"));
+const PageSegment4 = dynamic(() => import("./(components)/PageSegment4"));
+const SegmentMainRepeat = dynamic(
+  () => import("./(components)/SegmentMainRepeat"),
+);
 
 import faqs from "../../../../faqs/power-bi";
 import faqSchema from "../../../../faqs/biSchema";
@@ -18,6 +24,7 @@ import graph from "../../../../public/pageHeros/mob/graph.webp";
 import {
   generateProfessionalServiceSchema,
   generateOrganizationSchema,
+  generateWebSiteSchema,
 } from "../../../../utils/schemaGenerators";
 
 const schema = {
@@ -25,6 +32,7 @@ const schema = {
   "@graph": [
     generateOrganizationSchema(),
     generateProfessionalServiceSchema(),
+    generateWebSiteSchema(),
     {
       "@type": "WebPage",
       "@id":

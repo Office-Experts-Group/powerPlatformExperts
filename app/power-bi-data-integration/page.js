@@ -1,11 +1,17 @@
 import React from "react";
+import dynamic from "next/dynamic";
 
 import ServiceHero from "../../components/ServiceHero";
-import Contact from "../../components/Contact";
-import PageSegmentMain from "./(components)/PageSegmentMain";
 import ServicePageCards from "./(components)/ServicePageCards";
-import DeskImage from "./(components)/DeskImage";
-import Bullets from "./(components)/Bullets";
+import PageSegmentMain from "./(components)/PageSegmentMain";
+
+const Contact = dynamic(() => import("../../components/Contact"));
+const DeskImage = dynamic(() => import("./(components)/DeskImage"));
+const Bullets = dynamic(() => import("./(components)/Bullets"));
+const PageSegment5 = dynamic(() => import("./(components)/PageSegment5"));
+const ExpertsAwait = dynamic(() => import("../../components/ExpertsAwait"));
+const Segment4Repeat = dynamic(() => import("./(components)/Segment4Repeat"));
+const UseCases = dynamic(() => import("./(components)/UseCases"));
 
 import integration from "../../public/pageHeros/integration.webp";
 import integrationMob from "../../public/pageHeros/mob/integrationMob.webp";
@@ -13,17 +19,15 @@ import integrationMob from "../../public/pageHeros/mob/integrationMob.webp";
 import {
   generateProfessionalServiceSchema,
   generateOrganizationSchema,
+  generateWebSiteSchema,
 } from "../../utils/schemaGenerators";
-import PageSegment5 from "./(components)/PageSegment5";
-import ExpertsAwait from "../../components/ExpertsAwait";
-import Segment4Repeat from "./(components)/Segment4Repeat";
-import UseCases from "./(components)/UseCases";
 
 const schema = {
   "@context": "https://schema.org",
   "@graph": [
     generateOrganizationSchema(),
     generateProfessionalServiceSchema(),
+    generateWebSiteSchema(),
     {
       "@type": "WebPage",
       "@id":

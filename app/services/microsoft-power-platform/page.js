@@ -1,15 +1,22 @@
 import React from "react";
+import dynamic from "next/dynamic";
 
 import ServiceHero from "../../../components/ServiceHero";
-import ExpertsAwait from "../../../components/ExpertsAwait";
-import Contact from "../../../components/Contact";
-import Testimonials from "../../(components)/Testimonials";
 import PageSegmentMain from "./(components)/PageSegmentMain";
-import ServicesApps from "./(components)/ServicesApps";
-import ServicesAutomate from "./(components)/ServicesAutomate";
-import ServicesBI from "./(components)/ServicesBI";
-import ServicesPages from "./(components)/ServicesPages";
-import OurProcess from "./(components)/OurProcess";
+
+const ExpertsAwait = dynamic(() => import("../../../components/ExpertsAwait"));
+const Contact = dynamic(() => import("../../../components/Contact"));
+const Testimonials = dynamic(() => import("../../(components)/Testimonials"));
+const ServicesApps = dynamic(() => import("./(components)/ServicesApps"));
+const ServicesAutomate = dynamic(
+  () => import("./(components)/ServicesAutomate"),
+);
+const ServicesBI = dynamic(() => import("./(components)/ServicesBI"));
+const ServicesPages = dynamic(() => import("./(components)/ServicesPages"));
+const OurProcess = dynamic(() => import("./(components)/OurProcess"));
+const DeskImage = dynamic(() => import("./(components)/DeskImage"));
+const Quote = dynamic(() => import("./(components)/Quote"));
+const Quote2 = dynamic(() => import("./(components)/Quote2"));
 
 import { getTestimonialsPageSchema } from "../../../utils/testimonialSchemaGenerator";
 import { testimonials } from "../../../testimonials";
@@ -20,10 +27,8 @@ import graphTableMob from "../../../public/pageHeros/mob/graphTableMob.webp";
 import {
   generateProfessionalServiceSchema,
   generateOrganizationSchema,
+  generateWebSiteSchema,
 } from "../../../utils/schemaGenerators";
-import DeskImage from "./(components)/DeskImage";
-import Quote from "./(components)/Quote";
-import Quote2 from "./(components)/Quote2";
 
 const schema = {
   "@context": "https://schema.org",
@@ -31,6 +36,7 @@ const schema = {
     ...getTestimonialsPageSchema(testimonials)["@graph"],
     generateOrganizationSchema(),
     generateProfessionalServiceSchema(),
+    generateWebSiteSchema(),
     {
       "@type": "WebPage",
       "@id":

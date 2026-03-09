@@ -1,25 +1,26 @@
 import React from "react";
+import dynamic from "next/dynamic";
 
 import ServiceHero from "../../components/ServiceHero";
-import ExpertsAwait from "../../components/ExpertsAwait";
-import Contact from "../../components/Contact";
-import Promo from "../../components/Promo";
-import Testimonials from "../(components)/Testimonials";
+import PageSegmentMain from "./(components)/PageSegmentMain";
 
+const Segment4Repeat = dynamic(() => import("./(components)/Segment4Repeat"));
+const PageSegment4 = dynamic(() => import("./(components)/PageSegment4"));
+const UseCases = dynamic(() => import("./(components)/UseCases"));
+const ServicesSection = dynamic(() => import("./(components)/ServicesSection"));
+const ExpertsAwait = dynamic(() => import("../../components/ExpertsAwait"));
+const Contact = dynamic(() => import("../../components/Contact"));
+const Testimonials = dynamic(() => import("../(components)/Testimonials"));
 // Import schema generators
 import {
   generateProfessionalServiceSchema,
   generateOrganizationSchema,
+  generateWebSiteSchema,
 } from "../../utils/schemaGenerators";
 import { testimonials } from "../../testimonials";
 
 import handShake from "../../public/pageHeros/handShake.webp";
 import handShakeMob from "../../public/pageHeros/mob/handShakeMob.webp";
-import PageSegmentMain from "./(components)/PageSegmentMain";
-import Segment4Repeat from "./(components)/Segment4Repeat";
-import PageSegment4 from "./(components)/PageSegment4";
-import UseCases from "./(components)/UseCases";
-import ServicesSection from "./(components)/ServicesSection";
 
 // Schema markup for SEO
 const schema = {
@@ -27,6 +28,7 @@ const schema = {
   "@graph": [
     generateOrganizationSchema(),
     generateProfessionalServiceSchema(),
+    generateWebSiteSchema(),
     {
       "@type": "WebPage",
       "@id": "https://www.powerplatformexperts.com.au/microsoft-fabric",
@@ -166,12 +168,6 @@ const Page = () => {
         <Segment4Repeat />
         <PageSegment4 />
         <UseCases />
-        {/* <div style={{ marginTop: "-4rem" }}>
-          <Promo
-            h2="Ready to Unify Your Data Analytics?"
-            p="Transform your data estate with Microsoft Fabric. Our certified consultants provide end-to-end implementation, migration, and support services tailored to your business needs."
-          />
-        </div> */}
         <ServicesSection />
         <ExpertsAwait />
 

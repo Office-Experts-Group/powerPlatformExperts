@@ -3,9 +3,10 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import dynamic from "next/dynamic";
 
-import Contact from "../../components/Contact";
-import CTAMain from "../(components)/CTAMain";
+const Contact = dynamic(() => import("../../components/Contact"));
+const CTAMain = dynamic(() => import("../(components)/CTAMain"));
 
 import styles from "../../styles/blog.module.scss";
 
@@ -14,6 +15,7 @@ import { blogPosts } from "./blogPosts";
 import {
   generateProfessionalServiceSchema,
   generateOrganizationSchema,
+  generateWebSiteSchema,
 } from "../../utils/schemaGenerators";
 
 const schema = {
@@ -21,6 +23,7 @@ const schema = {
   "@graph": [
     generateOrganizationSchema(),
     generateProfessionalServiceSchema(),
+    generateWebSiteSchema(),
     {
       "@type": "WebPage",
       "@id": "https://www.powerplatformexperts.com.au/blog",
@@ -60,15 +63,6 @@ const schema = {
           name: "Blog",
         },
       ],
-    },
-    {
-      "@type": "WebSite",
-      "@id": "https://www.powerplatformexperts.com.au#website",
-      url: "https://www.powerplatformexperts.com.au",
-      name: "Power Platform Experts Australia",
-      description:
-        "Australia's leading Microsoft Power Platform specialists, creating custom templates, toolbars, ribbons, and document automation solutions for businesses nationwide.",
-      inLanguage: "en-AU",
     },
   ],
 };

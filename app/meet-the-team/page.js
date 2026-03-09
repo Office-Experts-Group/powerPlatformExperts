@@ -1,9 +1,10 @@
 import React from "react";
+import dynamic from "next/dynamic";
 
 import ServiceHero from "../../components/ServiceHero";
-import MeetTheTeam from "../../components/MeetTheTeam";
-import Contact from "../../components/Contact";
 import Services from "./(components)/Services";
+const MeetTheTeam = dynamic(() => import("../../components/MeetTheTeam"));
+const Contact = dynamic(() => import("../../components/Contact"));
 
 import handShake from "../../public/pageHeros/handShake.webp";
 import handShakeMob from "../../public/pageHeros/mob/handShakeMob.webp";
@@ -11,6 +12,7 @@ import handShakeMob from "../../public/pageHeros/mob/handShakeMob.webp";
 import {
   generateProfessionalServiceSchema,
   generateOrganizationSchema,
+  generateWebSiteSchema,
 } from "../../utils/schemaGenerators";
 
 const schema = {
@@ -18,6 +20,7 @@ const schema = {
   "@graph": [
     generateOrganizationSchema(),
     generateProfessionalServiceSchema(),
+    generateWebSiteSchema(),
     {
       "@type": "WebPage",
       "@id": "https://www.powerplatformexperts.com.au/meet-the-team",
@@ -27,7 +30,7 @@ const schema = {
         "@id": "https://www.powerplatformexperts.com.au#website",
       },
       datePublished: "2024-10-27T00:00:00+00:00",
-      dateModified: "2024-10-27T00:00:00+00:00",
+      dateModified: "2026-03-09T00:00:00+00:00",
       description:
         "Meet our team of Microsoft certified Power Platform consultants and developers. Experts in Power Apps, Power Automate, Power BI, and Power Pages.",
       breadcrumb: {

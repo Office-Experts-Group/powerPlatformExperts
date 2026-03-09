@@ -1,14 +1,16 @@
 // app/power-bi-melbourne/page.js
 import React from "react";
+import dynamic from "next/dynamic";
 
 import ServiceHero from "../../components/ServiceHero";
-import ExpertsAwait from "../../components/ExpertsAwait";
-import Contact from "../../components/Contact";
 import PageSegmentMain from "./(components)/PageSegmentMain";
-import Segment4 from "./(components)/Segment4";
-import Promo from "../../components/Promo";
-import OurExperts from "./(components)/OurExperts";
-import Testimonials from "../../app/(components)/Testimonials";
+
+const ExpertsAwait = dynamic(() => import("../../components/ExpertsAwait"));
+const Contact = dynamic(() => import("../../components/Contact"));
+const Segment4 = dynamic(() => import("./(components)/Segment4"));
+const Promo = dynamic(() => import("../../components/Promo"));
+const Testimonials = dynamic(() => import("../(components)/Testimonials"));
+const OurExperts = dynamic(() => import("./(components)/OurExperts"));
 
 import melbourne from "../../public/pageHeros/melbourne.webp";
 import melbourneMob from "../../public/pageHeros/mob/melbourneMob.webp";
@@ -16,6 +18,7 @@ import melbourneMob from "../../public/pageHeros/mob/melbourneMob.webp";
 import {
   generateProfessionalServiceSchema,
   generateOrganizationSchema,
+  generateWebSiteSchema,
 } from "../../utils/schemaGenerators";
 import { testimonials } from "../../testimonials";
 
@@ -24,6 +27,7 @@ const schema = {
   "@graph": [
     generateOrganizationSchema(),
     generateProfessionalServiceSchema(),
+    generateWebSiteSchema(),
     {
       "@type": "WebPage",
       "@id": "https://www.powerplatformexperts.com.au/power-bi-melbourne",

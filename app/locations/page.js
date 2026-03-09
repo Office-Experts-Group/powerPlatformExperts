@@ -1,9 +1,10 @@
 import React from "react";
+import dynamic from "next/dynamic";
 
 import ServiceHero from "../../components/ServiceHero";
 import LocationGroups from "./(components)/LocationGroups";
-import Promo from "../../components/Promo";
-import Contact from "../../components/Contact";
+const Promo = dynamic(() => import("../../components/Promo"));
+const Contact = dynamic(() => import("../../components/Contact"));
 
 import australia from "../../public/pageHeros/australia.webp";
 import australiaMob from "../../public/pageHeros/mob/australiaMob.webp";
@@ -11,6 +12,7 @@ import australiaMob from "../../public/pageHeros/mob/australiaMob.webp";
 import {
   generateProfessionalServiceSchema,
   generateOrganizationSchema,
+  generateWebSiteSchema,
 } from "../../utils/schemaGenerators";
 
 // Import location images
@@ -32,6 +34,7 @@ const schema = {
   "@graph": [
     generateOrganizationSchema(),
     generateProfessionalServiceSchema(),
+    generateWebSiteSchema(),
     {
       "@type": "WebPage",
       "@id": "https://www.powerplatformexperts.com.au/locations",

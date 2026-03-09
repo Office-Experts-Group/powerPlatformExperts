@@ -1,12 +1,23 @@
 import React from "react";
+import dynamic from "next/dynamic";
 
 import ServiceHero from "../../components/ServiceHero";
-import LocationPages from "../(components)/LocationPages";
-import CTAMainProps from "../(components)/CTAMainProps";
-import ContactLocationSegment from "../../components/ContactLocationSegment";
-import ServicesLocation from "../(components)/ServicesLocation";
-import Promo from "../../components/Promo";
-import GoodToKnow from "../../components/GoodToKnow";
+import LocationSummary from "../(components)/LocationSummary";
+
+const LocationPages = dynamic(() => import("../(components)/LocationPages"));
+const CTAMainProps = dynamic(() => import("../(components)/CTAMainProps"));
+const ContactLocationSegment = dynamic(
+  () => import("../../components/ContactLocationSegment"),
+);
+const ServicesLocation = dynamic(
+  () => import("../(components)/ServicesLocation"),
+);
+const Promo = dynamic(() => import("../../components/Promo"));
+const GoodToKnow = dynamic(() => import("../../components/GoodToKnow"));
+const Testimonials = dynamic(() => import("../(components)/Testimonials"));
+const MeetTheTeamSlider = dynamic(
+  () => import("../../components/MeetTheTeamSlider"),
+);
 
 import goldCoast from "../../public/pageHeros/goldCoast.webp";
 import goldCoastMob from "../../public/pageHeros/mob/goldCoastMob.webp";
@@ -15,12 +26,9 @@ import { getHomePageSchema } from "../../utils/testimonialSchemaGenerator";
 import {
   generateProfessionalServiceSchema,
   generateOrganizationSchema,
+  generateWebSiteSchema,
 } from "../../utils/schemaGenerators";
 import { testimonials } from "../../testimonials";
-
-import LocationSummary from "../(components)/LocationSummary";
-import Testimonials from "../(components)/Testimonials";
-import MeetTheTeamSlider from "../../components/MeetTheTeamSlider";
 
 const schema = {
   "@context": "https://schema.org",
@@ -28,6 +36,7 @@ const schema = {
     generateOrganizationSchema(),
     generateProfessionalServiceSchema(),
     ...getHomePageSchema(testimonials, "powerplatform")["@graph"],
+    generateWebSiteSchema(),
     {
       "@type": "WebPage",
       "@id":

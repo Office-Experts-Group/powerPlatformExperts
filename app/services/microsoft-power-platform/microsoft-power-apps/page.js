@@ -1,16 +1,20 @@
 import React from "react";
+import dynamic from "next/dynamic";
 
 import ServiceHero from "../../../../components/ServiceHero";
 import ServicePageCards from "./(components)/ServicePageCards";
-import Contact from "../../../../components/Contact";
-import PageSegmentMain from "./(components)/PageSegmentMain";
-import BlackSegment from "./(components)/BlackSegment";
-import PageSegment4 from "./(components)/PageSegment4";
-import Promo from "../../../../components/Promo";
-import Segment4Repeat from "./(components)/Segment4Repeat";
-import SegmentMainRepeat from "./(components)/SegmentMainRepeat";
 import Contents from "./(components)/Contents";
-import FAQSection from "../../../../components/FAQSection";
+
+const Contact = dynamic(() => import("../../../../components/Contact"));
+const PageSegmentMain = dynamic(() => import("./(components)/PageSegmentMain"));
+const BlackSegment = dynamic(() => import("./(components)/BlackSegment"));
+const PageSegment4 = dynamic(() => import("./(components)/PageSegment4"));
+const Promo = dynamic(() => import("../../../../components/Promo"));
+const Segment4Repeat = dynamic(() => import("./(components)/Segment4Repeat"));
+const SegmentMainRepeat = dynamic(
+  () => import("./(components)/SegmentMainRepeat"),
+);
+const FAQSection = dynamic(() => import("../../../../components/FAQSection"));
 
 import faqs from "../../../../faqs/power-apps";
 import faqSchema from "../../../../faqs/appsSchema";
@@ -21,6 +25,7 @@ import calcMob from "../../../../public/pageHeros/mob/calcMob.webp";
 import {
   generateProfessionalServiceSchema,
   generateOrganizationSchema,
+  generateWebSiteSchema,
 } from "../../../../utils/schemaGenerators";
 
 const schema = {
@@ -28,6 +33,7 @@ const schema = {
   "@graph": [
     generateOrganizationSchema(),
     generateProfessionalServiceSchema(),
+    generateWebSiteSchema(),
     {
       "@type": "WebPage",
       "@id":

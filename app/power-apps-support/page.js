@@ -1,11 +1,15 @@
-import React from 'react'
+import React from "react";
+import dynamic from "next/dynamic";
 
 import ServiceHero from "../../components/ServiceHero";
-import Contact from "../../components/Contact";
-import PageSegmentMain from './(components)/PageSegmentMain';
-import PageSegment4 from './(components)/PageSegment4';
-import SegmentMainRepeat from './(components)/SegmentMainRepeat';
-import BlackSegment from './(components)/BlackSegment';
+import PageSegmentMain from "./(components)/PageSegmentMain";
+
+const Contact = dynamic(() => import("../../components/Contact"));
+const PageSegment4 = dynamic(() => import("./(components)/PageSegment4"));
+const SegmentMainRepeat = dynamic(
+  () => import("./(components)/SegmentMainRepeat"),
+);
+const BlackSegment = dynamic(() => import("./(components)/BlackSegment"));
 
 import notes from "../../public/pageHeros/notes.webp";
 import coffeeMob from "../../public/pageHeros/mob/coffeeMob.webp";
@@ -13,6 +17,7 @@ import coffeeMob from "../../public/pageHeros/mob/coffeeMob.webp";
 import {
   generateProfessionalServiceSchema,
   generateOrganizationSchema,
+  generateWebSiteSchema,
 } from "../../utils/schemaGenerators";
 
 const schema = {
@@ -20,6 +25,7 @@ const schema = {
   "@graph": [
     generateOrganizationSchema(),
     generateProfessionalServiceSchema(),
+    generateWebSiteSchema(),
     {
       "@type": "WebPage",
       "@id": "https://www.powerplatformexperts.com.au/power-apps-support",
@@ -40,13 +46,16 @@ const schema = {
       potentialAction: [
         {
           "@type": "ReadAction",
-          target: ["https://www.powerplatformexperts.com.au/power-apps-support"],
+          target: [
+            "https://www.powerplatformexperts.com.au/power-apps-support",
+          ],
         },
       ],
     },
     {
       "@type": "BreadcrumbList",
-      "@id": "https://www.powerplatformexperts.com.au/power-apps-support#breadcrumb",
+      "@id":
+        "https://www.powerplatformexperts.com.au/power-apps-support#breadcrumb",
       itemListElement: [
         {
           "@type": "ListItem",
@@ -66,92 +75,94 @@ const schema = {
 };
 
 const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "Service",
-    "name": "Power Apps Support Services",
-    "provider": {
-      "@type": "Organization",
-      "name": "Power Platform Experts - Office Experts Group",
-      "sameAs": [
-        "https://powerplatformexperts.com.au",
-        "https://officeexperts.com.au"
-      ]
+  "@context": "https://schema.org",
+  "@type": "Service",
+  name: "Power Apps Support Services",
+  provider: {
+    "@type": "Organization",
+    name: "Power Platform Experts - Office Experts Group",
+    sameAs: [
+      "https://powerplatformexperts.com.au",
+      "https://officeexperts.com.au",
+    ],
+  },
+  serviceType: "Business Intelligence Support",
+  areaServed: {
+    "@type": "Country",
+    name: "Australia",
+  },
+  description:
+    "Professional Power Apps support services including troubleshooting, optimisation, training, and ongoing maintenance for Australian businesses.",
+  offers: {
+    "@type": "Offer",
+    availability: "https://schema.org/InStock",
+    priceSpecification: {
+      "@type": "PriceSpecification",
+      priceCurrency: "AUD",
     },
-    "serviceType": "Business Intelligence Support",
-    "areaServed": {
-      "@type": "Country",
-      "name": "Australia"
-    },
-    "description": "Professional Power Apps support services including troubleshooting, optimisation, training, and ongoing maintenance for Australian businesses.",
-    "offers": {
-      "@type": "Offer",
-      "availability": "https://schema.org/InStock",
-      "priceSpecification": {
-        "@type": "PriceSpecification",
-        "priceCurrency": "AUD"
-      }
-    },
-    "audience": {
-      "@type": "BusinessAudience",
-      "audienceType": "Australian businesses using Microsoft Power Apps"
-    },
-    "serviceOutput": "Optimised Power Apps reports and dashboards, improved performance, and enhanced business intelligence capabilities",
-    "hasOfferCatalog": {
-      "@type": "OfferCatalog",
-      "name": "Power Apps Support Services",
-      "itemListElement": [
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Power Apps Troubleshooting & Technical Support"
-          }
+  },
+  audience: {
+    "@type": "BusinessAudience",
+    audienceType: "Australian businesses using Microsoft Power Apps",
+  },
+  serviceOutput:
+    "Optimised Power Apps reports and dashboards, improved performance, and enhanced business intelligence capabilities",
+  hasOfferCatalog: {
+    "@type": "OfferCatalog",
+    name: "Power Apps Support Services",
+    itemListElement: [
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "Power Apps Troubleshooting & Technical Support",
         },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Power Apps Maintenance & Enhancement"
-          }
+      },
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "Power Apps Maintenance & Enhancement",
         },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Power Apps Training & Knowledge Transfer"
-          }
-        }
-      ]
-    }
-  };
+      },
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "Power Apps Training & Knowledge Transfer",
+        },
+      },
+    ],
+  },
+};
 
 const PowerApps = () => {
   return (
     <>
-          <script
+      <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-          <script
+      <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
       />
-    <main>
-    <ServiceHero
-        title="Professional Power Apps Support and Training"
-        desktopImage={notes}
-        mobileImage={coffeeMob}
-        altDesk={"graphs on a table"}
-        altMob={"graphs on a table with coffee"}
-      />
-      <PageSegmentMain />
-      <PageSegment4 />
-      <BlackSegment />
-      <SegmentMainRepeat />
-      <Contact />
-    </main>
+      <main>
+        <ServiceHero
+          title="Professional Power Apps Support and Training"
+          desktopImage={notes}
+          mobileImage={coffeeMob}
+          altDesk={"graphs on a table"}
+          altMob={"graphs on a table with coffee"}
+        />
+        <PageSegmentMain />
+        <PageSegment4 />
+        <BlackSegment />
+        <SegmentMainRepeat />
+        <Contact />
+      </main>
     </>
-  )
-}
+  );
+};
 
-export default PowerApps
+export default PowerApps;

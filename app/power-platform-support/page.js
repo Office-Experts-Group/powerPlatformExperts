@@ -1,11 +1,13 @@
 import React from "react";
+import dynamic from "next/dynamic";
 
 import ServiceHero from "../../components/ServiceHero";
-import Contact from "../../components/Contact";
 import PageSegmentMain from "./(components)/PageSegmentMain";
-import PageSegment4 from "./(components)/PageSegment4";
-import BlackSegment from "./(components)/BlackSegment";
-import Testimonials from "../(components)/Testimonials";
+
+const Contact = dynamic(() => import("../../components/Contact"));
+const PageSegment4 = dynamic(() => import("./(components)/PageSegment4"));
+const BlackSegment = dynamic(() => import("./(components)/BlackSegment"));
+const Testimonials = dynamic(() => import("../(components)/Testimonials"));
 
 import handShake from "../../public/pageHeros/handShake.webp";
 import handShakeMob from "../../public/pageHeros/mob/handShakeMob.webp";
@@ -13,6 +15,7 @@ import handShakeMob from "../../public/pageHeros/mob/handShakeMob.webp";
 import {
   generateProfessionalServiceSchema,
   generateOrganizationSchema,
+  generateWebSiteSchema,
 } from "../../utils/schemaGenerators";
 import { testimonials } from "../../testimonials";
 
@@ -21,6 +24,7 @@ const schema = {
   "@graph": [
     generateOrganizationSchema(),
     generateProfessionalServiceSchema(),
+    generateWebSiteSchema(),
     {
       "@type": "WebPage",
       "@id": "https://www.powerplatformexperts.com.au/power-platform-support",

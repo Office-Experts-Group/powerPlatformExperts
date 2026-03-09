@@ -1,20 +1,25 @@
 import React from "react";
+import dynamic from "next/dynamic";
 
 import ServiceHero from "../../components/ServiceHero";
 import AboutUsMain from "./(components)/AboutUsMain";
-import Testimonials from "../(components)/Testimonials";
-import WhyChooseUs from "./(components)/WhyChooseUs";
-import GoodToKnow from "./(components)/GoodToKnow";
-import MeetTheTeamSlider from "./(components)/MeetTheTeamSlider";
-import Contact from "../../components/Contact";
-import Promo from "../../components/Promo";
-import ExpertsAwait from "../../components/ExpertsAwait";
+
+const Testimonials = dynamic(() => import("../(components)/Testimonials"));
+const WhyChooseUs = dynamic(() => import("./(components)/WhyChooseUs"));
+const GoodToKnow = dynamic(() => import("./(components)/GoodToKnow"));
+const MeetTheTeamSlider = dynamic(
+  () => import("./(components)/MeetTheTeamSlider"),
+);
+const Contact = dynamic(() => import("../../components/Contact"));
+const Promo = dynamic(() => import("../../components/Promo"));
+const ExpertsAwait = dynamic(() => import("../../components/ExpertsAwait"));
 
 import { getAboutPageSchema } from "../../utils/testimonialSchemaGenerator";
 import { testimonials } from "../../testimonials";
 import {
   generateProfessionalServiceSchema,
   generateOrganizationSchema,
+  generateWebSiteSchema,
 } from "../../utils/schemaGenerators";
 
 import aboutUs from "../../public/pageHeros/aboutUs.webp";
@@ -26,6 +31,7 @@ const schema = {
     ...getAboutPageSchema(testimonials, "powerPlatform")["@graph"],
     generateOrganizationSchema(),
     generateProfessionalServiceSchema(),
+    generateWebSiteSchema(),
     {
       "@type": "WebPage",
       "@id": "https://www.powerplatformexperts.com.au/about-us",

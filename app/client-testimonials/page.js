@@ -1,12 +1,14 @@
 import React from "react";
+import dynamic from "next/dynamic";
 
-import Contact from "../../components/Contact";
-import TestimonialPage from "./(components)/TestimonialPage";
 import ServiceHero from "../../components/ServiceHero";
+const Contact = dynamic(() => import("../../components/Contact"));
+import TestimonialPage from "./(components)/TestimonialPage";
 
 import {
   generateProfessionalServiceSchema,
   generateOrganizationSchema,
+  generateWebSiteSchema,
 } from "../../utils/schemaGenerators";
 import { getTestimonialsPageSchema } from "../../utils/testimonialSchemaGenerator";
 import { testimonials } from "../../testimonials";
@@ -24,6 +26,7 @@ const schema = {
     ],
     generateOrganizationSchema(),
     generateProfessionalServiceSchema(),
+    generateWebSiteSchema(),
     {
       "@type": "WebPage",
       "@id": "https://www.powerplatformexperts.com.au/client-testimonials",

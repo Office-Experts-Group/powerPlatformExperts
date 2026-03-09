@@ -1,11 +1,18 @@
 import React from "react";
+import dynamic from "next/dynamic";
 
 import ServiceHero from "../../components/ServiceHero";
-import Contact from "../../components/Contact";
 import PageSegmentMain from "./(components)/PageSegmentMain";
-import FAQSection from "../../components/FAQSection";
-import Bullets from "./(components)/Bullets";
-import MigrationBenefits from "./(components)/MigrationBenefits";
+
+const Contact = dynamic(() => import("../../components/Contact"));
+const FAQSection = dynamic(() => import("../../components/FAQSection"));
+const Bullets = dynamic(() => import("./(components)/Bullets"));
+const MigrationBenefits = dynamic(
+  () => import("./(components)/MigrationBenefits"),
+);
+const ComparisonTable = dynamic(() => import("./(components)/ComparisonTable"));
+const Conclusion = dynamic(() => import("./(components)/Conclusion"));
+const ExpertsAwait = dynamic(() => import("../../components/ExpertsAwait"));
 
 import excelMigration from "../../public/pageHeros/migration.webp";
 import excelMigrationMob from "../../public/pageHeros/mob/migrationMob.webp";
@@ -13,11 +20,9 @@ import excelMigrationMob from "../../public/pageHeros/mob/migrationMob.webp";
 import {
   generateProfessionalServiceSchema,
   generateOrganizationSchema,
+  generateWebSiteSchema,
 } from "../../utils/schemaGenerators";
 import { faqSchema } from "../../faqs/migration";
-import ComparisonTable from "./(components)/ComparisonTable";
-import Conclusion from "./(components)/Conclusion";
-import ExpertsAwait from "../../components/ExpertsAwait";
 
 // Main schema structure
 const schema = {
@@ -25,6 +30,7 @@ const schema = {
   "@graph": [
     generateOrganizationSchema(),
     generateProfessionalServiceSchema(),
+    generateWebSiteSchema(),
     {
       "@type": "WebPage",
       "@id":

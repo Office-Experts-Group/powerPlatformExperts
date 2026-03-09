@@ -1,16 +1,18 @@
 import React from "react";
+import dynamic from "next/dynamic";
 
 import ServiceHero from "../../../../components/ServiceHero";
-import FAQSection from "../../../../components/FAQSection";
 import ServicePageCards from "./(components)/ServicePageCards";
-import Contact from "../../../../components/Contact";
-import PageSegmentMain from "./(components)/PageSegmentMain";
-import BlackSegment from "./(components)/BlackSegment";
-import Promo from "./(components)/Promo";
-import Segment4Repeat from "./(components)/Segment4Repeat";
 import Contents from "./(components)/Contents";
-import faqs from "../../../../faqs/power-automate";
 
+const FAQSection = dynamic(() => import("../../../../components/FAQSection"));
+const Contact = dynamic(() => import("../../../../components/Contact"));
+const PageSegmentMain = dynamic(() => import("./(components)/PageSegmentMain"));
+const BlackSegment = dynamic(() => import("./(components)/BlackSegment"));
+const Promo = dynamic(() => import("./(components)/Promo"));
+const Segment4Repeat = dynamic(() => import("./(components)/Segment4Repeat"));
+
+import faqs from "../../../../faqs/power-automate";
 import faqSchema from "../../../../faqs/automateSchema";
 
 import puzzleMob from "../../../../public/pageHeros/mob/puzzleMob.webp";
@@ -19,6 +21,7 @@ import puzzle from "../../../../public/pageHeros/puzzle.webp";
 import {
   generateProfessionalServiceSchema,
   generateOrganizationSchema,
+  generateWebSiteSchema,
 } from "../../../../utils/schemaGenerators";
 
 const schema = {
@@ -26,6 +29,7 @@ const schema = {
   "@graph": [
     generateOrganizationSchema(),
     generateProfessionalServiceSchema(),
+    generateWebSiteSchema(),
     {
       "@type": "WebPage",
       "@id":

@@ -4,6 +4,7 @@ import dynamic from "next/dynamic";
 import {
   generateProfessionalServiceSchema,
   generateOrganizationSchema,
+  generateWebSiteSchema,
 } from "../utils/schemaGenerators";
 
 // Keep Hero static as it's above fold
@@ -32,6 +33,7 @@ const schema = {
     ...getHomePageSchema(testimonials, "powerplatform")["@graph"],
     generateOrganizationSchema(),
     generateProfessionalServiceSchema(),
+    generateWebSiteSchema(),
     {
       "@type": "WebPage",
       "@id": "https://www.powerplatformexperts.com.au",
