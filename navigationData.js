@@ -117,7 +117,7 @@ export const navigationData = {
           },
           {
             label: "Brand Templates",
-            href: `${WORD_EXPERTS_URL}/brand-templates`,
+            href: `${WORD_EXPERTS_URL}/brand-template`,
           },
           {
             label: "Google Docs Migration",
