@@ -1,0 +1,116 @@
+// agentsSegment.module.scss
+@import "./globals.scss";
+
+// ── Section ──────────────────────────────────
+.section {
+  background: $dark-bg;
+  padding: 8rem;
+
+  @include tablet {
+    padding: 6rem 4rem;
+  }
+  @include phoneLandscape {
+    padding: 5rem 1.25rem;
+  }
+  @include phone {
+    padding: 5rem 1.25rem;
+  }
+}
+
+// ── Two-column grid ───────────────────────────
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6rem;
+  align-items: center;
+
+  @include tablet {
+    grid-template-columns: 1fr;
+    gap: 4rem;
+  }
+  @include phoneLandscape {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  @include phone {
+    grid-template-columns: 1fr;
+  }
+}
+
+// ── Left — text column ────────────────────────
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+
+.eyebrow {
+  display: inline-block;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: rgba($theme, 0.9);
+  padding: 0.3rem 0.85rem;
+  border: 1px solid $theme-border;
+  border-radius: 2rem;
+}
+
+.heading {
+  font-size: clamp(1.8rem, 2.8vw, 2.6rem);
+  font-weight: 900;
+  color: #ffffff;
+  line-height: 1.18;
+
+  span {
+    font-style: normal;
+    color: $theme;
+  }
+}
+
+.body {
+  font-size: 1rem;
+  color: $white-55;
+  line-height: 1.9;
+
+  max-width: 480px;
+}
+
+// Divider
+.divider {
+  width: 100%;
+  height: 1px;
+  background: $white-08;
+}
+
+// CTA block
+.ctaBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  align-items: flex-start;
+}
+
+// ── Right — SVG visual pane ───────────────────
+.visual {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @include tablet {
+    max-width: 480px;
+    margin: 0 auto;
+  }
+  @include phoneLandscape {
+    display: none;
+  }
+  @include phone {
+    display: none;
+  }
+}
+
+.svgWrap {
+  width: 100%;
+  max-width: 480px;
+}

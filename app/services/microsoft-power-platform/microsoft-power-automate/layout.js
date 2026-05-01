@@ -1,16 +1,28 @@
 import React from "react";
 
 export const metadata = {
-  // Basic metadata
-  title: "Microsoft Power Automate Services | Power Platform Experts",
+  title:
+    "Microsoft Power Automate & AI Builder Consulting | Power Platform Experts",
   description:
-    "Expert Power Automate consulting services for workflow automation, process optimisation, and business efficiency.",
+    "Expert Power Automate consultants to optimise your business processes. We can update your existing workflows and add new integrations that save you time and money. From simple flows, to AI Builder and Copilot Studio automation agents.",
+
+  keywords: ["power automate"],
+
+  alternates: {
+    canonical: "/services/microsoft-power-platform/microsoft-power-automate",
+    alternate: [
+      {
+        url: "https://www.powerplatformexperts.com.au/services/microsoft-power-platform/microsoft-power-automate",
+      },
+    ],
+  },
 
   // OpenGraph
   openGraph: {
-    title: "Microsoft Power Automate Services | Power Platform Experts",
+    title:
+      "Microsoft Power Automate & AI Builder Consulting | Power Platform Experts",
     description:
-      "Expert Power Automate consulting services for workflow automation, process optimisation, and business efficiency.",
+      "Expert Power Automate consultants to optimise your business processes. We can update your existing workflows and add new integrations that save you time and money. From simple flows, to AI Builder and Copilot Studio automation agents.",
     url: "https://www.powerplatformexperts.com.au/services/microsoft-power-platform/microsoft-power-automate",
     siteName: "Power Platform Experts",
     images: [
@@ -25,15 +37,15 @@ export const metadata = {
     type: "website",
   },
 
-  // Additional metadata
-  keywords: ["custom Power Automate workflow development"],
-  alternates: {
-    canonical: "/services/microsoft-power-platform/microsoft-power-automate",
-    alternate: [
-      {
-        url: "https://www.officeexperts.com.au/services/microsoft-power-platform/microsoft-power-automate",
-      },
-    ],
+  // Twitter Card
+  twitter: {
+    card: "summary_large_image",
+    site: "@OfficeExpertsG1",
+    title:
+      "Microsoft Power Automate & AI Builder Consulting | Power Platform Experts",
+    description:
+      "Expert Power Automate consultants to optimise your business processes. We can update your existing workflows and add new integrations that save you time and money. From simple flows, to AI Builder and Copilot Studio automation agents.",
+    images: ["/logo.png"],
   },
 };
 

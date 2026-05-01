@@ -2,21 +2,21 @@ import React from "react";
 import dynamic from "next/dynamic";
 
 import ServiceHero from "../../../../components/ServiceHero";
-import ServicePageCards from "./(components)/ServicePageCards";
-import Contents from "./(components)/Contents";
 
+const PAIntro = dynamic(() => import("./(components)/PAIntro"));
+const PAProcess = dynamic(() => import("./(components)/PAProcess"));
+const AiBuilderCapabilities = dynamic(
+  () => import("./(components)/AiBuilderCapabilities"),
+);
+const AgentsSegment = dynamic(() => import("./(components)/AgentsSegment"));
 const FAQSection = dynamic(() => import("../../../../components/FAQSection"));
 const Contact = dynamic(() => import("../../../../components/Contact"));
-const PageSegmentMain = dynamic(() => import("./(components)/PageSegmentMain"));
-const BlackSegment = dynamic(() => import("./(components)/BlackSegment"));
-const Promo = dynamic(() => import("./(components)/Promo"));
-const Segment4Repeat = dynamic(() => import("./(components)/Segment4Repeat"));
+
+import automateMob from "../../../../public/pageHeros/mob/automate.webp";
+import automate from "../../../../public/pageHeros/automate.webp";
 
 import faqs from "../../../../faqs/power-automate";
 import faqSchema from "../../../../faqs/automateSchema";
-
-import puzzleMob from "../../../../public/pageHeros/mob/puzzleMob.webp";
-import puzzle from "../../../../public/pageHeros/puzzle.webp";
 
 import {
   generateProfessionalServiceSchema,
@@ -35,14 +35,21 @@ const schema = {
       "@id":
         "https://www.powerplatformexperts.com.au/services/microsoft-power-platform/microsoft-power-automate",
       url: "https://www.powerplatformexperts.com.au/services/microsoft-power-platform/microsoft-power-automate",
-      name: "Microsoft Power Automate Services | Process Automation Experts",
+      name: "Microsoft Power Automate & AI Builder Consulting | Power Platform Experts",
       isPartOf: {
         "@id": "https://www.powerplatformexperts.com.au#website",
       },
       datePublished: "2024-10-27T00:00:00+00:00",
-      dateModified: "2024-10-27T00:00:00+00:00",
+      dateModified: "2026-05-01T00:00:00+00:00",
       description:
-        "Professional Microsoft Power Automate development and consulting services. Automate workflows, integrate systems, and optimise processes. Call us today 1300 102 810",
+        "Expert Power Automate consultants to optimise your business processes. We can update your existing workflows and add new integrations that save you time and money. From simple flows, to AI Builder and Copilot Studio automation agents.",
+      about: [
+        { "@type": "Thing", name: "Microsoft Power Automate" },
+        { "@type": "Thing", name: "AI Builder" },
+        { "@type": "Thing", name: "Copilot Studio" },
+        { "@type": "Thing", name: "Invoice Processing Automation" },
+        { "@type": "Thing", name: "Intelligent Document Processing" },
+      ],
       breadcrumb: {
         "@id":
           "https://www.powerplatformexperts.com.au/services/microsoft-power-platform/microsoft-power-automate#breadcrumb",
@@ -54,6 +61,45 @@ const schema = {
           target: [
             "https://www.powerplatformexperts.com.au/services/microsoft-power-platform/microsoft-power-automate",
           ],
+        },
+      ],
+    },
+    {
+      // HowTo schema for the five-step delivery process
+      "@type": "HowTo",
+      name: "How we deliver AI automation with Power Automate",
+      description:
+        "Our five-step process for scoping, building and handing over AI-powered Power Automate workflows for Australian businesses.",
+      step: [
+        {
+          "@type": "HowToStep",
+          position: 1,
+          name: "Discovery",
+          text: "We map your manual processes to identify high-volume, rule-based tasks that are the strongest candidates for AI automation.",
+        },
+        {
+          "@type": "HowToStep",
+          position: 2,
+          name: "AI Model Design",
+          text: "We select or train the AI Builder models your flows will need, gathering sample documents and iterating until accuracy meets the threshold.",
+        },
+        {
+          "@type": "HowToStep",
+          position: 3,
+          name: "Flow Architecture",
+          text: "We design the full flow on paper — triggers, conditions, AI model calls, error handling, escalation paths and audit logging — before any code is written.",
+        },
+        {
+          "@type": "HowToStep",
+          position: 4,
+          name: "Build & Test",
+          text: "We build inside your Microsoft environment using your real data, testing against edge cases and exception scenarios before go-live.",
+        },
+        {
+          "@type": "HowToStep",
+          position: 5,
+          name: "Handover",
+          text: "Your team receives full documentation, hands-on training, and ongoing support as your business evolves.",
         },
       ],
     },
@@ -90,34 +136,38 @@ const schema = {
   ],
 };
 
-const Page = () => {
-  return (
-    <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
-      <Contents />
-      <ServiceHero
-        title="Microsoft Power Automate Consulting Services"
-        desktopImage={puzzle}
-        mobileImage={puzzleMob}
-        altDesk={"people holding large puzzle pieces"}
-        altMob={"people holding large puzzle pieces"}
-      />
-      <ServicePageCards />
-      <PageSegmentMain />
-      <Segment4Repeat />
-      <BlackSegment />
-      <Promo />
+// ─────────────────────────────────────────────
+// Page
+// ─────────────────────────────────────────────
+const Page = () => (
+  <>
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+    />
+
+    {/* 1 — Hero */}
+    <ServiceHero
+      title="Power Automate & AI Automation"
+      desktopImage={automate}
+      mobileImage={automateMob}
+      altDesk="power automate"
+      altMob="power automate"
+    />
+
+    <PAIntro />
+    <AiBuilderCapabilities />
+    <PAProcess />
+    <AgentsSegment />
+    <section style={{ margin: "6rem auto 3rem auto" }}>
       <FAQSection faqs={faqs} />
-      <Contact />
-    </>
-  );
-};
+    </section>
+    <Contact />
+  </>
+);
 
 export default Page;

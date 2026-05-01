@@ -1,0 +1,57 @@
+.agentSvg {
+  width: 100%;
+  height: auto;
+  display: block;
+  overflow: visible;
+}
+
+@keyframes orbitCW {
+  0% {
+    offset-distance: 0%;
+  }
+  100% {
+    offset-distance: 100%;
+  }
+}
+@keyframes hubPulse {
+  0%, 100% {
+    opacity: 0.15;
+    r: 28px;
+  }
+  50% {
+    opacity: 0.35;
+    r: 36px;
+  }
+}
+@keyframes nodePop {
+  0%, 100% {
+    opacity: 0.7;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+.packet {
+  offset-path: path("M 200 80 A 100 100 0 1 1 199.9 80");
+  animation: orbitCW 4s linear infinite;
+  opacity: 0.85;
+}
+
+.packet2 {
+  offset-path: path("M 200 80 A 100 100 0 1 1 199.9 80");
+  animation: orbitCW 4s linear infinite;
+  animation-delay: -1.33s;
+  opacity: 0.85;
+}
+
+.packet3 {
+  offset-path: path("M 200 80 A 100 100 0 1 1 199.9 80");
+  animation: orbitCW 4s linear infinite;
+  animation-delay: -2.66s;
+  opacity: 0.85;
+}
+
+.hubRing {
+  animation: hubPulse 3s ease-in-out infinite;
+  transform-origin: 200px 200px;
+}/*# sourceMappingURL=agentLoopSvg.module.css.map */
