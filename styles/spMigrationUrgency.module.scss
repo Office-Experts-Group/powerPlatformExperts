@@ -1,0 +1,556 @@
+// powerplatformexperts.com.au/sharepoint-consulting-and-development/(components)/spMigrationUrgency.module.scss
+
+@import "./globals.scss";
+
+/* ── Section shell — dark, alternates with white Copilot section ── */
+.section {
+  background: $dark-bg;
+  padding: 7rem 5rem;
+
+  @include desktop {
+    padding: 6rem 3.5rem;
+  }
+
+  @include tablet {
+    padding: 5rem 2rem;
+  }
+
+  @include phoneLandscape {
+    padding: 4.5rem 2rem;
+  }
+
+  @include phone {
+    padding: 4rem 1.25rem;
+  }
+}
+
+.inner {
+  max-width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+
+  @include tablet {
+    gap: 3.5rem;
+  }
+
+  @include phone {
+    gap: 3rem;
+  }
+}
+
+/* ── Header ── */
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.eyebrow {
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 3.5px;
+  text-transform: uppercase;
+  color: $accent;
+}
+
+.headerGrid {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 4rem;
+  align-items: end;
+
+  @include tablet {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  @include phoneLandscape {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  @include phone {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+}
+
+.headline {
+  font-size: clamp(2.4rem, 4vw, 4rem);
+  font-weight: 800;
+  color: $white;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+
+  white-space: nowrap;
+
+  @include tablet {
+    white-space: normal;
+  }
+
+  @include phone {
+    font-size: 2.2rem;
+    white-space: normal;
+  }
+}
+
+.accent {
+  color: $accent;
+}
+
+.lead {
+  font-size: 0.97rem;
+  line-height: 1.85;
+  color: $white-55;
+
+  max-width: 560px;
+  align-self: end;
+}
+
+/* ── Timeline ── */
+.timelineWrap {
+  position: relative;
+}
+
+/* The horizontal track line */
+.track {
+  position: absolute;
+  top: 20px; // vertically centred on the node dots
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: $white-08;
+  border-radius: 2px;
+
+  @include tablet {
+    display: none;
+  }
+
+  @include phoneLandscape {
+    display: none;
+  }
+
+  @include phone {
+    display: none;
+  }
+}
+
+/* Filled portion of track — up to "Now" node (50%) */
+.trackFill {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 38%;
+  background: linear-gradient(90deg, rgba(4, 105, 153, 0.6), $accent);
+  border-radius: 2px;
+}
+
+/* Milestone list — horizontal on desktop, vertical on mobile */
+.timeline {
+  list-style: none;
+  padding: 0;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0 2rem;
+
+  @include desktop {
+    gap: 0 1.5rem;
+  }
+
+  @include tablet {
+    grid-template-columns: 1fr;
+    gap: 0;
+    border-left: 2px solid $white-08;
+    padding-left: 0;
+    margin-left: 1rem;
+  }
+
+  @include phoneLandscape {
+    grid-template-columns: 1fr;
+    gap: 0;
+    border-left: 2px solid $white-08;
+    padding-left: 0;
+    margin-left: 1rem;
+  }
+
+  @include phone {
+    grid-template-columns: 1fr;
+    gap: 0;
+    border-left: 2px solid $white-08;
+    margin-left: 0.75rem;
+  }
+}
+
+/* Individual milestone */
+.milestone {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0;
+
+  @include tablet {
+    flex-direction: row;
+    gap: 1.5rem;
+    padding-bottom: 2.5rem;
+    position: relative;
+  }
+
+  @include phoneLandscape {
+    flex-direction: row;
+    gap: 1.5rem;
+    padding-bottom: 2.5rem;
+    position: relative;
+  }
+
+  @include phone {
+    flex-direction: row;
+    gap: 1.25rem;
+    padding-bottom: 2rem;
+    position: relative;
+  }
+}
+
+/* Node — sits on the track */
+.node {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+
+  @include tablet {
+    // On mobile, node becomes the vertical track marker
+    position: absolute;
+    left: -1.85rem;
+    top: 0;
+    width: 24px;
+    height: 24px;
+  }
+
+  @include phoneLandscape {
+    position: absolute;
+    left: -1.85rem;
+    top: 0;
+    width: 24px;
+    height: 24px;
+  }
+
+  @include phone {
+    position: absolute;
+    left: -1.55rem;
+    top: 0;
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.nodeDot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: $dark-surface;
+  border: 2px solid $white-18;
+  transition: border-color 0.2s;
+
+  @include phone {
+    width: 10px;
+    height: 10px;
+  }
+}
+
+/* Status variants */
+.milestone_passed {
+  .nodeDot {
+    background: rgba(4, 105, 153, 0.5);
+    border-color: $accent;
+  }
+
+  .date {
+    color: rgba(4, 105, 153, 0.7);
+  }
+
+  .cardLabel {
+    opacity: 0.7;
+  }
+}
+
+.milestone_current {
+  .nodeDot {
+    background: $white;
+    border-color: $accent;
+    box-shadow: 0 0 0 4px rgba(4, 105, 153, 0.25);
+    width: 14px;
+    height: 14px;
+  }
+
+  .card {
+    border-color: rgba(4, 105, 153, 0.4);
+    background: $dark-mid;
+  }
+}
+
+.milestone_approaching {
+  .nodeDot {
+    border-color: #e05c2a;
+    background: rgba(224, 92, 42, 0.15);
+  }
+
+  .date {
+    color: #e05c2a;
+  }
+}
+
+.milestone_warning {
+  .nodeDot {
+    border-color: rgba(224, 92, 42, 0.5);
+    background: rgba(224, 92, 42, 0.08);
+  }
+
+  .date {
+    color: rgba(224, 92, 42, 0.7);
+  }
+}
+
+/* Card body */
+.card {
+  flex: 1;
+  padding: 1.5rem;
+  border: 1px solid $white-08;
+  border-radius: 4px;
+  background: $dark-surface;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  transition: border-color 0.2s;
+
+  &:hover {
+    border-color: $white-18;
+  }
+
+  @include tablet {
+    margin-top: 0;
+  }
+
+  @include phoneLandscape {
+    margin-top: 0;
+  }
+
+  @include phone {
+    margin-top: 0;
+    padding: 1.25rem;
+  }
+}
+
+.cardTop {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.25rem;
+}
+
+.date {
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: $white-55;
+  line-height: 1;
+}
+
+.currentPill {
+  font-size: 0.58rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: $accent;
+  background: $accent-dim;
+  border: 1px solid $accent-border;
+  border-radius: 2px;
+  padding: 0.2rem 0.55rem;
+  line-height: 1.4;
+}
+
+.warningPill {
+  font-size: 0.58rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #e05c2a;
+  background: rgba(224, 92, 42, 0.1);
+  border: 1px solid rgba(224, 92, 42, 0.3);
+  border-radius: 2px;
+  padding: 0.2rem 0.55rem;
+  line-height: 1.4;
+}
+
+.cardLabel {
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: $white-90;
+  line-height: 1.3;
+}
+
+.cardEvent {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: $white-35;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.cardDetail {
+  font-size: 0.83rem;
+  line-height: 1.75;
+  color: $white-45;
+  margin: 0.5rem 0 0;
+}
+
+/* ── Reasons grid ── */
+.reasons {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+  padding-top: 1rem;
+  border-top: 1px solid $white-08;
+}
+
+.reasonsLabel {
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: $white-35;
+}
+
+.reasonsGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0 2.5rem;
+
+  @include desktop {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  @include tablet {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  @include phoneLandscape {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  @include phone {
+    grid-template-columns: 1fr;
+    gap: 1.75rem;
+  }
+}
+
+.reason {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.reasonBar {
+  width: 24px;
+  height: 3px;
+  background: $accent;
+  border-radius: 2px;
+  opacity: 0.7;
+}
+
+.reasonHeading {
+  font-size: 1rem;
+  font-weight: 700;
+  color: $white-88;
+  line-height: 1.3;
+  letter-spacing: 0.5px;
+}
+
+.reasonBody {
+  font-size: 0.85rem;
+  line-height: 1.8;
+  color: $white-45;
+}
+
+/* ── Bottom note ── */
+.note {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2.5rem;
+  padding: 1.75rem 2rem;
+  background: $dark-surface;
+  border: 1px solid $white-08;
+  border-radius: 4px;
+  flex-wrap: wrap;
+
+  p {
+    font-size: 0.88rem;
+    line-height: 1.75;
+    color: $white-55;
+
+    max-width: 600px;
+  }
+
+  @include phone {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+    padding: 1.5rem 1.25rem;
+  }
+}
+
+.noteLink {
+  color: $accent;
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 1px solid $accent-border;
+  transition: border-color 0.2s;
+
+  &:hover {
+    border-bottom-color: $accent;
+  }
+}
+
+.cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  white-space: nowrap;
+  flex-shrink: 0;
+  padding: 0.8rem 1.6rem;
+  background: $accent;
+  color: $white;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  text-decoration: none;
+  border-radius: 3px;
+  transition:
+    background 0.2s,
+    gap 0.2s;
+
+  svg {
+    transition: transform 0.2s;
+  }
+
+  &:hover {
+    background: darken(#046999, 8%);
+    gap: 0.9rem;
+
+    svg {
+      transform: translateX(3px);
+    }
+  }
+}

@@ -1,0 +1,457 @@
+// powerplatformexperts.com.au/sharepoint-consulting-and-development/(components)/spServices.module.scss
+
+@import "./globals.scss";
+
+/* ── Section shell — dark background for contrast after white section ── */
+.section {
+  background: $dark-bg;
+  padding: 7rem 5rem;
+
+  @include desktop {
+    padding: 6rem 3.5rem;
+  }
+
+  @include tablet {
+    padding: 5rem 2rem;
+  }
+
+  @include phoneLandscape {
+    padding: 4.5rem 2rem;
+  }
+
+  @include phone {
+    padding: 4rem 1.25rem;
+  }
+}
+
+.inner {
+  max-width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+/* ── Section header ── */
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 560px;
+}
+
+.eyebrow {
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 3.5px;
+  text-transform: uppercase;
+  color: $accent;
+}
+
+.headline {
+  font-size: clamp(2.2rem, 3.5vw, 3.2rem);
+  font-weight: 800;
+  color: $white;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+  margin: 0;
+}
+
+.sub {
+  font-size: 0.95rem;
+  line-height: 1.8;
+  color: $white-55;
+  margin: 0;
+}
+
+/* ── Tab layout: left nav + right panel ── */
+.tabsWrap {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 0;
+  border: 1px solid $white-08;
+  border-radius: 4px;
+  overflow: hidden;
+
+  @include desktop {
+    grid-template-columns: 240px 1fr;
+  }
+
+  @include tablet {
+    grid-template-columns: 1fr;
+  }
+
+  @include phoneLandscape {
+    grid-template-columns: 1fr;
+  }
+
+  @include phone {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ── Left nav ── */
+.nav {
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid $white-08;
+  background: $dark-surface;
+
+  @include tablet {
+    flex-direction: row;
+    flex-wrap: wrap;
+    border-right: none;
+    border-bottom: 1px solid $white-08;
+  }
+
+  @include phoneLandscape {
+    flex-direction: row;
+    flex-wrap: wrap;
+    border-right: none;
+    border-bottom: 1px solid $white-08;
+  }
+
+  @include phone {
+    flex-direction: column;
+    border-right: none;
+    border-bottom: 1px solid $white-08;
+  }
+}
+
+.navBtn {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1.25rem 1.5rem;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid $white-08;
+  cursor: pointer;
+  text-align: left;
+  width: 100%;
+  transition: background 0.18s;
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  &:hover {
+    background: $white-05;
+  }
+
+  @include tablet {
+    width: auto;
+    flex: 1 1 auto;
+    border-bottom: none;
+    border-right: 1px solid $white-08;
+    padding: 1rem;
+
+    &:last-child {
+      border-right: none;
+    }
+  }
+
+  @include phoneLandscape {
+    width: auto;
+    flex: 1 1 40%;
+    border-bottom: 1px solid $white-08;
+    border-right: 1px solid $white-08;
+    padding: 1rem;
+  }
+
+  @include phone {
+    padding: 1rem 1.25rem;
+  }
+}
+
+.navBtnActive {
+  background: $dark-mid;
+
+  // Accent left rule
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background: $accent;
+    border-radius: 0 2px 2px 0;
+  }
+
+  .navIndex {
+    color: $accent;
+  }
+
+  .navLabel {
+    color: $white;
+    font-weight: 700;
+  }
+
+  .navChevron {
+    color: $accent;
+    opacity: 1;
+  }
+
+  @include tablet {
+    &::before {
+      top: auto;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: auto;
+      height: 3px;
+      border-radius: 2px 2px 0 0;
+    }
+  }
+
+  @include phoneLandscape {
+    &::before {
+      top: auto;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: auto;
+      height: 3px;
+      border-radius: 2px 2px 0 0;
+    }
+  }
+}
+
+.navIndex {
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  color: $white-35;
+  flex-shrink: 0;
+  line-height: 1;
+  transition: color 0.18s;
+
+  @include tablet {
+    display: none;
+  }
+}
+
+.navLabel {
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: $white-65;
+  line-height: 1.3;
+  flex: 1;
+  transition: color 0.18s;
+}
+
+.navChevron {
+  color: $white-18;
+  flex-shrink: 0;
+  opacity: 0;
+  transition:
+    opacity 0.18s,
+    color 0.18s;
+
+  .navBtn:hover & {
+    opacity: 1;
+  }
+
+  @include tablet {
+    display: none;
+  }
+
+  @include phone {
+    display: block;
+    opacity: 0.4;
+  }
+}
+
+.alertDot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #e05c2a;
+  flex-shrink: 0;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.6;
+    transform: scale(0.85);
+  }
+}
+
+/* ── Right panel ── */
+.panel {
+  background: $dark-mid;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+  animation: panelFade 0.25s ease both;
+
+  @include desktop {
+    padding: 2.5rem;
+  }
+
+  @include tablet {
+    padding: 2rem;
+  }
+
+  @include phone {
+    padding: 1.75rem 1.25rem;
+  }
+}
+
+@keyframes panelFade {
+  from {
+    opacity: 0;
+    transform: translateX(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.panelHeader {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+/* Tag pill */
+.tag {
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: $accent;
+  background: $accent-dim;
+  border: 1px solid $accent-border;
+  border-radius: 2px;
+  padding: 0.25rem 0.7rem;
+}
+
+.tagAlert {
+  color: #e05c2a;
+  background: rgba(224, 92, 42, 0.1);
+  border-color: rgba(224, 92, 42, 0.3);
+}
+
+.panelTitle {
+  font-size: clamp(1.4rem, 2.2vw, 1.9rem);
+  font-weight: 800;
+  color: $white;
+  letter-spacing: -0.025em;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.panelIntro {
+  font-size: 0.95rem;
+  line-height: 1.75;
+  color: $white-65;
+  margin: 0;
+}
+
+.panelBody {
+  font-size: 0.9rem;
+  line-height: 1.9;
+  color: $white-55;
+  margin: 0;
+  padding-top: 0.5rem;
+  border-top: 1px solid $white-08;
+}
+
+/* Deliverables checklist */
+.points {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.65rem 2rem;
+
+  @include phone {
+    grid-template-columns: 1fr;
+  }
+}
+
+.point {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  font-size: 0.87rem;
+  color: $white-65;
+  line-height: 1.5;
+
+  svg {
+    flex-shrink: 0;
+    margin-top: 1px;
+  }
+}
+
+/* Advisory note blockquote */
+.note {
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+  padding: 1.25rem 1.5rem;
+  background: $dark-surface;
+  border-radius: 3px;
+}
+
+.noteBar {
+  width: 3px;
+  background: $accent;
+  border-radius: 2px;
+  flex-shrink: 0;
+  align-self: stretch;
+  opacity: 0.6;
+}
+
+.note p {
+  font-size: 0.85rem;
+  font-style: italic;
+  line-height: 1.75;
+  color: $white-45;
+  margin: 0;
+}
+
+/* Optional cross-link */
+.panelLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: fit-content;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: $accent;
+  text-decoration: none;
+  border-bottom: 1px solid $accent-border;
+  padding-bottom: 2px;
+  transition:
+    gap 0.2s,
+    border-color 0.2s;
+
+  svg {
+    transition: transform 0.2s;
+  }
+
+  &:hover {
+    gap: 0.8rem;
+    border-bottom-color: $accent;
+
+    svg {
+      transform: translateX(3px);
+    }
+  }
+}

@@ -4,13 +4,13 @@ export const metadata = {
   // Basic metadata
   title: "Microsoft Power Pages Services | Power Platform Experts",
   description:
-    "Build secure, responsive websites with Microsoft Power Pages. Integrate data, enhance visuals, and unlock AI insights.",
+    "Power Pages consultants for Australian businesses. We build external-facing portals connected to Dataverse, Dynamics 365 and Azure AD. Enterprise level security, role-based access, and embedded Power BI.",
 
   // OpenGraph
   openGraph: {
     title: "Microsoft Power Pages Services | Power Platform Experts",
     description:
-      "Build secure, responsive websites with Microsoft Power Pages. Integrate data, enhance visuals, and unlock AI insights.",
+      "Power Pages consultants for Australian businesses. We build external-facing portals connected to Dataverse, Dynamics 365 and Azure AD. Enterprise level security, role-based access, and embedded Power BI.",
     url: "https://www.powerplatformexperts.com.au/services/microsoft-power-platform/microsoft-power-pages",
     siteName: "Power Platform Experts",
     images: [
@@ -31,7 +31,7 @@ export const metadata = {
     site: "@PowerPlatformExp",
     title: "Microsoft Power Pages Services | Power Platform Experts",
     description:
-      "Build secure, responsive websites with Microsoft Power Pages. Integrate data, enhance visuals, and unlock AI insights.",
+      "Power Pages consultants for Australian businesses. We build external-facing portals connected to Dataverse, Dynamics 365 and Azure AD. Enterprise level security, role-based access, and embedded Power BI.",
     images: ["/logo.png"],
   },
 

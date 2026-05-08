@@ -1,0 +1,173 @@
+// powerplatformexperts.com.au/styles/ppAiCapabilities.module.scss
+
+@import "./globals.scss";
+
+/* ── Section shell — dark, picks up the dark rhythm again ── */
+.section {
+  background: $dark-bg;
+  padding: 8rem;
+
+  @include tablet {
+    padding: 6rem 2rem;
+  }
+  @include phoneLandscape {
+    padding: 6rem 2rem;
+  }
+  @include phone {
+    padding: 5rem 1.25rem;
+  }
+}
+
+.inner {
+  max-width: 1200px;
+  margin-inline: auto;
+}
+
+/* ── Header ── */
+.header {
+  margin-bottom: 3.5rem;
+  max-width: 720px;
+
+  @include phone {
+    margin-bottom: 2.5rem;
+  }
+}
+
+.eyebrow {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: $accent;
+  margin-bottom: 1.25rem;
+  padding: 0.35rem 0.9rem;
+  border: 1px solid $accent-border;
+  border-radius: 2rem;
+}
+
+.headline {
+  font-size: clamp(1.9rem, 3vw, 2.8rem);
+  font-weight: 700;
+  color: $white-90;
+  line-height: 1.2;
+  margin: 0 0 1rem;
+}
+
+.accent {
+  color: #7ec8e3;
+}
+
+.intro {
+  color: $white-65;
+  font-size: 1rem;
+  line-height: 1.85;
+}
+
+/* ── Three-column card grid ── */
+.cardGrid {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 3rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+
+  @include tablet {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+  @include phoneLandscape {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  @include phone {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
+
+/* ── Individual card ── */
+.card {
+  background: $dark-surface;
+  border: 1px solid $white-08;
+  border-radius: 0.75rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  transition: border-color 0.2s;
+
+  &:hover {
+    border-color: $accent-border;
+  }
+}
+
+.cardTop {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 0.25rem;
+}
+
+.iconWrap {
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+
+  svg {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.cardIndex {
+  font-size: 0.63rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: rgba(255, 255, 255, 0.2);
+  font-variant-numeric: tabular-nums;
+}
+
+.cardLabel {
+  font-size: 1rem;
+  font-weight: 700;
+  color: $white-88;
+  line-height: 1.3;
+  letter-spacing: 1px;
+}
+
+.cardBody {
+  font-size: 0.9rem;
+  color: $white-65;
+  line-height: 1.8;
+
+  flex: 1;
+}
+
+/* ── Honest assessment block inside card ── */
+.honestWrap {
+  border-top: 1px solid $white-08;
+  padding-top: 0.9rem;
+  margin-top: 0.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.honestTag {
+  font-size: 0.63rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #7ec8e3;
+  opacity: 0.8;
+}
+
+.honestText {
+  font-size: 0.82rem;
+  color: rgba(255, 255, 255, 0.4);
+  line-height: 1.65;
+
+  font-style: italic;
+}

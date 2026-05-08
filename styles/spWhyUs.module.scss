@@ -1,0 +1,332 @@
+// powerplatformexperts.com.au/sharepoint-consulting-and-development/(components)/spWhyUs.module.scss
+
+@import "./globals.scss";
+
+/* ── Section — dark, closes the page before Contact ── */
+.section {
+  background: $dark-bg;
+  padding: 7rem 5rem;
+
+  // Subtle diagonal texture using repeating gradient
+  background-image: repeating-linear-gradient(
+    135deg,
+    rgba(4, 105, 153, 0.03) 0px,
+    rgba(4, 105, 153, 0.03) 1px,
+    transparent 1px,
+    transparent 60px
+  );
+
+  @include desktop {
+    padding: 6rem 3.5rem;
+  }
+
+  @include tablet {
+    padding: 5rem 2rem;
+  }
+
+  @include phoneLandscape {
+    padding: 4.5rem 2rem;
+  }
+
+  @include phone {
+    padding: 4rem 1.25rem;
+  }
+}
+
+.inner {
+  max-width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+
+  @include tablet {
+    gap: 3.5rem;
+  }
+
+  @include phone {
+    gap: 3rem;
+  }
+}
+
+/* Screen-reader only heading — visual heading is the pull-quote */
+.srOnly {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* ── Main two-zone grid ── */
+.body {
+  display: grid;
+  grid-template-columns: 380px 1fr;
+  gap: 6rem;
+  align-items: start;
+
+  @include desktop {
+    grid-template-columns: 300px 1fr;
+    gap: 4rem;
+  }
+
+  @include tablet {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  @include phoneLandscape {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  @include phone {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+}
+
+/* ── Left: pull-quote column ── */
+.quoteCol {
+  position: sticky;
+  top: 130px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  @include tablet {
+    position: static;
+  }
+
+  @include phone {
+    position: static;
+  }
+}
+
+.eyebrow {
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 3.5px;
+  text-transform: uppercase;
+  color: $accent;
+}
+
+.pullQuote {
+  padding: 0;
+
+  p {
+    font-size: clamp(1.2rem, 1.8vw, 1.5rem);
+    font-weight: 500;
+    line-height: 1.55;
+    color: $white-88;
+    font-style: italic;
+
+    // Opening quote mark as decorative element
+    &::before {
+      content: "";
+      display: block;
+      width: 32px;
+      height: 3px;
+      background: $accent;
+      border-radius: 2px;
+      margin-bottom: 1.5rem;
+      opacity: 0.8;
+    }
+  }
+}
+
+.quoteAttribution {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding-top: 0.5rem;
+
+  div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+  }
+
+  strong {
+    font-size: 0.88rem;
+    font-weight: 700;
+    color: $white-88;
+    letter-spacing: -0.01em;
+  }
+
+  span {
+    font-size: 0.75rem;
+    color: $white-35;
+    letter-spacing: 0.5px;
+  }
+}
+
+.attributionBar {
+  width: 3px;
+  min-height: 100%;
+  align-self: stretch;
+  background: $accent;
+  border-radius: 2px;
+  flex-shrink: 0;
+  opacity: 0.6;
+}
+
+.cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  width: fit-content;
+  padding: 0.85rem 1.75rem;
+  background: $accent;
+  color: $white;
+  font-size: 0.88rem;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  text-decoration: none;
+  border-radius: 3px;
+  margin-top: 0.5rem;
+  transition:
+    background 0.2s,
+    gap 0.2s;
+
+  svg {
+    transition: transform 0.2s;
+  }
+
+  &:hover {
+    background: darken(#046999, 8%);
+    gap: 0.9rem;
+
+    svg {
+      transform: translateX(3px);
+    }
+  }
+}
+
+/* ── Right: differentiator prose ── */
+.diffCol {
+  display: flex;
+  flex-direction: column;
+}
+
+.diff {
+  padding: 2.5rem 0;
+  border-bottom: 1px solid $white-08;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  transition: background 0.15s;
+
+  // First item has top border too
+  &.diffFirst {
+    border-top: 1px solid $white-08;
+  }
+
+  // Subtle indent on hover
+  &:hover {
+    padding-left: 1rem;
+    transition:
+      padding-left 0.25s ease,
+      background 0.15s;
+  }
+
+  @include phone {
+    padding: 2rem 0;
+
+    &:hover {
+      padding-left: 0;
+    }
+  }
+}
+
+.diffHeading {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: $white-90;
+  letter-spacing: 1px;
+  line-height: 1.3;
+}
+
+.diffBody {
+  font-size: 0.92rem;
+  line-height: 1.9;
+  color: $white-55;
+
+  max-width: 640px;
+}
+
+.diffLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  width: fit-content;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: $accent;
+  text-decoration: none;
+  border-bottom: 1px solid $accent-border;
+  padding-bottom: 1px;
+  transition:
+    gap 0.2s,
+    border-color 0.2s;
+
+  svg {
+    transition: transform 0.2s;
+  }
+
+  &:hover {
+    gap: 0.7rem;
+    border-bottom-color: $accent;
+
+    svg {
+      transform: translateX(3px);
+    }
+  }
+}
+
+/* ── Footer: related links cluster ── */
+.footer {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  padding-top: 1rem;
+  border-top: 1px solid $white-08;
+}
+
+.footerLabel {
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: $white-35;
+}
+
+.linkCluster {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem 1rem;
+}
+
+.clusterLink {
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: $white-45;
+  text-decoration: none;
+  padding: 0.4rem 0.9rem;
+  border: 1px solid $white-08;
+  border-radius: 2px;
+  transition:
+    color 0.18s,
+    border-color 0.18s,
+    background 0.18s;
+
+  &:hover {
+    color: $white-88;
+    border-color: $white-18;
+    background: $white-05;
+  }
+}

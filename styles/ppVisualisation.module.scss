@@ -1,0 +1,215 @@
+// powerplatformexperts.com.au/styles/ppVisualisation.module.scss
+
+@import "./globals.scss";
+
+/* ── Section shell — light grey, breaks dark→light rhythm ── */
+.section {
+  background: $light-bg;
+  padding: 8rem;
+
+  @include tablet {
+    padding: 6rem 2rem;
+  }
+  @include phoneLandscape {
+    padding: 6rem 2rem;
+  }
+  @include phone {
+    padding: 5rem 1.25rem;
+  }
+}
+
+.inner {
+  max-width: 1200px;
+  margin-inline: auto;
+}
+
+/* ── Header ── */
+.header {
+  margin-bottom: 3rem;
+  max-width: 720px;
+}
+
+.eyebrow {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: $accent;
+  margin-bottom: 1.25rem;
+  padding: 0.35rem 0.9rem;
+  border: 1px solid $accent-border;
+  border-radius: 2rem;
+}
+
+.headline {
+  font-size: clamp(1.9rem, 3vw, 2.8rem);
+  font-weight: 700;
+  color: $text-primary;
+  line-height: 1.2;
+  margin: 0 0 1rem;
+}
+
+.intro {
+  color: $darkGrayText;
+  font-size: 1rem;
+  line-height: 1.8;
+  margin: 0;
+}
+
+/* ── Tab strip ── */
+.tabStrip {
+  display: flex;
+  gap: 0;
+  border-bottom: 2px solid $border;
+  margin-bottom: 0;
+}
+
+.tab {
+  position: relative;
+  background: none;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: $text-muted;
+  cursor: pointer;
+  letter-spacing: 0.2px;
+  transition: color 0.2s;
+  white-space: nowrap;
+
+  /* Active underline */
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: $accent;
+    transform: scaleX(0);
+    transition: transform 0.2s ease;
+    border-radius: 2px 2px 0 0;
+  }
+
+  &:hover {
+    color: $text-primary;
+  }
+
+  @include phone {
+    padding: 0.6rem 1rem;
+    font-size: 0.8rem;
+  }
+}
+
+.tabActive {
+  color: $accent;
+
+  &::after {
+    transform: scaleX(1);
+  }
+}
+
+/* ── Content panel ── */
+.panel {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+  background: $white;
+  border: 1px solid $border;
+  border-top: none;
+  border-radius: 0 0 0.75rem 0.75rem;
+  padding: 3rem;
+
+  @include tablet {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    padding: 2rem;
+  }
+  @include phoneLandscape {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 1.75rem;
+  }
+  @include phone {
+    grid-template-columns: 1fr;
+    gap: 1.75rem;
+    padding: 1.5rem 1rem;
+  }
+}
+
+/* ── Panel text ── */
+.panelText {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.panelHeading {
+  font-size: clamp(1.2rem, 2vw, 1.6rem);
+  font-weight: 700;
+  color: $text-primary;
+  line-height: 1.25;
+  margin: 0;
+}
+
+.panelBody {
+  color: $darkGrayText;
+  font-size: 0.97rem;
+  line-height: 1.8;
+  margin: 0;
+}
+
+.panelDetail {
+  color: $text-muted;
+  font-size: 0.88rem;
+  line-height: 1.75;
+  margin: 0;
+  padding: 1rem;
+  background: $light-bg;
+  border-left: 3px solid $accent-border;
+  border-radius: 0 0.4rem 0.4rem 0;
+}
+
+/* ── Tags ── */
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  list-style: none;
+  padding: 0;
+  margin: 0.25rem 0 0;
+}
+
+.tag {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  color: $accent;
+  background: $accent-light;
+  padding: 0.25rem 0.7rem;
+  border-radius: 2rem;
+}
+
+/* ── Panel visual ── */
+.panelVisual {
+  svg {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 0.5rem;
+    /* Subtle drop shadow to lift the mockup */
+    filter: drop-shadow(0 4px 24px rgba(0, 0, 0, 0.1));
+  }
+
+  @include tablet {
+    order: -1;
+  }
+  @include phoneLandscape {
+    order: -1;
+  }
+  @include phone {
+    order: -1;
+  }
+}

@@ -1,0 +1,307 @@
+// powerplatformexperts.com.au/sharepoint-consulting-and-development/(components)/spIntro.module.scss
+
+@import "./globals.scss";
+
+.section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 680px;
+
+  @include tablet {
+    grid-template-columns: 1fr;
+  }
+  @include phoneLandscape {
+    grid-template-columns: 1fr;
+  }
+  @include phone {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ── Dark left panel ── */
+.dark {
+  background: $dark-bg;
+  padding: 5rem 4rem 5rem 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5rem;
+  background-image:
+    linear-gradient(rgba(4, 105, 153, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(4, 105, 153, 0.06) 1px, transparent 1px);
+  background-size: 48px 48px;
+
+  @include desktop {
+    padding: 4rem 2.5rem 4rem 3.5rem;
+  }
+  @include tablet {
+    padding: 4rem 2rem;
+    background-size: 40px 40px;
+  }
+  @include phoneLandscape {
+    padding: 3.5rem 2rem;
+  }
+  @include phone {
+    padding: 3.5rem 1.25rem;
+    background-size: 32px 32px;
+  }
+}
+
+.eyebrow {
+  display: inline-block;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 3.5px;
+  text-transform: uppercase;
+  color: $accent;
+  border: 1px solid $accent-border;
+  border-radius: 2px;
+  padding: 0.3rem 0.8rem;
+  width: fit-content;
+}
+
+.headline {
+  font-size: clamp(1.65rem, 2.8vw, 2.55rem);
+  font-weight: 500;
+  line-height: 1.25;
+  color: $white-90;
+
+  span {
+    font-weight: 800;
+    color: $accent;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background: $accent;
+      border-radius: 1px;
+      opacity: 0.7;
+    }
+  }
+
+  @include phone {
+    font-size: 1.55rem;
+  }
+}
+
+.lead {
+  line-height: 1.8;
+  color: $white-65;
+}
+
+.cta {
+  display: inline-flex;
+  align-items: center !important;
+  gap: 0.6rem;
+  width: fit-content !important;
+  margin-top: 0.5rem;
+  transition:
+    background 0.2s,
+    gap 0.2s;
+
+  &:hover {
+    background: darken(#046999, 8%);
+    gap: 0.9rem;
+  }
+}
+
+/* ── Light right panel ── */
+.light {
+  background: $light-bg;
+  padding: 5rem 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+
+  @include desktop {
+    padding: 4rem 3rem;
+  }
+  @include tablet {
+    padding: 3rem 2rem;
+    border-top: 1px solid $border;
+  }
+  @include phoneLandscape {
+    padding: 3rem 2rem;
+    border-top: 1px solid $border;
+  }
+  @include phone {
+    padding: 3rem 1.25rem;
+    border-top: 1px solid $border;
+  }
+}
+
+.panelLabel {
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: $text-muted;
+}
+
+/* ── Comparison table ── */
+.tableWrap {
+  overflow-x: auto;
+  border-radius: 10px;
+  border: 1px solid $border-strong;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  flex: 1;
+}
+
+.fixTable {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.875rem;
+
+  thead tr {
+    background: $dark-bg;
+
+    th {
+      padding: 0.9rem 1.1rem;
+      text-align: left;
+      font-size: 0.6rem;
+      font-weight: 700;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      color: $white-55;
+
+      &:first-child {
+        border-radius: 9px 0 0 0;
+        width: 22%;
+      }
+      &:last-child {
+        border-radius: 0 9px 0 0;
+      }
+    }
+  }
+
+  tbody {
+    tr {
+      border-top: 1px solid $border;
+      background: $white;
+      transition: background 0.15s;
+
+      &:hover {
+        background: $accent-light;
+      }
+
+      &:last-child td:first-child {
+        border-radius: 0 0 0 9px;
+      }
+      &:last-child td:last-child {
+        border-radius: 0 0 9px 0;
+      }
+    }
+
+    td {
+      padding: 1rem 1.1rem;
+      vertical-align: top;
+      line-height: 1.55;
+    }
+  }
+}
+
+/* ── Row highlight animation ── */
+/* 4 rows × 2000ms = 8000ms total cycle */
+/* Mirrors the hover state: background $accent-light only */
+@keyframes rowPulse {
+  0%,
+  100% {
+    background: $white;
+  }
+  2% {
+    background: $accent-light;
+  }
+  23% {
+    background: $accent-light;
+  }
+  25% {
+    background: $white;
+  }
+}
+
+.fixTable tbody {
+  tr:nth-child(1) {
+    animation: rowPulse 8000ms 0ms infinite;
+  }
+  tr:nth-child(2) {
+    animation: rowPulse 8000ms 2000ms infinite;
+  }
+  tr:nth-child(3) {
+    animation: rowPulse 8000ms 4000ms infinite;
+  }
+  tr:nth-child(4) {
+    animation: rowPulse 8000ms 6000ms infinite;
+  }
+
+  tr:hover {
+    animation-play-state: paused;
+  }
+}
+
+.labelCell {
+  span {
+    display: inline-block;
+    font-size: 0.6rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: $accent;
+    background: rgba(4, 105, 153, 0.08);
+    border: 1px solid $accent-border;
+    border-radius: 3px;
+    padding: 0.25rem 0.55rem;
+    white-space: nowrap;
+  }
+}
+
+.problemCell {
+  color: $text-secondary;
+  font-weight: 400;
+  font-family: var(--font-aptos), sans-serif;
+}
+
+.fixCell {
+  color: $text-primary;
+  font-weight: 600;
+  font-family: var(--font-aptos), sans-serif;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+
+  svg {
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+}
+
+/* ── Footnote ── */
+.footnote {
+  padding-top: 1.5rem;
+  border-top: 1px solid $border;
+
+  p {
+    font-size: 0.82rem;
+    line-height: 1.7;
+    color: $text-muted;
+  }
+
+  a {
+    color: $accent;
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: 1px solid $accent-border;
+    transition:
+      border-color 0.2s,
+      color 0.2s;
+
+    &:hover {
+      color: darken(#046999, 10%);
+      border-bottom-color: $accent;
+    }
+  }
+}

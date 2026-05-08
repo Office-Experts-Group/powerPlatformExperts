@@ -33,9 +33,9 @@
   font-weight: 700;
   letter-spacing: 3px;
   text-transform: uppercase;
-  color: rgba($theme, 0.9);
+  color: rgba($accent, 0.9);
   padding: 0.32rem 0.85rem;
-  border: 1px solid $theme-border;
+  border: 1px solid $accent-border;
   border-radius: 2rem;
   margin-bottom: 1.25rem;
 }
@@ -50,7 +50,7 @@
 
   span {
     font-style: normal;
-    color: $theme;
+    color: $accent;
   }
 }
 
@@ -109,9 +109,9 @@
     color: $white-12;
   }
   .cardEyebrow {
-    color: rgba($theme, 0.9);
-    background: $theme-dim;
-    border: 1px solid $theme-border;
+    color: rgba($accent, 0.9);
+    background: $accent-dim;
+    border: 1px solid $accent-border;
   }
   .cardHeading {
     color: $white-88;
@@ -121,9 +121,9 @@
     color: $white-55;
   }
   .tag {
-    background: rgba($theme, 0.18);
+    background: rgba($accent, 0.18);
     color: rgba(255, 255, 255, 0.75);
-    border: 1px solid $theme-border;
+    border: 1px solid $accent-border;
   }
   .expandBtn {
     color: $white-55;
@@ -153,9 +153,9 @@
     color: $white-12;
   }
   .cardEyebrow {
-    color: rgba($theme, 0.9);
-    background: $theme-dim;
-    border: 1px solid $theme-border;
+    color: rgba($accent, 0.9);
+    background: $accent-dim;
+    border: 1px solid $accent-border;
   }
   .cardHeading {
     color: $white-88;
@@ -165,9 +165,9 @@
     color: $white-55;
   }
   .tag {
-    background: rgba($theme, 0.18);
+    background: rgba($accent, 0.18);
     color: rgba(255, 255, 255, 0.75);
-    border: 1px solid $theme-border;
+    border: 1px solid $accent-border;
   }
   .expandBtn {
     color: $white-55;
@@ -191,7 +191,7 @@
 
 // Accent — solid brand blue for card 3
 .cardAccent {
-  background: $theme;
+  background: $accent;
 
   .cardIndex {
     color: rgba(255, 255, 255, 0.15);

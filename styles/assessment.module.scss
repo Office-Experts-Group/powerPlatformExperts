@@ -49,7 +49,7 @@
 }
 
 .progressBar {
-  background-color: $theme;
+  background-color: $accent;
   height: 8px;
   border-radius: 999px;
   transition: width 0.3s ease;
@@ -100,14 +100,14 @@
   transition: all 0.2s ease;
 
   &:hover {
-    background-color: rgba($theme, 0.05);
-    border-color: rgba($theme, 0.3);
+    background-color: rgba($accent, 0.05);
+    border-color: rgba($accent, 0.3);
   }
 }
 
 // Email form
 .emailFormContainer {
-  background-color: rgba($theme, 0.1);
+  background-color: rgba($accent, 0.1);
   padding: 24px;
   border-radius: 8px;
 }
@@ -151,7 +151,7 @@
 
   &:focus {
     outline: none;
-    border-color: $theme;
+    border-color: $accent;
   }
 }
 
@@ -172,7 +172,7 @@
 
 .submitButton {
   width: 100%;
-  background-color: $theme;
+  background-color: $accent;
   color: white;
   border: none;
   border-radius: 4px;
@@ -182,7 +182,7 @@
   transition: background-color 0.2s ease;
 
   &:hover {
-    background-color: darken($theme, 10%);
+    background-color: darken($accent, 10%);
   }
 }
 
@@ -246,7 +246,7 @@
   }
 
   &.intermediate {
-    background-color: $theme;
+    background-color: $accent;
   }
 
   &.basic {
@@ -306,7 +306,7 @@
   }
 
   &.intermediate::before {
-    background-color: $theme;
+    background-color: $accent;
   }
 
   &.basic::before {
@@ -341,10 +341,10 @@
 }
 
 .serviceLink {
-  color: $theme;
+  color: $accent;
 
   &:hover {
-    color: darken($theme, 15%);
+    color: darken($accent, 15%);
   }
 }
 
@@ -364,7 +364,7 @@
 }
 
 .ctaContainer {
-  background-color: rgba($theme, 0.1);
+  background-color: rgba($accent, 0.1);
   padding: 16px;
   border-radius: 8px;
 }
@@ -382,7 +382,7 @@
 
 .ctaButton {
   display: inline-block;
-  background-color: $theme;
+  background-color: $accent;
   color: white;
   border: none;
   border-radius: 4px;
@@ -392,7 +392,7 @@
   transition: background-color 0.2s ease;
 
   &:hover {
-    background-color: darken($theme, 10%);
+    background-color: darken($accent, 10%);
   }
 }
 

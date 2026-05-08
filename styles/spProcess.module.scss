@@ -1,0 +1,399 @@
+// powerplatformexperts.com.au/sharepoint-consulting-and-development/(components)/spProcess.module.scss
+
+@import "./globals.scss";
+
+/* ── Section — white, after dark migration section ── */
+.section {
+  background: $white;
+  padding: 7rem 5rem;
+
+  @include desktop {
+    padding: 6rem 3.5rem;
+  }
+
+  @include tablet {
+    padding: 5rem 2rem;
+  }
+
+  @include phoneLandscape {
+    padding: 4.5rem 2rem;
+  }
+
+  @include phone {
+    padding: 4rem 1.25rem;
+  }
+}
+
+.inner {
+  max-width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+
+  @include tablet {
+    gap: 3.5rem;
+  }
+
+  @include phone {
+    gap: 3rem;
+  }
+}
+
+/* ── Header: two-col split ── */
+.header {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 4rem;
+  align-items: end;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid $border;
+
+  @include tablet {
+    grid-template-columns: 1fr;
+    gap: 1.75rem;
+  }
+
+  @include phoneLandscape {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  @include phone {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+}
+
+.headerLeft {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.eyebrow {
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 3.5px;
+  text-transform: uppercase;
+  color: $grayText;
+}
+
+.headline {
+  font-size: clamp(2rem, 3.2vw, 3rem);
+  font-weight: 800;
+  color: $black;
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+  margin: 0;
+}
+
+.accent {
+  color: $accent;
+}
+
+.headerRight {
+  padding-bottom: 0.25rem;
+}
+
+.lead {
+  font-size: 0.97rem;
+  line-height: 1.85;
+  color: $text-secondary;
+  margin: 0;
+}
+
+/* ── Phase list ── */
+.phases {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+/* Individual phase row */
+.phase {
+  position: relative;
+  padding: 4rem 0;
+  border-bottom: 1px solid $border;
+  overflow: hidden;
+
+  &:first-child {
+    border-top: none;
+    padding-top: 0;
+
+    // Nudge bgNum up a bit on first item since there's no top padding
+    .bgNum {
+      top: -1.5rem;
+    }
+  }
+
+  &:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+
+  @include tablet {
+    padding: 3rem 0;
+  }
+
+  @include phone {
+    padding: 2.5rem 0;
+  }
+}
+
+/* Alternate rows get a very faint tinted background */
+.phaseAlt {
+  background: $grayBGC;
+  margin: 0 -5rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+
+  @include desktop {
+    margin: 0 -3.5rem;
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+  }
+
+  @include tablet {
+    margin: 0 -2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  @include phoneLandscape {
+    margin: 0 -2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  @include phone {
+    margin: 0 -1.25rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+}
+
+/* Large background numeral */
+.bgNum {
+  position: absolute;
+  top: 50%;
+  right: -0.5rem;
+  transform: translateY(-50%);
+  font-size: clamp(8rem, 14vw, 14rem);
+  font-weight: 900;
+  letter-spacing: -0.05em;
+  line-height: 1;
+  color: transparent;
+  -webkit-text-stroke: 1.5px rgba(4, 105, 153, 0.08);
+  pointer-events: none;
+  user-select: none;
+
+  @include phone {
+    font-size: 6rem;
+    right: -0.25rem;
+    -webkit-text-stroke: 1px rgba(4, 105, 153, 0.07);
+  }
+}
+
+/* Two-col grid inside each phase */
+.phaseGrid {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  gap: 3rem 5rem;
+  align-items: start;
+  position: relative; // sits above bgNum
+
+  @include desktop {
+    grid-template-columns: 200px 1fr;
+    gap: 2.5rem 3rem;
+  }
+
+  @include tablet {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  @include phoneLandscape {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  @include phone {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+}
+
+/* Phase identity col */
+.phaseLeft {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding-top: 0.25rem;
+
+  @include tablet {
+    flex-direction: row;
+    align-items: baseline;
+    gap: 1.25rem;
+    flex-wrap: wrap;
+  }
+
+  @include phone {
+    flex-direction: row;
+    align-items: baseline;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+}
+
+.phaseTag {
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: $accent;
+}
+
+.phaseLabel {
+  font-size: clamp(1.25rem, 1.8vw, 1.6rem);
+  font-weight: 800;
+  color: $text-primary;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+  margin: 0;
+
+  @include tablet {
+    font-size: 1.25rem;
+  }
+}
+
+.phaseSummary {
+  font-size: 0.85rem;
+  font-style: italic;
+  color: $darkGrayText;
+  margin: 0;
+  line-height: 1.5;
+
+  @include tablet {
+    display: none; // too noisy in horizontal layout
+  }
+
+  @include phone {
+    display: none;
+  }
+}
+
+/* Content col */
+.phaseRight {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.phaseBody {
+  font-size: 0.95rem;
+  line-height: 1.9;
+  color: $text-secondary;
+  margin: 0;
+}
+
+/* Outputs checklist */
+.outputs {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.outputsLabel {
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: $grayText;
+}
+
+.outputList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem 2rem;
+
+  @include phone {
+    grid-template-columns: 1fr;
+  }
+}
+
+.outputItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  font-size: 0.85rem;
+  color: $text-secondary;
+  line-height: 1.5;
+
+  svg {
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+}
+
+/* Advisory note */
+.phaseNote {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  font-size: 0.85rem;
+  font-style: italic;
+  line-height: 1.75;
+  color: $darkGrayText;
+  margin: 0;
+  padding: 1rem 1.25rem;
+  background: $accent-light;
+  border-radius: 3px;
+}
+
+.noteRule {
+  display: block;
+  width: 3px;
+  min-height: 100%;
+  align-self: stretch;
+  background: $accent;
+  border-radius: 2px;
+  flex-shrink: 0;
+  opacity: 0.5;
+}
+
+/* Cross-link */
+.phaseLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: fit-content;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: $accent;
+  text-decoration: none;
+  border-bottom: 1px solid $accent-border;
+  padding-bottom: 2px;
+  transition:
+    gap 0.2s,
+    border-color 0.2s;
+
+  svg {
+    transition: transform 0.2s;
+  }
+
+  &:hover {
+    gap: 0.8rem;
+    border-bottom-color: $accent;
+
+    svg {
+      transform: translateX(3px);
+    }
+  }
+}

@@ -1,0 +1,239 @@
+@charset "UTF-8";
+/* ── Section shell — light grey, continuing alternating rhythm ── */
+.section {
+  background: #f7f8f9;
+  padding: 8rem;
+}
+@media (min-width: 767px) and (max-width: 1024px) {
+  .section {
+    padding: 6rem 2rem;
+  }
+}
+@media (min-width: 450px) and (max-width: 766px) {
+  .section {
+    padding: 6rem 2rem;
+  }
+}
+@media (max-width: 449px) {
+  .section {
+    padding: 5rem 1.25rem;
+  }
+}
+
+.inner {
+  max-width: 1200px;
+  margin-inline: auto;
+}
+
+/* ── Header row — headline left, context paragraph right ── */
+.headerRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: end;
+  margin-bottom: 3.5rem;
+}
+@media (min-width: 767px) and (max-width: 1024px) {
+  .headerRow {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin-bottom: 2.5rem;
+  }
+}
+@media (min-width: 450px) and (max-width: 766px) {
+  .headerRow {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+    margin-bottom: 2rem;
+  }
+}
+@media (max-width: 449px) {
+  .headerRow {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+}
+
+.headerLeft {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.eyebrow {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #046999;
+  margin-bottom: 1.25rem;
+  padding: 0.35rem 0.9rem;
+  border: 1px solid rgba(4, 105, 153, 0.3);
+  border-radius: 2rem;
+  align-self: flex-start;
+}
+
+.headline {
+  font-size: clamp(1.9rem, 3vw, 2.8rem);
+  font-weight: 700;
+  color: #0d1b2a;
+  line-height: 1.2;
+}
+
+.accent {
+  color: #046999;
+}
+
+.headerRight {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-bottom: 0.25rem;
+}
+
+.intro {
+  color: #777a7e;
+  font-size: 0.97rem;
+  line-height: 1.85;
+}
+
+.introLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.83rem;
+  font-weight: 700;
+  color: #046999;
+  text-decoration: none;
+  letter-spacing: 0.3px;
+  border-bottom: 1px solid transparent;
+  padding-bottom: 1px;
+  transition: border-color 0.2s;
+  align-self: flex-start;
+}
+.introLink:hover {
+  border-bottom-color: #046999;
+}
+
+/* ── 2×2 card grid ── */
+.grid {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2.5rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+}
+@media (min-width: 450px) and (max-width: 766px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 449px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
+
+/* ── Card base ── */
+.card {
+  border-radius: 0.75rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+/* Primary card — accent filled */
+.cardPrimary {
+  background: #046999;
+  color: #ffffff;
+}
+.cardPrimary .cardIndex {
+  color: rgba(255, 255, 255, 0.3);
+}
+.cardPrimary .cardLabel {
+  color: #ffffff;
+}
+.cardPrimary .cardBody {
+  color: rgba(255, 255, 255, 0.8);
+}
+.cardPrimary .cardDetail {
+  color: rgba(255, 255, 255, 0.55);
+  border-top-color: rgba(255, 255, 255, 0.15);
+}
+
+/* Secondary cards — white with border */
+.cardSecondary {
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+.cardSecondary .cardIndex {
+  color: #9a9da1;
+}
+.cardSecondary .cardLabel {
+  color: #0d1b2a;
+}
+.cardSecondary .cardBody {
+  color: #777a7e;
+}
+.cardSecondary .cardDetail {
+  color: #9a9da1;
+  border-top-color: rgba(0, 0, 0, 0.08);
+}
+
+.cardHeader {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 0.25rem;
+}
+
+/* Glyph wrapper */
+.glyphWrap {
+  width: 36px;
+  height: 36px;
+  flex-shrink: 0;
+}
+.glyphWrap svg {
+  width: 100%;
+  height: 100%;
+}
+
+.glyphPrimary {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.glyphSecondary {
+  color: #046999;
+}
+
+.cardIndex {
+  font-size: 0.63rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  font-variant-numeric: tabular-nums;
+}
+
+.cardLabel {
+  font-size: 1.05rem;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.cardBody {
+  font-size: 0.92rem;
+  line-height: 1.8;
+  flex: 1;
+}
+
+.cardDetail {
+  font-size: 0.82rem;
+  line-height: 1.7;
+  padding-top: 0.85rem;
+  border-top: 1px solid;
+  font-style: italic;
+}/*# sourceMappingURL=ppHowWeWork.module.css.map */

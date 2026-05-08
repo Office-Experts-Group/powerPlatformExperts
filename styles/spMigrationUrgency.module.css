@@ -1,0 +1,560 @@
+@charset "UTF-8";
+/* ── Section shell — dark, alternates with white Copilot section ── */
+.section {
+  background: #111820;
+  padding: 7rem 5rem;
+}
+@media (min-width: 1025px) and (max-width: 1199px) {
+  .section {
+    padding: 6rem 3.5rem;
+  }
+}
+@media (min-width: 767px) and (max-width: 1024px) {
+  .section {
+    padding: 5rem 2rem;
+  }
+}
+@media (min-width: 450px) and (max-width: 766px) {
+  .section {
+    padding: 4.5rem 2rem;
+  }
+}
+@media (max-width: 449px) {
+  .section {
+    padding: 4rem 1.25rem;
+  }
+}
+
+.inner {
+  max-width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+@media (min-width: 767px) and (max-width: 1024px) {
+  .inner {
+    gap: 3.5rem;
+  }
+}
+@media (max-width: 449px) {
+  .inner {
+    gap: 3rem;
+  }
+}
+
+/* ── Header ── */
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.eyebrow {
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 3.5px;
+  text-transform: uppercase;
+  color: #046999;
+}
+
+.headerGrid {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 4rem;
+  align-items: end;
+}
+@media (min-width: 767px) and (max-width: 1024px) {
+  .headerGrid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
+@media (min-width: 450px) and (max-width: 766px) {
+  .headerGrid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
+@media (max-width: 449px) {
+  .headerGrid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+}
+
+.headline {
+  font-size: clamp(2.4rem, 4vw, 4rem);
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+  white-space: nowrap;
+}
+@media (min-width: 767px) and (max-width: 1024px) {
+  .headline {
+    white-space: normal;
+  }
+}
+@media (max-width: 449px) {
+  .headline {
+    font-size: 2.2rem;
+    white-space: normal;
+  }
+}
+
+.accent {
+  color: #046999;
+}
+
+.lead {
+  font-size: 0.97rem;
+  line-height: 1.85;
+  color: rgba(255, 255, 255, 0.55);
+  max-width: 560px;
+  align-self: end;
+}
+
+/* ── Timeline ── */
+.timelineWrap {
+  position: relative;
+}
+
+/* The horizontal track line */
+.track {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 2px;
+}
+@media (min-width: 767px) and (max-width: 1024px) {
+  .track {
+    display: none;
+  }
+}
+@media (min-width: 450px) and (max-width: 766px) {
+  .track {
+    display: none;
+  }
+}
+@media (max-width: 449px) {
+  .track {
+    display: none;
+  }
+}
+
+/* Filled portion of track — up to "Now" node (50%) */
+.trackFill {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 38%;
+  background: linear-gradient(90deg, rgba(4, 105, 153, 0.6), #046999);
+  border-radius: 2px;
+}
+
+/* Milestone list — horizontal on desktop, vertical on mobile */
+.timeline {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0 2rem;
+}
+@media (min-width: 1025px) and (max-width: 1199px) {
+  .timeline {
+    gap: 0 1.5rem;
+  }
+}
+@media (min-width: 767px) and (max-width: 1024px) {
+  .timeline {
+    grid-template-columns: 1fr;
+    gap: 0;
+    border-left: 2px solid rgba(255, 255, 255, 0.08);
+    padding-left: 0;
+    margin-left: 1rem;
+  }
+}
+@media (min-width: 450px) and (max-width: 766px) {
+  .timeline {
+    grid-template-columns: 1fr;
+    gap: 0;
+    border-left: 2px solid rgba(255, 255, 255, 0.08);
+    padding-left: 0;
+    margin-left: 1rem;
+  }
+}
+@media (max-width: 449px) {
+  .timeline {
+    grid-template-columns: 1fr;
+    gap: 0;
+    border-left: 2px solid rgba(255, 255, 255, 0.08);
+    margin-left: 0.75rem;
+  }
+}
+
+/* Individual milestone */
+.milestone {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0;
+}
+@media (min-width: 767px) and (max-width: 1024px) {
+  .milestone {
+    flex-direction: row;
+    gap: 1.5rem;
+    padding-bottom: 2.5rem;
+    position: relative;
+  }
+}
+@media (min-width: 450px) and (max-width: 766px) {
+  .milestone {
+    flex-direction: row;
+    gap: 1.5rem;
+    padding-bottom: 2.5rem;
+    position: relative;
+  }
+}
+@media (max-width: 449px) {
+  .milestone {
+    flex-direction: row;
+    gap: 1.25rem;
+    padding-bottom: 2rem;
+    position: relative;
+  }
+}
+
+/* Node — sits on the track */
+.node {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+}
+@media (min-width: 767px) and (max-width: 1024px) {
+  .node {
+    position: absolute;
+    left: -1.85rem;
+    top: 0;
+    width: 24px;
+    height: 24px;
+  }
+}
+@media (min-width: 450px) and (max-width: 766px) {
+  .node {
+    position: absolute;
+    left: -1.85rem;
+    top: 0;
+    width: 24px;
+    height: 24px;
+  }
+}
+@media (max-width: 449px) {
+  .node {
+    position: absolute;
+    left: -1.55rem;
+    top: 0;
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.nodeDot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #18232e;
+  border: 2px solid rgba(255, 255, 255, 0.18);
+  transition: border-color 0.2s;
+}
+@media (max-width: 449px) {
+  .nodeDot {
+    width: 10px;
+    height: 10px;
+  }
+}
+
+/* Status variants */
+.milestone_passed .nodeDot {
+  background: rgba(4, 105, 153, 0.5);
+  border-color: #046999;
+}
+.milestone_passed .date {
+  color: rgba(4, 105, 153, 0.7);
+}
+.milestone_passed .cardLabel {
+  opacity: 0.7;
+}
+
+.milestone_current .nodeDot {
+  background: #ffffff;
+  border-color: #046999;
+  box-shadow: 0 0 0 4px rgba(4, 105, 153, 0.25);
+  width: 14px;
+  height: 14px;
+}
+.milestone_current .card {
+  border-color: rgba(4, 105, 153, 0.4);
+  background: #1a2a3a;
+}
+
+.milestone_approaching .nodeDot {
+  border-color: #e05c2a;
+  background: rgba(224, 92, 42, 0.15);
+}
+.milestone_approaching .date {
+  color: #e05c2a;
+}
+
+.milestone_warning .nodeDot {
+  border-color: rgba(224, 92, 42, 0.5);
+  background: rgba(224, 92, 42, 0.08);
+}
+.milestone_warning .date {
+  color: rgba(224, 92, 42, 0.7);
+}
+
+/* Card body */
+.card {
+  flex: 1;
+  padding: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 4px;
+  background: #18232e;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  transition: border-color 0.2s;
+}
+.card:hover {
+  border-color: rgba(255, 255, 255, 0.18);
+}
+@media (min-width: 767px) and (max-width: 1024px) {
+  .card {
+    margin-top: 0;
+  }
+}
+@media (min-width: 450px) and (max-width: 766px) {
+  .card {
+    margin-top: 0;
+  }
+}
+@media (max-width: 449px) {
+  .card {
+    margin-top: 0;
+    padding: 1.25rem;
+  }
+}
+
+.cardTop {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.25rem;
+}
+
+.date {
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.55);
+  line-height: 1;
+}
+
+.currentPill {
+  font-size: 0.58rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #046999;
+  background: rgba(4, 105, 153, 0.15);
+  border: 1px solid rgba(4, 105, 153, 0.3);
+  border-radius: 2px;
+  padding: 0.2rem 0.55rem;
+  line-height: 1.4;
+}
+
+.warningPill {
+  font-size: 0.58rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #e05c2a;
+  background: rgba(224, 92, 42, 0.1);
+  border: 1px solid rgba(224, 92, 42, 0.3);
+  border-radius: 2px;
+  padding: 0.2rem 0.55rem;
+  line-height: 1.4;
+}
+
+.cardLabel {
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.3;
+}
+
+.cardEvent {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.35);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.cardDetail {
+  font-size: 0.83rem;
+  line-height: 1.75;
+  color: rgba(255, 255, 255, 0.45);
+  margin: 0.5rem 0 0;
+}
+
+/* ── Reasons grid ── */
+.reasons {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.reasonsLabel {
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.35);
+}
+
+.reasonsGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0 2.5rem;
+}
+@media (min-width: 1025px) and (max-width: 1199px) {
+  .reasonsGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+}
+@media (min-width: 767px) and (max-width: 1024px) {
+  .reasonsGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+}
+@media (min-width: 450px) and (max-width: 766px) {
+  .reasonsGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+}
+@media (max-width: 449px) {
+  .reasonsGrid {
+    grid-template-columns: 1fr;
+    gap: 1.75rem;
+  }
+}
+
+.reason {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.reasonBar {
+  width: 24px;
+  height: 3px;
+  background: #046999;
+  border-radius: 2px;
+  opacity: 0.7;
+}
+
+.reasonHeading {
+  font-size: 1rem;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.88);
+  line-height: 1.3;
+  letter-spacing: 0.5px;
+}
+
+.reasonBody {
+  font-size: 0.85rem;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.45);
+}
+
+/* ── Bottom note ── */
+.note {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2.5rem;
+  padding: 1.75rem 2rem;
+  background: #18232e;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 4px;
+  flex-wrap: wrap;
+}
+.note p {
+  font-size: 0.88rem;
+  line-height: 1.75;
+  color: rgba(255, 255, 255, 0.55);
+  max-width: 600px;
+}
+@media (max-width: 449px) {
+  .note {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+    padding: 1.5rem 1.25rem;
+  }
+}
+
+.noteLink {
+  color: #046999;
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(4, 105, 153, 0.3);
+  transition: border-color 0.2s;
+}
+.noteLink:hover {
+  border-bottom-color: #046999;
+}
+
+.cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  white-space: nowrap;
+  flex-shrink: 0;
+  padding: 0.8rem 1.6rem;
+  background: #046999;
+  color: #ffffff;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  text-decoration: none;
+  border-radius: 3px;
+  transition: background 0.2s, gap 0.2s;
+}
+.cta svg {
+  transition: transform 0.2s;
+}
+.cta:hover {
+  background: rgb(2.9605095541, 77.7133757962, 113.2394904459);
+  gap: 0.9rem;
+}
+.cta:hover svg {
+  transform: translateX(3px);
+}/*# sourceMappingURL=spMigrationUrgency.module.css.map */

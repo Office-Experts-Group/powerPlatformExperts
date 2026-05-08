@@ -56,9 +56,9 @@
   font-weight: 700;
   letter-spacing: 3px;
   text-transform: uppercase;
-  color: rgba($theme, 0.9);
+  color: rgba($accent, 0.9);
   padding: 0.3rem 0.85rem;
-  border: 1px solid $theme-border;
+  border: 1px solid $accent-border;
   border-radius: 2rem;
 }
 
@@ -70,7 +70,7 @@
 
   span {
     font-style: normal;
-    color: $theme;
+    color: $accent;
   }
 }
 
@@ -111,7 +111,7 @@
 .diffBar {
   width: 28px;
   height: 4px;
-  background: $theme;
+  background: $accent;
   border-radius: 2px;
   flex-shrink: 0;
 }
@@ -183,10 +183,10 @@
 
   &:hover {
     .stepNum {
-      color: $theme;
+      color: $accent;
     }
     .stepLine {
-      background: $theme;
+      background: $accent;
     }
     .stepLabel {
       color: #ffffff;
@@ -225,7 +225,7 @@
   }
 
   &:focus-visible {
-    outline: 2px solid rgba($theme, 0.6);
+    outline: 2px solid rgba($accent, 0.6);
     outline-offset: 2px;
   }
 
@@ -247,10 +247,10 @@
 // ── Step active state ─────────────────────────
 .stepActive {
   .stepNum {
-    color: $theme;
+    color: $accent;
   }
   .stepLine {
-    background: $theme;
+    background: $accent;
   }
   .stepLabel {
     color: #ffffff;

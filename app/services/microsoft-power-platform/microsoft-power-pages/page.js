@@ -1,27 +1,26 @@
-import React from "react";
+// powerplatformexperts.com.au/app/services/microsoft-power-platform/microsoft-power-pages/page.js
+
 import dynamic from "next/dynamic";
 
 import ServiceHero from "../../../../components/ServiceHero";
-import Contents from "./(components)/Contents";
-import ServicePageCards from "./(components)/ServicePageCards";
 
-const ExpertsAwait = dynamic(
-  () => import("../../../../components/ExpertsAwait"),
+import PPIntro from "./(components)/PPIntro";
+
+const PPDataIntegration = dynamic(
+  () => import("./(components)/PPDataIntegration"),
 );
-const FAQSection = dynamic(() => import("../../../../components/FAQSection"));
+const PPVisualisation = dynamic(() => import("./(components)/PPVisualisation"));
+const PPSecurity = dynamic(() => import("./(components)/PPSecurity"));
+const PPAiCapabilities = dynamic(
+  () => import("./(components)/PPAiCapabilities"),
+);
+const PPHowWeWork = dynamic(() => import("./(components)/PPHowWeWork"));
+const PPComparison = dynamic(() => import("./(components)/PPComparison"));
+
 const Contact = dynamic(() => import("../../../../components/Contact"));
-const PageSegmentMain = dynamic(() => import("./(components)/PageSegmentMain"));
-const PageSegment4 = dynamic(() => import("./(components)/PageSegment4"));
-const Segment4Repeat = dynamic(() => import("./(components)/Segment4Repeat"));
-const SegmentMainRepeat = dynamic(
-  () => import("./(components)/SegmentMainRepeat"),
-);
 
-import faqs from "../../../../faqs/power-pages";
-import faqSchema from "../../../../faqs/pagesSchema";
-
-import longDesk from "../../../../public/pageHeros/longDesk.webp";
-import coffee from "../../../../public/pageHeros/mob/coffeeMob.webp";
+import pages from "../../../../public/pageHeros/pages.webp";
+import pagesMob from "../../../../public/pageHeros/mob/pagesMob.webp";
 
 import {
   generateProfessionalServiceSchema,
@@ -40,14 +39,14 @@ const schema = {
       "@id":
         "https://www.powerplatformexperts.com.au/services/microsoft-power-platform/microsoft-power-pages/",
       url: "https://www.powerplatformexperts.com.au/services/microsoft-power-platform/microsoft-power-pages/",
-      name: "Microsoft Power Pages Services | Web Portal Development",
+      name: "Microsoft Power Pages Services | Web Portal Development Australia",
       isPartOf: {
         "@id": "https://www.powerplatformexperts.com.au#website",
       },
       datePublished: "2024-10-27T00:00:00+00:00",
-      dateModified: "2024-10-27T00:00:00+00:00",
+      dateModified: "2025-05-01T00:00:00+00:00",
       description:
-        "Empower your business with Microsoft Power Pages services. Create secure, responsive websites with data integration, visuals, and AI insights. Contact us today for expert assistance!",
+        "Power Pages consultants for Australian businesses. We build external-facing portals connected to Dataverse, Dynamics 365 and Azure AD. Enterprise level security, role-based access, and embedded Power BI.",
       breadcrumb: {
         "@id":
           "https://www.powerplatformexperts.com.au/services/microsoft-power-platform/microsoft-power-pages#breadcrumb",
@@ -122,6 +121,7 @@ const schema = {
   ],
 };
 
+// ── Page ───────────────────────────────────────────────────────────────────
 const Page = () => {
   return (
     <>
@@ -129,25 +129,22 @@ const Page = () => {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
       />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
-      <Contents />
+
       <ServiceHero
-        title="Microsoft Power Pages Services"
-        desktopImage={longDesk}
-        mobileImage={coffee}
-        altDesk={"An office desk full of paperwork"}
-        altMob={"office supplies and a cup of coffee"}
+        title="Microsoft Power Pages"
+        desktopImage={pages}
+        mobileImage={pagesMob}
+        altDesk="Power Pages infographic"
+        altMob="Power Pages infographic"
       />
-      <ServicePageCards />
-      <PageSegmentMain />
-      <Segment4Repeat />
-      <ExpertsAwait />
-      <PageSegment4 />
-      <SegmentMainRepeat />
-      <FAQSection faqs={faqs} />
+      <PPIntro />
+      <PPDataIntegration />
+      <PPVisualisation />
+      <PPSecurity />
+      <PPAiCapabilities />
+      <PPHowWeWork />
+      <PPComparison />
+
       <Contact />
     </>
   );
