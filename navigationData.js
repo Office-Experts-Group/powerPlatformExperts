@@ -128,6 +128,10 @@ export const navigationData = {
             href: `/services/microsoft-power-platform/microsoft-power-pages`,
           },
           {
+            label: "Data Integration with Microsoft Fabric",
+            href: `/microsoft-fabric`,
+          },
+          {
             label: "Power Bi Support",
             href: `/power-bi-support`,
           },
