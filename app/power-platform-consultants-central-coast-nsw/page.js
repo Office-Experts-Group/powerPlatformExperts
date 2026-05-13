@@ -43,11 +43,13 @@ const schema = {
         "https://www.powerplatformexperts.com.au/power-platform-consultants-central-coast-nsw",
       url: "https://www.powerplatformexperts.com.au/power-platform-consultants-central-coast-nsw",
       name: "Power Platform Consultants Central Coast, NSW",
+      description:
+        "Central Coast NSW's leading Power Platform consultants. Our nationwide team has 25+ years experience helping businesses streamline operations with Power BI, Apps, Pages, and Automate solutions.",
       isPartOf: {
         "@id": "https://www.powerplatformexperts.com.au#website",
       },
       datePublished: "2024-10-26T00:00:00+00:00",
-      dateModified: "2025-03-26T00:00:00+00:00",
+      dateModified: "2026-05-13T00:00:00+00:00",
       breadcrumb: {
         "@id":
           "https://www.powerplatformexperts.com.au/power-platform-consultants-central-coast-nsw#breadcrumb",

@@ -5,7 +5,7 @@ export const metadata = {
   title: "Power Platform Integration Assessment",
   description:
     "Free assessment to evaluate your Power Platform skills. Get personalised recommendations for improving your Power BI, Apps, and Automate capabilities.",
-  
+
   // OpenGraph
   openGraph: {
     title: "Power Platform Integration Assessment",
@@ -15,7 +15,7 @@ export const metadata = {
     siteName: "Power Platform Experts",
     images: [
       {
-        url: "/logo.png", 
+        url: "/logo.png",
         width: 1200,
         height: 630,
         alt: "Power Platform Experts Logo",
@@ -36,12 +36,14 @@ export const metadata = {
   },
 
   // Additional metadata
-  keywords: [
-    "Power Platform Integration assessment",
-  ],
-  
+  keywords: ["Power Platform Integration assessment"],
+
   alternates: {
     canonical: "/power-platform-assessment",
+  },
+  robots: {
+    index: false,
+    follow: false,
   },
 };
 

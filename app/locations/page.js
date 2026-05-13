@@ -160,7 +160,8 @@ const Page = () => {
             word: "https://www.wordexperts.com.au/contact-us",
             access: "https://www.accessexperts.com.au/contact-us",
             powerplatform: "/contact-us",
-            office: "https://www.officeexperts.com.au/contact-us",
+            office:
+              "https://www.officeexperts.com.au/microsoft-consultants-melbourne",
           },
         },
         {

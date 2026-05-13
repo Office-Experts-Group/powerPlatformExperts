@@ -43,11 +43,13 @@ const schema = {
         "https://www.powerplatformexperts.com.au/power-platform-consultants-northern-rivers-nsw",
       url: "https://www.powerplatformexperts.com.au/power-platform-consultants-northern-rivers-nsw",
       name: "Power Platform Consultants Northern Rivers, NSW",
+      description:
+        "With our headquarters in Grafton. Our now nationwide team has 25+ years experience helping businesses streamline operations with Power BI, Apps, Pages, and Automate solutions.",
       isPartOf: {
         "@id": "https://www.powerplatformexperts.com.au#website",
       },
       datePublished: "2024-10-26T00:00:00+00:00",
-      dateModified: "2025-03-26T00:00:00+00:00",
+      dateModified: "2026-05-13T00:00:00+00:00",
       breadcrumb: {
         "@id":
           "https://www.powerplatformexperts.com.au/power-platform-consultants-northern-rivers-nsw#breadcrumb",

@@ -4,13 +4,13 @@ export const metadata = {
   // Basic metadata
   title: "Power Platform Consultants Central Coast, NSW",
   description:
-  "Central Coast NSW's leading Power Platform consultants. 25+ years helping businesses streamline operations with Power BI, Apps, Pages, and Automate solutions.",
+    "Central Coast NSW's leading Power Platform consultants. Our nationwide team has 25+ years experience helping businesses streamline operations with Power BI, Apps, Pages, and Automate solutions.",
 
   // OpenGraph
   openGraph: {
     title: "Power Platform Consultants Central Coast, NSW",
     description:
-    "Central Coast NSW's leading Power Platform consultants. 25+ years helping businesses streamline operations with Power BI, Apps, Pages, and Automate solutions.",
+      "Central Coast NSW's leading Power Platform consultants. Our nationwide team has 25+ years experience helping businesses streamline operations with Power BI, Apps, Pages, and Automate solutions.",
     url: "https://www.powerplatformexperts.com.au/power-platform-consultants-central-coast-nsw",
     siteName: "Power Platform Experts",
     images: [
@@ -37,7 +37,7 @@ export const metadata = {
     site: "@OfficeExpertsG1",
     title: "Power Platform Consultants Central Coast, NSW",
     description:
-    "Central Coast NSW's leading Power Platform consultants. 25+ years helping businesses streamline operations with Power BI, Apps, Pages, and Automate solutions.",
+      "Central Coast NSW's leading Power Platform consultants. Our nationwide team has 25+ years experience helping businesses streamline operations with Power BI, Apps, Pages, and Automate solutions.",
     images: ["/logo.png"],
   },
 
