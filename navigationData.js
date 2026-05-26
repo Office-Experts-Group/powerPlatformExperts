@@ -116,15 +116,15 @@ export const navigationData = {
             href: `/services/microsoft-power-platform/microsoft-power-apps`,
           },
           {
-            label: "Workflow Automation with Power Automate",
+            label: "Automation with Power Automate",
             href: `/services/microsoft-power-platform/microsoft-power-automate`,
           },
           {
-            label: "Data Analytics with Power BI",
-            href: `/services/microsoft-power-platform/microsoft-power-bi`,
+            label: "Data Visualisation with Power BI",
+            href: `/power-bi-data-integration`,
           },
           {
-            label: "Simple, Scalable Websites with Power Pages",
+            label: "Websites with Power Pages",
             href: `/services/microsoft-power-platform/microsoft-power-pages`,
           },
           {
@@ -138,10 +138,6 @@ export const navigationData = {
           {
             label: "Power Apps Support",
             href: `/power-apps-support`,
-          },
-          {
-            label: "Data Integration",
-            href: `/power-bi-data-integration`,
           },
           {
             label: "Excel to Power BI Migration",
