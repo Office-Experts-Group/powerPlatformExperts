@@ -3,11 +3,15 @@ import Image from "next/image";
 
 import styles from "../styles/meetTheTeam.module.css";
 
+import Services from "../app/meet-the-team/(components)/Services";
+
 import { teamMembers } from "../meetTheTeam";
 
 const MeetTheTeam = () => {
   return (
     <section>
+      <Services meetStyles={styles} />
+
       <div className={styles.meetTheTeam}>
         <div className={styles.teamGrid}>
           {teamMembers.map((member, index) => (
