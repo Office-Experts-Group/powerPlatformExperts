@@ -68,7 +68,7 @@ export const metadata = {
   openGraph: {
     title: "Power Platform Consultants | Power Platform Experts",
     description:
-    "Experts in Microsoft Power BI, Apps, Automate & Pages. We deliver tailored solutions to streamline business processes and improve efficiency.",
+      "Experts in Microsoft Power BI, Apps, Automate & Pages. We deliver tailored solutions to streamline business processes and improve efficiency.",
     url: "https://www.powerplatformexperts.com.au",
     siteName: "Power Platform Experts",
     images: [
@@ -95,7 +95,7 @@ export const metadata = {
     site: "@PowerPlatformExp",
     title: "Power Platform Consultants | Power Platform Experts",
     description:
-    "Experts in Microsoft Power BI, Apps, Automate & Pages. We deliver tailored solutions to streamline business processes and improve efficiency.",
+      "Experts in Microsoft Power BI, Apps, Automate & Pages. We deliver tailored solutions to streamline business processes and improve efficiency.",
     images: ["/logo.png"],
   },
 
@@ -109,10 +109,9 @@ export const metadata = {
   },
   verification: {
     google: "4pCGu8qrYPdfGHve5jLQXy0z9_WNgV7qAtUU4lg3QTo",
-  },
-
-  alternates: {
-    canonical: "https://www.powerplatformexperts.com.au",
+    other: {
+      "msvalidate.01": "4C995B7893493FB7A686B1F5CADBC4D5",
+    },
   },
 
   robots: {
@@ -133,7 +132,7 @@ export const metadata = {
   metadataBase: new URL(
     process.env.NODE_ENV === "production"
       ? "https://www.powerplatformexperts.com.au"
-      : "http://localhost:3000"
+      : "http://localhost:3000",
   ),
 };
 
