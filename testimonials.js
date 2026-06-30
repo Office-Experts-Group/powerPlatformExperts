@@ -151,15 +151,6 @@ export const testimonials = [
   },
   {
     content:
-      "Effortless to work with. Josh at Office Experts designed our project exactly as per the scope. Fast and reliable. I would definitely recommend Office Experts to anyone.",
-    name: "Carel Nel",
-    contact: "www.mayers.com.au",
-    image: mayersfinefood150x,
-    width: 150,
-    height: 61,
-  },
-  {
-    content:
       "I have been working with Office Experts for a number of years on projects and cannot recommend them highly enough. If you have a project you want brought to life, Office Experts are guns when it comes to capability, innovation and customer service.",
     name: "Stuart Clark",
     contact: "www.duluxgroup.com.au",
@@ -282,15 +273,6 @@ export const testimonials = [
     image: mortgagechoice150x,
     width: 150,
     height: 39,
-  },
-  {
-    content:
-      "Josh understood our requirements from the get go and has done a ripper job in providing us what we need, which is a rather complex leave sheet built in a spreadsheet. He managed this on time and in budget. An absolute pleasure to work with and I hope to do so again.",
-    name: "Rodney Murray",
-    contact: "sgwater.com.au",
-    image: southgippslandwater150x,
-    width: 150,
-    height: 63,
   },
   {
     content:
@@ -632,15 +614,6 @@ export const testimonials = [
     image: linkstratamanagement150x,
     width: 150,
     height: 51,
-  },
-  {
-    content:
-      "Joshua has been amazing to deal with. His capacity to understand the complex and varied needs for each project were always impressive. I also noted the courage to take creative license when it was granted and running with it, bringing rewarding results. Having worked on a number of projects now, I am comforted by the skill & detail displayed each time. Will certainly use again, Cheers Cody",
-    name: "Cody",
-    contact: "autokeepers.com.au",
-    image: autokeepers150x,
-    width: 150,
-    height: 24,
   },
   {
     content:
