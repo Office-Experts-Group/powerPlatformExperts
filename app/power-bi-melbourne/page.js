@@ -37,7 +37,7 @@ const schema = {
         "@id": "https://www.powerplatformexperts.com.au#website",
       },
       datePublished: "2025-10-08T00:00:00+00:00",
-      dateModified: "2025-10-08T00:00:00+00:00",
+      dateModified: "2026-06-30T00:00:00+00:00",
       description:
         "Leading Power BI consultants in Melbourne. Custom dashboards, real-time analytics, and data visualisation solutions for Victorian businesses. Get in touch for a free consultation.",
       breadcrumb: {

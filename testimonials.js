@@ -545,6 +545,15 @@ export const testimonials = [
   },
   {
     content:
+      "Office Experts Group understood our requirements from the get go and has done a ripper job in providing us what we need, which is a rather complex leave sheet built in a spreadsheet. They managed this on time and in budget. An absolute pleasure to work with and I hope to do so again.",
+    name: "Rodney Murray",
+    contact: "sgwater.com.au",
+    image: southgippslandwater150x,
+    width: 150,
+    height: 63,
+  },
+  {
+    content:
       "I contacted Office Experts with very late notice for some urgent work that we required. Jason was extremely helpful and met all of the required deadlines that our customer had put on us even consulting with us after normal working hours. Jason also offered some great ideas and tips that we had not even thought of which has made the use of the spreadsheet very efficient, saving us time and money. I have been back to get minor changes done and once again everything was done well within time requirements and cost effective. I highly recommended Jason and Office Experts and will be using them in the future.",
     name: "Darryl Cloete",
     contact: "www.linkedin.com/in/darryl-cloete-6081ba16b",
@@ -569,6 +578,15 @@ export const testimonials = [
     image: blcivil150x,
     width: 150,
     height: 150,
+  },
+  {
+    content:
+      "Effortless to work with. Office Experts Group designed our project exactly as per the scope. Fast and reliable. I would definitely recommend Office Experts to anyone.",
+    name: "Carel Nel",
+    contact: "www.mayers.com.au",
+    image: mayersfinefood150x,
+    width: 150,
+    height: 61,
   },
   {
     content:
@@ -614,6 +632,15 @@ export const testimonials = [
     image: linkstratamanagement150x,
     width: 150,
     height: 51,
+  },
+  {
+    content:
+      "Effortless to work with. Office Experts Group designed our project exactly as per the scope. Fast and reliable. I would definitely recommend Office Experts to anyone.",
+    name: "Carel Nel",
+    contact: "www.mayers.com.au",
+    image: mayersfinefood150x,
+    width: 150,
+    height: 61,
   },
   {
     content:
@@ -686,6 +713,15 @@ export const testimonials = [
     image: privatewealthpartnersx,
     width: 150,
     height: 49,
+  },
+  {
+    content:
+      "Office Experts Group has been amazing to deal with. Their capacity to understand the complex and varied needs for each project were always impressive. I also noted the courage to take creative license when it was granted and running with it, bringing rewarding results. Having worked on a number of projects now, I am comforted by the skill & detail displayed each time. Will certainly use again, Cheers Cody",
+    name: "Cody",
+    contact: "autokeepers.com.au",
+    image: autokeepers150x,
+    width: 150,
+    height: 24,
   },
   {
     content:
