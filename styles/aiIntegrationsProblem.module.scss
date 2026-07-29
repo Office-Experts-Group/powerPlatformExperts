@@ -1,0 +1,111 @@
+// styles/aiIntegrationsProblem.module.scss
+@import "./globals.scss";
+
+.section {
+  background: $grayBGC;
+  padding: 7rem;
+
+  @include tablet {
+    padding: 5rem 3rem;
+  }
+
+  @include phoneLandscape {
+    padding: 4rem 1.5rem;
+  }
+
+  @include phone {
+    padding: 3.5rem 1.25rem;
+  }
+}
+
+.inner {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.header {
+  max-width: 760px;
+  margin: 0 auto 3.5rem;
+  text-align: center;
+}
+
+.eyebrow {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: $accent;
+  padding: 0.35rem 0.9rem;
+  border: 1px solid $accent-border;
+  border-radius: 2rem;
+  margin-bottom: 1.25rem;
+}
+
+.heading {
+  font-size: clamp(1.9rem, 3.2vw, 2.5rem);
+  font-weight: 900;
+  color: $text-primary;
+  line-height: 1.22;
+  margin: 0 0 1.5rem;
+}
+
+.accent {
+  color: $accent;
+}
+
+.body {
+  color: $text-secondary;
+  line-height: 1.85;
+  font-size: 1rem;
+  text-align: center;
+  margin: 0 0 1.1rem;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.75rem;
+
+  @include tablet {
+    grid-template-columns: 1fr;
+  }
+
+  @include phone {
+    grid-template-columns: 1fr;
+  }
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2.5rem 2rem;
+  text-align: center;
+}
+
+.cardIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $accent;
+  margin-bottom: 1.25rem;
+}
+
+.cardHeading {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: $text-primary;
+  margin: 0 0 0.75rem;
+}
+
+.cardBody {
+  font-size: 0.95rem;
+  color: $text-secondary;
+  line-height: 1.75;
+  margin: 0;
+}

@@ -1,0 +1,110 @@
+// styles/aiIntegrationsWhyUs.module.scss
+@import "./globals.scss";
+
+.section {
+  background: $white;
+  padding: 7rem;
+
+  @include tablet {
+    padding: 5rem 3rem;
+  }
+
+  @include phoneLandscape {
+    padding: 4rem 1.5rem;
+  }
+
+  @include phone {
+    padding: 3.5rem 1.25rem;
+  }
+}
+
+.inner {
+  max-width: 860px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.eyebrow {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: $accent;
+  padding: 0.35rem 0.9rem;
+  border: 1px solid $accent-border;
+  border-radius: 2rem;
+  margin-bottom: 1.25rem;
+}
+
+.heading {
+  font-size: clamp(1.9rem, 3.2vw, 2.5rem);
+  font-weight: 900;
+  color: $text-primary;
+  line-height: 1.22;
+  margin: 0 0 1.5rem;
+}
+
+.accent {
+  color: $accent;
+}
+
+.body {
+  color: $text-secondary;
+  line-height: 1.85;
+  font-size: 1rem;
+  margin: 0 0 3rem;
+  text-align: center;
+}
+
+.inlineLink {
+  color: $accent;
+  font-weight: 700;
+  text-decoration: none;
+  border-bottom: 1px solid $accent-border;
+
+  &:hover {
+    border-bottom-color: $accent;
+  }
+}
+
+.stats {
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+
+  @include phone {
+    gap: 1.5rem;
+  }
+}
+
+.stat {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+
+  @include phone {
+    gap: 1.5rem;
+  }
+}
+
+.statValue {
+  display: block;
+  font-size: 2rem;
+  font-weight: 900;
+  color: $accent;
+}
+
+.statLabel {
+  display: block;
+  font-size: 0.8rem;
+  color: $text-muted;
+  margin-top: 0.25rem;
+}
+
+.divider {
+  width: 1px;
+  height: 2.5rem;
+  background: $border;
+}

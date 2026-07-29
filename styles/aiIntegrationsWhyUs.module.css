@@ -1,0 +1,111 @@
+.section {
+  background: #ffffff;
+  padding: 7rem;
+}
+@media (min-width: 767px) and (max-width: 1024px) {
+  .section {
+    padding: 5rem 3rem;
+  }
+}
+@media (min-width: 450px) and (max-width: 766px) {
+  .section {
+    padding: 4rem 1.5rem;
+  }
+}
+@media (max-width: 449px) {
+  .section {
+    padding: 3.5rem 1.25rem;
+  }
+}
+
+.inner {
+  max-width: 860px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.eyebrow {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #046999;
+  padding: 0.35rem 0.9rem;
+  border: 1px solid rgba(4, 105, 153, 0.3);
+  border-radius: 2rem;
+  margin-bottom: 1.25rem;
+}
+
+.heading {
+  font-size: clamp(1.9rem, 3.2vw, 2.5rem);
+  font-weight: 900;
+  color: #0d1b2a;
+  line-height: 1.22;
+  margin: 0 0 1.5rem;
+}
+
+.accent {
+  color: #046999;
+}
+
+.body {
+  color: #4a5568;
+  line-height: 1.85;
+  font-size: 1rem;
+  margin: 0 0 3rem;
+  text-align: center;
+}
+
+.inlineLink {
+  color: #046999;
+  font-weight: 700;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(4, 105, 153, 0.3);
+}
+.inlineLink:hover {
+  border-bottom-color: #046999;
+}
+
+.stats {
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+}
+@media (max-width: 449px) {
+  .stats {
+    gap: 1.5rem;
+  }
+}
+
+.stat {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+}
+@media (max-width: 449px) {
+  .stat {
+    gap: 1.5rem;
+  }
+}
+
+.statValue {
+  display: block;
+  font-size: 2rem;
+  font-weight: 900;
+  color: #046999;
+}
+
+.statLabel {
+  display: block;
+  font-size: 0.8rem;
+  color: #9a9da1;
+  margin-top: 0.25rem;
+}
+
+.divider {
+  width: 1px;
+  height: 2.5rem;
+  background: rgba(0, 0, 0, 0.08);
+}/*# sourceMappingURL=aiIntegrationsWhyUs.module.css.map */
