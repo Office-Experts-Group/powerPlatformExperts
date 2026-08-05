@@ -112,6 +112,10 @@ export const navigationData = {
         href: `/services/microsoft-power-platform`,
         items: [
           {
+            label: "AI Integrations",
+            href: `/services/microsoft-power-platform/ai-integrations`,
+          },
+          {
             label: "App Development with Power Apps",
             href: `/services/microsoft-power-platform/microsoft-power-apps`,
           },
@@ -174,8 +178,8 @@ export const navigationData = {
             href: `${OFFICE_EXPERTS_URL}/services/microsoft-office/upgrades-and-migration`,
           },
           {
-            label: "VBScript",
-            href: `${OFFICE_EXPERTS_URL}/services/microsoft-vbscript`,
+            label: "VBScript and ActiveX",
+            href: `${OFFICE_EXPERTS_URL}/services/activex-vbscript-migration`,
           },
           {
             label: "Add-in Creation",
