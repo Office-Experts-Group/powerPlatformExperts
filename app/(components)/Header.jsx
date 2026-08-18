@@ -103,7 +103,7 @@ const Header = () => {
 
           <li className={styles.navItem}>
             <Link
-              href="https://www.officeexperts.com.au/case-studies"
+              href="https://www.officeexperts.com.au/case-studies?site=powerplatform"
               className={styles.navLink}
             >
               <span>Case Studies</span>
