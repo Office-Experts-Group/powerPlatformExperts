@@ -20,7 +20,7 @@ const MeetTheTeamSlider = () => {
   return (
     <section className={styles.teamSlider}>
       <div className={styles.box}>
-        <h2>Word Experts</h2>
+        <h2>Power Platform Experts</h2>
       </div>
       <h3 className={styles.teamHeading}>Meet The Team</h3>
 
