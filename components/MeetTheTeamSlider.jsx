@@ -40,7 +40,7 @@ const MeetTheTeamSlider = () => {
                 // crawlers so each team member's details only exist once
                 // in the accessible/indexable content of the page.
                 aria-hidden={isDuplicate || undefined}
-                inert={isDuplicate || undefined}
+                inert={isDuplicate ? "true" : undefined}
               >
                 <TeamCard
                   image={member.image}
