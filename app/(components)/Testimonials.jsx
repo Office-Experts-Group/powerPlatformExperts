@@ -10,7 +10,10 @@ import { filterAndSortTestimonials } from "../../utils/filterTestimonials";
 
 const Testimonials = ({ testimonials }) => {
   const getTestimonials = (count = 10) => {
-    const sortedTestimonials = filterAndSortTestimonials(testimonials, "word");
+    const sortedTestimonials = filterAndSortTestimonials(
+      testimonials,
+      "powerplatform",
+    );
 
     // Filter out testimonials without images or content
     const validTestimonials = sortedTestimonials.filter(
