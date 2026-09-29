@@ -25,6 +25,7 @@ export const metadata = {
     ],
     locale: "en-AU",
     type: "article",
+    authors: ["Scott Robinson"],
   },
 
   // Additional metadata

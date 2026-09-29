@@ -2,13 +2,15 @@ import React from "react";
 
 export const metadata = {
   // Basic metadata
-  title: "How to Get Live MYOB & Xero Data into Power BI — No More Manual Exports",
+  title:
+    "How to Get Live MYOB & Xero Data into Power BI — No More Manual Exports",
   description:
     "Tired of CSV exports and stale reports? Learn how to connect live MYOB and Xero data into Power BI using modern OData feeds like OdataLink, plus implementation strategies from Power Platform Experts.",
 
   // OpenGraph
   openGraph: {
-    title: "How to Get Live MYOB & Xero Data into Power BI — No More Manual Exports",
+    title:
+      "How to Get Live MYOB & Xero Data into Power BI — No More Manual Exports",
     description:
       "Tired of CSV exports and stale reports? Learn how to connect live MYOB and Xero data into Power BI using modern OData feeds like OdataLink, plus implementation strategies from Power Platform Experts.",
     url: "https://www.powerplatformexperts.com.au/blog/xero-to-power-bi",
@@ -23,18 +25,18 @@ export const metadata = {
     ],
     locale: "en-AU",
     type: "website",
+    authors: ["Scott Robinson"],
   },
 
   // Additional metadata
-  keywords: [
-    "Xero Power BI",
-  ],
+  keywords: ["Xero Power BI"],
 
   // Twitter Card
   twitter: {
     card: "summary_large_image",
     site: "@OfficeExpertsG1",
-    title: "How to Get Live MYOB & Xero Data into Power BI — No More Manual Exports",
+    title:
+      "How to Get Live MYOB & Xero Data into Power BI — No More Manual Exports",
     description:
       "Tired of CSV exports and stale reports? Learn how to connect live MYOB and Xero data into Power BI using modern OData feeds like OdataLink, plus implementation strategies from Power Platform Experts.",
     images: ["/logo.png"],

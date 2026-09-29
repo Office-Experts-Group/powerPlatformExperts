@@ -2,13 +2,15 @@ import React from "react";
 
 export const metadata = {
   // Basic metadata
-  title: "Power BI Licensing Costs Spiraling? The Hidden Expenses Killing Your ROI",
+  title:
+    "Power BI Licensing Costs Spiraling? The Hidden Expenses Killing Your ROI",
   description:
     "Discover why 40% of businesses overpay for Power BI licenses. Learn the hidden costs, break-even points, and smart licensing strategies that could save your business.",
 
   // OpenGraph
   openGraph: {
-    title: "Power BI Licensing Costs Spiraling? The Hidden Expenses Killing Your ROI",
+    title:
+      "Power BI Licensing Costs Spiraling? The Hidden Expenses Killing Your ROI",
     description:
       "Discover why 40% of businesses overpay for Power BI licenses. Learn the hidden costs, break-even points, and smart licensing strategies that could save your business.",
     url: "https://www.powerplatformexperts.com.au/blog/power-bi-licensing-costs",
@@ -23,18 +25,18 @@ export const metadata = {
     ],
     locale: "en-AU",
     type: "website",
+    authors: ["Scott Robinson"],
   },
 
   // Additional metadata
-  keywords: [
-    "power bi licensing costs",
-  ],
+  keywords: ["power bi licensing costs"],
 
   // Twitter Card
   twitter: {
     card: "summary_large_image",
     site: "@OfficeExpertsG1",
-    title: "Power BI Licensing Costs Spiraling? The Hidden Expenses Killing Your ROI",
+    title:
+      "Power BI Licensing Costs Spiraling? The Hidden Expenses Killing Your ROI",
     description:
       "Discover why 40% of businesses overpay for Power BI licenses. Learn the hidden costs, break-even points, and smart licensing strategies that could save your business.",
     images: ["/logo.png"],

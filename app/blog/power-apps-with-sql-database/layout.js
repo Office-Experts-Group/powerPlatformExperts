@@ -23,6 +23,7 @@ export const metadata = {
     ],
     locale: "en-AU",
     type: "website",
+    authors: ["Marcello Brocchi"],
   },
 
   // Additional metadata

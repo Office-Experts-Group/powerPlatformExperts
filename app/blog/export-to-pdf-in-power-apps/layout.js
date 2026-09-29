@@ -23,6 +23,7 @@ export const metadata = {
     ],
     locale: "en-AU",
     type: "website",
+    authors: ["Scott Robinson"],
   },
 
   // Additional metadata
