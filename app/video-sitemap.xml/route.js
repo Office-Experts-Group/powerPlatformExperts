@@ -9,6 +9,18 @@ export const dynamic = "force-static";
 const SITE_URL =
   process.env.SITE_URL || "https://www.powerplatformexperts.com.au";
 
+// Extracts the YouTube video ID from any embed, watch or share URL (ignores ?si= and other parameters)
+const getYouTubeId = (url = "") =>
+  url.match(/(?:embed\/|watch\?v=|youtu\.be\/)([\w-]{11})/)?.[1];
+
+// Uses the stored thumbnail unless it is a malformed YouTube one, in which case it is rebuilt from the ID
+const getThumbnail = (video) => {
+  const id = getYouTubeId(video.playerUrl);
+  return id
+    ? `https://i.ytimg.com/vi/${id}/maxresdefault.jpg`
+    : video.thumbnailUrl;
+};
+
 // Escapes characters that are not allowed in XML text
 const escapeXml = (value = "") =>
   String(value)
@@ -24,7 +36,7 @@ const isVideoFile = (url = "") => /\.(mp4|webm|mov)(\?.*)?$/i.test(url);
 
 const buildVideo = (video) => `
     <video:video>
-      <video:thumbnail_loc>${escapeXml(video.thumbnailUrl)}</video:thumbnail_loc>
+<video:thumbnail_loc>${escapeXml(getThumbnail(video))}</video:thumbnail_loc>
       <video:title>${escapeXml(video.title)}</video:title>
       <video:description>${escapeXml(video.description)}</video:description>
       ${
