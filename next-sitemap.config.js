@@ -9,9 +9,7 @@ module.exports = {
   autoLastmod: false, // Without this, every URL gets the build time as its lastmod
   exclude: ["/api/*"],
 
-  robotsTxtOptions: {
-    additionalSitemaps: [
-      `${process.env.SITE_URL || "https://www.powerplatformexperts.com.au"}/video-sitemap.xml`,
-    ],
-  },
+  exclude: ["/api/*", "/test-page, /video-sitemap.xml"],
+
+  robotsTxtOptions: {},
 };
