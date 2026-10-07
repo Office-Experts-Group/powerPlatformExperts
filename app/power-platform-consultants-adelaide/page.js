@@ -18,6 +18,7 @@ const Testimonials = dynamic(() => import("../(components)/Testimonials"));
 const MeetTheTeamSlider = dynamic(
   () => import("../../components/MeetTheTeamSlider"),
 );
+const RelatedLinks = dynamic(() => import("../../components/RelatedLinks"));
 
 import adelaide from "../../public/pageHeros/adelaide.webp";
 import adelaideMob from "../../public/pageHeros/mob/adelaideMob.webp";
@@ -106,6 +107,50 @@ const Page = () => {
       <CTAMainProps location={location} />
       <ServicesLocation location={location} />
       <MeetTheTeamSlider />
+      <RelatedLinks
+        theme="light"
+        eyebrow="Case Studies"
+        heading="Our recent work with Power Platform and AI"
+        links={[
+          {
+            href: "https://www.officeexperts.com.au/case-studies/building-consultants-inspection-crm",
+            linkText: "Explore the SharePoint and Power Apps build",
+            title:
+              "Turning manual enquiry handling into an automated quote-to-email pipeline",
+            description:
+              "A building consultancy was handling inspection enquiries entirely by hand, from the first request through to putting together and sending a quote, which was slow and prone to errors that meant rework. We built an automated system on SharePoint, Power Apps and Power Automate that receives enquiries, manages them through to completion and generates quotes ready to send by email.",
+            image:
+              "https://www.officeexperts.com.au/case-studies/gm-building-consultants-inspection-crmLg.png",
+            imageAlt:
+              "Enquiry-to-quote system built on SharePoint, Power Apps and Power Automate",
+          },
+          {
+            href: "https://www.officeexperts.com.au/case-studies/manufacturing-project-setup-automation",
+            linkText: "See the automated job folder setup",
+            title:
+              "Turning a new project email into a fully built job folder in under a minute",
+            description:
+              "A manufacturing company's project setup relied on staff manually creating folders across multiple SharePoint sites, renaming them to match convention and copying in templates by hand every time a job was won. We built a Power Automate flow that reads the project details from the notification email and does the whole setup automatically, cutting setup time from roughly 30 minutes to under 1 minute.",
+            image:
+              "https://www.officeexperts.com.au/case-studies/manufacturing-project-setupLg.webp",
+            imageAlt:
+              "Power Automate flow building a project folder structure across SharePoint sites",
+          },
+          {
+            href: "https://www.officeexperts.com.au/case-studies/sporting-goods-agentic-ai-customer-service",
+            linkText: "Explore the customer service automation",
+            title:
+              "Resolving customer service tickets end to end in 3 hours instead of 48",
+            description:
+              "A national sporting goods provider ran customer service from Microsoft 365, with agents triaging every ticket, updating spreadsheets and writing responses by hand. We built a chained agentic AI system on Power Automate and Power Apps, with Classifier, Resolution, Validation and Escalation agents working in sequence and human review feeding training back in. Average resolution time fell by 94%, and 67% of tickets are now resolved end to end with no human intervention.",
+            image:
+              "https://www.officeexperts.com.au/case-studies/sporting-goods-agentic-customer-serviceLg.png",
+            imageAlt:
+              "Chained AI agents resolving customer service tickets on Power Automate and Power Apps",
+          },
+        ]}
+      />
+
       <GoodToKnow />
       <Testimonials testimonials={testimonials} />
       <Promo

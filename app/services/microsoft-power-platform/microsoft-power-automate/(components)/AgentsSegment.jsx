@@ -40,7 +40,7 @@ const AgentsSegment = () => (
 
           <div className={styles.ctaBlock}>
             <Link
-              href="#contact"
+              href="https://www.officeexperts.com.au/services/ai-agent-development"
               className="btn"
               style={{ textTransform: "capitalize" }}
             >

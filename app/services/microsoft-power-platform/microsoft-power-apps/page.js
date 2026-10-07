@@ -14,6 +14,9 @@ const Segment4Repeat = dynamic(() => import("./(components)/Segment4Repeat"));
 const SegmentMainRepeat = dynamic(
   () => import("./(components)/SegmentMainRepeat"),
 );
+const RelatedLinks = dynamic(
+  () => import("../../../../components/RelatedLinks"),
+);
 const FAQSection = dynamic(() => import("../../../../components/FAQSection"));
 
 import faqs from "../../../../faqs/power-apps";
@@ -125,6 +128,37 @@ const Page = () => {
       />
       <PageSegment4 />
       <SegmentMainRepeat />
+      <RelatedLinks
+        theme="dark"
+        eyebrow="Case Studies"
+        heading="Power Apps projects in practice"
+        links={[
+          {
+            href: "https://www.officeexperts.com.au/case-studies/building-consultants-inspection-crm",
+            linkText: "See how enquiries became quotes",
+            title:
+              "Turning manual enquiry handling into an automated quote-to-email pipeline",
+            description:
+              "A building consultancy was handling inspection enquiries entirely by hand, from the first request through to putting together and sending a quote, which was slow and prone to errors that meant rework. We built an automated system on SharePoint, Power Apps and Power Automate that receives enquiries, manages them through to completion and generates quotes ready to send by email.",
+            image:
+              "https://www.officeexperts.com.au/case-studies/gm-building-consultants-inspection-crmLg.png",
+            imageAlt:
+              "Enquiry-to-quote system built on SharePoint, Power Apps and Power Automate",
+          },
+          {
+            href: "https://www.officeexperts.com.au/case-studies/sporting-goods-agentic-ai-customer-service",
+            linkText: "Read how tickets get resolved end to end",
+            title:
+              "Resolving customer service tickets end to end in 3 hours instead of 48",
+            description:
+              "A national sporting goods provider ran customer service from Microsoft 365, with agents triaging every ticket, updating spreadsheets and writing responses by hand. We built a chained agentic AI system on Power Automate and Power Apps, with Classifier, Resolution, Validation and Escalation agents working in sequence and human review feeding training back in. Average resolution time fell by 94%, and 67% of tickets are now resolved end to end with no human intervention.",
+            image:
+              "https://www.officeexperts.com.au/case-studies/sporting-goods-agentic-customer-serviceLg.png",
+            imageAlt:
+              "Chained AI agents resolving customer service tickets on Power Automate and Power Apps",
+          },
+        ]}
+      />
       <FAQSection faqs={faqs} />
       <Contact />
     </>

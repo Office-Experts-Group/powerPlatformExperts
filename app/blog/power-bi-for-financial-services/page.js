@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 import Contact from "../../../components/Contact";
+import RelatedLinks from "../../../components/RelatedLinks";
 
 import styles from "../../../styles/blogPost.module.scss";
 
@@ -389,6 +390,37 @@ const PowerBIFinancialServicesBlogPost = () => {
           </div>
         </div>
       </div>
+      <RelatedLinks
+        theme="dark"
+        eyebrow="Case Studies"
+        heading="The Power Platform teams Financial services projects"
+        links={[
+          {
+            href: "https://www.officeexperts.com.au/case-studies/financial-services-ai-risk-compliance-automation",
+            linkText: "See the AI risk register build",
+            title:
+              "Taking 24 unowned risks to full ownership and monthly reviews from 6 hours to 1",
+            description:
+              "An FCA-regulated financial services firm had outgrown a compliance workflow built on spreadsheets and scattered policy documents. We replaced the spreadsheet with a live SharePoint risk register, built AI agents through Power Automate that map risks to mitigations and controls, and added a Power BI and Power Apps compliance dashboard with automated regulatory-change alerts. Monthly compliance review time fell by 83%, from 6 hours to 1.",
+            image:
+              "https://www.officeexperts.com.au/case-studies/financial-services-compliance-automationLg.png",
+            imageAlt:
+              "AI risk register and compliance dashboard built on SharePoint, Power Automate and Power BI",
+          },
+          {
+            href: "https://www.officeexperts.com.au/case-studies/private-client-cashflow-forecasting-tool",
+            linkText: "Read how uneven income is smoothed",
+            title:
+              "Turning uneven investment income into one clear monthly figure to plan against",
+            description:
+              "A private client's investment and business income arrived in seasonal, periodic lumps while monthly commitments fell steadily, so distribution and tax decisions were made without a full forward view of cash flow. We built a private planning tool that forecasts cash flow across personal, investment and business, and calculates the income needed each month before GST. It was delivered in 2 weeks and hosted privately on Microsoft Azure.",
+            image:
+              "https://www.officeexperts.com.au/case-studies/private-client-cashflow-plannerLg.png",
+            imageAlt:
+              "Private cash flow planning tool showing the monthly income figure needed",
+          },
+        ]}
+      />
       <Contact />
     </>
   );

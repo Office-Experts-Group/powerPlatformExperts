@@ -27,6 +27,7 @@ const nextConfig = {
         hostname: "img.youtube.com",
         pathname: "/**",
       },
+      { protocol: "https", hostname: "www.officeexperts.com.au" },
     ],
   },
 

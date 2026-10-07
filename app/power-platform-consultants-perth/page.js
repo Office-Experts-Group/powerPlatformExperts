@@ -18,6 +18,7 @@ const Testimonials = dynamic(() => import("../(components)/Testimonials"));
 const MeetTheTeamSlider = dynamic(
   () => import("../../components/MeetTheTeamSlider"),
 );
+const RelatedLinks = dynamic(() => import("../../components/RelatedLinks"));
 
 import perth from "../../public/pageHeros/perth.webp";
 import perthMob from "../../public/pageHeros/mob/perthMob.webp";
@@ -106,6 +107,49 @@ const Page = () => {
       <CTAMainProps location={location} />
       <ServicesLocation location={location} />
       <MeetTheTeamSlider />
+      <RelatedLinks
+        theme="light"
+        eyebrow="Case Studies"
+        heading="A taste of our work with Power Platform and AI"
+        links={[
+          {
+            href: "https://www.officeexperts.com.au/case-studies/retail-analytics-automated-review-deck-generator",
+            linkText: "Read more about how we did it",
+            title:
+              "Turning a days-long PowerPoint build into a one-click, 600+ slide deck",
+            description:
+              "A retail analytics business built large retailer review decks by hand, pulling figures out of Power BI and pasting them into templates slide by slide. We built a Python tool that reads a simple scope sheet, queries Power BI directly and assembles a fully branded deck of around 660 slides in under five minutes.",
+            image:
+              "https://www.officeexperts.com.au/case-studies/retail-analytics-deck-generatorLg.png",
+            imageAlt:
+              "Branded PowerPoint review deck generated automatically from Power BI data",
+          },
+          {
+            href: "https://www.officeexperts.com.au/case-studies/biochar-ai-go-to-market-analysis-uk",
+            linkText: "How 10,000+ documents became one report",
+            title:
+              "Turning 10,000+ documents into a 70-page go-to-market report in 4 weeks, not 3 months",
+            description:
+              "An international sustainability company needed a go-to-market strategy for the UK BioChar market, built from research scattered across government databases, competitor material, academic journals and customer sources. We built AI research agents through Power Automate that synthesised those sources into a reusable SharePoint knowledge base, auto-populated a standardised Word report template and logged every analyst refinement through Power Apps for a full audit trail.",
+            image:
+              "https://www.officeexperts.com.au/case-studies/biochar-gtm-analysisLg.png",
+            imageAlt:
+              "AI research agents feeding a SharePoint knowledge base and Word report template",
+          },
+          {
+            href: "https://www.officeexperts.com.au/case-studies/professional-services-sharepoint-foundation-workshops",
+            linkText: "Explore the access model",
+            title:
+              "Moving a team off shared logins onto a proper SharePoint foundation",
+            description:
+              "A small team ran its email, files and calendar through a single shared login, with a second shared login for its bookings system, so nobody could see who had changed what or remove someone cleanly when they left. We ran a series of live SharePoint Foundation Workshops that built a proper site structure, an Owners, Members and Visitors access model, and a staged plan to retire both shared logins.",
+            image:
+              "https://www.officeexperts.com.au/case-studies/professional-services-sharepoint-foundationLg.png",
+            imageAlt:
+              "SharePoint site structure and access model built in live workshops",
+          },
+        ]}
+      />
       <GoodToKnow />
       <Testimonials testimonials={testimonials} />
       <Promo

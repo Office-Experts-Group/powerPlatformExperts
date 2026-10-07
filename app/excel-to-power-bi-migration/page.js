@@ -13,6 +13,7 @@ const MigrationBenefits = dynamic(
 const ComparisonTable = dynamic(() => import("./(components)/ComparisonTable"));
 const Conclusion = dynamic(() => import("./(components)/Conclusion"));
 const ExpertsAwait = dynamic(() => import("../../components/ExpertsAwait"));
+const RelatedLinks = dynamic(() => import("../../components/RelatedLinks"));
 
 import excelMigration from "../../public/pageHeros/migration.webp";
 import excelMigrationMob from "../../public/pageHeros/mob/migrationMob.webp";
@@ -190,6 +191,37 @@ const ExcelToPowerBiMigration = () => {
         <ExpertsAwait />
         <Conclusion />
         <FAQSection />
+        <RelatedLinks
+          theme="dark"
+          eyebrow="Case Studies"
+          heading="Excel data consolidation projects"
+          links={[
+            {
+              href: "https://www.officeexperts.com.au/case-studies/golf-supplier-sales-data-consolidation",
+              linkText: "Read how supplier files are combined",
+              title:
+                "Turning a year of scattered supplier sales files into one automated summary",
+              description:
+                "A business receiving a large number of separate Excel sales files from its suppliers throughout the year needed them brought together and compared year on year. We built a Power Query and Power Pivot solution that pulls the raw files in automatically, categorises the data and produces summaries by supplier, member, month and quarter without manual copy and paste.",
+              image:
+                "https://www.officeexperts.com.au/case-studies/on-course-golf-sales-summaryLg.png",
+              imageAlt:
+                "Supplier sales files consolidated with Power Query and Power Pivot",
+            },
+            {
+              href: "https://www.officeexperts.com.au/case-studies/community-services-excel-consolidation-rebuild",
+              linkText: "Explore the row-based rebuild",
+              title:
+                "Replacing a linked-workbook spreadsheet with a one-click Power Query refresh",
+              description:
+                "A four-location community services provider had each site keying records into its own workbook, with a central file pulling them together through direct workbook links that had grown thousands of columns wide. We rebuilt it as a row-based entry template consolidated with Power Query, migrated all existing data into it, and showed the team how to build new reporting breakdowns with pivot tables.",
+              image:
+                "https://www.officeexperts.com.au/case-studies/community-services-excelLg.png",
+              imageAlt:
+                "Four location workbooks consolidated into one row-based dataset with Power Query",
+            },
+          ]}
+        />
         <Contact />
       </main>
     </>

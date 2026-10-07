@@ -18,6 +18,7 @@ const Testimonials = dynamic(() => import("../(components)/Testimonials"));
 const MeetTheTeamSlider = dynamic(
   () => import("../../components/MeetTheTeamSlider"),
 );
+const RelatedLinks = dynamic(() => import("../../components/RelatedLinks"));
 
 import canberra from "../../public/pageHeros/canberra.webp";
 import canberraMob from "../../public/pageHeros/mob/canberraMob.webp";
@@ -106,6 +107,48 @@ const Page = () => {
       <CTAMainProps location={location} />
       <ServicesLocation location={location} />
       <MeetTheTeamSlider />
+      <RelatedLinks
+        theme="light"
+        eyebrow="Case Studies"
+        heading="Recent work across the Power Platform and AI"
+        links={[
+          {
+            href: "https://www.officeexperts.com.au/case-studies/manufacturing-project-setup-automation",
+            linkText: "See the automated job folder setup",
+            title:
+              "Turning a new project email into a fully built job folder in under a minute",
+            description:
+              "A manufacturing company's project setup relied on staff manually creating folders across multiple SharePoint sites, renaming them to match convention and copying in templates by hand every time a job was won. We built a Power Automate flow that reads the project details from the notification email and does the whole setup automatically, cutting setup time from roughly 30 minutes to under 1 minute.",
+            image:
+              "https://www.officeexperts.com.au/case-studies/manufacturing-project-setupLg.webp",
+            imageAlt:
+              "Power Automate flow building a project folder structure across SharePoint sites",
+          },
+          {
+            href: "https://www.officeexperts.com.au/case-studies/rdao-application-ai-review-workflow",
+            linkText: "Read how reviews dropped to 90 minutes",
+            title:
+              "Cutting a 6-7 day investment review down to 90 minutes with an AI agent workflow",
+            description:
+              "An investor assessing remote companies relied on one person manually researching each applicant and cross-checking the investor's own policy, taking six to seven days per application. We built an AI agentic workflow across Power Automate, Power Apps, Power BI and Power Pages that pushes each application and its documents through a series of agents covering KYC, compliance, legal and financial checks, producing a detailed, referenced review in around 90 minutes.",
+            image: "https://www.officeexperts.com.au/case-studies/kula.png",
+            imageAlt:
+              "AI agent workflow reviewing investment applications across the Power Platform",
+          },
+          {
+            href: "https://www.officeexperts.com.au/case-studies/healthcare-patient-form-followup-automation",
+            linkText: "Explore the Fabric and Power Automate build",
+            title:
+              "Removing manual form chasing for an allied health provider's active patients",
+            description:
+              "An allied health provider sent intake and milestone forms to every patient but tracked who had responded entirely by hand, pulling clinical staff away from care to send reminders and escalations. We built two scheduled Power Automate flows against the provider's Microsoft Fabric data warehouse that send reminders, escalate overdue cases and close off completed forms automatically.",
+            image:
+              "https://www.officeexperts.com.au/case-studies/healthcare-form-followupLg.webp",
+            imageAlt:
+              "Scheduled Power Automate flows chasing patient forms from a Microsoft Fabric data warehouse",
+          },
+        ]}
+      />
       <GoodToKnow />
       <Testimonials testimonials={testimonials} />
       <Promo

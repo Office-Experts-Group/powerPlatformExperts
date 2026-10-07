@@ -12,6 +12,7 @@ const PageSegment5 = dynamic(() => import("./(components)/PageSegment5"));
 const ExpertsAwait = dynamic(() => import("../../components/ExpertsAwait"));
 const Segment4Repeat = dynamic(() => import("./(components)/Segment4Repeat"));
 const UseCases = dynamic(() => import("./(components)/UseCases"));
+const RelatedLinks = dynamic(() => import("../../components/RelatedLinks"));
 
 import integration from "../../public/pageHeros/integration.webp";
 import integrationMob from "../../public/pageHeros/mob/integrationMob.webp";
@@ -187,6 +188,37 @@ const PowerBiDataIntegration = () => {
         <ExpertsAwait />
         <Segment4Repeat />
         <UseCases />
+        <RelatedLinks
+          theme="dark"
+          eyebrow="Case Studies"
+          heading="Power BI data projects"
+          links={[
+            {
+              href: "https://www.officeexperts.com.au/case-studies/retail-power-bi-partner-reporting-security",
+              linkText: "Read how partner data was isolated",
+              title:
+                "Proving external partners could never see each other's Power BI data",
+              description:
+                "A retail data provider needed certainty that one wrong setting couldn't expose a partner's data to another before opening its Power BI reports to external partners. We reviewed the reports for design and usability, locked access down with Row-Level Security, and tested with a real external account against the provider's own figures, which matched to the cent, without changing what the internal team relied on.",
+              image:
+                "https://www.officeexperts.com.au/case-studies/retail-power-bi-partner-securityLg.webp",
+              imageAlt:
+                "Partner-facing Power BI reports secured with Row-Level Security",
+            },
+            {
+              href: "https://www.officeexperts.com.au/case-studies/retail-analytics-automated-review-deck-generator",
+              linkText: "Read how a full review deck is built automatically",
+              title:
+                "Turning a days-long PowerPoint build into a one-click, 600+ slide deck",
+              description:
+                "A retail analytics business built large retailer review decks by hand, pulling figures out of Power BI and pasting them into templates slide by slide. We built a Python tool that reads a simple scope sheet, queries Power BI directly and assembles a fully branded deck of around 660 slides in under five minutes.",
+              image:
+                "https://www.officeexperts.com.au/case-studies/retail-analytics-deck-generatorLg.png",
+              imageAlt:
+                "Branded PowerPoint review deck generated automatically from Power BI data",
+            },
+          ]}
+        />
         <Contact />
       </main>
     </>

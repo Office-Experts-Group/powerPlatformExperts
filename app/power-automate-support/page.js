@@ -8,6 +8,7 @@ const Contact = dynamic(() => import("../../components/Contact"));
 const PageSegment4 = dynamic(() => import("./(components)/PageSegment4"));
 const Segment4Repeat = dynamic(() => import("./(components)/Segment4Repeat"));
 const BlackSegment = dynamic(() => import("./(components)/BlackSegment"));
+const RelatedLinks = dynamic(() => import("../../components/RelatedLinks"));
 
 import longDesk from "../../public/pageHeros/longDesk.webp";
 import puzzleMob from "../../public/pageHeros/mob/puzzleMob.webp";
@@ -164,6 +165,37 @@ const PowerAutomate = () => {
         <Segment4Repeat />
         <BlackSegment />
         <PageSegment4 />
+        <RelatedLinks
+          theme="dark"
+          eyebrow="Case Studies"
+          heading="Power Automate projects we have delivered"
+          links={[
+            {
+              href: "https://www.officeexperts.com.au/case-studies/manufacturing-project-setup-automation",
+              linkText: "Read the project setup flow",
+              title:
+                "Turning a new project email into a fully built job folder in under a minute",
+              description:
+                "A manufacturing company's project setup relied on staff manually creating folders across multiple SharePoint sites, renaming them to match convention and copying in templates by hand every time a job was won. We built a Power Automate flow that reads the project details from the notification email and does the whole setup automatically, cutting setup time from roughly 30 minutes to under 1 minute.",
+              image:
+                "https://www.officeexperts.com.au/case-studies/manufacturing-project-setupLg.webp",
+              imageAlt:
+                "Power Automate flow building a project folder structure across SharePoint sites",
+            },
+            {
+              href: "https://www.officeexperts.com.au/case-studies/healthcare-patient-form-followup-automation",
+              linkText: "Explore the Fabric and Power Automate build",
+              title:
+                "Removing manual form chasing for an allied health provider's active patients",
+              description:
+                "An allied health provider sent intake and milestone forms to every patient but tracked who had responded entirely by hand, pulling clinical staff away from care to send reminders and escalations. We built two scheduled Power Automate flows against the provider's Microsoft Fabric data warehouse that send reminders, escalate overdue cases and close off completed forms automatically.",
+              image:
+                "https://www.officeexperts.com.au/case-studies/healthcare-form-followupLg.webp",
+              imageAlt:
+                "Scheduled Power Automate flows chasing patient forms from a Microsoft Fabric data warehouse",
+            },
+          ]}
+        />
         <Contact />
       </main>
     </>

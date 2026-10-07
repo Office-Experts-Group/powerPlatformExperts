@@ -18,6 +18,7 @@ const Testimonials = dynamic(() => import("../(components)/Testimonials"));
 const MeetTheTeamSlider = dynamic(
   () => import("../../components/MeetTheTeamSlider"),
 );
+const RelatedLinks = dynamic(() => import("../../components/RelatedLinks"));
 
 import centralCoast from "../../public/pageHeros/centralCoast.webp";
 import centralCoastMob from "../../public/pageHeros/mob/centralCoastMob.webp";
@@ -106,6 +107,48 @@ const Page = () => {
       <CTAMainProps location={location} />
       <ServicesLocation location={location} />
       <MeetTheTeamSlider />
+      <RelatedLinks
+        theme="light"
+        eyebrow="Case Studies"
+        heading="Recent work across the Power Platform and AI"
+        links={[
+          {
+            href: "https://www.officeexperts.com.au/case-studies/rdao-application-ai-review-workflow",
+            linkText: "Read how reviews dropped to 90 minutes",
+            title:
+              "Cutting a 6-7 day investment review down to 90 minutes with an AI agent workflow",
+            description:
+              "An investor assessing remote companies relied on one person manually researching each applicant and cross-checking the investor's own policy, taking six to seven days per application. We built an AI agentic workflow across Power Automate, Power Apps, Power BI and Power Pages that pushes each application and its documents through a series of agents covering KYC, compliance, legal and financial checks, producing a detailed, referenced review in around 90 minutes.",
+            image: "https://www.officeexperts.com.au/case-studies/kula.png",
+            imageAlt:
+              "AI agent workflow reviewing investment applications across the Power Platform",
+          },
+          {
+            href: "https://www.officeexperts.com.au/case-studies/healthcare-patient-form-followup-automation",
+            linkText: "Explore the Fabric and Power Automate build",
+            title:
+              "Removing manual form chasing for an allied health provider's active patients",
+            description:
+              "An allied health provider sent intake and milestone forms to every patient but tracked who had responded entirely by hand, pulling clinical staff away from care to send reminders and escalations. We built two scheduled Power Automate flows against the provider's Microsoft Fabric data warehouse that send reminders, escalate overdue cases and close off completed forms automatically.",
+            image:
+              "https://www.officeexperts.com.au/case-studies/healthcare-form-followupLg.webp",
+            imageAlt:
+              "Scheduled Power Automate flows chasing patient forms from a Microsoft Fabric data warehouse",
+          },
+          {
+            href: "https://www.officeexperts.com.au/case-studies/financial-services-ai-risk-compliance-automation",
+            linkText: "See the AI risk register build",
+            title:
+              "Taking 24 unowned risks to full ownership and monthly reviews from 6 hours to 1",
+            description:
+              "An FCA-regulated financial services firm had outgrown a compliance workflow built on spreadsheets and scattered policy documents. We replaced the spreadsheet with a live SharePoint risk register, built AI agents through Power Automate that map risks to mitigations and controls, and added a Power BI and Power Apps compliance dashboard with automated regulatory-change alerts. Monthly compliance review time fell by 83%, from 6 hours to 1.",
+            image:
+              "https://www.officeexperts.com.au/case-studies/financial-services-compliance-automationLg.png",
+            imageAlt:
+              "AI risk register and compliance dashboard built on SharePoint, Power Automate and Power BI",
+          },
+        ]}
+      />
       <GoodToKnow />
       <Testimonials testimonials={testimonials} />
       <Promo
