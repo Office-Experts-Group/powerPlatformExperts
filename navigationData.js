@@ -370,6 +370,10 @@ export const navigationData = {
             href: `${OFFICE_EXPERTS_URL}/services/microsoft-office-365/copilot`,
           },
           {
+            label: "AI Agent Development",
+            href: `${OFFICE_EXPERTS_URL}/services/ai-agent-development`,
+          },
+          {
             label: "Email Triage with AI",
             href: `${OFFICE_EXPERTS_URL}/services/ai-email-triage`,
           },
