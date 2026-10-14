@@ -413,7 +413,7 @@ export const navigationData = {
           },
           {
             label: "SQL Server",
-            href: `/services/by-business-solution/office-and-sql-server-integration`,
+            href: `/services/by-business-solution/`,
           },
           {
             label: "PowerPoint",
