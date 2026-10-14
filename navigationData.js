@@ -162,7 +162,7 @@ export const navigationData = {
             href: `${OFFICE_EXPERTS_URL}/services/by-business-solution/database-development-and-solutions`,
           },
           {
-            label: "3rd Party App or Office Integration",
+            label: "3rd Party App Integration",
             href: `${OFFICE_EXPERTS_URL}/services/by-business-solution/3rd-party-application-or-office-integration`,
           },
           {
@@ -180,6 +180,10 @@ export const navigationData = {
           {
             label: "VBScript and ActiveX",
             href: `${OFFICE_EXPERTS_URL}/services/activex-vbscript-migration`,
+          },
+          {
+            label: "Apps and Custom Development",
+            href: `${OFFICE_EXPERTS_URL}/services/microsoft-office-365/app-and-custom-development`,
           },
           {
             label: "Add-in Creation",
