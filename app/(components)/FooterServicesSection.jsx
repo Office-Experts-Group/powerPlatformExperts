@@ -117,7 +117,7 @@ const FooterServicesSection = () => {
             <Link href="https://www.officeexperts.com.au/services/by-business-solution/cloud-based-solutions-with-azure">
               Microsoft Azure
             </Link>
-            <Link href="https://www.officeexperts.com.au/services/by-business-solution/">
+            <Link href="https://www.officeexperts.com.au/services/by-business-solution/sql-server-and-access-integration">
               Microsoft SQL Server
             </Link>
             <Link href="https://www.officeexperts.com.au/services/by-business-solution/online-solutions">
