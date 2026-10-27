@@ -85,7 +85,7 @@ const FooterServicesSection = () => {
         <div className={styles.dropdownContainer}>
           <div className={styles.dropdownBackground}></div>
           <div className={styles.dropdownContent}>
-            <Link href="https://www.officeexperts.com.au/services/microsoft-office">
+            <Link href="https://www.officeexperts.com.au/services">
               Microsoft Office
             </Link>
             <Link href="https://www.excelexperts.com.au">Microsoft Excel</Link>
@@ -114,19 +114,19 @@ const FooterServicesSection = () => {
         <div className={styles.dropdownContainer}>
           <div className={styles.dropdownBackground}></div>
           <div className={styles.dropdownContent}>
-            <Link href="https://www.officeexperts.com.au/services/by-business-solution/cloud-based-solutions-with-azure">
+            <Link href="https://www.officeexperts.com.au/services/cloud-based-solutions-with-azure">
               Microsoft Azure
             </Link>
-            <Link href="https://www.officeexperts.com.au/services/by-business-solution/sql-server-and-access-integration">
+            <Link href="https://www.officeexperts.com.au/services/sql-server-and-access-integration">
               Microsoft SQL Server
             </Link>
-            <Link href="https://www.officeexperts.com.au/services/by-business-solution/online-solutions">
+            <Link href="https://www.officeexperts.com.au/services/online-solutions">
               Microsoft SharePoint
             </Link>
             <Link href="https://www.officeexperts.com.au/services/microsoft-dot-net">
               Microsoft .NET
             </Link>
-            <Link href="https://www.officeexperts.com.au/services/by-business-solution/custom-office-solutions">
+            <Link href="https://www.officeexperts.com.au/services/custom-office-solutions">
               Microsoft Outlook
             </Link>
             <Link href="https://www.officeexperts.com.au/services/microsoft-publisher">

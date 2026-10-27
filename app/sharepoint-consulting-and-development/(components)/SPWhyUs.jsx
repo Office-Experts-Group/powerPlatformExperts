@@ -33,7 +33,7 @@ const differentiators = [
     heading: "We'll tell you when it's not us.",
     body: "We're not limited to SharePoint. Where a workflow belongs in Power Automate, where a form needs Power Apps, where a portal makes more sense than a SharePoint site we can build those as part of the same engagement. And if something is outside our wheelhouse, we'll say so rather than stretch the scope to fit.",
     link: {
-      href: "https://www.officeexperts.com.au/services/microsoft-office-365/office-365-migration",
+      href: "https://www.officeexperts.com.au/services/microsoft-office-365",
       label: "Office 365 migration",
     },
   },

@@ -210,7 +210,7 @@ const PPComparison = () => {
             <aside className={styles.colNote}>
               Frameworks like{" "}
               <Link
-                href="https://www.officeexperts.com.au/services/by-business-solution/online-solutions"
+                href="https://www.officeexperts.com.au/services/app-and-custom-development"
                 className={styles.noteLink}
               >
                 React and Next.js

@@ -74,7 +74,7 @@ const scenarios = [
       <>
         A solution designed on
         <Link
-          href="https://www.officeexperts.com.au/services/by-business-solution/cloud-based-solutions-with-azure"
+          href="https://www.officeexperts.com.au/services/cloud-based-solutions-with-azure"
           className={styles.inlineLink}
         >
           {" "}

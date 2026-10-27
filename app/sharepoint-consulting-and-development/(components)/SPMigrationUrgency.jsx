@@ -156,7 +156,7 @@ const SPMigrationUrgency = () => {
             For organisations also running Exchange Server or Office Online
             Server, our colleagues at{" "}
             <Link
-              href="https://www.officeexperts.com.au/services/microsoft-365/microsoft-365-migration"
+              href="https://www.officeexperts.com.au/services/microsoft-365"
               className={styles.noteLink}
             >
               Office Experts handle the broader Microsoft&nbsp;365 migration

@@ -37,7 +37,7 @@ const capabilities = [
     title: "Cross-platform API orchestration",
     tag: "Integration",
     desc: "We connect Power Automate to whatever else you are running. Dynamics 365, Xero, MYOB, Salesforce, custom REST APIs, or legacy systems. Data moves where it needs to go, automatically and accurately, across every platform in your stack.",
-    href: "https://www.officeexperts.com.au/services/by-business-solution/3rd-party-application-or-office-integration",
+    href: "https://www.officeexperts.com.au/services/3rd-party-application-or-office-integration",
   },
 ];
 
