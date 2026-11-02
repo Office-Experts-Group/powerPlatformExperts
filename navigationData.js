@@ -1,7 +1,8 @@
 // navigationData.js - powerplatformexperts.com.au
 
 // Base URLs for different sites (change these for production)
-const WORD_EXPERTS_URL = "https://www.wordexperts.com.au";
+const WORD_EXPERTS_URL =
+  "https://www.officeexperts.com.au/services/microsoft-word";
 const OFFICE_EXPERTS_URL = "https://www.officeexperts.com.au";
 const EXCEL_EXPERTS_URL = "https://www.excelexperts.com.au";
 const POWER_PLATFORM_EXPERTS_URL = "/";
