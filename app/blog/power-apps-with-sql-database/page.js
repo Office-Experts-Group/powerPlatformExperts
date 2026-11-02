@@ -160,7 +160,7 @@ Gallery1.Items = SQLOrderData;
           </div>
           <div className={styles.svgs}>
             <a
-              href="https://www.linkedin.com/in/marcellobrocchi/?originalSubdomain=au"
+              href="https://www.linkedin.com/in/marcellobrocchi/"
               rel="nofollow noreferrer noopener"
             >
               <svg

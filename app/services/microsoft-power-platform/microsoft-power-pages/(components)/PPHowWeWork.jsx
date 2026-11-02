@@ -187,7 +187,7 @@ const PPHowWeWork = () => {
               and good documentation cover it.
             </p>
             <Link
-              href="https://www.powerplatformexperts.com.au/microsoft-support-and-training-australia"
+              href="https://www.officeexperts.com.au/microsoft-support-and-training-australia"
               className={styles.introLink}
             >
               Microsoft support &amp; training

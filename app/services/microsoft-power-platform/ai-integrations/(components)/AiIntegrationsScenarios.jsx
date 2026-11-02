@@ -15,7 +15,7 @@ const scenarios = [
       <>
         An internal knowledge agent built in{" "}
         <Link
-          href="https://www.officeexperts.com.au/services/microsoft-office-365/copilot"
+          href="https://www.officeexperts.com.au/services/copilot"
           className={styles.inlineLink}
         >
           Copilot Studio
@@ -96,7 +96,7 @@ const scenarios = [
         Tenant configuration, permission review, and role-based training so
         marketing, finance and operations each learn how{" "}
         <Link
-          href="https://www.officeexperts.com.au/services/microsoft-office-365/copilot"
+          href="https://www.officeexperts.com.au/services/copilot"
           className={styles.inlineLink}
         >
           Copilot

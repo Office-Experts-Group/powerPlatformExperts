@@ -43,7 +43,7 @@ const phases = [
       "Branded sites & library setup",
     ],
     link: {
-      href: "https://www.powerplatformexperts.com.au/services/microsoft-power-platform/microsoft-power-automate/",
+      href: "https://www.powerplatformexperts.com.au/services/microsoft-power-platform/microsoft-power-automate",
       label: "Power Automate workflow services",
     },
   },

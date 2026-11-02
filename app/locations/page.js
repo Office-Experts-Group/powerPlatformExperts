@@ -91,10 +91,10 @@ const Page = () => {
             "Our Sydney specialists provide Microsoft Power Platform solutions throughout the Greater Sydney metropolitan area. Creating automated workflows, custom business apps, data visualisations, and client portals, our team offers comprehensive training and support for all Microsoft Power Platform components.",
           serviceLinks: {
             excel: "https://www.excelexperts.com.au/excel-consultants-sydney",
-            word: "https://www.officeexperts.com.au/services/microsoft-word/microsoft-consultants-sydney",
-            access: "/access-consultants-sydney",
-            powerplatform:
-              "https://www.powerplatformexperts.com.au/power-platform-consultants-sydney",
+            word: "https://www.officeexperts.com.au/microsoft-consultants-sydney",
+            access:
+              "https://www.accessexperts.com.au/access-consultants-sydney",
+            powerplatform: "/power-platform-consultants-sydney",
             office:
               "https://www.officeexperts.com.au/microsoft-consultants-sydney",
           },
@@ -108,12 +108,12 @@ const Page = () => {
           serviceLinks: {
             excel:
               "https://www.excelexperts.com.au/excel-consultants-wollongong",
-            word: "https://www.officeexperts.com.au/services/microsoft-word/microsoft-consultants-wollongong",
-            access: "/access-consultants-wollongong",
-            powerplatform:
-              "https://www.powerplatformexperts.com.au/power-platform-consultants-wollongong",
+            word: "https://www.officeexperts.com.au/microsoft-consultants-wollongong",
+            access:
+              "https://www.accessexperts.com.au/access-consultants-wollongong",
+            powerplatform: "/power-platform-consultants-wollongong",
             office:
-              "https://www.officeexperts.com.au/office-excel-access-and-365-experts-wollongong",
+              "https://www.officeexperts.com.au/microsoft-consultants-wollongong",
           },
         },
         {
@@ -125,12 +125,12 @@ const Page = () => {
           serviceLinks: {
             excel:
               "https://www.excelexperts.com.au/excel-consultants-northern-rivers-nsw",
-            word: "https://www.officeexperts.com.au/services/microsoft-word/microsoft-consultants-northern-rivers-nsw",
-            access: "/access-consultants-northern-rivers-nsw",
-            powerplatform:
-              "https://www.powerplatformexperts.com.au/power-platform-consultants-northern-rivers-nsw",
+            word: "https://www.officeexperts.com.au/microsoft-consultants-northern-rivers-nsw",
+            access:
+              "https://www.accessexperts.com.au/access-consultants-northern-rivers-nsw",
+            powerplatform: "/power-platform-consultants-northern-rivers-nsw",
             office:
-              "https://www.officeexperts.com.au/office-excel-access-and-365-experts-northern-rivers-nsw",
+              "https://www.officeexperts.com.au/microsoft-consultants-northern-rivers-nsw",
           },
         },
         {
@@ -142,12 +142,12 @@ const Page = () => {
           serviceLinks: {
             excel:
               "https://www.excelexperts.com.au/excel-consultants-central-coast-nsw",
-            word: "https://www.officeexperts.com.au/services/microsoft-word/microsoft-consultants-central-coast-nsw",
-            access: "/access-consultants-central-coast-nsw",
-            powerplatform:
-              "https://www.powerplatformexperts.com.au/power-platform-consultants-central-coast-nsw",
+            word: "https://www.officeexperts.com.au/microsoft-consultants-central-coast-nsw",
+            access:
+              "https://www.accessexperts.com.au/access-consultants-central-coast-nsw",
+            powerplatform: "/power-platform-consultants-central-coast-nsw",
             office:
-              "https://www.officeexperts.com.au/office-and-office-365-experts-central-coast-nsw",
+              "https://www.officeexperts.com.au/microsoft-consultants-central-coast-nsw",
           },
         },
       ],
@@ -165,10 +165,10 @@ const Page = () => {
           serviceLinks: {
             excel:
               "https://www.excelexperts.com.au/excel-consultants-melbourne",
-            word: "https://www.officeexperts.com.au/services/microsoft-word/microsoft-consultants-melbourne",
-            access: "/access-consultants-melbourne",
-            powerplatform:
-              "https://www.powerplatformexperts.com.au/power-platform-consultants-melbourne",
+            word: "https://www.officeexperts.com.au/microsoft-consultants-melbourne",
+            access:
+              "https://www.accessexperts.com.au/access-consultants-melbourne",
+            powerplatform: "/power-platform-consultants-melbourne",
             office:
               "https://www.officeexperts.com.au/microsoft-consultants-melbourne",
           },
@@ -181,12 +181,12 @@ const Page = () => {
             "Located in the heart of Richmond, our Power Platform experts deliver tailored automation and business intelligence solutions for local enterprises. We specialise in developing low-code applications and workflows that significantly enhance operational efficiency and productivity.",
           serviceLinks: {
             excel: "https://www.excelexperts.com.au/excel-consultants-richmond",
-            word: "https://www.officeexperts.com.au/services/microsoft-word/microsoft-consultants-richmond",
-            access: "/access-consultants-richmond",
-            powerplatform:
-              "https://www.powerplatformexperts.com.au/power-platform-consultants-richmond",
+            word: "https://www.officeexperts.com.au/microsoft-consultants-richmond",
+            access:
+              "https://www.accessexperts.com.au/access-consultants-richmond",
+            powerplatform: "/power-platform-consultants-richmond",
             office:
-              "https://www.officeexperts.com.au/office-and-office-365-experts-richmond",
+              "https://www.officeexperts.com.au/microsoft-consultants-richmond",
           },
         },
       ],
@@ -203,10 +203,10 @@ const Page = () => {
             "Our Brisbane team delivers Microsoft Power Platform solutions throughout Southeast Queensland. We implement automated workflows, custom business applications, and interactive dashboards to transform how organisations operate. Our Power Platform specialists have been optimising business processes for over two decades.",
           serviceLinks: {
             excel: "https://www.excelexperts.com.au/excel-consultants-brisbane",
-            word: "https://www.officeexperts.com.au/services/microsoft-word/microsoft-consultants-brisbane",
-            access: "/access-consultants-brisbane",
-            powerplatform:
-              "https://www.powerplatformexperts.com.au/power-platform-consultants-brisbane",
+            word: "https://www.officeexperts.com.au/microsoft-consultants-brisbane",
+            access:
+              "https://www.accessexperts.com.au/access-consultants-brisbane",
+            powerplatform: "/power-platform-consultants-brisbane",
             office:
               "https://www.officeexperts.com.au/microsoft-consultants-brisbane",
           },
@@ -220,12 +220,12 @@ const Page = () => {
           serviceLinks: {
             excel:
               "https://www.excelexperts.com.au/excel-consultants-gold-coast",
-            word: "https://www.officeexperts.com.au/services/microsoft-word/microsoft-consultants-gold-coast",
-            access: "/access-consultants-gold-coast",
-            powerplatform:
-              "https://www.powerplatformexperts.com.au/power-platform-consultants-gold-coast",
+            word: "https://www.officeexperts.com.au/microsoft-consultants-gold-coast",
+            access:
+              "https://www.accessexperts.com.au/access-consultants-gold-coast",
+            powerplatform: "/power-platform-consultants-gold-coast",
             office:
-              "https://www.officeexperts.com.au/word-and-powerpoint-experts-gold-coast",
+              "https://www.officeexperts.com.au/microsoft-consultants-gold-coast",
           },
         },
       ],
@@ -242,10 +242,9 @@ const Page = () => {
             "Our Perth consultants implement Power Platform solutions for businesses throughout Western Australia. We develop custom Power Apps, Power Automate workflows, Power BI dashboards, and Power Pages portals to revolutionize your business processes and enhance data visibility.",
           serviceLinks: {
             excel: "https://www.excelexperts.com.au/excel-consultants-perth",
-            word: "https://www.officeexperts.com.au/services/microsoft-word/microsoft-consultants-perth",
-            access: "/access-consultants-perth",
-            powerplatform:
-              "https://www.powerplatformexperts.com.au/power-platform-consultants-perth",
+            word: "https://www.officeexperts.com.au/microsoft-consultants-perth",
+            access: "https://www.accessexperts.com.au/access-consultants-perth",
+            powerplatform: "/power-platform-consultants-perth",
             office:
               "https://www.officeexperts.com.au/microsoft-consultants-perth",
           },
@@ -264,12 +263,12 @@ const Page = () => {
             "Serving South Australian organisations, our Adelaide team develops Microsoft Power Platform solutions tailored to diverse business needs. We design automated workflows, custom applications, and data analytics solutions that address complex operational challenges and drive digital transformation.",
           serviceLinks: {
             excel: "https://www.excelexperts.com.au/excel-consultants-adelaide",
-            word: "https://www.officeexperts.com.au/services/microsoft-word/microsoft-consultants-adelaide",
-            access: "/access-consultants-adelaide",
-            powerplatform:
-              "https://www.powerplatformexperts.com.au/power-platform-consultants-adelaide",
+            word: "https://www.officeexperts.com.au/microsoft-consultants-adelaide",
+            access:
+              "https://www.accessexperts.com.au/access-consultants-adelaide",
+            powerplatform: "/power-platform-consultants-adelaide",
             office:
-              "https://www.officeexperts.com.au/office-excel-access-and-365-experts-adelaide",
+              "https://www.officeexperts.com.au/microsoft-consultants-adelaide",
           },
         },
       ],
@@ -286,10 +285,10 @@ const Page = () => {
             "Our Canberra team specialises in Microsoft Power Platform solutions for government departments and local organisations. Within the Office Experts Group, our Power Platform specialists focus on developing secure, compliant automation and business intelligence solutions that meet the unique requirements of government and regulated industries.",
           serviceLinks: {
             excel: "https://www.excelexperts.com.au/excel-consultants-canberra",
-            word: "https://www.officeexperts.com.au/services/microsoft-word/microsoft-consultants-canberra",
-            access: "/access-consultants-canberra",
-            powerplatform:
-              "https://www.powerplatformexperts.com.au/power-platform-consultants-canberra",
+            word: "https://www.officeexperts.com.au/microsoft-consultants-canberra",
+            access:
+              "https://www.accessexperts.com.au/access-consultants-canberra",
+            powerplatform: "/power-platform-consultants-canberra",
             office:
               "https://www.officeexperts.com.au/microsoft-consultants-canberra",
           },
@@ -308,12 +307,12 @@ const Page = () => {
             "Our Northern Territory team delivers Microsoft Power Platform solutions to Darwin businesses and organisations. We implement custom workflows, business applications, and data analysis tools that work effectively in remote environments, with both on-site and cloud-based deployment options.",
           serviceLinks: {
             excel: "https://www.excelexperts.com.au/excel-consultants-darwin",
-            word: "https://www.officeexperts.com.au/services/microsoft-word/microsoft-consultants-darwin",
-            access: "/access-consultants-darwin",
-            powerplatform:
-              "https://www.powerplatformexperts.com.au/power-platform-consultants-darwin",
+            word: "https://www.officeexperts.com.au/microsoft-consultants-darwin",
+            access:
+              "https://www.accessexperts.com.au/access-consultants-darwin",
+            powerplatform: "/power-platform-consultants-darwin",
             office:
-              "https://www.officeexperts.com.au/office-excel-access-and-365-experts-darwin",
+              "https://www.officeexperts.com.au/microsoft-consultants-darwin",
           },
         },
       ],
